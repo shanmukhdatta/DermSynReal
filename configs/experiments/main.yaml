@@ -1,0 +1,25 @@
+experiment_suite: dermsynreal_main_v0
+status: template_not_executed
+classes: [acne, vitiligo, hyperpigmentation, fungal, skin_cancer_or_precancer, normal]
+primary_metric: macro_f1
+evaluation_partition: real_test_only
+seeds: [13, 42, 2026]
+classifiers:
+  - resnet50
+  - efficientnet_b3
+conditions:
+  E0: real_only
+  E1: real_plus_disease_prompt
+  E2: real_plus_morphology_prompt
+  E3: real_plus_quality_selected_morphology
+  E4: real_plus_diversity_selected_morphology_optional
+  E5: synthetic_only_optional
+rules:
+  freeze_real_test: true
+  no_generator_access_to_real_test: true
+  matched_synthetic_counts: true
+  matched_training_budget: true
+  test_metric_used_for_selection: false
+notes: >-
+  Template only. Real image manifests, clinical taxonomy, checkpoint IDs, 
+  selection pool construction and validated training hyperparameters are not yet provided.
