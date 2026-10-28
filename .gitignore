@@ -1,0 +1,42 @@
+# Credentials and environments
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+.DS_Store
+
+# Clinical images, model weights and generated bulk data
+*.ckpt
+*.safetensors
+*.pt
+*.pth
+*.onnx
+*.bin
+data/raw/
+data/processed/
+data/private/
+data/real/
+data/images/
+data/generated/
+outputs/
+artifacts/
+checkpoints/
+runs/
+wandb/
+kaggle_outputs/
+*.parquet
+
+# Avoid storing patient pictures inside repository by default
+*.jpg
+*.jpeg
+*.png
+*.webp
+*.tiff
+*.bmp
