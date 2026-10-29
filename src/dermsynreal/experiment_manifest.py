@@ -108,7 +108,14 @@ def prepare(
             continue
         cls = _label(row["label"])
         pool[cls][group].append(row)
-        model_check[cls][group].add(row["model_id"])
+        # To isolate prompt wording (E1 vs E2), compare the same generator
+        # backbone AND adapter mode/revision. Mixing base, TI and LoRA runs
+        # would confound the experiment even if the backbone name is identical.
+        model_check[cls][group].add((
+            row["model_id"],
+            row.get("generator_mode", "base") or "base",
+            row.get("generator_revision", "") or row.get("base_revision", "")
+        ))
     sets = {"E0": []}
     selected = {"E1": [], "E2": [], "E3": [], "E4": []}
     for cls in CLASSES:
@@ -117,7 +124,7 @@ def prepare(
         if min(len(generic), len(morph)) < budget_per_class:
             raise ValueError(f"Insufficient accepted generic/morphology pool for {cls}")
         if len(model_check[cls]["generic"]) != 1 or model_check[cls]["generic"] != model_check[cls]["morphology"]:
-            raise ValueError(f"E1/E2 generator base IDs differ within {cls}; cannot isolate prompt design")
+            raise ValueError(f"E1/E2 generator backbone/mode/revision mismatch for {cls}; filter to one matched generator configuration")
         selected["E1"].extend(rng.sample(generic, budget_per_class))
         selected["E2"].extend(rng.sample(morph, budget_per_class))
         if include_quality:
