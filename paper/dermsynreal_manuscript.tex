@@ -1,0 +1,167 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=0.83in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern,microtype}
+\usepackage{amsmath,booktabs,tabularx,longtable,graphicx}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\setlist{nosep}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.38em}
+\renewcommand{\arraystretch}{1.15}
+\newcommand{\blank}{\rule{0.72cm}{0.32pt}}
+\title{\bfseries DermSynReal: A Leakage-Controlled Study of Morphology-Guided Synthetic Facial Dermatology Images for Six-Class Classification}
+\author{Boda Shanmukha Datta\\\small Department of Instrumentation and Control Engineering\\\small Dr. B. R. Ambedkar National Institute of Technology Jalandhar}
+\date{Research protocol draft, 29 October 2026}
+\begin{document}
+\maketitle
+\begin{center}
+\fbox{\parbox{0.9\linewidth}{\centering \textbf{Draft methodology, not a completed experiment.} No test score, clinical validity, generator success, or statistical finding is claimed. All result fields remain blank.}}
+\end{center}
+\begin{abstract}
+Public facial dermatology photographs exhibit uneven coverage across conditions, anatomical locations, skin appearances, and acquisition sources. Text-to-image generation may augment underrepresented appearances, but visual realism does not establish diagnosis-correct morphology or predictive utility. We specify DermSynReal, a planned study comparing morphology-controlled diffusion generation with generic disease-name generation and real-only classification. The six intended classifier outputs are acne, vitiligo, hyperpigmentation, facial fungal infections, skin cancer/precancerous lesions (pending taxonomy review), and normal facial skin. Our protocol starts with rights and diagnosis auditing, exact and near-duplicate grouping, and immutable group-aware real train/validation/test splits. It then tests disease-specific generator checkpoints and train-only LoRA adapters, versioned anatomical and morphological prompts, screened synthetic pools, controlled classifier fine-tuning, and paired evaluation strictly on unseen real photographs. The primary metric is six-class macro-F1, accompanied by per-class, source-specific and uncertainty analyses. Prompt-design comparisons and synthetic-selection comparisons are deliberately separated. This paper is a preregistration-style manuscript: dataset counts, acceptance rates and experimental results are placeholders awaiting verified runs.
+\end{abstract}
+\textbf{Keywords:} dermatology, facial skin, diffusion, synthetic augmentation, morphological prompts, data leakage.
+
+\section{Introduction}
+Image classification in dermatology is affected by imbalanced disease coverage, source artifacts, inconsistent diagnosis labels and unequal representation of skin appearances. The Fitzpatrick17k work documents representation and performance differences \cite{groh2021}; SCIN combines consented contributions with dermatologist labels, yet remains a source requiring task-specific anatomical and diagnostic review \cite{scin}. A labeled folder is not itself proof of disease: images describing Stevens--Johnson syndrome/toxic epidermal necrolysis cannot be treated as cancer, while dermatitis or rosacea cannot silently serve as normal controls.
+
+Diffusion models can generate diverse visual scenes \cite{rombach2022}. Generic disease names, however, do not specify lesion type, severity, border, texture, count or anatomical distribution. We test whether controlled descriptions add value. Our research questions are: (RQ1) do morphology-guided synthetic images improve classification of held-out real photographs over real-only training? (RQ2) do they outperform generic disease-prompt synthetic images at matched data and optimization budgets? (RQ3) does quality/diversity selection from the same morphology pool outperform a random matched-count selection? We treat every positive finding as a hypothesis until evaluated.
+
+\section{Literature and Scope}
+Fitzpatrick17k and SCIN are candidate sources, not automatically suitable six-class facial diagnoses \cite{groh2021,scin}. Existing acne collections such as ACNE04 and AcneSCU require exact version, rights and label verification before citation as included data. Latent diffusion supplies a general generation framework \cite{rombach2022}; conditioned generation alone does not verify lesion correctness. ResNet \cite{he2016}, EfficientNet \cite{tan2019}, ConvNeXt V2 \cite{woo2023}, DINOv2 \cite{oquab2024}, and the official dermatology-pretrained PanDerm encoder \cite{yan2025} constitute relevant, distinct transfer-learning backbones. The study concerns a six-way research image classifier, not a validated clinical diagnostic system.
+
+\section{Task Definition and Real Dataset Construction}
+Let the eligible real dataset be $D_R=\{(x_i,y_i,s_i,g_i)\}$, with original photo $x_i$, six-way target label $y_i$, source $s_i$ and protective group $g_i$. The label set is
+\[
+\mathcal{Y}=\{\text{acne},\text{vitiligo},\text{hyperpigmentation},\text{fungal},\text{cancer/precancer},\text{normal}\}.
+\]
+Subtype annotation remains separate from final output labels. Generation can target acne lesions and severity; vitiligo patch geometry; melasma, post-inflammatory pigmentation and lentigines; tinea faciei and facial pityriasis versicolor; melanoma, basal-cell carcinoma and squamous-cell carcinoma; and unaffected skin with annotated texture. Actinic keratosis is premalignant, and any decision to group it with skin cancer must be explicit, clinically justified and frozen before testing. The categories cannot be presumed to contain equally reliable evidence.
+
+\subsection{Acquisition, inclusion and label approval}
+Candidate input resources are ACNE04/AcneSCU, SCIN, Fitzpatrick17k and other properly licensed facial clinical images. Record original dataset ID/version, license, source URI, original diagnosis, original label confidence, annotation method, anatomical site, modality, skin appearance fields where supported, patient or session ID if actually available, and final mapped label. Approve only visible facial photographs with a sufficiently supported, compatible diagnosis. Exclude uncertain, multi-diagnosis, body-site-only, dermoscopy-only, corrupted or artifact-dominated cases from the primary clinical-photo experiment. Keep raw clinical images off GitHub.
+
+Reviewers assign a recorded decision (approved, rejected, needs-review) and reason to each proposed label; use targeted review for suspected cancer-class noncancer diagnoses and normal-class dermatological diagnoses. Filename-based keyword flags are an aid to manual review, not a diagnostic classifier. \textbf{No model training is allowed until class eligibility and mapping pass the label gate.}
+
+\subsection{Integrity and duplicate-aware partitions}
+Apply EXIF orientation and decode RGB. Inventory unreadable, black, nearly blank, heavily watermarked and duplicate samples. Detect exact duplicates with byte SHA-256 and canonical decoded pixel hashes; identify candidate near-duplicates with pHash under original/horizontal/vertical/180-degree orientations, additional dHash/wHash, ResNet-50 embeddings (optionally DINOv2/CLIP), approximate neighbor retrieval and ORB/SIFT geometric verification. The provisional protective 64-bit pHash Hamming threshold is $\leq5$; uncertain candidates require review. Merge protective matches with Union--Find. A visual component does \emph{not} prove that photographs share a patient. Prefer real patient IDs when available; otherwise document visually inferred groups. Quarantine conflicting class groups.
+
+Freeze group-aware stratified train/validation/test partitions (initial target 70/15/15, conditional on class support). Keep an entire group in one partition and preserve the assignment in versioned manifests. Avoid any real validation or test photograph in generator adaptation, prompt selection, synthetic nearest-neighbor references, or model training. Inspect post-split candidate cross-partition matches. Re-labeling or correcting the test set is a documented data-quality revision, never a test-score optimization.
+
+\section{Synthetic Facial Image Generation}
+\subsection{Morphology-based prompt library}
+Store one immutable prompt manifest record per formulation with class, subtype, lesion morphology, severity, count, facial region, symmetry/distribution, visible texture, background/camera, skin-appearance variation, and prompt-family ID. Generic controls specify the disease but not the detailed attribute bundle. Manage prompt tokenization against the actual generator's text encoders. The SD2.1 generation notebooks experiment with bounded long-prompt conditioning using Compel; long text is not assumed to be faithfully rendered. The normal-skin notebook targets SDXL, which must be analyzed separately when generator architecture would confound within-prompt comparisons.
+
+\subsection{Candidate checkpoints, pilots and LoRA}
+The repository includes separate SD2.1 exploratory generation and optional train-only LoRA pathways for acne, fungal infection, vitiligo, hyperpigmentation and skin cancer, plus SDXL normal-skin pathways. Some published disease resources are textual-inversion embeddings, not pretrained full-face diffusion checkpoints or LoRAs. For each candidate, verify repository/revision, license, required base architecture, tokenizer compatibility and official loading instructions. Reject anatomical mismatch as a clinical solution (e.g., a body-site fungal concept is not a proven tinea faciei model). Do not claim any checkpoint produces medically correct faces before clinical review.
+
+Run initial 15--20 image pilots for each selected prompt family using documented matching seeds and generation settings. Where compatible, compare base, published adaptation, train-only custom LoRA and combined variants. Do not train LoRA on real validation/test images. Version every generated image with model checkpoint, adapter revision, prompt ID, seed, scheduler, guidance, steps, source and acceptance reason. Save rejected images and failure categories in private audit outputs where rights permit.
+
+\subsection{Quality, novelty and synthetic splits}
+Check image decoding, black/blank output, facial framing, lesion morphology, unwanted text or watermarks, demographic coverage and near-copy risk. Use manual morphology reviews when available; generic CLIP/FID-like similarity alone is not proof of clinical correctness. Screening rules must be frozen without test feedback. Prompt-family-disjoint train/validation/test splits are useful for synthetic-only diagnostics; the \emph{primary} test remains fixed real-only data. Record prompt lineages, matched seeds and accepted counts; never allow one prompt family across synthetic train and synthetic test partitions.
+
+\section{Classifier Training and Main Comparisons}
+The current repository contains notebooks labeled ResNet-50, EfficientNet-B3, ConvNeXt Tiny, DINOv2 ViT-S/14 and PanDerm Base linear probe. Previously considered EfficientNet-B0, ConvNeXt V2 Tiny and DINOv2 ViT-B/14 are distinct variants and must not be represented by those existing files. Freeze the exact model family/version, official pretrained weights and hyperparameters at run time. PanDerm must use genuine official architecture and weights, with linear-probe and fine-tuned results clearly distinguished.
+
+All loaders must convert to RGB, preserve aspect ratio with a documented padding/cropping policy, enforce model-specific normalization and apply augmentations \emph{only} to training. A typical schedule trains a fresh six-class head, then unfreezes final blocks, and optionally fine-tunes all layers with separate optimizer groups and suitable learning rates. Save best checkpoints based on real-validation macro-F1 and verify reload, class ordering and predictions. The source of all pretrained weights, code commit, packages, GPU, split manifest and seed must be retained.
+
+\begin{table}[ht]\centering\small\caption{Experimental conditions. The same real-test partition is used throughout.}
+\begin{tabularx}{\linewidth}{lX X}\toprule ID & Train images & Contrast\\\midrule
+E0 & Real only & Primary baseline\\
+E1 & Real + generic-prompt synthetic & Generic augmentation\\
+E2 & Real + morphology-prompt synthetic, random selection & Morphology prompt effect\\
+E3 & Real + quality-selected subset from E2 pool & Quality effect at matched $N$\\
+E4 & Real + diversity-selected subset from E2 pool & Optional diversity effect at matched $N$\\
+E5 & Synthetic only & Optional real-test domain gap\\\bottomrule
+\end{tabularx}\end{table}
+
+For E1--E2, align generator, seeds, class budgets and selection procedure wherever feasible. For E2--E3--E4, select the \emph{same number of images from the exact same underlying morphology pool}. Match real/synthetic mixing ratios, classifier starting weights, epoch/step budget, optimizer, augmentation and seed. Record deliberate exceptions. Include a separate, clearly marked three-regime diagnostic (real-only, synthetic-only, combined); report real-test and synthetic-test performance in separate panels, never in a pooled score.
+
+\section{Statistical Evaluation}
+On the fixed real test partition, evaluate per-class precision, recall, F1, support and confusion matrices. With $C=6$, the primary metric is
+\[
+F_{1,\mathrm{macro}}=\frac{1}{C}\sum_{c=1}^{C}\frac{2P_cR_c}{P_c+R_c},
+\]
+taking a class term as zero if undefined. Secondary metrics: balanced accuracy, overall accuracy, source-specific real-test scores and probability calibration where probabilities exist. Class/skin-appearance subgroup analysis requires adequate, correctly annotated support.
+
+Predeclare E2--E0 and E2--E1 as main differences; selection comparisons E3--E2 and E4--E2 are additional. Evaluate paired model predictions on \emph{exactly the same real-test image IDs}. Bootstrap paired metric differences using known patient groups where available; otherwise report the limitations of visually inferred groups. Present 95\% intervals, sample size and whether the bootstrap unit was image or group. Control multiplicity with Holm adjustments when making several primary significance claims. Separate training-seed variability (planned seeds 13, 42, 2026) from test-sample uncertainty: a seed does not create more independent patients. Do not choose models or synthetic subsets using real-test scores.
+
+An optional nested, group-aware 25\% versus 100\% real-train study must preserve real validation/test data. If a generator was trained on the full real-train pool, the 25\% experiment establishes \emph{classifier-only} scarcity, not end-to-end low-data scarcity. A strict low-data claim requires corresponding restrictions on disease-specific generator adaptation.
+
+\section{Results to Complete After Experiments}
+\begin{table}[ht]\centering\small\caption{Label-audited real data inventory; fill only from a frozen, reviewed manifest.}
+\begin{tabularx}{\linewidth}{Xrrrr}\toprule Category & Accepted & Train & Val & Real test\\\midrule
+Acne & \blank & \blank & \blank & \blank\\
+Vitiligo & \blank & \blank & \blank & \blank\\
+Hyperpigmentation & \blank & \blank & \blank & \blank\\
+Facial fungal infection & \blank & \blank & \blank & \blank\\
+Skin cancer/precancer & \blank & \blank & \blank & \blank\\
+Normal & \blank & \blank & \blank & \blank\\
+Total & \blank & \blank & \blank & \blank\\\bottomrule\end{tabularx}\end{table}
+
+\begin{table}[ht]\centering\small\caption{Synthetic generation pilot and quality audit.}
+\begin{tabularx}{\linewidth}{Xrrrr}\toprule Setting & Candidates & Accepted & Morphology pass (\%) & Near-copy rejected\\\midrule
+Generic prompt & \blank & \blank & \blank & \blank\\
+Morphology prompt & \blank & \blank & \blank & \blank\\
+Train-only LoRA / adaptation & \blank & \blank & \blank & \blank\\\bottomrule\end{tabularx}\end{table}
+
+\begin{table}[ht]\centering\small\caption{Primary results on \emph{real} test photographs. Report each backbone/seed separately and summarize across seeds.}
+\begin{tabularx}{\linewidth}{lXrrr}\toprule Arm & Backbone / configuration & Macro-F1 & Balanced acc. & Accuracy\\\midrule
+E0 & \blank & \blank & \blank & \blank\\
+E1 & \blank & \blank & \blank & \blank\\
+E2 & \blank & \blank & \blank & \blank\\
+E3 & \blank & \blank & \blank & \blank\\
+E4 & \blank & \blank & \blank & \blank\\
+E5 & \blank & \blank & \blank & \blank\\\bottomrule\end{tabularx}\end{table}
+
+\begin{table}[ht]\centering\small\caption{Paired macro-F1 differences on identical real-test IDs.}
+\begin{tabularx}{\linewidth}{lXrr}\toprule Contrast & Question & $\Delta$ macro-F1 [95\% CI] & Adjusted $p$\\\midrule
+E2--E0 & Augmentation benefit & \blank & \blank\\
+E2--E1 & Morphology benefit & \blank & \blank\\
+E3--E2 & Quality selection & \blank & \blank\\
+E4--E2 & Diversity selection & \blank & \blank\\\bottomrule\end{tabularx}\end{table}
+
+\begin{table}[ht]\centering\small\caption{Diagnostic source-separated evaluation; never combine test domains.}
+\begin{tabularx}{\linewidth}{lXrr}\toprule Training regime & Evaluation domain & Accuracy & Macro-F1\\\midrule
+Real only & Real test & \blank & \blank\\
+Real only & Synthetic test & \blank & \blank\\
+Synthetic only & Real test & \blank & \blank\\
+Synthetic only & Synthetic test & \blank & \blank\\
+Combined & Real test & \blank & \blank\\
+Combined & Synthetic test & \blank & \blank\\\bottomrule\end{tabularx}\end{table}
+
+\begin{table}[ht]\centering\small\caption{Per-class real-test analysis (copy for each model and experimental condition).}
+\begin{tabularx}{\linewidth}{Xrrrr}\toprule Category & Support & Precision & Recall & F1\\\midrule
+Acne & \blank & \blank & \blank & \blank\\
+Vitiligo & \blank & \blank & \blank & \blank\\
+Hyperpigmentation & \blank & \blank & \blank & \blank\\
+Fungal & \blank & \blank & \blank & \blank\\
+Cancer/precancer & \blank & \blank & \blank & \blank\\
+Normal & \blank & \blank & \blank & \blank\\\bottomrule\end{tabularx}\end{table}
+
+\textbf{Final figures to insert:} provenance/label-audit flow, duplicate groups and splits, permissible real/synthetic example grid, clinical-morphology ratings, training histories, six-class confusion matrices, per-source scores, calibration plots, paired bootstrap distributions, low-data curves and error categories. All images require permission and privacy checks.
+
+\section{Discussion and Limitations Framework}
+A gain of E2 over E0 but not E1 is not evidence of morphology-specific advantage. Strong synthetic image quality with no real-test improvement is not a classifier success. Poor synthetic-only performance may reveal domain shift. Source watermarks, inaccurate labels, different generator checkpoints, inconsistent anatomy, class collapse and visually grouped rather than patient-disjoint samples limit interpretation. The broad cancer/precancer category has important clinical distinctions. Do not infer clinical safety, diagnosis readiness or fairness from this study's image classification alone. Report failures, uncertainty, computational cost and selection constraints as completely as positive results.
+
+\section{Ethics and Reproducibility}
+Use only authorized sources and record usage rights. Do not commit clinical imagery, sensitive patient information or access credentials. Screen synthetic images for possible copying of real data; disclose that generated faces are synthetic. Document checkpoint and prompt IDs, generator settings, classifier weights, data-group definitions, split hashes, package versions, code SHA, Kaggle runtime, seeds, training budgets and exact output prediction files. The final paper must distinguish locally tested code from GPU runs and reviewed clinical evidence.
+
+\section{Execution Roadmap}
+Existing repository materials include six disease-specific generation notebooks, prompt libraries, real/synthetic split notebooks and five classifier families. Their presence does not establish successful execution. Run in this order: (1) resolve class mapping and inspect all suspect filenames/images; (2) generate approved real manifest, deduplicate and freeze group-aware splits; (3) validate checkpoints and 15--20 image morphology pilots; (4) collect versioned synthetic pools with prompt/seed/adaptation metadata; (5) screen quality and leakage; (6) run real-only classifier and verify checkpoint reload; (7) execute controlled E1--E5 regimes and selected seeds; (8) export one real-test prediction CSV per run plus optional synthetic-test CSV; (9) run paired bootstrap/evaluation and source audits; (10) populate these blank tables and insert figures from saved artifacts. Stop whenever a gate fails.
+
+\section{Conclusion}
+DermSynReal defines a controlled test of morphology-guided synthetic augmentation rather than claiming that diffusion images are clinically accurate or improve classification. Its core scientific requirement is an unmodified real-world evaluation under verified labels and leakage-aware partitions. Results will be stated only after execution, review and paired analysis.
+
+\begin{thebibliography}{99}\small
+\bibitem{groh2021} M. Groh et al., Evaluating deep neural networks trained on clinical images in dermatology with the Fitzpatrick 17k dataset, \emph{CVPR Workshops}, pp. 1820--1828, 2021.
+\bibitem{scin} Google Research, SCIN (Skin Condition Image Network) dataset documentation, \url{https://github.com/google-research-datasets/scin}, accessed 2026.
+\bibitem{rombach2022} R. Rombach et al., High-resolution image synthesis with latent diffusion models, \emph{CVPR}, 2022.
+\bibitem{he2016} K. He et al., Deep residual learning for image recognition, \emph{CVPR}, 2016.
+\bibitem{tan2019} M. Tan and Q. Le, EfficientNet: Rethinking model scaling for convolutional neural networks, \emph{ICML}, 2019.
+\bibitem{woo2023} S. Woo et al., ConvNeXt V2: Co-designing and scaling ConvNets with masked autoencoders, \emph{CVPR}, 2023.
+\bibitem{oquab2024} M. Oquab et al., DINOv2: Learning robust visual features without supervision, \emph{TMLR}, 2024.
+\bibitem{yan2025} S. Yan et al., A multimodal vision foundation model for clinical dermatology, \emph{Nature Medicine}, 31, 2691--2702, 2025, doi:10.1038/s41591-025-03747-y.
+\end{thebibliography}
+\end{document}
