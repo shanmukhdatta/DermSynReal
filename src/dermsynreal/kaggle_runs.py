@@ -70,7 +70,7 @@ def sha256_file(path):
         for block in iter(lambda:f.read(2**20),b""):h.update(block)
     return h.hexdigest()
 
-def prompt_collection(repo_root, class_name, *, partition="train", limit=5, offset=0):
+def prompt_collection(repo_root, class_name, *, partition="train", limit=5, offset=0, variant="morphology"):
     """Load exact authored prompts; preserve prompt-family partition and negative prompts.
 
     Defaults to a small train-only pilot. For 210 train prompts set limit=None.
@@ -78,6 +78,8 @@ def prompt_collection(repo_root, class_name, *, partition="train", limit=5, offs
     their family IDs must not enter augmentation or generator fine-tuning.
     """
     cls=_label(class_name)
+    if variant not in ("morphology","generic"):
+        raise ValueError("variant must be morphology or generic")
     if partition not in ("train","val","test"):
         raise ValueError("partition must be train, val, test")
     if limit is not None and limit<1 or offset<0:
@@ -110,9 +112,24 @@ def prompt_collection(repo_root, class_name, *, partition="train", limit=5, offs
     for r in selected:
         phenotype=r.get("phenotype") or "unspecified"
         subtype=SUBTYPES.get(cls,{}).get(phenotype,phenotype)
+        if variant=="generic":
+            subject=str(r.get("sex_descriptor") or "person").strip()
+            tone=str(r.get("visual_skin_tone") or "natural skin").strip()
+            camera=str(r.get("camera_view") or "frontal clinical face photograph").strip()
+            lighting=str(r.get("lighting") or "diffuse illumination").strip()
+            class_terms={"Acne":"acne","Fungal_Infection":"a fungal skin condition",
+                         "Vitiligo":"vitiligo","Hyperpigmentation":"hyperpigmentation",
+                         "Skin_Cancer":"a suspicious skin lesion",
+                         "Normal":"ordinary natural skin without obvious lesions"}
+            positive=("Unretouched realistic clinical documentary photograph of a "
+                      +subject+" with "+tone+", showing "+class_terms[cls]
+                      +" on the face. "+camera+", "+lighting+
+                      ". Natural facial proportions, pores, skin texture, plain background, no labels.")
+        else:
+            positive=r["positive_prompt"]
         normalized.append({
             "id":r["prompt_id"],
-            "text":r["positive_prompt"],
+            "text":positive,
             "negative_prompt":r["negative_prompt"],
             "prompt_family_id":r["prompt_group_id"],
             "prompt_partition":r["split"],
@@ -121,6 +138,7 @@ def prompt_collection(repo_root, class_name, *, partition="train", limit=5, offs
             "pattern":phenotype,
             "distribution":r.get("facial_location",""),
             "adapter_mode":"none",
+            "prompt_type":variant,
             "category":cls.lower(),
             "use_cystic_token":False,
             "seed_base":r.get("seed_base"),
@@ -138,17 +156,19 @@ def resolve_repo_root(candidate=None):
     raise FileNotFoundError("Attach a full DermSynReal repository snapshot or clone it with Kaggle Internet")
 
 def generation_manifest(metadata,out_dir,*,root,class_name,repo_root,
-                        prompt_partition,model_id=None):
+                        prompt_partition,model_id=None,prompt_type="morphology"):
     """Convert existing metadata.jsonl to robust CSV without changing generator logic.
 
     Every image starts UNREVIEWED and is not accepted for training until a human
     morphological audit. Explicit source/shas/modes/families are exported.
     """
     cls=_label(class_name)
+    if prompt_type not in ("generic","morphology"):
+        raise ValueError("Invalid generation prompt type")
     root=Path(root)
     out=Path(out_dir);out.mkdir(parents=True,exist_ok=True)
     registry={p["id"]:p for p in prompt_collection(repo_root,cls,
-                    partition=prompt_partition,limit=None)}
+                    partition=prompt_partition,limit=None,variant=prompt_type)}
     records=[]
     for source_row in metadata:
         prompt_id=str(source_row.get("prompt_id") or "")
@@ -169,7 +189,7 @@ def generation_manifest(metadata,out_dir,*,root,class_name,repo_root,
             "image_path":str(image.resolve()),
             "label":cls.lower(),"class_name":cls,
             "prompt_id":prompt_id,"prompt_family_id":p["prompt_family_id"],
-            "prompt_partition":p["prompt_partition"],"prompt_type":"morphology",
+            "prompt_partition":p["prompt_partition"],"prompt_type":prompt_type,
             "model_id":str(model_id or source_row.get("base_model") or source_row.get("base") or ""),
             "generator_mode":str(source_row.get("mode") or source_row.get("requested_adapter_mode") or "base"),
             "seed":source_row.get("seed",""),
@@ -193,7 +213,7 @@ def generation_manifest(metadata,out_dir,*,root,class_name,repo_root,
     modes=Counter(r["generator_mode"] for r in records)
     manifest={
         "generated_images":len(records),"labels":dict(counts),"modes":dict(modes),
-        "prompt_partition":prompt_partition,
+        "prompt_partition":prompt_partition,"prompt_type":prompt_type,
         "distinct_prompt_families":len({r["prompt_family_id"] for r in records}),
         "model_id":model_id or "see individual rows",
         "source_repo_sha":git_sha(repo_root),
