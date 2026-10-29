@@ -1,0 +1,22 @@
+# Placeholder config for the upcoming Kaggle execution; no experiment has run.
+schema_version: 1
+status: not_executed
+primary_domain: real
+primary_metric: macro_f1
+target_classes: [acne, fungal_infection, vitiligo, hyperpigmentation, skin_cancer, normal]
+run_registry_csv: ""
+approved_real_audit_json: ""
+outputs_dir: /kaggle/working/dermsynreal_evaluation
+test_locked: true
+bootstrap:
+  iterations: 2000
+  seed: 42
+  resampling_unit: visual_group_unless_patient_ids_verified
+contrasts:
+  - [E2, E0]
+  - [E2, E1]
+  - [E3, E2]
+  - [E4, E2]
+source_stratification:
+  minimum_n_for_six_class_reporting: 24
+notes: "A passed structural label audit is mandatory. No test metrics may guide model selection."
