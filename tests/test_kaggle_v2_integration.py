@@ -103,13 +103,17 @@ class KaggleV2ContractTests(unittest.TestCase):
             for folder in CLASS_FOLDERS.values():(dataset/folder).mkdir(parents=True)
             exported=root/"saved_approved_splits"
             (exported/"train/Acne").mkdir(parents=True)
+            (exported/"val/Acne").mkdir(parents=True)
             (exported/"test/Acne").mkdir(parents=True)
             (exported/"train/Acne/a.png").write_bytes(b"fake train")
+            (exported/"val/Acne/c.png").write_bytes(b"fake validation")
             (exported/"test/Acne/b.png").write_bytes(b"fake test")
             manifest=root/"real.csv"
             write_rows(manifest,[
                 {"image_id":"train1","image_path":"train/Acne/a.png","label":"acne",
                  "split":"train","group_id":"G1","is_synthetic":"False"},
+                {"image_id":"val1","image_path":"val/Acne/c.png","label":"acne",
+                 "split":"val","group_id":"G3","is_synthetic":"False"},
                 {"image_id":"test1","image_path":"test/Acne/b.png","label":"acne",
                  "split":"test","group_id":"G2","is_synthetic":"False"},
             ])
@@ -124,6 +128,12 @@ class KaggleV2ContractTests(unittest.TestCase):
                     real_image_root=exported,cls="Acne",stage_dir=root/"lora",
                     origin_root=dataset,label_audit_json=audit)
             self.assertEqual(summary["count"],1)
+            self.assertEqual(summary["class_frozen_split_counts"],{"train":1,"val":1,"test":1})
+            self.assertTrue(summary["global_split_is_reused_not_resplit"])
+            with (staged/"class_frozen_split_counts.csv").open(newline="") as f:
+                counts=list(csv.DictReader(f))
+            self.assertEqual([(r["split"],r["image_count"]) for r in counts],
+                             [("train","1"),("val","1"),("test","1")])
             self.assertEqual(len(list((staged/"train").glob("*.png"))),1)
             self.assertTrue((staged/"train/train1_a.png").is_symlink())
 
