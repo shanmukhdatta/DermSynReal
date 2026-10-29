@@ -1,12 +1,26 @@
-experiment_suite: dermsynreal_main_v0
+experiment_suite: dermsynreal_main_v1
 status: template_not_executed
-classes: [acne, vitiligo, hyperpigmentation, fungal, skin_cancer_or_precancer, normal]
-primary_metric: macro_f1
+real_source: kaggle:shanmukhadattaboda/facial-skin-conditions-real-image-collection:v2
+real_dataset_mount: /kaggle/input/datasets/shanmukhadattaboda/facial-skin-conditions-real-image-collection
+real_labels: human_review_required
+classes: [acne, fungal_infection, vitiligo, hyperpigmentation, skin_cancer, normal]
+primary_metric: real_test_macro_f1
 evaluation_partition: real_test_only
 seeds: [13, 42, 2026]
 classifiers:
-  - resnet50
-  - efficientnet_b3
+  - resnet50.a1_in1k
+  - tf_efficientnet_b3.ns_jft_in1k
+  - convnext_tiny.fb_in22k_ft_in1k
+  - vit_small_patch14_dinov2.lvd142m
+  - PanDerm_Base_LP
+generation:
+  source: prompts/
+  prompt_bank_size_per_class: 300
+  train_val_test_prompt_counts: [210, 45, 45]
+  pilot_prompts: 5
+  images_per_prompt_pilot: 5
+  variants: [generic, morphology]
+  default_partition: train
 conditions:
   E0: real_only
   E1: real_plus_disease_prompt
@@ -14,12 +28,19 @@ conditions:
   E3: real_plus_quality_selected_morphology
   E4: real_plus_diversity_selected_morphology_optional
   E5: synthetic_only_optional
+classifier_training:
+  head_epochs: 2
+  partial_epochs: 4
+  optional_full_epochs: 0
+  epoch_update_budget: matched_to_real_train_size
 rules:
   freeze_real_test: true
   no_generator_access_to_real_test: true
+  human_review_required: true
+  synthetic_train_only: true
   matched_synthetic_counts: true
-  matched_training_budget: true
+  matched_training_optimizer_updates: true
   test_metric_used_for_selection: false
 notes: >-
-  Template only. Real image manifests, clinical taxonomy, checkpoint IDs, 
-  selection pool construction and validated training hyperparameters are not yet provided.
+  Code/template only. Actual GPU runs, label review, source licensing,
+  saved Kaggle splits and checkpoints are not yet verified.

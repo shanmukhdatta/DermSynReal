@@ -5,7 +5,7 @@
 ## Run organization
 
 - Frozen real test: same `image_id`, label, and visual/patient grouping across every model and condition. One frozen split SHA across one evaluation registry.
-- E0 real-only. E1 real+generic-prompt synthetic. E2 real+morphology-prompt synthetic sampled randomly. E3 same E2 pool quality-selected, matched count. E4 same E2 pool diversity-selected, matched count. E5 synthetic-only, tested on real images. The current standalone ResNet-50 training notebook can do E5; the five shorter training notebooks do not implement E5.
+- E0 real-only. E1 real+generic-prompt synthetic. E2 real+morphology-prompt synthetic sampled randomly. E3 same E2 pool quality-selected, matched count. E4 same E2 pool diversity-selected, matched count. E5 synthetic-only, tested on real images. The five current classifiers now accept an optional E5 synthetic-only training mode, retaining frozen real validation and test. The standalone older ResNet50 trainer remains separate. All GPU execution remains unverified.
 - Report training-mode differences only when the starting weights, optimizer, class budgets, seed and effective training budgets are controlled. Matched-arm manifest generation is in `scripts/build_experiment_manifests.py`.
 - Evaluation `notebooks/Evaluation/01` and `02` load `best_weights.pth` or `linear_probe.joblib` and **do not train** or choose hyperparameters on test data. They fail if test is not explicitly unlocked.
 - Real-test and synthetic-test metrics are separate. Synthetic-test split must be independent by prompt family from synthetic train. A synthetic-only model must still have real-test predictions.

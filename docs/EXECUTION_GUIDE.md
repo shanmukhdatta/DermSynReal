@@ -11,7 +11,7 @@ Existing notebooks should be reused instead of recreated:
 | Function | Current repository path | Execution status |
 | --- | --- | --- |
 | Real-data dedup + group split | `notebooks/Preprocessing/Real_Data/DermaLens_Real_Dedup_GroupSplit_Kaggle.ipynb` | GPU and image-based audit still required |
-| Synthetic prompt-family split | `notebooks/Preprocessing/Synthtic_data/DermaLens_Synthetic_Prompt_Split_Kaggle.ipynb` | Needs actual generated images |
+| Synthetic prompt-family split | `notebooks/Preprocessing/Synthetic_Data/DermaLens_Synthetic_Prompt_Split_Kaggle.ipynb` | Needs actual generated images |
 | Acne, fungal, vitiligo, hyperpigmentation, skin cancer, normal generation | `notebooks/Generation/<class>/01_*.ipynb` | Offline checks in class audit reports; no general claim of Kaggle GPU verification |
 | Optional custom LoRA adaptation | `notebooks/Generation/<class>/02_*.ipynb` | Train only on approved real training partitions |
 | ResNet-50, EfficientNet-B3, ConvNeXt Tiny, DINOv2 ViT-S/14, PanDerm Base probe | `notebooks/Training/01_*.ipynb` through `05_*.ipynb` | Final test locked until experiment settings are frozen |
@@ -55,7 +55,7 @@ Use each disease-specific `Generation` README and audit report. For a pilot, ins
 
 Run custom LoRA training only with the approved **real-train** subset. Do not use validation/test images even for captions, prompt search, checkpoint choice or memorization checks that feed back into generation. Record prompt ID/family, source class/subtype, morphology, negative prompt, exact model revision, LoRA/TI checkpoint, random seed, scheduler, steps, acceptance/rejection, quality reviewer, and image hashes.
 
-Use the existing `notebooks/Preprocessing/Synthtic_data/DermaLens_Synthetic_Prompt_Split_Kaggle.ipynb` when an independent synthetic diagnostic set is needed. It requires a prompt-family manifest; read its README. Do not confuse this synthetic-test subset with the primary real-test endpoint.
+Use the existing `notebooks/Preprocessing/Synthetic_Data/DermaLens_Synthetic_Prompt_Split_Kaggle.ipynb` when an independent synthetic diagnostic set is needed. It requires a prompt-family manifest; read its README. Do not confuse this synthetic-test subset with the primary real-test endpoint.
 
 ## 4. Experiment design and frozen config
 
@@ -141,3 +141,9 @@ python -m compileall -q src/dermsynreal/evaluation.py src/dermsynreal/label_gate
 GitHub Actions contains a lightweight `research-gates.yml`. It does not run GPU generation, clinical label verification or accuracy benchmarks. Save Kaggle outputs and update `docs/CODE_COMPLETION_TRACKER.md` with actual run URLs, exact SHA, configs and blockers for every phase.
 
 **Do not rerun expensive training while label quality is unresolved.**
+
+## Sole real collection v2 — exact Kaggle execution paths
+
+`/kaggle/input/datasets/shanmukhadattaboda/facial-skin-conditions-real-image-collection/Face_Skin_dataset` contains the original six folders `Acne`, `Fungal_infection`, `Hyper_Pigmentation`, `Normal_Skin`, `Skin_cancer`, `Vitiligo`. Use `notebooks/Preprocessing/Real_Data/00_Facial_Real_V2_Kaggle_Start_Here.ipynb` for discovery, SHA duplicate inventory, diagnosis/source review, and the frozen global protected split. These real photos are **not** accessed by generators directly; LoRA training requires the approved frozen *train* subset and audit. All six 300-prompt banks are now loaded automatically with generic E1 or morphology E2 modes, 210/45/45 disjoint prompt partitions and unapproved generated-image CSV output.
+
+Recommended run order: (1) inventory + human labels + licensing; (2) dedup/group split and review; (3) real-only E0 head/partial training smoke test; (4) E1 generic and E2 morphology 5-prompt pilot with morphology review; (5) optional real TRAIN-only LoRA; (6) all 210 training-family prompts and reviewed synthetic pools; (7) E1–E5 run manifests, fixed-budget classifier training across seeds; (8) real held-out evaluation and publication figures. Results stay blank until observed. For approved aggregate GitHub reports see `docs/RUN_RESULTS_HANDOFF.md`.

@@ -87,3 +87,13 @@ The [seven evaluation notebooks](notebooks/Evaluation/README.md) now cover revie
 ## Starting point
 
 Read [`docs/PROJECT_PLAN.md`](docs/PROJECT_PLAN.md), [`docs/CODE_COMPLETION_TRACKER.md`](docs/CODE_COMPLETION_TRACKER.md) and [`docs/RESEARCH_PROTOCOL.md`](docs/RESEARCH_PROTOCOL.md). Develop and test one phase at a time, then add its notebook and run record. The repository contains existing notebook implementations and offline checks, but no verified end-to-end study results on Kaggle. Work must begin by correcting the suspect Cancer and Normal class labels.
+
+## October 29 Kaggle v2 integration
+
+**Only real-image source:** `/kaggle/input/datasets/shanmukhadattaboda/facial-skin-conditions-real-image-collection` (Kaggle dataset v2). The screenshot displays six folders totaling **9,791 uploaded files, not 9,791 verified independent images**. The collection is not yet clinically reviewed, deduplicated or trained against. Original permissions must be checked; the uploader's CC0 choice does not prove third-party image rights.
+
+**Start:** [real v2 inventory → review → group-disjoint split → train manifest](notebooks/Preprocessing/Real_Data/00_Facial_Real_V2_Kaggle_Start_Here.ipynb). See [Preprocessing README](notebooks/Preprocessing/README.md), [Generation README](notebooks/Generation/README.md), [Training README](notebooks/Training/README.md), and [Evaluation README](notebooks/Evaluation/README.md).
+
+Each generator now consumes the authored **300-prompt** bank (`PROMPT_VARIANT='generic'` for E1 or `morphology` for E2) and writes unreviewed per-image manifests, SHA metadata and run logs. LoRA notebooks train only from the reviewed frozen **real training** split, never directly from the raw dataset; subtype LoRA adaptation requires reviewed subtype mapping. The four timm classifiers have head/partial/optional full stages with matched optimizer update budget; PanDerm remains a frozen-feature linear probe. E5 synthetic-only is optional. The held-out real test stays locked until experiment selection is complete.
+
+**Future GitHub results:** Kaggle keeps images and heavy model files; the new `scripts/prepare_public_run_report.py` prepares whitelisted aggregate CSV/JSON reports under `reports/experiments/<run-tag>/` for explicit, reviewed GitHub commits. [Handoff steps](docs/RUN_RESULTS_HANDOFF.md). No code here performs unattended future Kaggle training or publishing.

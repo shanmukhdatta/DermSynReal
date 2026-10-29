@@ -15,3 +15,5 @@ Run with `PYTHONPATH=src python scripts/<name>.py --help`. Every command uses ex
 The label gate is also a module CLI: `PYTHONPATH=src python -m dermsynreal.label_gate --help`.
 
 Inputs are actual Kaggle artifacts; no command here trains classifiers or verifies the medical correctness of labels. See `notebooks/Evaluation/README.md`.
+
+| `prepare_public_run_report.py` | Copy only a whitelisted set of aggregate Kaggle results into a versioned `reports/experiments/<run-tag>/` directory for manual privacy review and explicit GitHub publication. It never auto-pushes images or checkpoints. |
