@@ -184,6 +184,30 @@ def generation_manifest(metadata,out_dir,*,root,class_name,repo_root,
         if not image.is_file() or image.stat().st_size==0:
             raise FileNotFoundError(image)
         digest=sha256_file(image)
+        # Normalize differences between the existing six generator metadata
+        # formats. Do not silently call TI/LoRA outputs "base" in E1/E2.
+        mode=(source_row.get("experiment_mode") or source_row.get("mode")
+              or source_row.get("requested_adapter_mode") or "").strip()
+        if mode in ("", "none"):
+            if (source_row.get("lora_source") or source_row.get("custom_lora")
+                or source_row.get("custom_lora_source")):
+                mode="lora_only"
+            elif source_row.get("ti_token_used"):
+                mode="ti_only"
+            else:
+                mode="base"
+        adapter_source=(
+            source_row.get("custom_lora") or source_row.get("lora_source")
+            or source_row.get("custom_lora_source") or source_row.get("texture_lora")
+            or source_row.get("published_ti") or source_row.get("textual_inversion_model")
+            or (source_row.get("textual_inversion") if mode in ("ti", "ti_only", "combined") else "")
+            or ""
+        )
+        adapter_revision=(
+            source_row.get("ti_revision") or source_row.get("published_ti_revision")
+            or source_row.get("textual_inversion_revision")
+            or source_row.get("ti_commit") or source_row.get("texture_commit") or ""
+        )
         record={
             "image_id":"synthetic_"+digest[:16]+"_"+hashlib.sha256((p["id"]+relative).encode()).hexdigest()[:12],
             "image_path":str(image.resolve()),
@@ -192,16 +216,17 @@ def generation_manifest(metadata,out_dir,*,root,class_name,repo_root,
             "prompt_partition":p["prompt_partition"],"prompt_type":prompt_type,
             "model_id":str(model_id or source_row.get("base_model") or source_row.get("base") or ""),
             "generator_revision":str(source_row.get("base_revision") or source_row.get("base_commit") or ""),
-            "adapter_source":str(source_row.get("custom_lora") or source_row.get("lora_source")
-                                 or source_row.get("custom_lora_source") or source_row.get("textual_inversion") or ""),
-            "adapter_revision":str(source_row.get("ti_revision") or source_row.get("published_ti_revision")
-                                   or source_row.get("ti_commit") or source_row.get("texture_commit") or ""),
-            "generator_mode":str(source_row.get("mode") or source_row.get("requested_adapter_mode") or "base"),
+            "adapter_source":str(adapter_source),
+            "adapter_revision":str(adapter_revision),
+            "generator_mode":str(mode),
             "seed":source_row.get("seed",""),
             "image_sha256":digest,
             "accepted":"False", # no automated medical approval
             "reviewer_decision":"needs_review",
+            "reviewer_id":"",
             "morphology_score":"",
+            "quality_score":"",
+            "diversity_cluster_id":"",
             "near_copy_flag":"",
             "source_dataset":DATASET_SOURCE,
             "source_file":relative
