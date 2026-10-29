@@ -276,6 +276,34 @@ def prepare_lora_train_only(*,real_split_manifest,real_image_root,cls,
                 subtype_by_id[r["image_id"]]=r["subtype"].strip().lower()
         if not subtype_by_id:
             raise ValueError("No subtype-approved records")
+    # Audit the existing GLOBAL protected split by class. Never resplit each
+    # LoRA independently: that can put the same person into different classes'
+    # train/validation/test assignments. Only the train partition is staged.
+    class_rows=[r for r in allowed if _label(r["label"])==cls
+                and str(r["is_synthetic"]).lower() in {"false","0","no"}]
+    if not class_rows:
+        raise ValueError(f"No reviewed real rows for {cls}")
+    class_split_counts=Counter()
+    audit_rows=[]
+    seen_class_ids=set()
+    for row in class_rows:
+        image_id=(row.get("image_id") or "").strip()
+        split=row["split"].strip().lower()
+        if not image_id or image_id in seen_class_ids:
+            raise ValueError("Missing or duplicate class-specific real image ID")
+        seen_class_ids.add(image_id)
+        if split not in {"train","val","test"}:
+            raise ValueError("Invalid class split in global reviewed manifest")
+        class_split_counts[split]+=1
+        audit_rows.append({
+            "image_id":image_id,"class_name":cls,
+            "split":split,"group_id":row["group_id"],
+            "selected_for_lora":str(split=="train" and
+              (not subtype or subtype_by_id.get(image_id)==subtype.lower())),
+            "source_dataset":DATASET_SOURCE,
+        })
+    if any(class_split_counts[sp]==0 for sp in ("train","val","test")):
+        raise ValueError(f"{cls} needs real train, val and test in the same global frozen split")
     candidate=[]
     root=Path(real_image_root).resolve()
     source_dir=(dataset_root/CLASS_FOLDERS[cls]).resolve()
@@ -317,15 +345,25 @@ def prepare_lora_train_only(*,real_split_manifest,real_image_root,cls,
                       "staged_path":str(dest),"class_name":cls,"split":"train",
                       "group_id":r["group_id"],"source_dataset":DATASET_SOURCE})
     _csv(out/"lora_train_source_manifest.csv",index,list(index[0]))
+    _csv(out/"class_frozen_split_assignments.csv",audit_rows,list(audit_rows[0]))
+    statistics=[
+        {"class_name":cls,"split":split,"image_count":class_split_counts[split],
+         "protected_group_count":len({r["group_id"] for r in audit_rows if r["split"]==split}),
+         "used_for_lora_fitting":str(split=="train")}
+        for split in ("train","val","test")
+    ]
+    _csv(out/"class_frozen_split_counts.csv",statistics,list(statistics[0]))
     note={"class":cls,"count":len(index),"source":DATASET_SOURCE,
           "reviewed_train_only":True,"image_root":str(root),
+          "class_frozen_split_counts":dict(class_split_counts),
+          "global_split_is_reused_not_resplit":True,
           "raw_input":str(dataset_root),
           "manifest_sha256":sha256_file(real_split_manifest),
           "train_group_count":len({x["group_id"] for x in index}),
           "reviewed_subtype":subtype,
           "label_audit_sha256":sha256_file(label_audit_json),
           "subtype_review_sha256":sha256_file(subtype_csv) if subtype_csv else None,
-          "note":"No validation/test images were staged. Clinical review is assumed from the approved split provenance."}
+          "note":"Class-level train/val/test assignments are reused from the globally reviewed split. Only train files are staged. Clinical review cannot be established by this code."}
     (out/"lora_train_source_summary.json").write_text(json.dumps(note,indent=2)+"\n")
     return out,note
 
@@ -346,3 +384,54 @@ def training_run_report(*,model_output,manifest_csv,model_name,experiment,seed,r
                 "checkpoint_count":len([r for r in audit if r["filename"].endswith((".pth",".joblib"))])},
         artifacts=[out/"artifact_inventory.csv"],repo_root=repo_root)
     return record
+
+
+class _NotebookLogTee:
+    """Minimal line-stream tee; never upload raw GPU/medical console logs to public GitHub."""
+    def __init__(self, original, destination):
+        self.original=original
+        self.destination=destination
+    def write(self, message):
+        self.original.write(message)
+        self.destination.write(message)
+        self.destination.flush()
+        return len(message)
+    def flush(self):
+        self.original.flush()
+        self.destination.flush()
+    def isatty(self):
+        return False
+    def __getattr__(self,name):
+        return getattr(self.original,name)
+
+
+def start_notebook_logging(output_dir, *, kind, config=None, repo_root=None):
+    """Persist console stdout/stderr and an append-only structured start event.
+
+    Call after initializing OUT_DIR and before substantial GPU work. Use an output
+    folder in /kaggle/working; do not commit raw console logs to public GitHub.
+    """
+    import atexit
+    out=Path(output_dir)
+    out.mkdir(parents=True,exist_ok=True)
+    key=str(out.resolve())
+    if not hasattr(start_notebook_logging,"_open"):
+        start_notebook_logging._open={}
+    if key in start_notebook_logging._open:
+        return out/"notebook_console.log"
+    writer=(out/"notebook_console.log").open("a",encoding="utf-8",errors="replace",buffering=1)
+    original_out,original_err=sys.stdout,sys.stderr
+    sys.stdout=_NotebookLogTee(original_out,writer)
+    sys.stderr=_NotebookLogTee(original_err,writer)
+    start_notebook_logging._open[key]=writer
+    def _shutdown():
+        if sys.stdout is not original_out and getattr(sys.stdout,"destination",None)==writer:
+            sys.stdout=original_out
+        if sys.stderr is not original_err and getattr(sys.stderr,"destination",None)==writer:
+            sys.stderr=original_err
+        if not writer.closed:
+            writer.flush()
+            writer.close()
+    atexit.register(_shutdown)
+    append_run_log(out,kind=kind+"_started",config=config or {},repo_root=repo_root)
+    return out/"notebook_console.log"
