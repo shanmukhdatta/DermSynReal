@@ -1,0 +1,43 @@
+\section{Task Definition and Real-Image Data}
+\subsection{Output taxonomy}
+We study a single-label, six-category classification task for clinical-looking facial photographs. The proposed output vocabulary is
+\begin{equation}
+\mathcal{Y}=\{\mathrm{Acne},\mathrm{Fungal},\mathrm{Vitiligo},
+\mathrm{Hyperpigmentation},\mathrm{SkinCancer},\mathrm{Normal}\}.
+\label{eq:labels}
+\end{equation}
+These categories describe the research endpoint, not a comprehensive dermatological differential diagnosis. Clinically important subtypes remain separate in the source metadata and generation specification. Acne may involve comedonal or inflammatory appearances; hyperpigmentation encompasses distinct etiologies; facial fungal conditions require diagnosis-specific review. The skin-cancer category needs particularly careful definition: melanoma, basal-cell carcinoma and squamous-cell carcinoma are malignancies, whereas actinic keratosis is premalignant. Whether actinic keratosis belongs in this broad output must be justified and fixed before testing. A photograph with uncertain or multiple diagnoses is not simply forced into the nearest class.
+
+An eligible real-image record is written as $r_i=(x_i,y_i,s_i,\ell_i,g_i,h_i,a_i)$, comprising an image $x_i$, mapped label $y_i$, collection source $s_i$, original diagnostic provenance $\ell_i$, protective group $g_i$, SHA-256 content fingerprint $h_i$ and recorded approval decision $a_i$. The original source descriptor and its mapped class must be compatible; a folder name alone is not proof.
+
+\subsection{Acquisition and review}
+The implemented pipeline targets one Kaggle real-image collection, version 2, under the dataset slug \texttt{shanmukhadattaboda/facial-skin-conditions-real-image-collection}. Its six raw folders are discovered with their original case-sensitive names. Uploaded image counts represent candidate files rather than verified unique patients or medically established diagnoses. Original publication and reuse rights must be checked separately: a license selected by a dataset uploader cannot automatically override copyright or restrictions on photographs from another source.
+
+For every candidate we retain a stable ID, original relative path, source, original diagnosis when available, reviewer ID, decision, reason for rejection and content digest. The workflow flags obvious contradictions for manual inspection, such as Stevens--Johnson syndrome or toxic epidermal necrolysis photographs placed in a skin-cancer folder, or rosacea and dermatitis images placed under normal skin. These flags are screening aids, not an automated dermatologist. Images lacking credible diagnostic provenance, adequate rights or the intended facial presentation are rejected or held for review. Accepted labels are then frozen before partitioning.
+
+\subsection{Exact and near-duplicate grouping}
+Exact duplication is screened by both original file SHA-256 and decoded-pixel hashes. Potential near-duplicates are proposed using flip-aware perceptual hashes, additional gradient hashes and pretrained visual features; ORB-based geometric matching and a gallery aid ambiguous review. For pHash, one candidate distance is
+\begin{equation}
+d_{\rm ph}(i,j)=\min_{u,v\in \mathcal{T}}
+d_H\!\left({\rm pHash}(u(x_i)),{\rm pHash}(v(x_j))\right),
+\qquad
+\mathcal{T}=\{{\rm id},H,V,R_{180}\},
+\label{eq:phash}
+\end{equation}
+where $d_H$ is Hamming distance. A threshold of approximately five bits is a candidate heuristic rather than a diagnostic assertion of image identity. Candidate links are consolidated with connected components, and conflicting-label matches are quarantined. The transitivity of these groups can link ambiguous photographs; such cases deserve review rather than automatic reinterpretation as the same patient.
+
+The protective constraint is
+\begin{equation}
+g_i=g_j\quad\Longrightarrow\quad
+{\rm split}(x_i)={\rm split}(x_j).
+\label{eq:group}
+\end{equation}
+Actual patient or encounter IDs, if legitimately available, take precedence over image-only group inference. Otherwise the manuscript will describe the resulting partitions as \emph{visually grouped}, not as proven patient-disjoint.
+
+\subsection{The immutable real split}
+The planned real partition proportions are approximately 70\% training, 15\% validation and 15\% test. Indivisible groups and imbalanced categories may prevent exact fractions; actual counts will be reported. Let $\Rtrain$, $\Rval$ and $\Rtest$ denote these frozen datasets. The test set is excluded from image selection, generator LoRA adaptation, prompt revision, threshold tuning, classifier training and checkpoint selection. The validation set selects classifiers and training settings but is never used to fit the generator.
+
+The same globally grouped split is reused across the six LoRA inputs. A class-specific LoRA receives only its label's \emph{training} subset; it may report counts for that class in validation and test without fitting on those photographs. Re-splitting each raw disease folder independently could break group protection across labels and is deliberately prohibited.
+
+\subsection{Limits of the dataset safeguards}
+These checks make known label conflicts and duplicate risks visible, but they do not guarantee diagnostic truth, complete near-duplicate coverage or patient independence. They also do not establish that the source is representative of the clinical population. Dataset inclusion totals, exclusions, class support, duplicate groups and reviewer decisions are therefore reserved for the measured Results section rather than assumed from the uploaded image listing.
