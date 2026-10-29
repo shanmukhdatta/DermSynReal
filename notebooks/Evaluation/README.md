@@ -50,3 +50,10 @@ PYTHONPATH=src python scripts/report_calibration.py --help
 Read `docs/EXECUTION_GUIDE.md` for the full upstream acquisition, generation, splitting and training sequence.
 
 **Version 2 integration:** Final real test comes from `notebooks/Preprocessing/Real_Data/00_Facial_Real_V2_Kaggle_Start_Here.ipynb` and its saved, reviewer-approved deduplicated split. Classifier outputs now include stable IDs and six prediction probability columns. E1/E2 generic-vs-morphology prompts retain matched authored families, and the optional E5 synthetic-only arm is supported by the current training manifests. Missing GPU checkpoints and unreviewed labels remain blockers to final metrics.
+
+
+## Notebook 07 and paper statistics
+
+- `07_Statistical_Analysis_Across_Seeds.ipynb`: reads **actual** Evaluation 04 results, reports training-seed means, sample SD (blank for one seed), medians/ranges, per-class scores and matched E0–E5 contrasts, and produces a plot. These are *not* repeated independent patients. Evaluation 04 already automatically generates the three `seed_summary_*.csv` files, plus paired group-bootstrap 95% intervals.
+- Every 00–07 evaluation notebook now preserves `notebook_console.log`, `run_log.jsonl`, output checksums and CSV/JSON reports **when run**. No notebook fabricates class accuracies.
+- `scripts/prepare_public_run_report.py` handles only reviewed aggregate CSV/JSON files; never upload private per-image `real_test_errors.csv`, `misclassified_image_ids.csv` or raw console output to public GitHub.

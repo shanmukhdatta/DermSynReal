@@ -10,3 +10,10 @@ Every class contains `01_...` inference and `02_...` LoRA training notebooks, pl
 **02** requires `real_all_manifest.csv`, approved split images, `label_audit_summary.json` with `passed=true`; subtype LoRAs need independent subtype review. No fallback to the original unsplit Kaggle folders. The generator output includes `metadata.jsonl`, `reports/generation_manifest.csv`, `reports/synthetic_pool_review_draft.csv`, `reports/generation_summary.json`, `run_log.jsonl` and images. The LoRA output includes `trainer_console.log`, checkpoint weights, provenance and `run_log.jsonl`. Save Kaggle outputs as versioned datasets. Do not commit clinical photographs, generated full-image pools, large checkpoints, or private logs to GitHub.
 
 **After generation:** manually review disease morphology, novelty, exact/near-duplicates and source licensing. Approve only reviewed images in the synthetic pool, run `Preprocessing/Synthetic_Data/`, then use `scripts/build_experiment_manifests.py` to build matched E0–E4 training inputs. Test is real-only primary.
+
+
+## Class-specific splits and LoRA evidence
+
+Each of the six `02_` LoRA notebooks uses the **same** reviewed global real train/val/test split and exports `class_frozen_split_counts.csv` plus private `class_frozen_split_assignments.csv` for its target class (and reviewed subtype when applicable). Only the class's **train** files are linked into its LoRA imagefolder; validation and test photos remain excluded. A raw-folder independent split is intentionally **not** enabled because it risks patient/near-duplicate leakage between classes.
+
+The `01_` diffusion notebooks save full `notebook_console.log` and the existing `run_log.jsonl` and image manifests. The `02_` LoRA notebooks save notebook and trainer console logs, training provenance, partition statistics, and checkpoints. Both generic E1 and morphology E2 must preserve matched model/adapter identities for controlled comparisons. Never infer a diagnosis from the generated image alone.

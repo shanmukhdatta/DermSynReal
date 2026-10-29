@@ -59,3 +59,13 @@ Seven Evaluation notebooks and their supporting modules/configs/report schemas a
 - **Training:** exact current five models; the four timm classifiers now offer head → partial last-stage → optional full fine-tune and fixed optimizer-update budgets for E0–E5. The PanDerm baseline is a frozen linear probe; it is not full PanDerm fine-tuning. E5 is an optional synthetic-only arm with unchanged real validation/test. No GPU benchmark has yet passed.
 - **Results:** aggregation and paired evaluation remain test-locked and data dependent. `scripts/prepare_public_run_report.py` safely stages whitelisted aggregate reports for deliberate GitHub updates. Private photos, original image IDs, raw logs, checkpoints and bulk synthetic images should stay in private Kaggle storage.
 - **Next action:** run the image/label review and inventory, inspect suspect classes and original image rights, then first GPU pretrained ResNet/group-split Kaggle smoke test. Do **not** claim validated research experiments from static CI tests.
+
+
+## Evidence and statistical analysis update (29 October 2026)
+
+- `src/dermsynreal/kaggle_runs.py` now emits each LoRA class's **global frozen** train/val/test counts and private assignments, stages *train only*, and enables private full notebook console logging.
+- All six `Generation/**/02_*.ipynb` LoRA notebooks save these split counts and trainer + notebook run logs; all six diffusion generation notebooks save notebook console logs; five primary training notebooks and the older ResNet50 trainer save their own console/provenance logs; evaluation 00–07 save console and structured artifact metadata when executed.
+- `notebooks/Preprocessing/Synthetic_Data/00_Combine_Reviewed_Base_And_LoRA_Generations.ipynb` and `src/dermsynreal/combine_synthetic.py` fill the missing approved generation-output combination step without silently mixing incompatible generators or skipping manual review.
+- Evaluation 04 now automatically writes across-seed tables; Evaluation 07 graphs/reports seed variability. Group bootstrap paired 95% confidence intervals remain in Evaluation 04. No unsupported p-values are invented.
+- `scripts/prepare_public_run_report.py` and `reports/templates/run_evidence_ledger_template.csv` enable *explicit* public GitHub reporting of reviewed aggregate metrics; per-image data and raw case logs remain in private Kaggle storage.
+- **Unverified:** no real Kaggle GPU generation/training/inference, dataset label audit or medical evidence has been completed in this chat. Static CI is not a substitute for clinical review or completed experiments.

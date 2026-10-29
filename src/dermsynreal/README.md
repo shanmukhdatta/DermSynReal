@@ -19,3 +19,8 @@ The original scaffold's future `data/`, `generation/`, `selection/`, and `traini
 
 - `real_collection.py` — Kaggle v2-only image inventory, exact SHA duplicate report, human-review staging and stable frozen-split manifest bridge.
 - `kaggle_runs.py` — split-safe generic/morphology prompt loading, per-image generator provenance, approved-only train LoRA staging, CSV/JSONL run logs and model/checkpoint artifact hashes.
+
+
+- `combine_synthetic.py` — class/generator-compatible reviewed pool combination with remounted image roots, SHA-256 verification and safe prompt-family retention.
+- `statistical_analysis.py` — per-arm training-seed means/SD/median/ranges, per-class variability and descriptive matched contrasts, with CSV/JSON evidence. Paired group bootstrap confidence intervals live in `evaluation.py`.
+- `kaggle_runs.py` also provides `start_notebook_logging()` to preserve a private console log and the six-LoRA class split audit CSVs without resplitting globally protected groups.

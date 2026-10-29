@@ -18,3 +18,8 @@ Start with E0, real-only and a small GPU smoke test. Choose model stages on **re
 For E1–E4 use reviewed synthetic data in train **only** and the same frozen real val/test. The `scripts/build_experiment_manifests.py` builder outputs compatible E0–E4 CSVs after reviewed real and synthetic pools are supplied. Do not use synthetic test data to train or choose checkpoints.
 
 Each notebook saves `best_weights.pth` or the PanDerm probe, `history.csv`/`val_tuning.csv`, run config, `artifact_inventory.csv`, `run_log.jsonl`, and (when explicitly unlocked) real-test predictions with stable IDs, six class probabilities and grouped/real source metadata. PanDerm needs genuine pretrained weights and the official encoder source. Kaggle execution and clinical validity are unverified until actually run.
+
+
+## Persistent training proof
+
+All five standard classifiers store `notebook_console.log` from before model initialization, their validation history/checkpoints, `artifact_inventory.csv` with SHA-256 digests of stable output files, and `run_log.jsonl`. The older `DermaLens_ResNet50_Kaggle_Training.ipynb` also has console and completion logs, but uses a different training design. The real held-out test is only evaluated when `RUN_FINAL_TEST=True`. Every model uses the same frozen reviewer-approved real test IDs and group assignments. Raw logs and per-image prediction outputs must be retained privately; only aggregated class/experiment results may be published publicly.
