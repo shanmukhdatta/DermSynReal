@@ -52,6 +52,7 @@ def prepare(
     budget_per_class: int, seed: int = 42,
     include_quality: bool = False, include_diversity: bool = False,
     include_synthetic_only: bool = False,
+    generator_mode_filter: str | None = None,
 ):
     if budget_per_class < 1:
         raise ValueError("Synthetic budget per class must be positive")
@@ -95,6 +96,8 @@ def prepare(
     model_check = defaultdict(lambda: defaultdict(set))
     for row in synth:
         if row["accepted"].lower() not in {"yes", "true", "1"}:
+            continue
+        if generator_mode_filter and row.get("generator_mode", "") != generator_mode_filter:
             continue
         if not row["prompt_family_id"] or not row["model_id"]:
             raise ValueError(f"Accepted synthetic ID missing provenance: {row['image_id']}")
@@ -179,6 +182,7 @@ def prepare(
         "generated_arms": sorted(produced),
         "budget_per_class": budget_per_class,
         "seed": seed,
+        "generator_mode_filter":generator_mode_filter,
         "real_rows_each_arm": len(real_out),
         "real_group_count": len(groups),
         "selected_synthetic_ids": {arm: [r["image_id"] for r in selected[arm]]
@@ -200,12 +204,14 @@ def main():
     p.add_argument("--quality", action="store_true")
     p.add_argument("--diversity", action="store_true")
     p.add_argument("--synthetic-only", action="store_true")
+    p.add_argument("--generator-mode", help="Select base/TI/LoRA pool for matched E1/E2 comparisons")
     a = p.parse_args()
     print(json.dumps(prepare(
         a.real_split, a.approved_real, a.synthetic_pool, a.out,
         budget_per_class=a.n_per_class, seed=a.seed,
         include_quality=a.quality, include_diversity=a.diversity,
         include_synthetic_only=a.synthetic_only,
+        generator_mode_filter=a.generator_mode,
     ), indent=2))
 
 
