@@ -114,7 +114,9 @@ def prepare(
         model_check[cls][group].add((
             row["model_id"],
             row.get("generator_mode", "base") or "base",
-            row.get("generator_revision", "") or row.get("base_revision", "")
+            row.get("generator_revision", "") or row.get("base_revision", ""),
+            row.get("adapter_source", ""),
+            row.get("adapter_revision", "")
         ))
     sets = {"E0": []}
     selected = {"E1": [], "E2": [], "E3": [], "E4": []}
