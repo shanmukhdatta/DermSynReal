@@ -127,5 +127,72 @@ class LabelGateTests(unittest.TestCase):
             self.assertFalse(summary["passed"])
 
 
+
+from dermsynreal.experiment_manifest import prepare
+
+
+class ExperimentManifestTests(unittest.TestCase):
+    def fixtures(self):
+        real, approved, synthetic = [], [], []
+        for split in ("train", "val", "test"):
+            for i, cls in enumerate(CLASSES):
+                identifier = f"real_{split}_{i}"
+                real.append({
+                    "image_id": identifier,
+                    "image_path": f"real/{split}/{i}.png",
+                    "label": cls,
+                    "split": split,
+                    "group_id": identifier,
+                })
+                approved.append({
+                    "image_id": identifier,
+                    "class_name": cls,
+                    "reviewer_decision": "approved",
+                })
+        for index, cls in enumerate(CLASSES):
+            for kind in ("generic", "morphology"):
+                for j in range(3):
+                    identifier = f"syn_{index}_{kind}_{j}"
+                    synthetic.append({
+                        "image_id": identifier,
+                        "image_path": f"syn/{identifier}.png",
+                        "label": cls,
+                        "prompt_family_id": f"{kind}_{index}_{j}",
+                        "prompt_type": kind,
+                        "model_id": f"checkpoint_{index}",
+                        "accepted": "true",
+                        "quality_score": str(3 - j),
+                        "diversity_cluster_id": f"cluster_{j % 2}",
+                    })
+        return real, approved, synthetic
+
+    def test_build_matched_arms_with_reviewed_real_ids(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            real, approved, synthetic = self.fixtures()
+            for name, rows in (("real.csv", real), ("approved.csv", approved), ("syn.csv", synthetic)):
+                csv_file(root / name, rows)
+            result = prepare(root / "real.csv", root / "approved.csv", root / "syn.csv",
+                             root / "output", budget_per_class=2,
+                             seed=42, include_quality=True, include_diversity=True)
+            self.assertEqual(result["generated_arms"], ["E0", "E1", "E2", "E3", "E4"])
+            self.assertEqual(len(result["selected_synthetic_ids"]["E2"]), 12)
+            with (root / "output/E2_training_manifest.csv").open() as f:
+                rows = list(csv.DictReader(f))
+            self.assertEqual(len(rows), 30)
+            self.assertEqual(sum(r["is_synthetic"] == "True" for r in rows), 12)
+            self.assertEqual(set(r["split"] for r in rows if r["is_synthetic"] == "True"), {"train"})
+
+    def test_builder_blocks_unapproved_and_group_leakage(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            real, approved, synthetic = self.fixtures()
+            approved[0]["reviewer_decision"] = "needs_review"
+            for name, rows in (("real.csv", real), ("approved.csv", approved), ("syn.csv", synthetic)):
+                csv_file(root / name, rows)
+            with self.assertRaises(ValueError):
+                prepare(root / "real.csv", root / "approved.csv", root / "syn.csv",
+                        root / "output", budget_per_class=1)
+
 if __name__ == "__main__":
     unittest.main()
