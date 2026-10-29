@@ -203,6 +203,21 @@ class ExperimentManifestTests(unittest.TestCase):
             self.assertEqual(len(real_val),6)
             self.assertTrue(all(x["is_synthetic"]=="False" for x in real_test+real_val))
 
+    def test_E1_E2_reject_mixed_adapter_modes(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp)
+            real,approved,synthetic=self.fixtures()
+            for row in synthetic:
+                row["generator_mode"]="base" if row["prompt_type"]=="morphology" else "ti_only"
+                row["generator_revision"]="fixture-revision"
+                row["adapter_source"]="fixture-adapter" if row["prompt_type"]=="generic" else ""
+                row["adapter_revision"]="fixture-ti-version" if row["prompt_type"]=="generic" else ""
+            for name,rows in (("real.csv",real),("approved.csv",approved),("syn.csv",synthetic)):
+                csv_file(root/name,rows)
+            with self.assertRaises(ValueError):
+                prepare(root/"real.csv",root/"approved.csv",root/"syn.csv",
+                        root/"output",budget_per_class=1)
+
     def test_builder_blocks_unapproved_and_group_leakage(self):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
