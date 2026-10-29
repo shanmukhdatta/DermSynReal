@@ -1,0 +1,1 @@
+run_id,stage,class_name_or_backbone,experiment_arm,training_seed,kaggle_notebook_url,kaggle_output_version,github_code_sha,reviewed_real_split_sha,reviewed_label_audit_sha,prompt_manifest_sha,checkpoint_sha,aggregate_results_sha,status,notes
