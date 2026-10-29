@@ -2,7 +2,7 @@
 
 **Morphology-controlled synthetic facial dermatology images and real-world classifier evaluation**
 
-> Research project in setup. Experiments and clinical validity have **not** yet been established. This repository is not a diagnostic tool.
+> Research project with uploaded notebooks, prompt libraries, offline analysis helpers and a LaTeX manuscript. **GPU experiments and clinical validity have not been established.** This repository is not a diagnostic tool.
 
 ## Research question
 
@@ -69,6 +69,17 @@ The same fixed real-test partition, controlled train budgets, seed schedules and
 - Treat clinical realism, fairness, novelty, compute times and statistically significant results as hypotheses until verified.
 - Never present synthetic images as genuine patient photographs.
 
+## Paper and reproducibility additions (29 October 2026)
+
+- [Complete LaTeX methodology draft with blank results tables](paper/dermsynreal_manuscript.tex).
+- [Step-by-step Kaggle execution and critical data-label gate](docs/EXECUTION_GUIDE.md).
+- [Reviewed-label metadata gate](src/dermsynreal/label_gate.py) and [source-separated real-test evaluation](src/dermsynreal/evaluation.py).
+- [Research unit tests](tests/test_research_gates.py) and [GitHub Actions offline gate](.github/workflows/research-gates.yml).
+- Existing generation, preprocessing, training and prompt assets are preserved; see `notebooks/` and `prompts/`.
+- The five current classifier notebooks now export immutable test-image/group-linked CSV files after the final-test flag is enabled.
+
+**Important:** current notebooks use EfficientNet-B3, ConvNeXt Tiny and DINOv2 ViT-S/14; these are not the separately planned EfficientNet-B0, ConvNeXt V2 Tiny and DINOv2 ViT-B/14. PanDerm Base is currently implemented as a linear probe. Do not report results under mismatched model names.
+
 ## Starting point
 
-Read [`docs/PROJECT_PLAN.md`](docs/PROJECT_PLAN.md), [`docs/CODE_COMPLETION_TRACKER.md`](docs/CODE_COMPLETION_TRACKER.md) and [`docs/RESEARCH_PROTOCOL.md`](docs/RESEARCH_PROTOCOL.md). Develop and test one phase at a time, then add its notebook and run record. At present the repository contains **scaffolding only**, not executed research.
+Read [`docs/PROJECT_PLAN.md`](docs/PROJECT_PLAN.md), [`docs/CODE_COMPLETION_TRACKER.md`](docs/CODE_COMPLETION_TRACKER.md) and [`docs/RESEARCH_PROTOCOL.md`](docs/RESEARCH_PROTOCOL.md). Develop and test one phase at a time, then add its notebook and run record. The repository contains existing notebook implementations and offline checks, but no verified end-to-end study results on Kaggle. Work must begin by correcting the suspect Cancer and Normal class labels.
