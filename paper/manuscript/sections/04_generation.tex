@@ -1,0 +1,56 @@
+\section{Morphology-Guided Synthetic Image Generation}
+\subsection{Structured, family-aware prompts}
+The six generator directories are linked to an authored prompt collection. Each disease category contains 300 prompt records grouped into 60 prompt families. Within each category, 210 prompts belong to the training partition, 45 to validation and 45 to test; all instances of a family remain in one partition. This allocation makes it possible to examine generalization to unseen prompt formulations without confusing that diagnostic with the primary real-image test.
+
+A morphology record $p$ specifies a set of visual attributes $\mathbf{m}$: visible lesion or pigment characteristics, spatial distribution on the face, approximate severity, local texture, skin appearance, camera viewpoint and illumination. For example, an acne prompt may distinguish scattered inflammatory papules on the cheek from a small number of noninflamed comedones on the forehead. A vitiligo prompt may request depigmented patches of differing extent and border, while a pigmentation prompt may describe bilateral malar patches rather than simply asking for a dark mark. These are instructions to an image generator, not statements that the generated findings are clinically verified. The hyperpigmentation, fungal and skin-cancer prompt families similarly preserve subtype information without implying that all subtypes are interchangeable.
+
+For the prompt-design contrast, each morphology prompt has a corresponding generic counterpart. The generic version retains basic photographic context but names the broad condition without the detailed lesion attribute bundle. Both versions preserve the prompt ID, prompt-family allocation and, where feasible, the generator revision and seed schedule. We formalize the intended comparison as
+\begin{equation}
+x_{i,v,k}=G_{\theta,\phi}(p_{i,v},z_{i,k};\gamma),
+\qquad v\in\{\mathrm{generic},\mathrm{morphology}\},
+\label{eq:generator}
+\end{equation}
+where $G_{\theta,\phi}$ denotes the generator with base parameters $\theta$ and optional adaptation $\phi$, $z_{i,k}$ is the stochastic seed/noise choice and $\gamma$ collects guidance, sampling steps, resolution and scheduler settings. A difference between prompt variants can be associated with the wording only when the remaining inputs are adequately matched.
+
+\subsection{Diffusion architecture and checkpoint identity}
+The present generation scripts use an SD2.1-compatible base for the acne, fungal, vitiligo, hyperpigmentation and skin-cancer appearance tasks, and an SDXL-compatible pipeline for the normal-skin category. Both belong to the wider latent diffusion family \citep{rombach2022latent}, but they use different architectures and encoding procedures. SDXL output must not be presented as an isolated prompt-text comparison against SD2.1 output from another class. For each run we record the precise base repository, model revision or checkpoint hash, scheduler, sampler settings, positive and negative text, guidance, image size and seed.
+
+Some external disease resources are textual-inversion concepts rather than complete diffusion models or LoRA adapters. We distinguish these mechanisms in the metadata. A condition represented by a dermatology concept learned at another anatomical site does not constitute a validated facial generator. Base-only pilots are therefore the appropriate first test before optional embeddings or adapters are enabled.
+
+\subsection{Token limits and long-prompt conditioning}
+A long prompt does not necessarily provide more effective control. The relevant text encoders have finite context windows, and silently truncating the final clauses may remove the very morphology being studied. Generator notebooks consequently validate prompt length and, where supported, experiment with Compel-based conditioning over bounded chunks. We do not assume that concatenating or chunking text guarantees faithful rendition of all attributes. The audit retains the effective token length, conditioning settings and rejected prompts so that apparent differences between generic and morphology arms are not caused by undocumented truncation.
+
+\subsection{Optional LoRA adaptation}
+Low-rank adaptation modifies selected weight matrices through trainable low-rank terms while leaving the original model weights fixed \citep{hu2022lora}. In simplified form,
+\begin{equation}
+W'=W+\Delta W,\qquad \Delta W=BA,\qquad
+A\in\mathbb{R}^{r\times d},\ B\in\mathbb{R}^{d'\times r},
+\end{equation}
+with $r$ much smaller than the original dimensions. Its value here is practical: a disease-specific generator can be adapted without full diffusion-model retraining. The exact targeted modules, rank, optimization steps and checkpoint format must nevertheless be preserved because LoRA variants are not equivalent to textual inversion or to the unadapted base.
+
+Only the reviewed real \emph{training} images are eligible for LoRA input. The six LoRA notebooks are wired to class-specific subsets derived from a single global frozen split, and a requested subtype requires a documented per-image subtype decision. Optional LoRA-generated examples form a separate, versioned generator source; they may be combined into a reviewed preprocessing pool but not silently mixed with base-model examples in a matched prompt experiment. A generator trained on real images creates additional memorization risk, so generated samples require novelty checks against the original real training set and especially against protected validation and test sets.
+
+\subsection{Candidate counts, screening and provenance}
+The generation design can produce five samples per authored prompt. Across the full 300-prompt bank that corresponds to 1,500 \emph{candidate} images per class: 1,050 from training families and 225 each from validation and test families. This is an intended production count before failures or review, not a claim of 1,500 accepted images. Only accepted images from training prompt families may be offered for classifier augmentation. The held-out synthetic prompt partitions are reserved for optional separate diagnostic analyses.
+
+Every generated image receives its original prompt identifier, family, seed, generator/adapter identity, original image digest, status and review metadata. Human review considers whether the requested visible attributes are present, whether the face is plausible, whether watermarks or text are present, whether a second face or major artifact intrudes, and whether there are exact or near-copy concerns. An initially produced image has status \emph{needs review}; model confidence or image realism does not approve it. The resulting accepted pool is subjected to exact SHA and decoded-pixel hashing and to prompt-family leakage checks before being used in a classifier manifest.
+
+\begin{figure}[ht]
+\centering
+\setlength{\fboxsep}{7pt}
+\begin{tabular}{c}
+\fbox{\parbox{0.83\linewidth}{\centering \textbf{Reviewed real facial photographs}\\
+source/diagnosis checks $\rightarrow$ duplicate groups $\rightarrow$ fixed train/val/test}}\\[4pt]
+$\downarrow$\\[-2pt]
+\fbox{\parbox{0.83\linewidth}{\centering \textbf{Training-only generation}\\
+authored generic and morphology prompt families; base diffusion; optional train-only LoRA}}\\[4pt]
+$\downarrow$\\[-2pt]
+\fbox{\parbox{0.83\linewidth}{\centering \textbf{Synthetic quality/novelty gate}\\
+manual appearance assessment; duplicate quarantine; prompt-family preservation}}\\[4pt]
+$\downarrow$\\[-2pt]
+\fbox{\parbox{0.83\linewidth}{\centering \textbf{Controlled classifiers and evaluation}\\
+E0--E5 training; real validation selection; identical frozen real test; paired statistics}}
+\end{tabular}
+\caption{Study workflow, showing the separation between generator construction and the held-out real-image evaluation. This is a methodological diagram, not an empirical result.}
+\label{fig:workflow}
+\end{figure}
