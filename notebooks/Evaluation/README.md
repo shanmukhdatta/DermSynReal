@@ -48,3 +48,5 @@ PYTHONPATH=src python scripts/report_calibration.py --help
 ```
 
 Read `docs/EXECUTION_GUIDE.md` for the full upstream acquisition, generation, splitting and training sequence.
+
+**Version 2 integration:** Final real test comes from `notebooks/Preprocessing/Real_Data/00_Facial_Real_V2_Kaggle_Start_Here.ipynb` and its saved, reviewer-approved deduplicated split. Classifier outputs now include stable IDs and six prediction probability columns. E1/E2 generic-vs-morphology prompts retain matched authored families, and the optional E5 synthetic-only arm is supported by the current training manifests. Missing GPU checkpoints and unreviewed labels remain blockers to final metrics.
