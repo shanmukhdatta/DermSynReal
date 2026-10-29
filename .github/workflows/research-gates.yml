@@ -30,3 +30,20 @@ jobs:
               assert data["nbformat"] == 4 and data["cells"]
               print(path)
           PY
+
+  latex-paper:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Compile manuscript with latexmk
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: dermsynreal_manuscript.tex
+          working_directory: paper
+      - name: Archive generated research draft PDF
+        uses: actions/upload-artifact@v4
+        with:
+          name: DermSynReal-manuscript-draft
+          path: paper/dermsynreal_manuscript.pdf
+          if-no-files-found: error
