@@ -223,7 +223,7 @@ def append_run_log(output_dir,*,kind,config,artifacts=(),repo_root=None):
     return row
 
 def prepare_lora_train_only(*,real_split_manifest,real_image_root,cls,
-                            stage_dir,origin_root=None):
+                            stage_dir,origin_root=None,subtype_csv=None,subtype=None):
     """Fail closed unless image is explicitly from reviewed REAL train split.
 
     Symlinks only; avoids copying photos before the original LoRA training
@@ -233,6 +233,19 @@ def prepare_lora_train_only(*,real_split_manifest,real_image_root,cls,
     dataset_root=discover_root(origin_root)
     allowed=_read_csv(real_split_manifest,
         {"image_id","image_path","label","split","group_id","is_synthetic"})
+    subtype_by_id=None
+    if subtype:
+        if not subtype_csv:
+            raise ValueError("This disease-specific LoRA requires a reviewer-verified subtype CSV")
+        reviewed=_read_csv(subtype_csv,{"image_id","subtype","reviewer_decision"})
+        subtype_by_id={}
+        for r in reviewed:
+            if r["image_id"] in subtype_by_id:
+                raise ValueError("Duplicate subtype review image ID")
+            if r["reviewer_decision"].strip().lower()=="approved":
+                subtype_by_id[r["image_id"]]=r["subtype"].strip().lower()
+        if not subtype_by_id:
+            raise ValueError("No subtype-approved records")
     candidate=[]
     root=Path(real_image_root).resolve()
     source_dir=(dataset_root/CLASS_FOLDERS[cls]).resolve()
@@ -249,6 +262,8 @@ def prepare_lora_train_only(*,real_split_manifest,real_image_root,cls,
             continue
         if str(r["is_synthetic"]).lower() not in {"false","0","no"}:
             raise ValueError("Only reviewed real source images may train the generator")
+        if subtype and subtype_by_id.get(r["image_id"])!=subtype.lower():
+            continue
         rel=Path(r["image_path"])
         if ".." in rel.parts:raise ValueError("Unsafe relative manifest path")
         src=(rel if rel.is_absolute() else root/rel).resolve()
@@ -277,6 +292,8 @@ def prepare_lora_train_only(*,real_split_manifest,real_image_root,cls,
           "raw_input":str(dataset_root),
           "manifest_sha256":sha256_file(real_split_manifest),
           "train_group_count":len({x["group_id"] for x in index}),
+          "reviewed_subtype":subtype,
+          "subtype_review_sha256":sha256_file(subtype_csv) if subtype_csv else None,
           "note":"No validation/test images were staged. Clinical review is assumed from the approved split provenance."}
     (out/"lora_train_source_summary.json").write_text(json.dumps(note,indent=2)+"\n")
     return out,note
