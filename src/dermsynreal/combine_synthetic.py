@@ -47,7 +47,8 @@ def _resolve_image(row,root):
 
 
 def combine_approved(manifests,image_roots,out_csv,*,generator_mode=None,
-                     prompt_partition=None,require_six_classes=False):
+                     prompt_partition=None,require_six_classes=False,
+                     allow_mixed_generators=False):
     if len(manifests)!=len(image_roots) or not manifests:
         raise ValueError("Provide one image-root mount per input reviewed manifest")
     if prompt_partition is not None and prompt_partition not in PARTITIONS:
@@ -111,9 +112,11 @@ def combine_approved(manifests,image_roots,out_csv,*,generator_mode=None,
         row["model_id"],row["generator_mode"],
         row.get("generator_revision",""),row.get("adapter_source",""),
         row.get("adapter_revision","")))
-    for cls,modes in per_class_modes.items():
-        if len(modes)>1:
-            raise ValueError(f"{cls} mixes generator checkpoints/modes. Use matched inputs or filter before combining")
+    mixed_classes=sorted(cls for cls,modes in per_class_modes.items() if len(modes)>1)
+    if mixed_classes and not allow_mixed_generators:
+        raise ValueError("Mixed base/TI/LoRA generators for "+", ".join(mixed_classes)+
+                         ". Set allow_mixed_generators=True only for preprocessing; "
+                         "filter to a MATCHED generator mode before controlled E1/E2 training")
     out=Path(out_csv)
     out.parent.mkdir(parents=True,exist_ok=True)
     if out.exists():raise FileExistsError(out)
@@ -129,6 +132,8 @@ def combine_approved(manifests,image_roots,out_csv,*,generator_mode=None,
         "prompt_types":dict(Counter(r["prompt_type"] for r in rows)),
         "prompt_partitions":dict(Counter(r["prompt_partition"] for r in rows)),
         "generator_modes":dict(Counter(r["generator_mode"] for r in rows)),
+        "mixed_generator_classes":mixed_classes,
+        "mixed_generator_output_requires_filtered_experiment_manifest":bool(mixed_classes),
         "distinct_prompt_families":len({(r["class_name"],r["prompt_family_id"]) for r in rows}),
         "same_class_exact_duplicate_hashes_left_for_preprocessing":sum(
              len(groups)>1 for groups in sha_groups.values()),
