@@ -68,7 +68,6 @@ def copy_aggregate_reports(source_dir,out_dir,tag):
         records.append({"file":name,"bytes":len(data),"sha256":hashlib.sha256(data).hexdigest()})
     (dest/"artifact_manifest.json").write_text(json.dumps({
         "run_tag":tag,"created_utc":datetime.now(timezone.utc).isoformat(),
-        "source_local_directory":str(source.resolve()),
         "artifact_files":records,
         "note":"Aggregate research outputs only; check source licenses, diagnosis review, "
                "model names and scientific claims manually before pushing to public GitHub."
