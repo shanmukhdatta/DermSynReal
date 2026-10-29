@@ -53,6 +53,7 @@ def prepare(
     include_quality: bool = False, include_diversity: bool = False,
     include_synthetic_only: bool = False,
     generator_mode_filter: str | None = None,
+    synthetic_image_root: str | None = None,
 ):
     if budget_per_class < 1:
         raise ValueError("Synthetic budget per class must be positive")
@@ -64,6 +65,22 @@ def prepare(
     })
     _unique(real, "real")
     _unique(synth, "synthetic")
+    if synthetic_image_root:
+        # The preprocessing CSV stores train/Class/file.png relative to its
+        # final output directory. Reattach that directory as Kaggle Input,
+        # then resolve to absolute paths so classifier IMAGE_ROOT can remain
+        # the frozen real dataset root.
+        mount = Path(synthetic_image_root).resolve()
+        if not mount.is_dir():
+            raise FileNotFoundError(mount)
+        for row in synth:
+            rel=Path(row["image_path"])
+            if rel.is_absolute() or ".." in rel.parts:
+                raise ValueError("Expected synthetic preprocessed image_path relative to --synthetic-root")
+            candidate=(mount/rel).resolve()
+            if not candidate.is_relative_to(mount) or not candidate.is_file():
+                raise FileNotFoundError(candidate)
+            row["image_path"]=str(candidate)
     if {r["image_id"] for r in real} & {s["image_id"] for s in synth}:
         raise ValueError("A synthetic image_id collides with a real image_id")
     if {r["image_path"] for r in real} & {s["image_path"] for s in synth}:
@@ -183,6 +200,7 @@ def prepare(
         "budget_per_class": budget_per_class,
         "seed": seed,
         "generator_mode_filter":generator_mode_filter,
+        "synthetic_image_root_explicit":bool(synthetic_image_root),
         "real_rows_each_arm": len(real_out),
         "real_group_count": len(groups),
         "selected_synthetic_ids": {arm: [r["image_id"] for r in selected[arm]]
@@ -205,6 +223,7 @@ def main():
     p.add_argument("--diversity", action="store_true")
     p.add_argument("--synthetic-only", action="store_true")
     p.add_argument("--generator-mode", help="Select base/TI/LoRA pool for matched E1/E2 comparisons")
+    p.add_argument("--synthetic-root", help="Mount root for relative images from reviewed synthetic preprocessing ZIP")
     a = p.parse_args()
     print(json.dumps(prepare(
         a.real_split, a.approved_real, a.synthetic_pool, a.out,
@@ -212,6 +231,7 @@ def main():
         include_quality=a.quality, include_diversity=a.diversity,
         include_synthetic_only=a.synthetic_only,
         generator_mode_filter=a.generator_mode,
+        synthetic_image_root=a.synthetic_root,
     ), indent=2))
 
 
