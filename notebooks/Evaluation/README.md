@@ -57,3 +57,6 @@ Read `docs/EXECUTION_GUIDE.md` for the full upstream acquisition, generation, sp
 - `07_Statistical_Analysis_Across_Seeds.ipynb`: reads **actual** Evaluation 04 results, reports training-seed means, sample SD (blank for one seed), medians/ranges, per-class scores and matched E0–E5 contrasts, and produces a plot. These are *not* repeated independent patients. Evaluation 04 already automatically generates the three `seed_summary_*.csv` files, plus paired group-bootstrap 95% intervals.
 - Every 00–07 evaluation notebook now preserves `notebook_console.log`, `run_log.jsonl`, output checksums and CSV/JSON reports **when run**. No notebook fabricates class accuracies.
 - `scripts/prepare_public_run_report.py` handles only reviewed aggregate CSV/JSON files; never upload private per-image `real_test_errors.csv`, `misclassified_image_ids.csv` or raw console output to public GitHub.
+
+
+The paper's statistics are computationally prepared but unpopulated: paired group-bootstrap 95% intervals in Evaluation 04, train-seed mean/sample SD and matched arm differences in Evaluation 07, source-specific class metrics, confusion matrices and calibration. Check genuine patient/visual group independence and multiple comparisons before inferential claims; do not invent p-values or present train seeds as independent real test cohorts.

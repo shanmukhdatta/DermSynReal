@@ -69,3 +69,10 @@ Seven Evaluation notebooks and their supporting modules/configs/report schemas a
 - Evaluation 04 now automatically writes across-seed tables; Evaluation 07 graphs/reports seed variability. Group bootstrap paired 95% confidence intervals remain in Evaluation 04. No unsupported p-values are invented.
 - `scripts/prepare_public_run_report.py` and `reports/templates/run_evidence_ledger_template.csv` enable *explicit* public GitHub reporting of reviewed aggregate metrics; per-image data and raw case logs remain in private Kaggle storage.
 - **Unverified:** no real Kaggle GPU generation/training/inference, dataset label audit or medical evidence has been completed in this chat. Static CI is not a substitute for clinical review or completed experiments.
+
+
+## October 29 final generator-mixing and manifest bridge revision
+
+- Explicit base+LoRA mixing is supported **for preprocessing** (`ALLOW_MIXED_GENERATORS=True`) with generator-mode and adapter-revision provenance preserved; not silently treated as one controlled E1/E2 scientific arm.
+- Synthetic preprocessing now writes a **reviewed, exact-deduplicated TRAIN-only** `reports/synthetic_train_pool_for_experiments.csv` for the E0–E5 manifest builder. The builder accepts `--synthetic-root` to reattach saved images and `--generator-mode` to isolate comparable base/LoRA experimental pools. Human approvals and prompt group separation still required.
+- Across-seed statistics, paired real-test group-bootstrap intervals, train/LoRA/evaluation logs, safe public aggregate export, run ledger and corresponding offline tests are committed. No image generation, LoRA training, classifier validation, clinical review or manuscript results are claimed completed.
