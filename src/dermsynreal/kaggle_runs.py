@@ -223,13 +223,18 @@ def append_run_log(output_dir,*,kind,config,artifacts=(),repo_root=None):
     return row
 
 def prepare_lora_train_only(*,real_split_manifest,real_image_root,cls,
-                            stage_dir,origin_root=None,subtype_csv=None,subtype=None):
+                            stage_dir,origin_root=None,subtype_csv=None,subtype=None,label_audit_json=None):
     """Fail closed unless image is explicitly from reviewed REAL train split.
 
     Symlinks only; avoids copying photos before the original LoRA training
     notebook prepares its imagefolder. NEVER run on unsplit raw Kaggle folders.
     """
     cls=_label(cls)
+    if not label_audit_json:
+        raise ValueError("A passed reviewer label_audit_summary.json is required for LoRA")
+    label_audit=json.loads(Path(label_audit_json).read_text(encoding="utf-8"))
+    if label_audit.get("passed") is not True:
+        raise ValueError("Real-image clinical review has not passed; generator fine-tuning blocked")
     dataset_root=discover_root(origin_root)
     allowed=_read_csv(real_split_manifest,
         {"image_id","image_path","label","split","group_id","is_synthetic"})
@@ -293,6 +298,7 @@ def prepare_lora_train_only(*,real_split_manifest,real_image_root,cls,
           "manifest_sha256":sha256_file(real_split_manifest),
           "train_group_count":len({x["group_id"] for x in index}),
           "reviewed_subtype":subtype,
+          "label_audit_sha256":sha256_file(label_audit_json),
           "subtype_review_sha256":sha256_file(subtype_csv) if subtype_csv else None,
           "note":"No validation/test images were staged. Clinical review is assumed from the approved split provenance."}
     (out/"lora_train_source_summary.json").write_text(json.dumps(note,indent=2)+"\n")
