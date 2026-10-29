@@ -24,6 +24,11 @@ ALLOWED={
     "domain_class_error_rates.csv",
     "calibration_by_domain.json",
     "generation_quality_summary.json",
+    "seed_summary_real_test.csv",
+    "seed_summary_per_class.csv",
+    "seed_summary_paired_contrasts.csv",
+    "statistical_analysis_summary.json",
+    "class_frozen_split_counts.csv",
 }
 IMAGE_ID_COLUMNS={"image_id","image_path","filename","path","source_path","original_path",
                   "patient_id","patient_name","file"}
