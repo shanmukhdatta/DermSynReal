@@ -40,7 +40,7 @@ def read_predictions(path: str | Path) -> list[dict]:
     """
     with open(path, newline="", encoding="utf-8-sig") as file:
         reader = csv.DictReader(file)
-        required = {"image_id", "true_label", "pred_label", "source", "split"}
+        required = {"image_id", "true_label", "pred_label", "source", "split", "group_id"}
         if not reader.fieldnames or not required.issubset(reader.fieldnames):
             raise ValueError(f"Missing CSV columns: {sorted(required - set(reader.fieldnames or []))}")
         rows = []
@@ -50,6 +50,9 @@ def read_predictions(path: str | Path) -> list[dict]:
             if not identifier or identifier in ids:
                 raise ValueError(f"Missing or duplicate image_id on line {line}: {identifier!r}")
             ids.add(identifier)
+            group_id = (raw.get("group_id") or "").strip()
+            if not group_id:
+                raise ValueError(f"Missing protected group_id on line {line}")
             source = (raw["source"] or "").strip().lower()
             if source not in {"real", "synthetic"}:
                 raise ValueError(f"Explicit source must be real/synthetic on line {line}")
@@ -61,7 +64,7 @@ def read_predictions(path: str | Path) -> list[dict]:
                 "pred_label": _label(raw["pred_label"] or ""),
                 "source": source,
                 "split": "test",
-                "group_id": (raw.get("group_id") or "").strip() or identifier,
+                "group_id": group_id,
                 "dataset_source": (raw.get("dataset_source") or "").strip(),
                 "prompt_family_id": (raw.get("prompt_family_id") or "").strip(),
             })
