@@ -1,0 +1,51 @@
+\section{Classifier Training and Experimental Conditions}
+\subsection{Five classification pipelines}
+We use a fixed six-output prediction head and compare five available pretrained representations. The four general visual architectures are ResNet-50, EfficientNet-B3, ConvNeXt Tiny and DINOv2 ViT-S/14. A fifth pipeline uses genuine PanDerm Base pretrained features with a linear classifier. In particular, EfficientNet-B3 is not EfficientNet-B0, ConvNeXt Tiny is not ConvNeXt V2 Tiny, and DINOv2 ViT-S/14 is not the larger ViT-B/14. The manuscript, tables and checkpoint names must use only the models actually executed.
+
+For a classifier $f_\omega(x)\in\mathbb{R}^{6}$, the objective is standard multiclass cross-entropy over the selected \emph{training} rows:
+\begin{equation}
+\mathcal{L}_{\rm CE}(\omega)=
+-\frac{1}{N}\sum_{i=1}^{N}
+\log\!\left(
+\frac{\exp f_\omega(x_i)_{y_i}}
+{\sum_{c=1}^{6}\exp f_\omega(x_i)_c}
+\right).
+\label{eq:loss}
+\end{equation}
+The output label order is fixed across training, checkpoint reload and evaluation. Resizing preserves photographic aspect ratio through a documented square-padding policy; images are decoded and converted to RGB, and the model's expected normalization is used. On-the-fly random augmentation belongs to training only. Neither validation nor test images receive stochastic augmentation, and corrupt or near-blank inputs are reported rather than silently assigned a class.
+
+The general backbones follow three possible stages. First, the pretrained feature extractor is held fixed while the six-class head is learned. Second, final feature blocks are unfrozen at a smaller learning rate. Third, full backbone fine-tuning is optional; its use depends on recorded GPU resources and real-validation behavior. Optimizer parameter groups separate head and backbone rates. Early stopping and checkpoint selection use macro-F1 on $\Rval$, never $\Rtest$. A successful experiment must demonstrate that the saved checkpoint can be reloaded to reproduce the stored class ordering and predictions. The PanDerm pipeline is different by design: the official pretrained encoder remains frozen and a linear probe is fitted to extracted features. Consequently, its training cost and adaptation capacity cannot be assumed comparable to end-to-end fine-tuning.
+
+\subsection{Controlled augmentation arms}
+Table~\ref{tab:arms} defines the arms used to isolate the interventions. In every arm except optional synthetic-only E5, the same reviewed real training subset is retained; every arm is selected using the same real validation and tested on the same real test.
+
+\begin{table}[ht]
+\centering\small
+\caption{Prespecified experiment arms. E4 and E5 are optional; E3 and E4 require measured selection metadata.}
+\label{tab:arms}
+\begin{tabularx}{\linewidth}{@{}lX X@{}}
+\toprule
+Arm & Training samples & Comparison addressed\\\midrule
+E0 & Reviewed real training only & Real-only reference\\
+E1 & Real + generic-name synthetic samples & Generic augmentation effect\\
+E2 & Real + morphology-prompt synthetic samples & Morphology and augmentation effects\\
+E3 & Real + quality-ranked samples from the E2 morphology pool & Selection by documented quality\\
+E4 & Real + diversity-selected samples from the same morphology pool & Selection by documented coverage\\
+E5 & Synthetic morphology samples only & Optional real-domain transfer diagnostic\\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+The planned class budget is $n_s$ accepted synthetic training images per category, held equal in E1 and E2, and likewise in the E2/E3/E4 comparison. If a class lacks adequate accepted examples, the matched experiment is deferred or the budget is reduced for \emph{all} arms; it is not supplemented from held-out prompt families. For quality selection, a documented morphology score must be provided for candidate images. Diversity selection requires a cluster or coverage identifier. Neither score is derived from real-test performance. We record the selected synthetic IDs and prompt-family IDs for every generated manifest.
+
+The E1--E2 contrast is valid as a prompt intervention only for matching generator architecture and adaptation mode, including checkpoint and adapter revision. The preprocessing pipeline may combine reviewed base and LoRA images into one stored pool, but the experiment-manifest builder filters by generator mode to make controlled arms. Without this filter, a gain cannot be attributed to prompt detail. Likewise, the different SDXL base used for normal-skin generation is a potential class-source shortcut: comparisons within each class should keep the generator identity stable, and the discussion must acknowledge that synthetic style could still correlate with labels.
+
+\subsection{Optimization and reproducible comparison}
+Each configured backbone uses an identified initialization, image size, batch size, optimizer, training-stage schedule and seed. The current manifest protocol reserves the training seeds 13, 42 and 2026 for repeated selected experiments. For timm classifiers, the implementation aims to match the number of optimizer updates per epoch to the real-only baseline even when an augmented pool is larger. This controls one component of training exposure, but it does not guarantee identical numbers of distinct real and synthetic examples seen or equal effective class balance. Such differences must be recorded, not hidden.
+
+Where possible, the same initial checkpoint and random-seed convention are used for the corresponding E0/E1/E2 training runs. The real validation set selects the early-stopping checkpoint independently for each condition. Hyperparameter changes that occur after seeing real-test metrics constitute exploratory reanalysis; they cannot be presented as prespecified confirmatory results.
+
+\subsection{Synthetic-only and diagnostic evaluation}
+The optional E5 arm fits a classifier on accepted synthetic images from training prompt families while retaining real validation and real test for comparison. The evaluation of E5 on real images measures transfer from synthetic training to the collected real-image domain. If an independent synthetic prompt-test set was also generated, its performance is reported in a separate table. A combined real-plus-synthetic score must not pool real-test and synthetic-test predictions because the two domains have different meanings and independence assumptions.
+
+An optional low-data study could restrict the real classifier training set to a subset of $\Rtrain$ while leaving $\Rval$ and $\Rtest$ untouched. If a disease-specific LoRA was adapted using the \emph{full} real training set, such a comparison would test limited classifier labels, not a truly low-real-data generation system. A strict low-data claim requires that all dataset-specific generator adaptation obey the smaller real-data budget.
