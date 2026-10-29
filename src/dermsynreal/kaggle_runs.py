@@ -191,6 +191,11 @@ def generation_manifest(metadata,out_dir,*,root,class_name,repo_root,
             "prompt_id":prompt_id,"prompt_family_id":p["prompt_family_id"],
             "prompt_partition":p["prompt_partition"],"prompt_type":prompt_type,
             "model_id":str(model_id or source_row.get("base_model") or source_row.get("base") or ""),
+            "generator_revision":str(source_row.get("base_revision") or source_row.get("base_commit") or ""),
+            "adapter_source":str(source_row.get("custom_lora") or source_row.get("lora_source")
+                                 or source_row.get("custom_lora_source") or source_row.get("textual_inversion") or ""),
+            "adapter_revision":str(source_row.get("ti_revision") or source_row.get("published_ti_revision")
+                                   or source_row.get("ti_commit") or source_row.get("texture_commit") or ""),
             "generator_mode":str(source_row.get("mode") or source_row.get("requested_adapter_mode") or "base"),
             "seed":source_row.get("seed",""),
             "image_sha256":digest,
