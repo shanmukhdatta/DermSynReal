@@ -1,0 +1,42 @@
+\section{Evaluation and Statistical Analysis}
+\subsection{Primary endpoint and class-level measures}
+The primary endpoint is macro-averaged F1 on $\Rtest$. For each of the six categories $c$, precision $P_c$ and recall $R_c$ are calculated from the real-test confusion matrix. With an undefined class F1 taken as zero,
+\begin{equation}
+F_{1,\mathrm{macro}} =
+\frac{1}{6}\sum_{c=1}^{6}
+\frac{2P_cR_c}{P_c+R_c}.
+\label{eq:f1}
+\end{equation}
+This definition gives equal weight to all six target categories regardless of their frequencies. We also report overall accuracy, balanced accuracy (mean class recall), each class's support and confusion matrix. A macro average is uninformative if one of the intended classes is absent from the test set; all six real-test class supports must therefore be recorded.
+
+All classifiers must output scores in the same frozen class order. For one run, the prediction CSV preserves the test image ID, true and predicted labels, real image source, protective group, and six class probabilities when available. The test partition is evaluated only after the corresponding training configuration has been finalized using real validation.
+
+\subsection{Paired real-test contrasts}
+The main contrasts are
+\begin{align}
+\Delta_{\mathrm{aug}}&=F_1(E2)-F_1(E0),\\
+\Delta_{\mathrm{prompt}}&=F_1(E2)-F_1(E1),\\
+\Delta_{\mathrm{quality}}&=F_1(E3)-F_1(E2),\\
+\Delta_{\mathrm{diversity}}&=F_1(E4)-F_1(E2).
+\label{eq:contrasts}
+\end{align}
+All differences refer to \emph{the same real-test IDs}, within one backbone and training seed. We do not compare F1 differences computed on independently redrawn test sets or silently pair mismatched model checkpoints. E3 and E4 are additional selection contrasts, included only when their prerequisites are satisfied. E5 is diagnostic rather than an additional primary superiority claim.
+
+To characterize test-sample uncertainty, the evaluation code forms paired bootstrap replicates of each F1 difference, resampling protective real-image groups where that is the available unit. If the groups were visually inferred rather than linked to verified patients, this limitation is disclosed. A percentile interval is reported as
+\begin{equation}
+{\rm CI}_{95\%}(\Delta)=
+\left[Q_{0.025}\bigl(\Delta^{(b)}\bigr),
+Q_{0.975}\bigl(\Delta^{(b)}\bigr)\right],
+\label{eq:bootstrap}
+\end{equation}
+where each replicate evaluates both trained models on the same resampled test groups \citep{efron1986bootstrap}. The interval describes uncertainty under that resampling scheme; it is not proof of causality or an automatically valid p-value.
+
+A separate summary of training seeds reports the mean, sample standard deviation (if at least two seeds are available), median and range of observed real-test scores. A new seed changes training randomness but does \emph{not} create an independent clinical test cohort. Accordingly, seed variability is shown separately from paired test-group bootstrap intervals. The current implementation does not manufacture p-values. If inferential hypothesis testing is subsequently preregistered, the primary family and appropriate multiplicity control, such as Holm's procedure \citep{holm1979multiple}, must be specified before interpreting significance.
+
+\subsection{Source sensitivity, calibration and errors}
+A classifier can perform differently across original collections even when its pooled macro-F1 appears stable. We therefore compute source-stratified counts and metrics where class support is sufficient, while marking a source with too few categories as a partial diagnostic rather than a complete six-class comparison. Per-class errors are grouped for review, with no patient-identifiable example published without permission.
+
+Where six valid probability outputs exist, secondary analysis includes multiclass negative log-likelihood, Brier score and expected calibration error. Calibration is calculated by evaluation domain rather than pooling real and synthetic samples. Any temperature or threshold parameter is fitted using real validation rather than the real test. Class-specific and source-specific findings are descriptive when support is small.
+
+\subsection{Interpretation rules}
+The sign of one observed metric difference does not determine the study's conclusion. If E2 exceeds E0 but not E1, there may be an augmentation benefit without a morphology-specific benefit. If synthetic images receive high visual quality ratings but real-test performance does not improve, the generator has not shown downstream utility. If an apparent gain occurs mainly in one data source, source association may be a competing explanation. All results are reported with actual accepted-image counts, label-audit state, train budgets and checkpoint identifiers. Results from an unreviewed dataset cannot be promoted to clinical evidence simply by adding a confidence interval.
