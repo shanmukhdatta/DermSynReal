@@ -14,19 +14,19 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-      - name: Compile all new evaluation code
-        run: python -m compileall -q src/dermsynreal/evaluation.py src/dermsynreal/label_gate.py src/dermsynreal/experiment_manifest.py scripts/evaluate_predictions.py scripts/build_experiment_manifests.py src/dermsynreal/evaluation_pipeline.py src/dermsynreal/inference.py src/dermsynreal/panderm_inference.py src/dermsynreal/quality_audit.py src/dermsynreal/calibration.py scripts/infer_timm_checkpoint.py scripts/infer_panderm_checkpoint.py scripts/report_experiments.py scripts/audit_generation_quality.py scripts/report_calibration.py
+      - name: Compile every shared research module and CLI
+        run: python -m compileall -q src/dermsynreal scripts notebooks/Preprocessing/Real_Data/pipeline.py
       - name: Run offline unit tests (no clinical files and no GPU)
         env:
           PYTHONPATH: src
         run: python -m unittest discover -s tests -p 'test_*.py' -v
-      - name: Validate notebook JSON without running external models
+      - name: Validate ALL Kaggle notebook JSON and Python cell syntax without external models
         run: |
           python - <<'PY'
           import json
           from pathlib import Path
-          for location in ("notebooks/Training", "notebooks/Evaluation"):
-              for path in Path(location).glob("*.ipynb"):
+          for location in ("notebooks/Training", "notebooks/Evaluation", "notebooks/Generation", "notebooks/Preprocessing"):
+              for path in Path(location).rglob("*.ipynb"):
                   data = json.loads(path.read_text(encoding="utf-8"))
                   assert data["nbformat"] == 4 and data["cells"]
                   for i, cell in enumerate(data["cells"]):
