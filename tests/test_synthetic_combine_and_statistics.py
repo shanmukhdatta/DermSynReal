@@ -66,6 +66,12 @@ class ReviewedCombinerTests(unittest.TestCase):
             manifest=root/"raw.csv";csv_write(manifest,[first,second])
             with self.assertRaises(ValueError):
                 combine_approved([manifest],[mount],root/"combined.csv")
+            # Explicitly permitted for preprocessing; experiment builder must
+            # filter the resulting pool to a matched generator mode.
+            result=combine_approved([manifest],[mount],root/"mixed.csv",
+                                    allow_mixed_generators=True)
+            self.assertEqual(result["approved_images"],2)
+            self.assertEqual(result["mixed_generator_classes"],["Acne"])
 
     def test_accepted_bad_checksum_is_rejected(self):
         with tempfile.TemporaryDirectory() as d:
