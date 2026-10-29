@@ -1,0 +1,81 @@
+\section{Results}
+\label{sec:results}
+\noindent\textbf{This section is intentionally unpopulated.} Tables and figure slots below are the required structure for measured Kaggle outputs. Dashes indicate \emph{not yet measured}, not a zero score or a nonsignificant finding. The final text must be written after the dataset label audit and evaluation registry pass their checks. No quantitative outcomes are inferred from the software implementation.
+
+\subsection{Real-data eligibility and frozen partitions}
+\begin{table}[ht]
+\centering\small
+\caption{Final diagnosis-reviewed real-image inventory. Replace every dash with recorded reviewed counts and state the number of protective groups.}
+\label{tab:realdata}
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
+Target class & Approved & Train & Val & Real test\\\midrule
+Acne & \NA & \NA & \NA & \NA\\
+Fungal infection & \NA & \NA & \NA & \NA\\
+Vitiligo & \NA & \NA & \NA & \NA\\
+Hyperpigmentation & \NA & \NA & \NA & \NA\\
+Skin cancer/precancer scope & \NA & \NA & \NA & \NA\\
+Normal & \NA & \NA & \NA & \NA\\\midrule
+Total & \NA & \NA & \NA & \NA\\
+\bottomrule
+\end{tabular}
+\end{table}
+\noindent\Pending. Insert exclusion counts, exact/near-duplicate groups, cross-class conflicts, group-origin information and source-rights decisions. Explain if known patient IDs were unavailable.
+
+\subsection{Generation yield and morphology review}
+\begin{table}[ht]
+\centering\small
+\caption{Generator-prompt yield, accepted appearance quality and rejected duplicates. Each row must identify the actual generator revision and adaptation mode.}
+\label{tab:synthetic}
+\begin{tabularx}{\linewidth}{@{}Xrrrr@{}}
+\toprule
+Configuration & Candidates & Accepted & Accept (\%) & Near-copy rejects\\\midrule
+E1 generic prompts & \NA & \NA & \NA & \NA\\
+E2 morphology prompts & \NA & \NA & \NA & \NA\\
+Optional LoRA source (separately) & \NA & \NA & \NA & \NA\\
+\bottomrule
+\end{tabularx}
+\end{table}
+\noindent\Pending. Insert a permitted representative-image grid only after originality, privacy, attribution and morphology review. The figure must distinguish real and synthetic images unambiguously.
+
+\subsection{Primary real-test classification}
+\begin{table}[ht]
+\centering\small
+\caption{Primary real-test performance by experiment arm. Make one version per backbone or add a backbone column when measured. Report mean across seeds and its SD separately.}
+\label{tab:primary}
+\begin{tabular}{@{}lrrr@{}}
+\toprule
+Arm & Macro-F1 & Balanced accuracy & Accuracy\\\midrule
+E0 real only & \NA & \NA & \NA\\
+E1 generic synthetic & \NA & \NA & \NA\\
+E2 morphology synthetic & \NA & \NA & \NA\\
+E3 quality selected & \NA & \NA & \NA\\
+E4 diversity selected (optional) & \NA & \NA & \NA\\
+E5 synthetic only (optional) & \NA & \NA & \NA\\
+\bottomrule
+\end{tabular}
+\end{table}
+\noindent\Pending. State the tested backbone, exact frozen real-test sample size, number of distinct protective groups, matched synthetic budget, training seeds, checkpoint version and failure/early-stopping events.
+
+\subsection{Matched real-test contrasts}
+\begin{table}[ht]
+\centering\small
+\caption{Paired differences in real-test macro-F1, evaluated on the identical real test for each backbone and seed. A CI is not a p-value.}
+\label{tab:paired}
+\begin{tabularx}{\linewidth}{@{}lXr@{}}
+\toprule
+Contrast & Interpretation & Difference [95\% group-bootstrap CI]\\\midrule
+E2 versus E0 & Augmentation versus real only & \NA\\
+E2 versus E1 & Morphological specificity versus generic prompts & \NA\\
+E3 versus E2 & Quality selection at matched sample count & \NA\\
+E4 versus E2 & Diversity selection at matched sample count & \NA\\
+\bottomrule
+\end{tabularx}
+\end{table}
+\noindent\Pending. Insert paired bootstrap intervals, observed signs across training seeds and a statement on the reliability of the underlying grouping unit. Do not add a fabricated significance column.
+
+\subsection{Class errors, source behavior and calibration}
+\noindent\Pending. Insert real-test six-class confusion matrices, per-class precision/recall/F1, source-specific support and calibrated probability diagnostics. Figures should come from the saved Evaluation 04--07 artifacts, with sources shown only at justified support thresholds. If synthetic prompt-test results exist, place them in a separate supplementary panel rather than pooling them into the primary real-test score.
+
+\subsection{Result-dependent synthesis}
+\noindent\Pending. Replace this single paragraph with a factual summary answering RQ1--RQ3, naming the backbones, effect magnitudes, uncertainty intervals, disagreement across seeds, and negative results. A clinically favorable interpretation must be justified by the data and cannot rest on visual quality alone.
