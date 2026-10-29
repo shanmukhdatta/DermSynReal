@@ -80,6 +80,35 @@ class KaggleV2ContractTests(unittest.TestCase):
             self.assertEqual(v["prompt_family_id"],prompt["prompt_family_id"])
             self.assertEqual(v["source_dataset"],DATASET_SOURCE)
 
+    def test_generator_metadata_preserves_ti_and_lora_and_reviewer_fields(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp)
+            (root/"a.png").write_bytes(b"offline fake bytes")
+            fungal=prompt_collection(REPO,"Fungal_Infection")[0]
+            summary=generation_manifest([{
+                "file":"a.png","prompt_id":fungal["id"],
+                "experiment_mode":"ti_only","published_ti":"offline-fixture-TI",
+                "published_ti_revision":"revision-a","base_revision":"base-sha",
+            }],root/"fungal_reports",root=root,class_name="Fungal_Infection",
+                repo_root=REPO,prompt_partition="train",model_id="fake")
+            with (root/"fungal_reports/generation_manifest.csv").open(newline="") as f:
+                record=next(csv.DictReader(f))
+            self.assertEqual(record["generator_mode"],"ti_only")
+            self.assertEqual(record["adapter_source"],"offline-fixture-TI")
+            self.assertEqual(record["adapter_revision"],"revision-a")
+            self.assertEqual(record["reviewer_id"],"")
+            self.assertEqual(record["accepted"],"False")
+            acne=prompt_collection(REPO,"Acne")[0]
+            generation_manifest([{
+                "file":"a.png","prompt_id":acne["id"],
+                "lora_source":"offline-fixture-lora","base_commit":"base-revision",
+            }],root/"acne_reports",root=root,class_name="Acne",
+                repo_root=REPO,prompt_partition="train",model_id="fake")
+            with (root/"acne_reports/generation_manifest.csv").open(newline="") as f:
+                mode=next(csv.DictReader(f))
+            self.assertEqual(mode["generator_mode"],"lora_only")
+            self.assertEqual(mode["adapter_source"],"offline-fixture-lora")
+
     def test_raw_folder_names_and_exact_duplicate_inventory(self):
         with tempfile.TemporaryDirectory() as tmp:
             root=Path(tmp)/"Face_Skin_dataset"
