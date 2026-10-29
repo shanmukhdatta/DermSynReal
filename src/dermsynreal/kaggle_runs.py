@@ -374,7 +374,7 @@ def training_run_report(*,model_output,manifest_csv,model_name,experiment,seed,r
         raise FileNotFoundError(manifest_csv)
     audit=[]
     for p in sorted(out.glob("*")):
-        if p.is_file() and p.name not in {"run_log.jsonl","artifact_inventory.csv"}:
+        if p.is_file() and p.name not in {"run_log.jsonl","artifact_inventory.csv","notebook_console.log"}:
             audit.append({"filename":p.name,"bytes":p.stat().st_size,"sha256":sha256_file(p)})
     _csv(out/"artifact_inventory.csv",audit,["filename","bytes","sha256"])
     record=append_run_log(out,kind="classifier_checkpoint_inventory",
