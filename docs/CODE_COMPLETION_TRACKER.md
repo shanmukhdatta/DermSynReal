@@ -76,3 +76,6 @@ Seven Evaluation notebooks and their supporting modules/configs/report schemas a
 - Explicit base+LoRA mixing is supported **for preprocessing** (`ALLOW_MIXED_GENERATORS=True`) with generator-mode and adapter-revision provenance preserved; not silently treated as one controlled E1/E2 scientific arm.
 - Synthetic preprocessing now writes a **reviewed, exact-deduplicated TRAIN-only** `reports/synthetic_train_pool_for_experiments.csv` for the E0–E5 manifest builder. The builder accepts `--synthetic-root` to reattach saved images and `--generator-mode` to isolate comparable base/LoRA experimental pools. Human approvals and prompt group separation still required.
 - Across-seed statistics, paired real-test group-bootstrap intervals, train/LoRA/evaluation logs, safe public aggregate export, run ledger and corresponding offline tests are committed. No image generation, LoRA training, classifier validation, clinical review or manuscript results are claimed completed.
+
+
+- Generator outputs use unique variant/partition/offset folders; 300 × 5 = 1,500 per class requires separate 210-train, 45-val, and 45-test prompt passes. Only the 1,050 train-prompt candidates may enter synthetic augmentation in that example.

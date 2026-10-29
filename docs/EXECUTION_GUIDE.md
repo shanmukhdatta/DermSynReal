@@ -158,3 +158,6 @@ Recommended run order: (1) inventory + human labels + licensing; (2) dedup/group
 5. Train each of the five classifier notebooks using the produced real/synthetic manifest and original approved real image root. Save checkpoint/validation/log artifacts in Kaggle. Run Evaluation 01/02 on the saved checkpoint, Evaluation 04 to generate paired real-test bootstrap CIs and seed summaries, Evaluation 07 for statistical plots. Publish only reviewed aggregate results via the safe export script and explicit GitHub commit.
 
 All steps require real Kaggle execution; a successful static CI run proves only code syntax/unit checks, not GPU/clinical behavior.
+
+
+**1,500 image allocation:** 300 authored prompts/class × 5 images = 1,500 only when **train (210)/val (45)/test (45)** prompt partitions are each generated separately (1,050 / 225 / 225 before acceptance). `PROMPT_LIMIT=None` on `train` alone generates 1,050, not 1,500. Output paths now include variant, partition and offset; preserve the prompt-family metadata when merging reviewed base/LoRA outputs. All generated samples require review.

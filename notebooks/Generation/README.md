@@ -17,3 +17,8 @@ Every class contains `01_...` inference and `02_...` LoRA training notebooks, pl
 Each of the six `02_` LoRA notebooks uses the **same** reviewed global real train/val/test split and exports `class_frozen_split_counts.csv` plus private `class_frozen_split_assignments.csv` for its target class (and reviewed subtype when applicable). Only the class's **train** files are linked into its LoRA imagefolder; validation and test photos remain excluded. A raw-folder independent split is intentionally **not** enabled because it risks patient/near-duplicate leakage between classes.
 
 The `01_` diffusion notebooks save full `notebook_console.log` and the existing `run_log.jsonl` and image manifests. The `02_` LoRA notebooks save notebook and trainer console logs, training provenance, partition statistics, and checkpoints. Both generic E1 and morphology E2 must preserve matched model/adapter identities for controlled comparisons. Never infer a diagnosis from the generated image alone.
+
+
+## Exactly 1,500 images per class with the authored prompt bank
+
+With `IMAGES_PER_PROMPT=5`, generate the three original **nonoverlapping** prompt partitions: `PROMPT_PARTITION='train'; PROMPT_LIMIT=None` gives 210 × 5 = 1,050 synthetic **training** candidates; repeat separately for `'val'` and `'test'` with `PROMPT_LIMIT=None` to get 45 × 5 = 225 in each diagnostic partition, totaling 1,500 per class before review or image rejection. Every generator now writes distinct `prompt_<variant>/<partition>/offset_<start>_count_<N>` folders, so repeated batches don't overwrite one another. For a roughly 1,500-image **train-only** pool use 210 authored training prompts with 7–8 images/prompt, but record the actual count and do not use held-out prompt families for training.
