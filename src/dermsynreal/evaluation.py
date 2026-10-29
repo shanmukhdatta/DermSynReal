@@ -62,6 +62,8 @@ def read_predictions(path: str | Path) -> list[dict]:
                 "source": source,
                 "split": "test",
                 "group_id": (raw.get("group_id") or "").strip() or identifier,
+                "dataset_source": (raw.get("dataset_source") or "").strip(),
+                "prompt_family_id": (raw.get("prompt_family_id") or "").strip(),
             })
     if not rows:
         raise ValueError("Prediction CSV is empty")
