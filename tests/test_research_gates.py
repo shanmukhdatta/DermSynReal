@@ -183,6 +183,26 @@ class ExperimentManifestTests(unittest.TestCase):
             self.assertEqual(sum(r["is_synthetic"] == "True" for r in rows), 12)
             self.assertEqual(set(r["split"] for r in rows if r["is_synthetic"] == "True"), {"train"})
 
+    def test_E5_synthetic_training_keeps_real_val_test_frozen(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp)
+            real,approved,synthetic=self.fixtures()
+            for name,rows in (("real.csv",real),("approved.csv",approved),("syn.csv",synthetic)):
+                csv_file(root/name,rows)
+            output=root/"output"
+            summary=prepare(root/"real.csv",root/"approved.csv",root/"syn.csv",output,
+                            budget_per_class=2,seed=42,include_synthetic_only=True)
+            self.assertIn("E5",summary["generated_arms"])
+            with (output/"E5_training_manifest.csv").open() as f:
+                e5=list(csv.DictReader(f))
+            self.assertEqual(sum(x["is_synthetic"]=="True" for x in e5),12)
+            self.assertEqual(sum(x["is_synthetic"]=="True" and x["split"]!="train" for x in e5),0)
+            real_test=[x for x in e5 if x["split"]=="test"]
+            real_val=[x for x in e5 if x["split"]=="val"]
+            self.assertEqual(len(real_test),6)
+            self.assertEqual(len(real_val),6)
+            self.assertTrue(all(x["is_synthetic"]=="False" for x in real_test+real_val))
+
     def test_builder_blocks_unapproved_and_group_leakage(self):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
