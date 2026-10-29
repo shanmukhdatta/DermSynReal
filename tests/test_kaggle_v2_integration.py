@@ -36,6 +36,34 @@ class KaggleV2ContractTests(unittest.TestCase):
             self.assertTrue(all(r["negative_prompt"] for r in a+b+c))
             self.assertTrue(all(r["text"] for r in a+b+c))
 
+
+    def test_generic_and_morphology_have_identical_protected_families(self):
+        for cls in ("Acne","Fungal_Infection","Vitiligo","Hyperpigmentation","Skin_Cancer","Normal"):
+            generic=prompt_collection(REPO,cls,partition="train",limit=10,variant="generic")
+            morphology=prompt_collection(REPO,cls,partition="train",limit=10,variant="morphology")
+            self.assertEqual([r["id"] for r in generic],[r["id"] for r in morphology])
+            self.assertEqual([r["prompt_family_id"] for r in generic],
+                             [r["prompt_family_id"] for r in morphology])
+            self.assertEqual([r["negative_prompt"] for r in generic],
+                             [r["negative_prompt"] for r in morphology])
+            self.assertTrue(all(r["prompt_type"]=="generic" for r in generic))
+            self.assertTrue(all(r["prompt_type"]=="morphology" for r in morphology))
+            self.assertTrue(any(a["text"]!=b["text"] for a,b in zip(generic,morphology)))
+
+    def test_generic_generated_manifest_identifies_E1(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp);(root/"fixture.png").write_bytes(b"NOT AN IMAGE: test fixture only")
+            p=prompt_collection(REPO,"Normal",variant="generic")[0]
+            summary=generation_manifest(
+                [{"file":"fixture.png","prompt_id":p["id"],"seed":13}],
+                root/"report",root=root,class_name="Normal",repo_root=REPO,
+                prompt_partition="train",model_id="fake",prompt_type="generic")
+            self.assertEqual(summary["prompt_type"],"generic")
+            with (root/"report/generation_manifest.csv").open(newline="") as f:
+                row=next(csv.DictReader(f))
+            self.assertEqual(row["prompt_type"],"generic")
+            self.assertEqual(row["accepted"],"False")
+
     def test_generated_samples_require_human_review(self):
         with tempfile.TemporaryDirectory() as tmp:
             p=Path(tmp)
