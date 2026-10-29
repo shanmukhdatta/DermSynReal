@@ -79,3 +79,10 @@ Seven Evaluation notebooks and their supporting modules/configs/report schemas a
 
 
 - Generator outputs use unique variant/partition/offset folders; 300 × 5 = 1,500 per class requires separate 210-train, 45-val, and 45-test prompt passes. Only the 1,050 train-prompt candidates may enter synthetic augmentation in that example.
+
+## Final static audit after user-requested re-verification (29 October 2026)
+
+- Reinspected 30 committed Kaggle notebooks, real V2 label/dedup bridge, six actual generator metadata formats, LoRA class-only stage, synthetic review/combiner, E0–E5 manifest builder, and statistical reports. Latest complete static workflow evidence: [GitHub Actions research-gates](https://github.com/shanmukhdatta/DermSynReal/actions).
+- Fixed the generator manifest's missing reviewer ID/quality fields and loss of actual `experiment_mode` / TI / LoRA provenance. Fungal and Skin Cancer first-run configurations now default to base-only, requiring explicit verified optional adapters. Normal SDXL permits configurable number of images per prompt. The Skin Cancer generator no longer blocks a new partition/variant because a previous partition exists in the base directory.
+- Fixed a risky `shutil.rmtree` in synthetic split output: existing image splits and ZIP artifacts are never silently overwritten. Fungal notebook syntax fix followed a failing GitHub Actions notebook compile check; subsequent Python unit-tests and notebook syntax validation passed.
+- **Actual Kaggle-generated outputs still unverified:** 9,791 image listing counts are pre-review; duplicate counts, medical label validity, original image permissions, prompt tokenizer compatibility, GPU VRAM, pretrained checkpoint access, LoRA training and final clinical classification remain unchecked. The code is suitable to start **five-prompt base-model GPU pilots and real-label inventory**, not a completed or proven full-scale clinical research experiment.
