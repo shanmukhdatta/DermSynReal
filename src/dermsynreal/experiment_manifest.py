@@ -51,6 +51,7 @@ def prepare(
     real_split_csv, approved_csv, synthetic_pool_csv, out_dir, *,
     budget_per_class: int, seed: int = 42,
     include_quality: bool = False, include_diversity: bool = False,
+    include_synthetic_only: bool = False,
 ):
     if budget_per_class < 1:
         raise ValueError("Synthetic budget per class must be positive")
@@ -100,6 +101,8 @@ def prepare(
         group = row["prompt_type"].lower()
         if group not in {"generic", "morphology"}:
             raise ValueError(f"Unknown prompt_type: {group}")
+        if row.get("prompt_partition", "train") not in {"", "train"}:
+            continue
         if row.get("split", "train") not in {"", "train"}:
             # Optional diagnostic synthetic test data belongs elsewhere.
             continue
@@ -151,6 +154,12 @@ def prepare(
         if len(selected[arm]) != len(CLASSES) * budget_per_class:
             raise AssertionError(f"Unexpected sample count for {arm}")
         produced[arm] = real_out + [_training_row(r, True) for r in selected[arm]]
+    if include_synthetic_only:
+        # The CSV retains the frozen real partitions for downstream validation and
+        # test evaluation; the training notebook's synthetic_only setting uses ONLY
+        # the synthetic subset for optimizer steps.
+        produced["E5"] = real_out + [_training_row(r, True) for r in selected["E2"]]
+        selected["E5"] = list(selected["E2"])
     fields = ["image_path", "label", "split", "group_id", "is_synthetic"]
     for arm, records in produced.items():
         with (out / f"{arm}_training_manifest.csv").open("w", newline="", encoding="utf-8") as f:
@@ -172,7 +181,7 @@ def prepare(
 
 
 def main():
-    p = argparse.ArgumentParser(description="Build matched E0-E4 training manifests")
+    p = argparse.ArgumentParser(description="Build matched E0-E5 training manifests")
     p.add_argument("--real-split", required=True)
     p.add_argument("--approved-real", required=True)
     p.add_argument("--synthetic-pool", required=True)
@@ -181,11 +190,13 @@ def main():
     p.add_argument("--seed", type=int, default=42)
     p.add_argument("--quality", action="store_true")
     p.add_argument("--diversity", action="store_true")
+    p.add_argument("--synthetic-only", action="store_true")
     a = p.parse_args()
     print(json.dumps(prepare(
         a.real_split, a.approved_real, a.synthetic_pool, a.out,
         budget_per_class=a.n_per_class, seed=a.seed,
         include_quality=a.quality, include_diversity=a.diversity,
+        include_synthetic_only=a.synthetic_only,
     ), indent=2))
 
 
