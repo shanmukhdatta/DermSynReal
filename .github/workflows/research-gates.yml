@@ -1,0 +1,32 @@
+name: DermSynReal offline research gates
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  unit-tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Compile all new evaluation code
+        run: python -m compileall -q src/dermsynreal/evaluation.py src/dermsynreal/label_gate.py scripts/evaluate_predictions.py
+      - name: Run offline unit tests (no clinical files and no GPU)
+        env:
+          PYTHONPATH: src
+        run: python -m unittest discover -s tests -p test_research_gates.py -v
+      - name: Validate notebook JSON without running external models
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          for path in Path("notebooks/Training").glob("*.ipynb"):
+              data = json.loads(path.read_text(encoding="utf-8"))
+              assert data["nbformat"] == 4 and data["cells"]
+              print(path)
+          PY
