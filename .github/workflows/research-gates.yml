@@ -15,7 +15,7 @@ jobs:
         with:
           python-version: "3.11"
       - name: Compile all new evaluation code
-        run: python -m compileall -q src/dermsynreal/evaluation.py src/dermsynreal/label_gate.py scripts/evaluate_predictions.py
+        run: python -m compileall -q src/dermsynreal/evaluation.py src/dermsynreal/label_gate.py src/dermsynreal/experiment_manifest.py scripts/evaluate_predictions.py scripts/build_experiment_manifests.py
       - name: Run offline unit tests (no clinical files and no GPU)
         env:
           PYTHONPATH: src
