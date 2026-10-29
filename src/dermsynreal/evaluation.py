@@ -111,6 +111,8 @@ def _quantile(sorted_numbers: list[float], probability: float) -> float:
     position = (len(sorted_numbers) - 1) * probability
     lower = int(math.floor(position))
     upper = int(math.ceil(position))
+    if lower == upper:
+        return sorted_numbers[lower]
     return sorted_numbers[lower] * (upper - position) + sorted_numbers[upper] * (position - lower)
 
 
