@@ -1,11 +1,18 @@
-# dermsynreal package
+# dermsynreal research modules
 
-Future modules are deliberately implemented one phase at a time:
-- `data/`: image manifests, provenance, hashes and group-aware splitting.
-- `generation/`: checkpoint registry, morphology prompt templates, deterministic inference.
-- `selection/`: quality, coverage, diversity and leakage-risk filters.
-- `training/`: classifier factories, samplers, experiment runners.
-- `evaluation/`: fixed real-test predictions, metrics, paired bootstrap.
-- `reporting/`: saved tables, figures and quality-control galleries.
+Shared reproducible building blocks, called by the Kaggle notebook orchestration under `notebooks/`. They are Python modules, not pretrained medical models.
 
-The package currently contains only a version marker.
+| File | Role |
+| --- | --- |
+| `label_gate.py` | explicit review decision + metadata flags before real-data splitting |
+| `experiment_manifest.py` | verified real IDs and matched E0–E4 synthetic training manifest construction |
+| `evaluation.py` | six-class metric definitions, source separation and paired visual-group bootstrap |
+| `evaluation_pipeline.py` | run registry, E0–E5 reporting, per-source/class metrics and paired contrasts |
+| `inference.py` | load real saved weights for ResNet50, EfficientNet-B3, ConvNeXt Tiny and DINOv2 ViT-S/14; export probability predictions |
+| `panderm_inference.py` | genuine PanDerm author encoder + saved frozen linear-probe evaluation |
+| `calibration.py` | real/synthetic-separated ECE, NLL and multiclass Brier score |
+| `quality_audit.py` | manually reviewed synthetic morphology/novelty decision summary |
+
+Use `PYTHONPATH=src` for the current source tree. The GPU modules import third-party deep-learning libraries only at execution time; offline metadata/evaluation tests require only standard Python. No module substitutes missing clinical data, model checkpoints or patient identity.
+
+The original scaffold's future `data/`, `generation/`, `selection/`, and `training/` package subdirectories are not claimed implemented; the actual existing Kaggle generation, grouping and training implementations live under `notebooks/`. Do not add redundant replacement code without a tested integration need.

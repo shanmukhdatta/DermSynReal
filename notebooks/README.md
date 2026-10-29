@@ -1,15 +1,15 @@
-# Kaggle notebooks — phase by phase
+# Kaggle notebooks — current repository inventory
 
-Notebooks are thin runners built on `src/dermsynreal/` and should be independently restartable on Kaggle T4. Each notebook will print exact input/output mounts, package revisions, config hash, compute info, seed, Git SHA and artifacts.
+Notebook code has been uploaded, but **no GPU run or clinical experiment is verified simply by its presence**.
 
-| Notebook | Responsibility | Status |
-| --- | --- | --- |
-| 00_environment_check.ipynb | Check Kaggle GPU, PyTorch, package versions, disk and mounts | Next |
-| 01_real_data_audit.ipynb | Dataset provenance, images, deduplication and splitting | Planned |
-| 02_generation_pilot.ipynb | Test generators, prompt families, morphology samples | Planned |
-| 03_synthetic_generation.ipynb | Run reproducible batches and QA | Planned |
-| 04_train_classifier.ipynb | Fine-tune classifiers for experiment configs | Planned |
-| 05_evaluation.ipynb | Fixed real test metrics and per-case predictions | Planned |
-| 06_ablation_studies.ipynb | Low-data and optional analyses | Planned |
+- `Generation/`: two disease-specific diffusion / optional LoRA notebooks for each of six target classes, with existing README and offline validation notes.
+- `Preprocessing/Real_Data/`: real deduplication and group-aware split.
+- `Preprocessing/Synthtic_data/`: synthetic prompt-family split (folder spelling preserved for compatibility).
+- `Training/`: five explicit backbone notebooks (ResNet-50, EfficientNet-B3, ConvNeXt Tiny, DINOv2 ViT-S/14, PanDerm Base linear probe) plus a separate self-contained ResNet50 real/synthetic/combined training notebook.
+- **`Evaluation/`: seven Kaggle-ready notebooks**, from real-label preflight to model inference, generation QA, cross-condition paired reporting, calibration, and LaTeX result export. Start with [Evaluation README](Evaluation/README.md).
 
-Do not claim a notebook is executable until it exists and has been tested on a matching Kaggle runtime.
+Train notebooks 01–05 export locked real-test prediction CSVs. For full class probabilities or a separate synthetic-test set, use the dedicated evaluation inference notebooks. All source image inputs and final run flags are intentionally configured by the researcher.
+
+See [execution guide](../docs/EXECUTION_GUIDE.md) and [evaluation protocol](../docs/EVALUATION_PROTOCOL.md).
+
+**Important:** The present EfficientNet-B3, ConvNeXt Tiny and DINOv2 ViT-S/14 notebooks are not the separately planned EfficientNet-B0, ConvNeXt V2 Tiny and DINOv2 ViT-B/14 variants. PanDerm is a linear probe. Do not misname experiments.

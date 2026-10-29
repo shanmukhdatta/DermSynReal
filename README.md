@@ -80,6 +80,10 @@ The same fixed real-test partition, controlled train budgets, seed schedules and
 
 **Important:** current notebooks use EfficientNet-B3, ConvNeXt Tiny and DINOv2 ViT-S/14; these are not the separately planned EfficientNet-B0, ConvNeXt V2 Tiny and DINOv2 ViT-B/14. PanDerm Base is currently implemented as a linear probe. Do not report results under mismatched model names.
 
+## New Kaggle evaluation workflow
+
+The [seven evaluation notebooks](notebooks/Evaluation/README.md) now cover reviewed real-label preflight, real/synthetic held-out checkpoint inference, official PanDerm linear probe, morphology QA, paired E0–E5 comparisons, calibration and LaTeX results export. New [empty CSV templates](data/manifests/) and [source/class reporting protocol](docs/EVALUATION_PROTOCOL.md) are available. These notebooks **have not been executed against real images on Kaggle**; results remain blank. The first blocking task is to correct and clinically review the real Skin Cancer and Normal label issues.
+
 ## Starting point
 
 Read [`docs/PROJECT_PLAN.md`](docs/PROJECT_PLAN.md), [`docs/CODE_COMPLETION_TRACKER.md`](docs/CODE_COMPLETION_TRACKER.md) and [`docs/RESEARCH_PROTOCOL.md`](docs/RESEARCH_PROTOCOL.md). Develop and test one phase at a time, then add its notebook and run record. The repository contains existing notebook implementations and offline checks, but no verified end-to-end study results on Kaggle. Work must begin by correcting the suspect Cancer and Normal class labels.
