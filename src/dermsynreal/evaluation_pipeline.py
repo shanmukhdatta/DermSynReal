@@ -167,6 +167,8 @@ def run_reporting(registry_csv, output_dir, *, label_audit_json,
     _save_csv(out/"paired_real_test.csv", paired,
               ["backbone","seed","treatment_run","baseline_run","contrast","delta_macro_f1",
                "ci95_lower","ci95_upper","paired_n","resampling_groups","p_value","test_independence_note"])
+    from .statistical_analysis import summarize_across_seeds
+    statistical_summary = summarize_across_seeds(out)
     manifest = {
         "format_version":1,
         "registry":str(Path(registry_csv).resolve()),
@@ -176,6 +178,7 @@ def run_reporting(registry_csv, output_dir, *, label_audit_json,
         "real_split_sha":next(iter(real_split_shas)),
         "primary_test_domain":"real",
         "runs":len(summaries),"pairs":len(paired),
+        "descriptive_statistical_analysis":statistical_summary,
         "bootstrap_iterations":iterations,"bootstrap_seed":bootstrap_seed,
         "interpretation":"descriptive outputs only; uncertainty depends on true independence of resampling groups; no p-values calculated",
         "no_clinical_validation":True
