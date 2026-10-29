@@ -78,6 +78,27 @@ image_path,label,split,group_id,is_synthetic
 
 Labels are lowercase `acne,fungal_infection,vitiligo,hyperpigmentation,skin_cancer,normal`. Split is `train`, `val` or `test`. The `is_synthetic` field is boolean; synthetic data may be used for *training only* in these five notebooks. Construct this manifest from **validated split outputs**, not by randomly rescanning unsplit class folders. Maintain a corresponding provenance join to original image ID, source ID, and label-audit approval. An upstream scanner must not silently generate false patient IDs.
 
+### Matched E0–E4 manifest builder (new reusable code)
+
+After auditing all real labels and freezing the real group split, prepare two provenance CSVs:
+
+- `real_split.csv` with `image_id,image_path,label,split,group_id`. **Preserve the original approved image IDs** even if split copies have different paths; join the split report back to the original source manifest. Never assign guessed patient identities.
+- `synthetic_pool.csv` with `image_id,image_path,label,prompt_family_id,prompt_type,model_id,accepted`; optionally `quality_score,diversity_cluster_id,split`. Here `prompt_type` is `generic` or `morphology`; each class must have sufficient accepted samples from both types. `model_id` must match between generic and morphology candidates *within each class* to isolate prompt design.
+
+Use the actual `approved_for_split.csv` from the label gate as the approval join:
+
+```bash
+PYTHONPATH=src python scripts/build_experiment_manifests.py \
+  --real-split /path/real_split.csv \
+  --approved-real /path/approved_for_split.csv \
+  --synthetic-pool /path/synthetic_pool.csv \
+  --n-per-class 100 --seed 42 \
+  --quality --diversity \
+  --out /path/experiment_manifests
+```
+
+The builder writes `E0_training_manifest.csv` through `E4_training_manifest.csv` as requested, and `manifest_build_summary.json` with the selected synthetic image IDs. Omit `--quality` or `--diversity` until all the corresponding metadata is available. It verifies approved real IDs, mapped labels, group isolation, six-class split coverage, and matched per-class synthetic counts. It does **not** substitute for near-duplicate image analysis, generator quality review or clinical verification. E5 (synthetic-only) requires a separate classifier runner because the five uploaded classifier notebooks currently require real train/val/test partitions.
+
 ## 5. Train and export real-test predictions
 
 Start with the actual real-only baseline and keep `RUN_FINAL_TEST=False` while selecting hyperparameters. Apply frozen splits, train-only augmentation, pretrained checkpoint and correct model-specific preprocessing, best-checkpoint reload and validation macro-F1. Do not call results clinically validated.
