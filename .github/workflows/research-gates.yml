@@ -52,3 +52,20 @@ jobs:
           name: DermSynReal-manuscript-draft
           path: paper/dermsynreal_manuscript.pdf
           if-no-files-found: error
+
+  latex-full-manuscript:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Compile complete paper with bibliography
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: main.tex
+          working_directory: paper/manuscript
+      - name: Archive complete scientific draft PDF
+        uses: actions/upload-artifact@v4
+        with:
+          name: DermSynReal-full-manuscript-draft
+          path: paper/manuscript/main.pdf
+          if-no-files-found: error
