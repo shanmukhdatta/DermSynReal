@@ -1,0 +1,48 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=0.85in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern,microtype}
+\usepackage{amsmath,amssymb,booktabs,tabularx,array,graphicx}
+\usepackage{caption}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage{float}
+\usepackage{natbib}
+\setlist{nosep,leftmargin=*}
+\setlength{\parindent}{1.05em}
+\setlength{\parskip}{0.10em}
+\renewcommand{\arraystretch}{1.17}
+\setlength{\emergencystretch}{2em}
+\newcommand{\NA}{\textemdash}
+\newcommand{\Pending}{\textit{Awaiting verified experiment}}
+\newcommand{\Rtest}{D_{\mathrm{R}}^{\mathrm{test}}}
+\newcommand{\Rtrain}{D_{\mathrm{R}}^{\mathrm{train}}}
+\newcommand{\Rval}{D_{\mathrm{R}}^{\mathrm{val}}}
+\newcommand{\Synthetic}{D_{\mathrm{S}}}
+\title{\bfseries DermSynReal: Evaluating Morphology-Guided Synthetic Facial Images for Six-Class Dermatology Classification}
+\author{Boda Shanmukha Datta\\
+\small Department of Instrumentation and Control Engineering\\
+\small Dr.\ B.\ R.\ Ambedkar National Institute of Technology Jalandhar\\
+\small \textit{Additional contributors and clinical reviewers to be credited before submission}}
+\date{\small Manuscript draft --- methodological sections complete; empirical analysis pending}
+\begin{document}
+\maketitle
+\begin{abstract}
+Clinical photographs of facial skin conditions vary widely in image quality, disease presentation and acquisition source. Classifiers trained on such collections can learn source-specific cues as readily as clinical morphology, making apparent improvements from synthetic augmentation difficult to interpret. This paper develops \emph{DermSynReal}, a controlled six-class study of whether morphology-guided diffusion images can improve classification of unseen real facial photographs. We define a diagnosis- and provenance-reviewed real-image collection, duplicate-aware group partitions, a structured prompt bank with isolated prompt families, and two matched generation strategies: generic disease-name descriptions and explicit lesion-morphology descriptions. We distinguish base diffusion synthesis from optional train-only low-rank adaptation and require independent review of generated-image morphology, artifacts and possible duplication. Five classifier pipelines---ResNet-50, EfficientNet-B3, ConvNeXt Tiny, DINOv2 ViT-S/14 and a PanDerm Base linear probe---are organized around fixed real validation and test sets. The primary outcome is six-class macro-F1 on the real test set, with paired group-bootstrap intervals, class-level metrics, source-stratified analyses and training-seed variability. We specify the contrasts that isolate the effects of augmentation, prompt detail and synthetic-image selection. The implementation and evaluation protocol are provided; numerical findings and clinical claims will be reported only after audited Kaggle execution. This design makes it possible to distinguish better-looking synthetic images from synthetic images that demonstrably help on real data.
+\end{abstract}
+\noindent\textbf{Keywords:} clinical facial photographs; dermatology; synthetic data; diffusion models; morphology-guided prompting; data leakage; transfer learning; reproducibility.
+\par\medskip
+\noindent\textbf{Status note.} This draft contains the complete methodological and contextual narrative. Tables in the Results section deliberately contain no invented measurements. References to planned experiments do not imply that a GPU run, label audit or clinical validation has already succeeded.
+\input{sections/01_introduction}
+\input{sections/02_related_work}
+\input{sections/03_data}
+\input{sections/04_generation}
+\input{sections/05_classification}
+\input{sections/06_evaluation}
+\input{sections/07_results}
+\input{sections/08_discussion}
+\input{sections/09_reproducibility}
+\bibliographystyle{plainnat}
+\bibliography{references}
+\end{document}
