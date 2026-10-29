@@ -1,0 +1,10 @@
+PROMPT ID: SKIN_156
+PHENOTYPE: melanoma_appearance
+GROUP: SKIN_G032
+SPLIT: train
+
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 78-year-old man with very deep brown skin. At the left temple, show melanoma-suspicious skin lesion features: a solitary asymmetrical dark-brown macule with a scalloped uneven edge. One side is nearly black while the opposite side fades to tan. The uneven border and pigment variation are clearly visible. The surrounding skin retains natural pores; pigmentation is not painted on. A natural resting facial expression. Slight right three-quarter clinical view, even neutral clinical lighting, visible natural pores, neutral background, sharp focus.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, face paint, makeup concealment, airbrushed skin, beauty filter, plastic pores, glossy cosmetic retouching, tattoo, watermark, text, label, arrows, distorted facial anatomy, duplicate face, blurred skin detail, fantasy colors, excessive artificial symmetry

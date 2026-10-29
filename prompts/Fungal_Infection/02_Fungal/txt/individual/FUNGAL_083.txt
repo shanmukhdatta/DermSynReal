@@ -1,0 +1,11 @@
+PROMPT_ID: FUNGAL_083
+PROMPT_GROUP_ID: FUNGAL_G023
+PHENOTYPE: pityriasis_versicolor
+SPLIT: train
+CLINICAL_STATUS: PILOT_REVIEW_REQUIRED
+
+POSITIVE_PROMPT:
+Clinical facial photograph of a 35-year-old man with deep brown skin; front-facing clinical close-up, neutral examination-room lighting. Across the lateral forehead, show a pityriasis versicolor pattern: five or six discrete flat spots lighter than adjacent skin. A few superficial bran-like flakes cross the spots. The mottled pigment contrast is distinct but the patches remain non-raised. The patches have fine superficial scale, without a raised annular border. The photograph has realistic skin texture, no beauty retouching, and an uncluttered background.
+
+NEGATIVE_PROMPT:
+illustration, painting, CGI, cartoon, plastic skin, airbrushed skin, heavy makeup, beauty filter, watermark, printed text, arrows, labels, duplicate head, extra eyes, distorted face, blurry lesion, harsh oversharpening, collage

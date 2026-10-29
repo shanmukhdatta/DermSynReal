@@ -1,0 +1,10 @@
+PROMPT_ID: VITILIGO_214
+GROUP_ID: VITILIGO_G043
+PHENOTYPE: non_segmental_appearance
+SPLIT: train
+
+POSITIVE PROMPT:
+Clinical photograph of a 24-year-old man with medium-brown skin, showing a non-segmental facial vitiligo pattern. At the upper nasal sidewalls beside both eyes, small sharply defined white patches cluster at paired inner eye regions. The spots remain flat, without scale or swelling. The paired depigmented areas are small and separated by unaffected skin. The whitened region has no scale and lies level with the rest of the face. Frontal clinical portrait, soft indirect window light. Use an unretouched photo with natural pores and accurate skin color.
+
+NEGATIVE PROMPT:
+illustration, painting, cartoon, CGI, digitally painted white mask, artificial cutout borders, face paint, cosmetic concealer, smooth plastic skin, beauty filter, watermark, text overlay, arrows, annotation, duplicate face, extra eyes, distorted facial anatomy, out of focus lesion, heavy crust, thick scale, raised ring rash, collage

@@ -1,0 +1,10 @@
+PROMPT ID: SKIN_248
+PHENOTYPE: ak_precancerous_appearance
+GROUP: SKIN_G050
+SPLIT: train
+
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 62-year-old man with light skin. At the upper left cheek, show actinic-keratosis-like sun-damaged skin features: a small cluster of several faint rough pink spots with patchy fine scale. Normal skin separates the individual subtle lesions. Fine dry scale is subtle but visible. Dry surface scale remains confined to the described patch or spots. Render the indicated skin tone without color exaggeration. Slight right three-quarter clinical view, even indirect daylight, visible natural pores, neutral background, sharp focus.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, face paint, makeup concealment, airbrushed skin, beauty filter, plastic pores, glossy cosmetic retouching, tattoo, watermark, text, label, arrows, distorted facial anatomy, duplicate face, blurred skin detail, fantasy colors, excessive artificial symmetry

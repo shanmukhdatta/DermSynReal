@@ -1,0 +1,10 @@
+PROMPT ID: SKIN_195
+PHENOTYPE: melanoma_appearance
+GROUP: SKIN_G039
+SPLIT: train
+
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 29-year-old woman with light-medium beige skin. At the left temple, show melanoma-suspicious skin lesion features: a tan facial patch with interrupted islands of deep brown pigmentation. Pigment density differs between halves of the otherwise smooth patch. Pigment irregularity is visible within the localized mark. The surrounding skin retains natural pores; pigmentation is not painted on. Include visible unaffected facial skin around the lesion. Frontal close facial view, even neutral clinical lighting, visible natural pores, neutral background, sharp focus.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, face paint, makeup concealment, airbrushed skin, beauty filter, plastic pores, glossy cosmetic retouching, tattoo, watermark, text, label, arrows, distorted facial anatomy, duplicate face, blurred skin detail, fantasy colors, excessive artificial symmetry

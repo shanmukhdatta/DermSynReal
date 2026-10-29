@@ -1,0 +1,43 @@
+{
+  "total_records": 300,
+  "batches_of_five": 60,
+  "unique_full_positive_prompts": 300,
+  "group_count": 60,
+  "split_counts": {
+    "train": 210,
+    "val": 45,
+    "test": 45
+  },
+  "phenotype_counts": {
+    "bcc_appearance": 75,
+    "scc_appearance": 75,
+    "melanoma_appearance": 75,
+    "ak_precancerous_appearance": 75
+  },
+  "variation_counts": {
+    "V1": 60,
+    "V2": 60,
+    "V3": 60,
+    "V4": 60,
+    "V5": 60
+  },
+  "sex_counts": {
+    "female": 150,
+    "male": 150
+  },
+  "skin_tone_counts": {
+    "I": 50,
+    "II": 50,
+    "III": 50,
+    "IV": 50,
+    "V": 50,
+    "VI": 50
+  },
+  "word_count_min": 73,
+  "word_count_max": 92,
+  "morphology_near_duplicates_threshold_0_91_between_groups": [],
+  "exact_tokenizer_verification": "PENDING_KAGGLE",
+  "clinical_review": "PENDING",
+  "generated_image_test": "NOT_RUN",
+  "source_text_consistency": "CSV_JSON_TXT_EXACT"
+}

@@ -1,0 +1,10 @@
+PROMPT ID: SKIN_037
+PHENOTYPE: bcc_appearance
+GROUP: SKIN_G008
+SPLIT: train
+
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 50-year-old woman with very fair skin. At the right temple, show basal-cell-carcinoma-like morphology: a flat pink plaque with a few very shallow surface breaks. Its faint raised glistening outline remains visible between small dry areas. The raised contour stands out while the adjacent skin remains ordinary. A margin of unaffected skin surrounds the lesion. Maintain natural lesion contrast against adjacent skin. Slight left three-quarter clinical view, controlled soft studio lighting, visible natural pores, neutral background, sharp focus.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, face paint, makeup concealment, airbrushed skin, beauty filter, plastic pores, glossy cosmetic retouching, tattoo, watermark, text, label, arrows, distorted facial anatomy, duplicate face, blurred skin detail, fantasy colors, excessive artificial symmetry

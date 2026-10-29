@@ -1,0 +1,9 @@
+ID: HYPER_055
+GROUP: HYPER_G055
+SPLIT: test
+PHENOTYPE: melasma_appearance
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 54-year-old woman with medium-brown skin. At the skin along both lower facial borders, show melasma-like facial hyperpigmentation: low-contrast brown fields with ill-defined borders on both sides. Normal skin shows through small gaps within the pigment. Broad extent, larger adjoining flat pigment fields cover much of the specified region. The pigmentation is flat, with no raised border, crust or scale; both sides are broadly but not perfectly symmetrical. Frontal facial close-up, even diffused clinical light, realistic pores and skin texture, natural skin tones, plain background, no retouching.
+
+NEGATIVE PROMPT:
+cartoon, CGI, painted-on stains, makeup, face paint, beauty filter, plastic skin, airbrushing, watermark, text, arrows, annotations, duplicate face, distorted eyes, wrong facial anatomy, blurred lesions, oversaturated pigments, image collage, unrelated body rash

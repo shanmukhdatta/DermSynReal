@@ -1,0 +1,10 @@
+PROMPT ID: SKIN_188
+PHENOTYPE: melanoma_appearance
+GROUP: SKIN_G038
+SPLIT: train
+
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 64-year-old man with light skin. At the left temple, show melanoma-suspicious skin lesion features: a flat dark-brown lesion with an eccentric paler gray-white zone. The irregular border contains several uneven projections. Pigment irregularity is visible within the localized mark. The surrounding skin retains natural pores; pigmentation is not painted on. Render the indicated skin tone without color exaggeration. Straight-on facial photograph, even neutral clinical lighting, visible natural pores, neutral background, sharp focus.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, face paint, makeup concealment, airbrushed skin, beauty filter, plastic pores, glossy cosmetic retouching, tattoo, watermark, text, label, arrows, distorted facial anatomy, duplicate face, blurred skin detail, fantasy colors, excessive artificial symmetry

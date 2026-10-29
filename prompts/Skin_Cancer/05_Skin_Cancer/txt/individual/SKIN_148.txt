@@ -1,0 +1,10 @@
+PROMPT ID: SKIN_148
+PHENOTYPE: scc_appearance
+GROUP: SKIN_G030
+SPLIT: test
+
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 68-year-old man with medium brown skin. At the right temple, show cutaneous-squamous-cell-carcinoma-like morphology: a broad scaly reddish nodule-plaque with irregularly raised edges. The coarse keratinous surface varies in thickness across the lesion. Dry keratin texture is clearly visible under neutral light. Keratin and surface scale are confined to the described area. Render the indicated skin tone without color exaggeration. Slight right three-quarter clinical view, even indirect daylight, visible natural pores, neutral background, sharp focus.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, face paint, makeup concealment, airbrushed skin, beauty filter, plastic pores, glossy cosmetic retouching, tattoo, watermark, text, label, arrows, distorted facial anatomy, duplicate face, blurred skin detail, fantasy colors, excessive artificial symmetry

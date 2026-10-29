@@ -1,0 +1,10 @@
+PROMPT_ID: VITILIGO_265
+GROUP_ID: VITILIGO_G053
+PHENOTYPE: segmental_appearance
+SPLIT: test
+
+POSITIVE PROMPT:
+Clinical photograph of a 20-year-old woman with light olive skin, showing a unilateral segmental facial vitiligo pattern. At the right cheek near the eye, a smooth white patch curves around a local natural facial contour. It stays on one side and does not cross the facial midline. The patch occupies a narrow unilateral facial zone. A narrow sharp border separates the white skin from adjacent pigment. Face-level clinical photograph, soft diffused daylight. Use soft realistic lighting and preserve the unaltered skin surface.
+
+NEGATIVE PROMPT:
+illustration, painting, cartoon, CGI, digitally painted white mask, artificial cutout borders, face paint, cosmetic concealer, smooth plastic skin, beauty filter, watermark, text overlay, arrows, annotation, duplicate face, extra eyes, distorted facial anatomy, out of focus lesion, heavy crust, thick scale, raised ring rash, collage

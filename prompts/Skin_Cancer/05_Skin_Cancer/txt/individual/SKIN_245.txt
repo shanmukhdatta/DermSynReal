@@ -1,0 +1,10 @@
+PROMPT ID: SKIN_245
+PHENOTYPE: ak_precancerous_appearance
+GROUP: SKIN_G049
+SPLIT: train
+
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 69-year-old woman with deep brown skin. At the left cheek, show actinic-keratosis-like sun-damaged skin features: a thin tan-pink patch bearing a delicate yellow-white adherent scale. The surrounding surface shows mild sun-exposure texture. The localized surface scale is easy to distinguish. Dry surface scale remains confined to the described patch or spots. Include visible unaffected facial skin around the lesion. Frontal close facial view, even neutral clinical lighting, visible natural pores, neutral background, sharp focus.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, face paint, makeup concealment, airbrushed skin, beauty filter, plastic pores, glossy cosmetic retouching, tattoo, watermark, text, label, arrows, distorted facial anatomy, duplicate face, blurred skin detail, fantasy colors, excessive artificial symmetry

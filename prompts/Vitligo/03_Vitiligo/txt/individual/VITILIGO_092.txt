@@ -1,0 +1,10 @@
+PROMPT_ID: VITILIGO_092
+GROUP_ID: VITILIGO_G019
+PHENOTYPE: non_segmental_appearance
+SPLIT: train
+
+POSITIVE PROMPT:
+Clinical photograph of a 27-year-old man with fair beige skin, showing a non-segmental facial vitiligo pattern. At the paired lateral forehead regions, white patches form two asymmetric but corresponding regions across the forehead. There is a narrow strip of pigmented skin between the patches. The paired white regions have unequal area while remaining on both sides. A narrow sharp border separates the white skin from adjacent pigment. Front-facing dermatology photograph, soft diffused daylight. Use an unretouched photo with natural pores and accurate skin color.
+
+NEGATIVE PROMPT:
+illustration, painting, cartoon, CGI, digitally painted white mask, artificial cutout borders, face paint, cosmetic concealer, smooth plastic skin, beauty filter, watermark, text overlay, arrows, annotation, duplicate face, extra eyes, distorted facial anatomy, out of focus lesion, heavy crust, thick scale, raised ring rash, collage

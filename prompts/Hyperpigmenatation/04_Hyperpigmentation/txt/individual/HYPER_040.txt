@@ -1,0 +1,9 @@
+ID: HYPER_040
+GROUP: HYPER_G040
+SPLIT: test
+PHENOTYPE: melasma_appearance
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 34-year-old man with medium-brown skin. At the upper central cheeks beside the nose, show melasma-like facial hyperpigmentation: paired irregular patches containing small pale skin islands. The central islands retain the same normal skin texture as the surrounding face. Broad extent, larger adjoining flat pigment fields cover much of the specified region. The pigmentation is flat, with no raised border, crust or scale; both sides are broadly but not perfectly symmetrical. Realistic close facial photograph, even diffused clinical light, realistic pores and skin texture, natural skin tones, plain background, no retouching.
+
+NEGATIVE PROMPT:
+cartoon, CGI, painted-on stains, makeup, face paint, beauty filter, plastic skin, airbrushing, watermark, text, arrows, annotations, duplicate face, distorted eyes, wrong facial anatomy, blurred lesions, oversaturated pigments, image collage, unrelated body rash

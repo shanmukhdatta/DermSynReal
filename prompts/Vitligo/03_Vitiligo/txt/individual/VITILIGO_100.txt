@@ -1,0 +1,10 @@
+PROMPT_ID: VITILIGO_100
+GROUP_ID: VITILIGO_G020
+PHENOTYPE: segmental_appearance
+SPLIT: train
+
+POSITIVE PROMPT:
+Clinical photograph of a 17-year-old man with very dark brown skin, showing a unilateral segmental facial vitiligo pattern. At the left temple, small separated depigmented macules align in a short curved chain. The sequence follows a facial region without being a straight painted stripe. The irregular patch remains unilateral, with unaffected skin elsewhere. Surrounding skin shows normal visible pores and fine texture. Unretouched clinical face photograph, balanced diffuse studio light. Use an unretouched photo with natural pores and accurate skin color.
+
+NEGATIVE PROMPT:
+illustration, painting, cartoon, CGI, digitally painted white mask, artificial cutout borders, face paint, cosmetic concealer, smooth plastic skin, beauty filter, watermark, text overlay, arrows, annotation, duplicate face, extra eyes, distorted facial anatomy, out of focus lesion, heavy crust, thick scale, raised ring rash, collage

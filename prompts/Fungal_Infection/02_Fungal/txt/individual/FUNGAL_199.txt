@@ -1,0 +1,11 @@
+PROMPT_ID: FUNGAL_199
+PROMPT_GROUP_ID: FUNGAL_G019
+PHENOTYPE: tinea_faciei
+SPLIT: train
+CLINICAL_STATUS: PILOT_REVIEW_REQUIRED
+
+POSITIVE_PROMPT:
+Clinical facial photograph of a 21-year-old young man with very fair ivory skin; left three-quarter facial view, diffused window daylight. On the central left cheek, show a tinea faciei pattern: one main round scaly plaque beside a much smaller early oval patch. The larger lesion has partial central clearing; the smaller lesion is uniformly faint. The patch edge looks pink-red with fine flaky skin. Only a small amount of fine scale outlines the patch. A neutral background and natural pores keep the skin texture visible.
+
+NEGATIVE_PROMPT:
+illustration, painting, CGI, cartoon, plastic skin, airbrushed skin, heavy makeup, beauty filter, watermark, printed text, arrows, labels, duplicate head, extra eyes, distorted face, blurry lesion, harsh oversharpening, collage

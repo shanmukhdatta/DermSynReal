@@ -1,0 +1,10 @@
+PROMPT_ID: VITILIGO_284
+GROUP_ID: VITILIGO_G057
+PHENOTYPE: non_segmental_appearance
+SPLIT: val
+
+POSITIVE PROMPT:
+Clinical photograph of a 32-year-old man with very dark brown skin, showing a non-segmental facial vitiligo pattern. At the paired cheek regions near the mouth, two main depigmented cheek patches have smaller nearby satellite white macules. The smaller spots do not form red or raised bumps. Smaller isolated white spots accompany the main bilateral patches. Surrounding skin shows normal visible pores and fine texture. Front-facing dermatology photograph, balanced diffuse studio light. Keep true skin texture and a plain neutral background; avoid cosmetic smoothing.
+
+NEGATIVE PROMPT:
+illustration, painting, cartoon, CGI, digitally painted white mask, artificial cutout borders, face paint, cosmetic concealer, smooth plastic skin, beauty filter, watermark, text overlay, arrows, annotation, duplicate face, extra eyes, distorted facial anatomy, out of focus lesion, heavy crust, thick scale, raised ring rash, collage

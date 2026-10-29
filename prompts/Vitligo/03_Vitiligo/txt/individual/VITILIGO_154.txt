@@ -1,0 +1,10 @@
+PROMPT_ID: VITILIGO_154
+GROUP_ID: VITILIGO_G031
+PHENOTYPE: non_segmental_appearance
+SPLIT: test
+
+POSITIVE PROMPT:
+Clinical photograph of a 45-year-old man with medium-brown skin, showing a non-segmental facial vitiligo pattern. At the skin just below both lower lip corners, short flat depigmented patches flank the lower lip. The patches stop at an irregular border with normally colored skin. Smaller isolated white spots accompany the main bilateral patches. The depigmented area is smooth with naturally uneven contours. Unretouched clinical face photograph, even neutral examination-room light. Use soft realistic lighting and preserve the unaltered skin surface.
+
+NEGATIVE PROMPT:
+illustration, painting, cartoon, CGI, digitally painted white mask, artificial cutout borders, face paint, cosmetic concealer, smooth plastic skin, beauty filter, watermark, text overlay, arrows, annotation, duplicate face, extra eyes, distorted facial anatomy, out of focus lesion, heavy crust, thick scale, raised ring rash, collage

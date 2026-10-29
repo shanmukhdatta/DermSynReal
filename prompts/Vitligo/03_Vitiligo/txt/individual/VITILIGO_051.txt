@@ -1,0 +1,10 @@
+PROMPT_ID: VITILIGO_051
+GROUP_ID: VITILIGO_G011
+PHENOTYPE: segmental_appearance
+SPLIT: train
+
+POSITIVE PROMPT:
+Clinical photograph of a 16-year-old woman with deep brown skin, showing a unilateral segmental facial vitiligo pattern. At the right upper cheekbone, three small white ovals cluster along a unilateral facial region. The marks have different diameters and smooth surfaces. The affected region is compact and remains entirely on one side. A narrow sharp border separates the white skin from adjacent pigment. Frontal clinical portrait, soft diffused daylight. Keep true skin texture and a plain neutral background; avoid cosmetic smoothing.
+
+NEGATIVE PROMPT:
+illustration, painting, cartoon, CGI, digitally painted white mask, artificial cutout borders, face paint, cosmetic concealer, smooth plastic skin, beauty filter, watermark, text overlay, arrows, annotation, duplicate face, extra eyes, distorted facial anatomy, out of focus lesion, heavy crust, thick scale, raised ring rash, collage

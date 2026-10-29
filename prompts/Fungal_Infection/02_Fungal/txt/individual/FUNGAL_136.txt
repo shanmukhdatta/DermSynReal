@@ -1,0 +1,11 @@
+PROMPT_ID: FUNGAL_136
+PROMPT_GROUP_ID: FUNGAL_G016
+PHENOTYPE: pityriasis_versicolor
+SPLIT: train
+CLINICAL_STATUS: PILOT_REVIEW_REQUIRED
+
+POSITIVE_PROMPT:
+Clinical facial photograph of a 24-year-old young woman with deep brown skin; front-facing facial portrait, diffuse overhead and frontal light. Across both temple regions, show a pityriasis versicolor pattern: fine speckled reduced pigmentation over a small facial region. A thin powdery scale follows natural skin lines. The pigment difference is faint and scaling is visible only close up. The patches have fine superficial scale, without a raised annular border. Use ordinary color balance, natural skin texture, and a distraction-free backdrop.
+
+NEGATIVE_PROMPT:
+illustration, painting, CGI, cartoon, plastic skin, airbrushed skin, heavy makeup, beauty filter, watermark, printed text, arrows, labels, duplicate head, extra eyes, distorted face, blurry lesion, harsh oversharpening, collage

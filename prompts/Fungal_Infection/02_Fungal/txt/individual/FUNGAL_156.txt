@@ -1,0 +1,11 @@
+PROMPT_ID: FUNGAL_156
+PROMPT_GROUP_ID: FUNGAL_G036
+PHENOTYPE: pityriasis_versicolor
+SPLIT: test
+CLINICAL_STATUS: PILOT_REVIEW_REQUIRED
+
+POSITIVE_PROMPT:
+Clinical facial photograph of a 58-year-old woman with very fair ivory skin; frontal face-level photograph, balanced shadow-free lighting. Across the left temple and upper cheek, show a pityriasis versicolor pattern: scattered small light-brown macules of unequal size. The lesions are flat, with subtle surface flaking. The mottled pigment contrast is distinct but the patches remain non-raised. The patches have fine superficial scale, without a raised annular border. Preserve visible pores and fine surface scale in a neutral clinical composition.
+
+NEGATIVE_PROMPT:
+illustration, painting, CGI, cartoon, plastic skin, airbrushed skin, heavy makeup, beauty filter, watermark, printed text, arrows, labels, duplicate head, extra eyes, distorted face, blurry lesion, harsh oversharpening, collage

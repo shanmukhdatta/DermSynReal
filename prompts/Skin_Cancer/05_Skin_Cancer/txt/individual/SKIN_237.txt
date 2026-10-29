@@ -1,0 +1,10 @@
+PROMPT ID: SKIN_237
+PHENOTYPE: ak_precancerous_appearance
+GROUP: SKIN_G048
+SPLIT: train
+
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 86-year-old woman with light-medium beige skin. At the right upper cheek, show actinic-keratosis-like sun-damaged skin features: a small flat-topped gray-pink papule with dry whitish scale. The scale is thin and uneven rather than a thick central keratin plug. Fine dry scale is subtle but visible. Dry surface scale remains confined to the described patch or spots. Maintain natural lesion contrast against adjacent skin. Slight left three-quarter clinical view, controlled soft studio lighting, visible natural pores, neutral background, sharp focus.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, face paint, makeup concealment, airbrushed skin, beauty filter, plastic pores, glossy cosmetic retouching, tattoo, watermark, text, label, arrows, distorted facial anatomy, duplicate face, blurred skin detail, fantasy colors, excessive artificial symmetry

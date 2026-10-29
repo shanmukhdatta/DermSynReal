@@ -1,0 +1,10 @@
+PROMPT ID: SKIN_200
+PHENOTYPE: melanoma_appearance
+GROUP: SKIN_G040
+SPLIT: train
+
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 38-year-old man with light skin. At the left upper cheek, show melanoma-suspicious skin lesion features: a broad asymmetrical brown-gray patch with blurred uneven boundaries. Fine pigment mottling extends beyond a darker central area without scale. The uneven border and pigment variation are clearly visible. The surrounding skin retains natural pores; pigmentation is not painted on. Include visible unaffected facial skin around the lesion. Slight left three-quarter clinical view, soft diffuse examination-room light, visible natural pores, neutral background, sharp focus.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, face paint, makeup concealment, airbrushed skin, beauty filter, plastic pores, glossy cosmetic retouching, tattoo, watermark, text, label, arrows, distorted facial anatomy, duplicate face, blurred skin detail, fantasy colors, excessive artificial symmetry

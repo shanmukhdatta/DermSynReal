@@ -1,0 +1,10 @@
+PROMPT ID: SKIN_018
+PHENOTYPE: bcc_appearance
+GROUP: SKIN_G004
+SPLIT: train
+
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 76-year-old man with very deep brown skin. At the left nasal sidewall, show basal-cell-carcinoma-like morphology: a skin-colored firm-looking bump with smooth pearly elevation. Subtle fine surface vessels interrupt an otherwise even surface. The raised contour stands out while the adjacent skin remains ordinary. A margin of unaffected skin surrounds the lesion. Render the indicated skin tone without color exaggeration. Frontal clinical face view, soft diffuse examination-room light, visible natural pores, neutral background, sharp focus.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, face paint, makeup concealment, airbrushed skin, beauty filter, plastic pores, glossy cosmetic retouching, tattoo, watermark, text, label, arrows, distorted facial anatomy, duplicate face, blurred skin detail, fantasy colors, excessive artificial symmetry

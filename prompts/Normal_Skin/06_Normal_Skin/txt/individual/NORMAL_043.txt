@@ -1,0 +1,9 @@
+ID: NORMAL_043
+GROUP: NORMAL_G043
+PHENOTYPE: balanced_skin_appearance
+SPLIT: test
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 19-year-old woman with fair skin, frontal clinical portrait, even shadow-controlled studio illumination. Show balanced-looking non-lesional facial skin. At the central forehead, depict soft normal forehead texture with tiny irregularly spaced pores. Minor facial lines are present but no distinct dermatologic lesion is visible. The surface remains gently even in reflectance, not uniformly polished. Preserve real facial microtexture and ordinary skin color variation. Clear facial view, simple backdrop, restrained photographic processing.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, makeup, beauty filter, airbrushed skin, porcelain skin, digitally painted face, unnatural skin smoothing, watermark, text, distorted face, duplicate eyes, extra nose, excessive blur, overexposure, extreme shadows, acne papules, pustules, comedones, red inflamed rash, ring-shaped scaly plaques, depigmented white patches, distinct pigmented lesions, bleeding or crusted lesions, wet greasy oil coating, severe dryness, thick flaking

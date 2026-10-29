@@ -1,0 +1,10 @@
+PROMPT_ID: VITILIGO_231
+GROUP_ID: VITILIGO_G047
+PHENOTYPE: segmental_appearance
+SPLIT: train
+
+POSITIVE PROMPT:
+Clinical photograph of a 49-year-old woman with deep brown skin, showing a unilateral segmental facial vitiligo pattern. At the right temple, an obliquely oriented white oval has a slightly scalloped rim. Its orientation follows local facial anatomy, not a perfect outline. The affected region is compact and remains entirely on one side. The depigmented area is smooth with naturally uneven contours. Face-level clinical photograph, even neutral examination-room light. Use an unretouched photo with natural pores and accurate skin color.
+
+NEGATIVE PROMPT:
+illustration, painting, cartoon, CGI, digitally painted white mask, artificial cutout borders, face paint, cosmetic concealer, smooth plastic skin, beauty filter, watermark, text overlay, arrows, annotation, duplicate face, extra eyes, distorted facial anatomy, out of focus lesion, heavy crust, thick scale, raised ring rash, collage

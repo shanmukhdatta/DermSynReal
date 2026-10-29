@@ -1,0 +1,10 @@
+PROMPT_ID: VITILIGO_275
+GROUP_ID: VITILIGO_G055
+PHENOTYPE: non_segmental_appearance
+SPLIT: val
+
+POSITIVE PROMPT:
+Clinical photograph of a 32-year-old woman with deep brown skin, showing a non-segmental facial vitiligo pattern. At both sides of the central upper lip skin, separate white patches flank the upper lip below the nose. Pigmented gaps interrupt the white band near the middle. The paired white regions have unequal area while remaining on both sides. Surrounding skin shows normal visible pores and fine texture. Unretouched clinical face photograph, balanced diffuse studio light. Use an unretouched photo with natural pores and accurate skin color.
+
+NEGATIVE PROMPT:
+illustration, painting, cartoon, CGI, digitally painted white mask, artificial cutout borders, face paint, cosmetic concealer, smooth plastic skin, beauty filter, watermark, text overlay, arrows, annotation, duplicate face, extra eyes, distorted facial anatomy, out of focus lesion, heavy crust, thick scale, raised ring rash, collage

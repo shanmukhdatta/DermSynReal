@@ -1,0 +1,48 @@
+{
+  "total_prompts": 300,
+  "five_prompt_batches": 60,
+  "morphological_families": 60,
+  "all_positive_prompts_unique": true,
+  "cross_morphology_near_duplicate_pairs_0_945": [],
+  "phenotype_counts": {
+    "balanced_skin_appearance": 100,
+    "oily_skin_appearance": 100,
+    "dry_skin_appearance": 100
+  },
+  "sex_descriptor_counts": {
+    "female": 150,
+    "male": 150
+  },
+  "tone_reference_counts": {
+    "I": 50,
+    "II": 50,
+    "IV": 50,
+    "VI": 50,
+    "III": 50,
+    "V": 50
+  },
+  "variation_counts": {
+    "V1": 60,
+    "V2": 60,
+    "V3": 60,
+    "V4": 60,
+    "V5": 60
+  },
+  "group_split_leakage": 0,
+  "split_counts": {
+    "train": 210,
+    "val": 45,
+    "test": 45
+  },
+  "min_word_count": 72,
+  "max_word_count": 90,
+  "exact_sd21_token_validation": "PENDING_KAGGLE",
+  "image_generation_test": "NOT_RUN",
+  "clinical_label_validation": "NOT_RUN",
+  "cautions": [
+    "Normal appearance is not equivalent to cosmetically ideal skin",
+    "A photographic appearance does not establish actual skin type",
+    "Generated synthetic skin patterns can contain unintended disease features and must be filtered",
+    "15/150 token limit requires the matching text encoder tokenizer"
+  ]
+}

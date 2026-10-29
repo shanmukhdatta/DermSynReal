@@ -1,0 +1,10 @@
+PROMPT ID: SKIN_174
+PHENOTYPE: melanoma_appearance
+GROUP: SKIN_G035
+SPLIT: train
+
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 47-year-old man with very deep brown skin. At the left temple, show melanoma-suspicious skin lesion features: a dome-shaped dark-blue-black pigmented nodule with asymmetric boundaries. The smooth elevated surface shows uneven brown-black color at the periphery. The uneven border and pigment variation are clearly visible. The surrounding skin retains natural pores; pigmentation is not painted on. The abnormality is confined to this specified skin region. Frontal close facial view, soft diffused daylight, visible natural pores, neutral background, sharp focus.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, face paint, makeup concealment, airbrushed skin, beauty filter, plastic pores, glossy cosmetic retouching, tattoo, watermark, text, label, arrows, distorted facial anatomy, duplicate face, blurred skin detail, fantasy colors, excessive artificial symmetry

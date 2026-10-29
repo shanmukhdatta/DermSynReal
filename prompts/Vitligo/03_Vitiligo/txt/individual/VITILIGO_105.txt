@@ -1,0 +1,10 @@
+PROMPT_ID: VITILIGO_105
+GROUP_ID: VITILIGO_G021
+PHENOTYPE: focal_undetermined_appearance
+SPLIT: val
+
+POSITIVE PROMPT:
+Clinical photograph of a 57-year-old woman with very fair ivory skin, showing a localized focal-appearing facial vitiligo pattern. At the left lower eyelid skin, one small tapering white patch follows a natural skin fold. Its border remains well differentiated against nearby skin. The white region remains a single limited focus rather than a widespread pattern. The whitened region has no scale and lies level with the rest of the face. Front-facing dermatology photograph, soft indirect window light. Keep the lesion in sharp focus, with neutral white balance and no retouching.
+
+NEGATIVE PROMPT:
+illustration, painting, cartoon, CGI, digitally painted white mask, artificial cutout borders, face paint, cosmetic concealer, smooth plastic skin, beauty filter, watermark, text overlay, arrows, annotation, duplicate face, extra eyes, distorted facial anatomy, out of focus lesion, heavy crust, thick scale, raised ring rash, collage

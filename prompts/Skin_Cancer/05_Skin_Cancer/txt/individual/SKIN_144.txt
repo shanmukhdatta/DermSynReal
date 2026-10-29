@@ -1,0 +1,10 @@
+PROMPT ID: SKIN_144
+PHENOTYPE: scc_appearance
+GROUP: SKIN_G029
+SPLIT: test
+
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 68-year-old man with very deep brown skin. At the left temple, show cutaneous-squamous-cell-carcinoma-like morphology: a compact erythematous papule with densely packed white-yellow scale. Its raised border is firm-looking with no pearly translucence. Dry keratin texture is clearly visible under neutral light. Keratin and surface scale are confined to the described area. The abnormality is confined to this specified skin region. Slight right three-quarter clinical view, controlled soft studio lighting, visible natural pores, neutral background, sharp focus.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, face paint, makeup concealment, airbrushed skin, beauty filter, plastic pores, glossy cosmetic retouching, tattoo, watermark, text, label, arrows, distorted facial anatomy, duplicate face, blurred skin detail, fantasy colors, excessive artificial symmetry

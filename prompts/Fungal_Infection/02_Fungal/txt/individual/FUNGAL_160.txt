@@ -1,0 +1,11 @@
+PROMPT_ID: FUNGAL_160
+PROMPT_GROUP_ID: FUNGAL_G040
+PHENOTYPE: pityriasis_versicolor
+SPLIT: train
+CLINICAL_STATUS: PILOT_REVIEW_REQUIRED
+
+POSITIVE_PROMPT:
+Clinical facial photograph of a 24-year-old young woman with deep brown skin; front-facing clinical close-up, diffuse overhead and frontal light. Across the upper central forehead, show a pityriasis versicolor pattern: several faint salmon-pink flat oval spots with powdery scale. The color is subdued and the nearby skin is not inflamed. The pigment difference is faint and scaling is visible only close up. The patches have fine superficial scale, without a raised annular border. Use ordinary color balance, natural skin texture, and a distraction-free backdrop.
+
+NEGATIVE_PROMPT:
+illustration, painting, CGI, cartoon, plastic skin, airbrushed skin, heavy makeup, beauty filter, watermark, printed text, arrows, labels, duplicate head, extra eyes, distorted face, blurry lesion, harsh oversharpening, collage

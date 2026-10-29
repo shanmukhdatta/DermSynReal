@@ -1,0 +1,9 @@
+ID: HYPER_251
+GROUP: HYPER_G011
+SPLIT: train
+PHENOTYPE: pih_appearance
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 27-year-old woman with very dark brown skin. At the cheek-to-jaw regions on both sides, show residual post-inflammatory hyperpigmentation-like marks: scattered small oval dark-brown macules with soft but readable borders. There are no pustules, crusts or active red papules. Broader affected-area extent, while the pigmentation remains flat and localized to the named region. The discolored areas lie flat on healed skin, without active pustules, visible crust, or depressed scars. Frontal clinical face photograph, neutral soft daylight, realistic pores and skin texture, natural skin tones, plain background, no retouching.
+
+NEGATIVE PROMPT:
+cartoon, CGI, painted-on stains, makeup, face paint, beauty filter, plastic skin, airbrushing, watermark, text, arrows, annotations, duplicate face, distorted eyes, wrong facial anatomy, blurred lesions, oversaturated pigments, image collage, unrelated body rash

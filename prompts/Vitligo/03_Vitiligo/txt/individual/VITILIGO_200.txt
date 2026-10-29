@@ -1,0 +1,10 @@
+PROMPT_ID: VITILIGO_200
+GROUP_ID: VITILIGO_G040
+PHENOTYPE: non_segmental_appearance
+SPLIT: train
+
+POSITIVE PROMPT:
+Clinical photograph of a 27-year-old man with fair beige skin, showing a non-segmental facial vitiligo pattern. At the cheekbone arches on both sides, two irregular white areas follow portions of the cheekbone contours. Each contains small indentations of normally pigmented skin. The paired white regions have unequal area while remaining on both sides. Surrounding skin shows normal visible pores and fine texture. Unretouched clinical face photograph, balanced diffuse studio light. Use an unretouched photo with natural pores and accurate skin color.
+
+NEGATIVE PROMPT:
+illustration, painting, cartoon, CGI, digitally painted white mask, artificial cutout borders, face paint, cosmetic concealer, smooth plastic skin, beauty filter, watermark, text overlay, arrows, annotation, duplicate face, extra eyes, distorted facial anatomy, out of focus lesion, heavy crust, thick scale, raised ring rash, collage

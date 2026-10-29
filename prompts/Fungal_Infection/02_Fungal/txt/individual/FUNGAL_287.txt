@@ -1,0 +1,11 @@
+PROMPT_ID: FUNGAL_287
+PROMPT_GROUP_ID: FUNGAL_G047
+PHENOTYPE: tinea_faciei
+SPLIT: train
+CLINICAL_STATUS: PILOT_REVIEW_REQUIRED
+
+POSITIVE_PROMPT:
+Clinical facial photograph of a 16-year-old boy with fair beige skin; frontal face-level photograph, even diffuse daylight. On the left outer upper cheek, show a tinea faciei pattern: a diagonally oriented oval patch with one rough flaky edge and mild central fading. Its border is uneven, without uniform scaling across the whole surface. The patch edge looks pink-red with fine flaky skin. Only a small amount of fine scale outlines the patch. A neutral background and natural pores keep the skin texture visible.
+
+NEGATIVE_PROMPT:
+illustration, painting, CGI, cartoon, plastic skin, airbrushed skin, heavy makeup, beauty filter, watermark, printed text, arrows, labels, duplicate head, extra eyes, distorted face, blurry lesion, harsh oversharpening, collage

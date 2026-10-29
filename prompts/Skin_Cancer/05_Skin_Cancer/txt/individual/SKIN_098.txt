@@ -1,0 +1,10 @@
+PROMPT ID: SKIN_098
+PHENOTYPE: scc_appearance
+GROUP: SKIN_G020
+SPLIT: train
+
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 45-year-old man with light skin. At the upper forehead, show cutaneous-squamous-cell-carcinoma-like morphology: a broad reddish scaly plaque with a slightly firm raised edge. Areas of adherent dry white scale alternate with smoother red skin. The surface roughness is restricted to this one localized area. Keratin and surface scale are confined to the described area. Render the indicated skin tone without color exaggeration. Slight right three-quarter clinical view, even indirect daylight, visible natural pores, neutral background, sharp focus.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, face paint, makeup concealment, airbrushed skin, beauty filter, plastic pores, glossy cosmetic retouching, tattoo, watermark, text, label, arrows, distorted facial anatomy, duplicate face, blurred skin detail, fantasy colors, excessive artificial symmetry

@@ -1,0 +1,10 @@
+PROMPT_ID: VITILIGO_137
+GROUP_ID: VITILIGO_G028
+PHENOTYPE: non_segmental_appearance
+SPLIT: train
+
+POSITIVE PROMPT:
+Clinical photograph of a 27-year-old woman with deep brown skin, showing a non-segmental facial vitiligo pattern. At the paired upper lip skin, paired pale-white islands have scalloped edges above the lip. The vermilion and adjacent skin stay visible as separate structures. Smaller isolated white spots accompany the main bilateral patches. The white-to-normal-skin transition is distinct but not mechanically traced. Unretouched clinical face photograph, broad shadow-free clinical light. Keep true skin texture and a plain neutral background; avoid cosmetic smoothing.
+
+NEGATIVE PROMPT:
+illustration, painting, cartoon, CGI, digitally painted white mask, artificial cutout borders, face paint, cosmetic concealer, smooth plastic skin, beauty filter, watermark, text overlay, arrows, annotation, duplicate face, extra eyes, distorted facial anatomy, out of focus lesion, heavy crust, thick scale, raised ring rash, collage

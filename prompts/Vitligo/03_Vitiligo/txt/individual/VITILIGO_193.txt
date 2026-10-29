@@ -1,0 +1,10 @@
+PROMPT_ID: VITILIGO_193
+GROUP_ID: VITILIGO_G039
+PHENOTYPE: focal_undetermined_appearance
+SPLIT: train
+
+POSITIVE PROMPT:
+Clinical photograph of a 20-year-old woman with deep brown skin, showing a localized focal-appearing facial vitiligo pattern. At the left temple, one depigmented patch has a small notch of normal pigment at its edge. The surrounding skin is not inflamed. Only this small localized site is visibly affected. Surrounding skin shows normal visible pores and fine texture. Frontal clinical portrait, balanced diffuse studio light. Use soft realistic lighting and preserve the unaltered skin surface.
+
+NEGATIVE PROMPT:
+illustration, painting, cartoon, CGI, digitally painted white mask, artificial cutout borders, face paint, cosmetic concealer, smooth plastic skin, beauty filter, watermark, text overlay, arrows, annotation, duplicate face, extra eyes, distorted facial anatomy, out of focus lesion, heavy crust, thick scale, raised ring rash, collage

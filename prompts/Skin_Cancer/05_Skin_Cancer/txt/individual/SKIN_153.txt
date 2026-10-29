@@ -1,0 +1,10 @@
+PROMPT ID: SKIN_153
+PHENOTYPE: melanoma_appearance
+GROUP: SKIN_G031
+SPLIT: train
+
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 64-year-old woman with light-medium beige skin. At the left lateral forehead, show melanoma-suspicious skin lesion features: a flat irregular tan-to-dark-brown patch with asymmetric contours. The smooth surface has intermixed light and dark zones rather than scale. The mark contrasts with neighboring skin but remains naturally rendered. The surrounding skin retains natural pores; pigmentation is not painted on. Render the indicated skin tone without color exaggeration. Frontal close facial view, controlled soft studio lighting, visible natural pores, neutral background, sharp focus.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, face paint, makeup concealment, airbrushed skin, beauty filter, plastic pores, glossy cosmetic retouching, tattoo, watermark, text, label, arrows, distorted facial anatomy, duplicate face, blurred skin detail, fantasy colors, excessive artificial symmetry

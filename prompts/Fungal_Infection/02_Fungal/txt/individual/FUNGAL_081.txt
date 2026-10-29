@@ -1,0 +1,11 @@
+PROMPT_ID: FUNGAL_081
+PROMPT_GROUP_ID: FUNGAL_G021
+PHENOTYPE: tinea_faciei
+SPLIT: train
+CLINICAL_STATUS: PILOT_REVIEW_REQUIRED
+
+POSITIVE_PROMPT:
+Clinical facial photograph of a 43-year-old man with light olive skin; frontal face-level photograph, soft broad-source lighting. On the mid-left cheek, show a tinea faciei pattern: connected curved scaly borders forming an irregular lobed plaque. The interlocking arcs are organic, not a perfect geometric circle. The patch edge looks pink-red with fine flaky skin. Only a small amount of fine scale outlines the patch. Keep the affected area in focus, with realistic pores and no cosmetic smoothing.
+
+NEGATIVE_PROMPT:
+illustration, painting, CGI, cartoon, plastic skin, airbrushed skin, heavy makeup, beauty filter, watermark, printed text, arrows, labels, duplicate head, extra eyes, distorted face, blurry lesion, harsh oversharpening, collage

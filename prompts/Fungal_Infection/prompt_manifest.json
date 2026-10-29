@@ -1,0 +1,46 @@
+{
+  "name": "DermaLens Facial Fungal Morphology Prompts",
+  "release": "v3 final wording",
+  "total_records": 300,
+  "images_per_prompt": 5,
+  "potential_images": 1500,
+  "class_names": [
+    "Fungal infection"
+  ],
+  "phenotype_counts": {
+    "tinea_faciei": 150,
+    "pityriasis_versicolor": 120,
+    "angular_cheilitis_candida_unconfirmed": 30
+  },
+  "split_counts": {
+    "train": 210,
+    "test": 45,
+    "val": 45
+  },
+  "prompt_guide": {
+    "target": "approximately 100-140 SD2.1 content tokens when validated",
+    "maximum_content_tokens": 150,
+    "compel_max_chunks": 2,
+    "content_tokens_per_chunk": 75,
+    "token_validation": "PENDING exact tokenizer"
+  },
+  "canonical_json": "02_Fungal/json/fungal_all_300.json",
+  "sources": {
+    "tinea_faciei": [
+      "https://dermnetnz.org/topics/tinea-faciei",
+      "https://dermnetnz.org/topics/facial-rashes"
+    ],
+    "pityriasis_versicolor": [
+      "https://dermnetnz.org/topics/pityriasis-versicolor",
+      "https://dermnetnz.org/topics/dermoscopy-of-pityriasis-versicolor",
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC10608716/"
+    ],
+    "angular_cheilitis_candida_unconfirmed": [
+      "https://dermnetnz.org/topics/angular-cheilitis",
+      "https://www.ncbi.nlm.nih.gov/books/NBK536929/"
+    ]
+  },
+  "clinical_label_caution": "Angular cheilitis can have Candida, bacterial, irritant or mixed causes. 30 records are HOLD_FOR_DIAGNOSTIC_REVIEW and omitted from loader by default.",
+  "leakage_prevention": "All 5 related morphological variants share group and split. Generated images inherit prompt split and group ID.",
+  "synthetic_limitation": "Visual realism and clinical correctness require human review and independent real-image test evaluation."
+}

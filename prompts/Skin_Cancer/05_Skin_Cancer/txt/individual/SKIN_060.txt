@@ -1,0 +1,10 @@
+PROMPT ID: SKIN_060
+PHENOTYPE: bcc_appearance
+GROUP: SKIN_G012
+SPLIT: val
+
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 50-year-old man with very deep brown skin. At the left forehead, show basal-cell-carcinoma-like morphology: a pink raised rim surrounding a shallow central indentation. The outer edge appears pearly rather than scaly or sharply pigmented. The elevation is subtle but readable at normal photographic distance. A margin of unaffected skin surrounds the lesion. Include visible unaffected facial skin around the lesion. Frontal clinical face view, controlled soft studio lighting, visible natural pores, neutral background, sharp focus.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, face paint, makeup concealment, airbrushed skin, beauty filter, plastic pores, glossy cosmetic retouching, tattoo, watermark, text, label, arrows, distorted facial anatomy, duplicate face, blurred skin detail, fantasy colors, excessive artificial symmetry

@@ -1,0 +1,10 @@
+PROMPT ID: SKIN_203
+PHENOTYPE: melanoma_appearance
+GROUP: SKIN_G041
+SPLIT: train
+
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 29-year-old woman with deep brown skin. At the left nasal sidewall, show melanoma-suspicious skin lesion features: an irregular gray-brown flat macule with uneven pigment density. Some edges are faint while another section has a sharper dark-brown border. Pigment irregularity is visible within the localized mark. The surrounding skin retains natural pores; pigmentation is not painted on. Render the indicated skin tone without color exaggeration. Frontal close facial view, controlled soft studio lighting, visible natural pores, neutral background, sharp focus.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, face paint, makeup concealment, airbrushed skin, beauty filter, plastic pores, glossy cosmetic retouching, tattoo, watermark, text, label, arrows, distorted facial anatomy, duplicate face, blurred skin detail, fantasy colors, excessive artificial symmetry

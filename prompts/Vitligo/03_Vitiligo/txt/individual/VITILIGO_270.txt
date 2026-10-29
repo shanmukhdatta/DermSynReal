@@ -1,0 +1,10 @@
+PROMPT_ID: VITILIGO_270
+GROUP_ID: VITILIGO_G054
+PHENOTYPE: focal_undetermined_appearance
+SPLIT: train
+
+POSITIVE PROMPT:
+Clinical photograph of a 58-year-old man with medium-brown skin, showing a localized focal-appearing facial vitiligo pattern. At the skin above the outer end of the right brow, one solitary irregular patch has a chalk-white center and clean boundary. There is no scale, crust, swelling, or thickening. The localized patch occupies a moderately sized area of that facial site. The depigmented area is smooth with naturally uneven contours. Close frontal facial photograph, even neutral examination-room light. Keep true skin texture and a plain neutral background; avoid cosmetic smoothing.
+
+NEGATIVE PROMPT:
+illustration, painting, cartoon, CGI, digitally painted white mask, artificial cutout borders, face paint, cosmetic concealer, smooth plastic skin, beauty filter, watermark, text overlay, arrows, annotation, duplicate face, extra eyes, distorted facial anatomy, out of focus lesion, heavy crust, thick scale, raised ring rash, collage

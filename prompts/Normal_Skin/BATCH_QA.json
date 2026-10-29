@@ -1,0 +1,782 @@
+[
+  {
+    "batch_index": 1,
+    "ids": [
+      "NORMAL_001",
+      "NORMAL_002",
+      "NORMAL_003",
+      "NORMAL_004",
+      "NORMAL_005"
+    ],
+    "unique_morphologies": 5,
+    "unique_texts": 5,
+    "phenotype_count": 3
+  },
+  {
+    "batch_index": 2,
+    "ids": [
+      "NORMAL_006",
+      "NORMAL_007",
+      "NORMAL_008",
+      "NORMAL_009",
+      "NORMAL_010"
+    ],
+    "unique_morphologies": 5,
+    "unique_texts": 5,
+    "phenotype_count": 3
+  },
+  {
+    "batch_index": 3,
+    "ids": [
+      "NORMAL_011",
+      "NORMAL_012",
+      "NORMAL_013",
+      "NORMAL_014",
+      "NORMAL_015"
+    ],
+    "unique_morphologies": 5,
+    "unique_texts": 5,
+    "phenotype_count": 3
+  },
+  {
+    "batch_index": 4,
+    "ids": [
+      "NORMAL_016",
+      "NORMAL_017",
+      "NORMAL_018",
+      "NORMAL_019",
+      "NORMAL_020"
+    ],
+    "unique_morphologies": 5,
+    "unique_texts": 5,
+    "phenotype_count": 3
+  },
+  {
+    "batch_index": 5,
+    "ids": [
+      "NORMAL_021",
+      "NORMAL_022",
+      "NORMAL_023",
+      "NORMAL_024",
+      "NORMAL_025"
+    ],
+    "unique_morphologies": 5,
+    "unique_texts": 5,
+    "phenotype_count": 3
+  },
+  {
+    "batch_index": 6,
+    "ids": [
+      "NORMAL_026",
+      "NORMAL_027",
+      "NORMAL_028",
+      "NORMAL_029",
+      "NORMAL_030"
+    ],
+    "unique_morphologies": 5,
+    "unique_texts": 5,
+    "phenotype_count": 3
+  },
+  {
+    "batch_index": 7,
+    "ids": [
+      "NORMAL_031",
+      "NORMAL_032",
+      "NORMAL_033",
+      "NORMAL_034",
+      "NORMAL_035"
+    ],
+    "unique_morphologies": 5,
+    "unique_texts": 5,
+    "phenotype_count": 3
+  },
+  {
+    "batch_index": 8,
+    "ids": [
+      "NORMAL_036",
+      "NORMAL_037",
+      "NORMAL_038",
+      "NORMAL_039",
+      "NORMAL_040"
+    ],
+    "unique_morphologies": 5,
+    "unique_texts": 5,
+    "phenotype_count": 3
+  },
+  {
+    "batch_index": 9,
+    "ids": [
+      "NORMAL_041",
+      "NORMAL_042",
+      "NORMAL_043",
+      "NORMAL_044",
+      "NORMAL_045"
+    ],
+    "unique_morphologies": 5,
+    "unique_texts": 5,
+    "phenotype_count": 3
+  },
+  {
+    "batch_index": 10,
+    "ids": [
+      "NORMAL_046",
+      "NORMAL_047",
+      "NORMAL_048",
+      "NORMAL_049",
+      "NORMAL_050"
+    ],
+    "unique_morphologies": 5,
+    "unique_texts": 5,
+    "phenotype_count": 3
+  },
+  {
+    "batch_index": 11,
+    "ids": [
+      "NORMAL_051",
+      "NORMAL_052",
+      "NORMAL_053",
+      "NORMAL_054",
+      "NORMAL_055"
+    ],
+    "unique_morphologies": 5,
+    "unique_texts": 5,
+    "phenotype_count": 3
+  },
+  {
+    "batch_index": 12,
+    "ids": [
+      "NORMAL_056",
+      "NORMAL_057",
+      "NORMAL_058",
+      "NORMAL_059",
+      "NORMAL_060"
+    ],
+    "unique_morphologies": 5,
+    "unique_texts": 5,
+    "phenotype_count": 3
+  },
+  {
+    "batch_index": 13,
+    "ids": [
+      "NORMAL_061",
+      "NORMAL_062",
+      "NORMAL_063",
+      "NORMAL_064",
+      "NORMAL_065"
+    ],
+    "unique_morphologies": 5,
+    "unique_texts": 5,
+    "phenotype_count": 3
+  },
+  {
+    "batch_index": 14,
+    "ids": [
+      "NORMAL_066",
+      "NORMAL_067",
+      "NORMAL_068",
+      "NORMAL_069",
+      "NORMAL_070"
+    ],
+    "unique_morphologies": 5,
+    "unique_texts": 5,
+    "phenotype_count": 3
+  },
+  {
+    "batch_index": 15,
+    "ids": [
+      "NORMAL_071",
+      "NORMAL_072",
+      "NORMAL_073",
+      "NORMAL_074",
+      "NORMAL_075"
+    ],
+    "unique_morphologies": 5,
+    "unique_texts": 5,
+    "phenotype_count": 3
+  },
+  {
+    "batch_index": 16,
+    "ids": [
+      "NORMAL_076",
+      "NORMAL_077",
+      "NORMAL_078",
+      "NORMAL_079",
+      "NORMAL_080"
+    ],
+    "unique_morphologies": 5,
+    "unique_texts": 5,
+    "phenotype_count": 3
+  },
+  {
+    "batch_index": 17,
+    "ids": [
+      "NORMAL_081",
+      "NORMAL_082",
+      "NORMAL_083",
+      "NORMAL_084",
+      "NORMAL_085"
+    ],
+    "unique_morphologies": 5,
+    "unique_texts": 5,
+    "phenotype_count": 3
+  },
+  {
+    "batch_index": 18,
+    "ids": [
+      "NORMAL_086",
+      "NORMAL_087",
+      "NORMAL_088",
+      "NORMAL_089",
+      "NORMAL_090"
+    ],
+    "unique_morphologies": 5,
+    "unique_texts": 5,
+    "phenotype_count": 3
+  },
+  {
+    "batch_index": 19,
+    "ids": [
+      "NORMAL_091",
+      "NORMAL_092",
+      "NORMAL_093",
+      "NORMAL_094",
+      "NORMAL_095"
+    ],
+    "unique_morphologies": 5,
+    "unique_texts": 5,
+    "phenotype_count": 3
+  },
+  {
+    "batch_index": 20,
+    "ids": [
+      "NORMAL_096",
+      "NORMAL_097",
+      "NORMAL_098",
+      "NORMAL_099",
+      "NORMAL_100"
+    ],
+    "unique_morphologies": 5,
+    "unique_texts": 5,
+    "phenotype_count": 3
+  },
+  {
+    "batch_index": 21,
+    "ids": [
+      "NORMAL_101",
+      "NORMAL_102",
+      "NORMAL_103",
+      "NORMAL_104",
+      "NORMAL_105"
+    ],
+    "unique_morphologies": 5,
+    "unique_texts": 5,
+    "phenotype_count": 3
+  },
+  {
+    "batch_index": 22,
+    "ids": [
+      "NORMAL_106",
+      "NORMAL_107",
+      "NORMAL_108",
+      "NORMAL_109",
+      "NORMAL_110"
+    ],
+    "unique_morphologies": 5,
+    "unique_texts": 5,
+    "phenotype_count": 3
+  },
+  {
+    "batch_index": 23,
+    "ids": [
+      "NORMAL_111",
+      "NORMAL_112",
+      "NORMAL_113",
+      "NORMAL_114",
+      "NORMAL_115"
+    ],
+    "unique_morphologies": 5,
+    "unique_texts": 5,
+    "phenotype_count": 3
+  },
+  {
+    "batch_index": 24,
+    "ids": [
+      "NORMAL_116",
+      "NORMAL_117",
+      "NORMAL_118",
+      "NORMAL_119",
+      "NORMAL_120"
+    ],
+    "unique_morphologies": 5,
+    "unique_texts": 5,
+    "phenotype_count": 3
+  },
+  {
+    "batch_index": 25,
+    "ids": [
+      "NORMAL_121",
+      "NORMAL_122",
+      "NORMAL_123",
+      "NORMAL_124",
+      "NORMAL_125"
+    ],
+    "unique_morphologies": 5,
+    "unique_texts": 5,
+    "phenotype_count": 3
+  },
+  {
+    "batch_index": 26,
+    "ids": [
+      "NORMAL_126",
+      "NORMAL_127",
+      "NORMAL_128",
+      "NORMAL_129",
+      "NORMAL_130"
+    ],
+    "unique_morphologies": 5,
+    "unique_texts": 5,
+    "phenotype_count": 3
+  },
+  {
+    "batch_index": 27,
+    "ids": [
+      "NORMAL_131",
+      "NORMAL_132",
+      "NORMAL_133",
+      "NORMAL_134",
+      "NORMAL_135"
+    ],
+    "unique_morphologies": 5,
+    "unique_texts": 5,
+    "phenotype_count": 3
+  },
+  {
+    "batch_index": 28,
+    "ids": [
+      "NORMAL_136",
+      "NORMAL_137",
+      "NORMAL_138",
+      "NORMAL_139",
+      "NORMAL_140"
+    ],
+    "unique_morphologies": 5,
+    "unique_texts": 5,
+    "phenotype_count": 3
+  },
+  {
+    "batch_index": 29,
+    "ids": [
+      "NORMAL_141",
+      "NORMAL_142",
+      "NORMAL_143",
+      "NORMAL_144",
+      "NORMAL_145"
+    ],
+    "unique_morphologies": 5,
+    "unique_texts": 5,
+    "phenotype_count": 3
+  },
+  {
+    "batch_index": 30,
+    "ids": [
+      "NORMAL_146",
+      "NORMAL_147",
+      "NORMAL_148",
+      "NORMAL_149",
+      "NORMAL_150"
+    ],
+    "unique_morphologies": 5,
+    "unique_texts": 5,
+    "phenotype_count": 3
+  },
+  {
+    "batch_index": 31,
+    "ids": [
+      "NORMAL_151",
+      "NORMAL_152",
+      "NORMAL_153",
+      "NORMAL_154",
+      "NORMAL_155"
+    ],
+    "unique_morphologies": 5,
+    "unique_texts": 5,
+    "phenotype_count": 3
+  },
+  {
+    "batch_index": 32,
+    "ids": [
+      "NORMAL_156",
+      "NORMAL_157",
+      "NORMAL_158",
+      "NORMAL_159",
+      "NORMAL_160"
+    ],
+    "unique_morphologies": 5,
+    "unique_texts": 5,
+    "phenotype_count": 3
+  },
+  {
+    "batch_index": 33,
+    "ids": [
+      "NORMAL_161",
+      "NORMAL_162",
+      "NORMAL_163",
+      "NORMAL_164",
+      "NORMAL_165"
+    ],
+    "unique_morphologies": 5,
+    "unique_texts": 5,
+    "phenotype_count": 3
+  },
+  {
+    "batch_index": 34,
+    "ids": [
+      "NORMAL_166",
+      "NORMAL_167",
+      "NORMAL_168",
+      "NORMAL_169",
+      "NORMAL_170"
+    ],
+    "unique_morphologies": 5,
+    "unique_texts": 5,
+    "phenotype_count": 3
+  },
+  {
+    "batch_index": 35,
+    "ids": [
+      "NORMAL_171",
+      "NORMAL_172",
+      "NORMAL_173",
+      "NORMAL_174",
+      "NORMAL_175"
+    ],
+    "unique_morphologies": 5,
+    "unique_texts": 5,
+    "phenotype_count": 3
+  },
+  {
+    "batch_index": 36,
+    "ids": [
+      "NORMAL_176",
+      "NORMAL_177",
+      "NORMAL_178",
+      "NORMAL_179",
+      "NORMAL_180"
+    ],
+    "unique_morphologies": 5,
+    "unique_texts": 5,
+    "phenotype_count": 3
+  },
+  {
+    "batch_index": 37,
+    "ids": [
+      "NORMAL_181",
+      "NORMAL_182",
+      "NORMAL_183",
+      "NORMAL_184",
+      "NORMAL_185"
+    ],
+    "unique_morphologies": 5,
+    "unique_texts": 5,
+    "phenotype_count": 3
+  },
+  {
+    "batch_index": 38,
+    "ids": [
+      "NORMAL_186",
+      "NORMAL_187",
+      "NORMAL_188",
+      "NORMAL_189",
+      "NORMAL_190"
+    ],
+    "unique_morphologies": 5,
+    "unique_texts": 5,
+    "phenotype_count": 3
+  },
+  {
+    "batch_index": 39,
+    "ids": [
+      "NORMAL_191",
+      "NORMAL_192",
+      "NORMAL_193",
+      "NORMAL_194",
+      "NORMAL_195"
+    ],
+    "unique_morphologies": 5,
+    "unique_texts": 5,
+    "phenotype_count": 3
+  },
+  {
+    "batch_index": 40,
+    "ids": [
+      "NORMAL_196",
+      "NORMAL_197",
+      "NORMAL_198",
+      "NORMAL_199",
+      "NORMAL_200"
+    ],
+    "unique_morphologies": 5,
+    "unique_texts": 5,
+    "phenotype_count": 3
+  },
+  {
+    "batch_index": 41,
+    "ids": [
+      "NORMAL_201",
+      "NORMAL_202",
+      "NORMAL_203",
+      "NORMAL_204",
+      "NORMAL_205"
+    ],
+    "unique_morphologies": 5,
+    "unique_texts": 5,
+    "phenotype_count": 3
+  },
+  {
+    "batch_index": 42,
+    "ids": [
+      "NORMAL_206",
+      "NORMAL_207",
+      "NORMAL_208",
+      "NORMAL_209",
+      "NORMAL_210"
+    ],
+    "unique_morphologies": 5,
+    "unique_texts": 5,
+    "phenotype_count": 3
+  },
+  {
+    "batch_index": 43,
+    "ids": [
+      "NORMAL_211",
+      "NORMAL_212",
+      "NORMAL_213",
+      "NORMAL_214",
+      "NORMAL_215"
+    ],
+    "unique_morphologies": 5,
+    "unique_texts": 5,
+    "phenotype_count": 3
+  },
+  {
+    "batch_index": 44,
+    "ids": [
+      "NORMAL_216",
+      "NORMAL_217",
+      "NORMAL_218",
+      "NORMAL_219",
+      "NORMAL_220"
+    ],
+    "unique_morphologies": 5,
+    "unique_texts": 5,
+    "phenotype_count": 3
+  },
+  {
+    "batch_index": 45,
+    "ids": [
+      "NORMAL_221",
+      "NORMAL_222",
+      "NORMAL_223",
+      "NORMAL_224",
+      "NORMAL_225"
+    ],
+    "unique_morphologies": 5,
+    "unique_texts": 5,
+    "phenotype_count": 3
+  },
+  {
+    "batch_index": 46,
+    "ids": [
+      "NORMAL_226",
+      "NORMAL_227",
+      "NORMAL_228",
+      "NORMAL_229",
+      "NORMAL_230"
+    ],
+    "unique_morphologies": 5,
+    "unique_texts": 5,
+    "phenotype_count": 3
+  },
+  {
+    "batch_index": 47,
+    "ids": [
+      "NORMAL_231",
+      "NORMAL_232",
+      "NORMAL_233",
+      "NORMAL_234",
+      "NORMAL_235"
+    ],
+    "unique_morphologies": 5,
+    "unique_texts": 5,
+    "phenotype_count": 3
+  },
+  {
+    "batch_index": 48,
+    "ids": [
+      "NORMAL_236",
+      "NORMAL_237",
+      "NORMAL_238",
+      "NORMAL_239",
+      "NORMAL_240"
+    ],
+    "unique_morphologies": 5,
+    "unique_texts": 5,
+    "phenotype_count": 3
+  },
+  {
+    "batch_index": 49,
+    "ids": [
+      "NORMAL_241",
+      "NORMAL_242",
+      "NORMAL_243",
+      "NORMAL_244",
+      "NORMAL_245"
+    ],
+    "unique_morphologies": 5,
+    "unique_texts": 5,
+    "phenotype_count": 3
+  },
+  {
+    "batch_index": 50,
+    "ids": [
+      "NORMAL_246",
+      "NORMAL_247",
+      "NORMAL_248",
+      "NORMAL_249",
+      "NORMAL_250"
+    ],
+    "unique_morphologies": 5,
+    "unique_texts": 5,
+    "phenotype_count": 3
+  },
+  {
+    "batch_index": 51,
+    "ids": [
+      "NORMAL_251",
+      "NORMAL_252",
+      "NORMAL_253",
+      "NORMAL_254",
+      "NORMAL_255"
+    ],
+    "unique_morphologies": 5,
+    "unique_texts": 5,
+    "phenotype_count": 3
+  },
+  {
+    "batch_index": 52,
+    "ids": [
+      "NORMAL_256",
+      "NORMAL_257",
+      "NORMAL_258",
+      "NORMAL_259",
+      "NORMAL_260"
+    ],
+    "unique_morphologies": 5,
+    "unique_texts": 5,
+    "phenotype_count": 3
+  },
+  {
+    "batch_index": 53,
+    "ids": [
+      "NORMAL_261",
+      "NORMAL_262",
+      "NORMAL_263",
+      "NORMAL_264",
+      "NORMAL_265"
+    ],
+    "unique_morphologies": 5,
+    "unique_texts": 5,
+    "phenotype_count": 3
+  },
+  {
+    "batch_index": 54,
+    "ids": [
+      "NORMAL_266",
+      "NORMAL_267",
+      "NORMAL_268",
+      "NORMAL_269",
+      "NORMAL_270"
+    ],
+    "unique_morphologies": 5,
+    "unique_texts": 5,
+    "phenotype_count": 3
+  },
+  {
+    "batch_index": 55,
+    "ids": [
+      "NORMAL_271",
+      "NORMAL_272",
+      "NORMAL_273",
+      "NORMAL_274",
+      "NORMAL_275"
+    ],
+    "unique_morphologies": 5,
+    "unique_texts": 5,
+    "phenotype_count": 3
+  },
+  {
+    "batch_index": 56,
+    "ids": [
+      "NORMAL_276",
+      "NORMAL_277",
+      "NORMAL_278",
+      "NORMAL_279",
+      "NORMAL_280"
+    ],
+    "unique_morphologies": 5,
+    "unique_texts": 5,
+    "phenotype_count": 3
+  },
+  {
+    "batch_index": 57,
+    "ids": [
+      "NORMAL_281",
+      "NORMAL_282",
+      "NORMAL_283",
+      "NORMAL_284",
+      "NORMAL_285"
+    ],
+    "unique_morphologies": 5,
+    "unique_texts": 5,
+    "phenotype_count": 3
+  },
+  {
+    "batch_index": 58,
+    "ids": [
+      "NORMAL_286",
+      "NORMAL_287",
+      "NORMAL_288",
+      "NORMAL_289",
+      "NORMAL_290"
+    ],
+    "unique_morphologies": 5,
+    "unique_texts": 5,
+    "phenotype_count": 3
+  },
+  {
+    "batch_index": 59,
+    "ids": [
+      "NORMAL_291",
+      "NORMAL_292",
+      "NORMAL_293",
+      "NORMAL_294",
+      "NORMAL_295"
+    ],
+    "unique_morphologies": 5,
+    "unique_texts": 5,
+    "phenotype_count": 3
+  },
+  {
+    "batch_index": 60,
+    "ids": [
+      "NORMAL_296",
+      "NORMAL_297",
+      "NORMAL_298",
+      "NORMAL_299",
+      "NORMAL_300"
+    ],
+    "unique_morphologies": 5,
+    "unique_texts": 5,
+    "phenotype_count": 3
+  }
+]

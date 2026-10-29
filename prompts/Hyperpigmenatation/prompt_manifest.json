@@ -1,0 +1,45 @@
+{
+  "dataset": "DermaLens facial hyperpigmentation morphology prompts",
+  "version": "1.0.0",
+  "class_name": "Hyperpigmentation",
+  "count": 300,
+  "csv_batches": 3,
+  "phenotype_counts": {
+    "melasma_appearance": 100,
+    "pih_appearance": 100,
+    "solar_lentigines_appearance": 100
+  },
+  "split_counts": {
+    "val": 45,
+    "train": 210,
+    "test": 45
+  },
+  "variation_counts": {
+    "V1": 60,
+    "V2": 60,
+    "V3": 60,
+    "V4": 60,
+    "V5": 60
+  },
+  "sex_descriptor_counts": {
+    "female": 150,
+    "male": 150
+  },
+  "fitzpatrick_reference_counts": {
+    "V": 50,
+    "VI": 50,
+    "III": 50,
+    "II": 50,
+    "IV": 50,
+    "I": 50
+  },
+  "recommended_images_per_prompt": 5,
+  "expected_candidate_images": 1500,
+  "preferred_inference_source": "04_Hyperpigmentation/json/hyperpigmentation_all_300.json",
+  "positive_prompt_content_token_cap": 150,
+  "conditioning_chunks_max": 2,
+  "exact_tokenizer_validation": "NOT_PERFORMED_OFFLINE",
+  "appearance_labels_not_diagnoses": true,
+  "image_generation_not_performed": true,
+  "note": "Do not claim solar lentigines are diagnostically confirmed by visual appearance alone, and do not claim PIH cause without history. Synthetic evaluation needs held-out real examples."
+}

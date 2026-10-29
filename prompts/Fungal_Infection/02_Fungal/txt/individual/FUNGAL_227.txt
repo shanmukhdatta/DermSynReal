@@ -1,0 +1,11 @@
+PROMPT_ID: FUNGAL_227
+PROMPT_GROUP_ID: FUNGAL_G047
+PHENOTYPE: tinea_faciei
+SPLIT: train
+CLINICAL_STATUS: PILOT_REVIEW_REQUIRED
+
+POSITIVE_PROMPT:
+Clinical facial photograph of a 35-year-old man with deep brown skin; frontal face-level photograph, neutral examination-room lighting. On the left outer upper cheek, show a tinea faciei pattern: a diagonally oriented oval patch with one rough flaky edge and mild central fading. Its border is uneven, without uniform scaling across the whole surface. The edge looks dusky reddish-brown against the natural skin tone. The outer rim is clearly visible but the lesion remains localized. The photograph has realistic skin texture, no beauty retouching, and an uncluttered background.
+
+NEGATIVE_PROMPT:
+illustration, painting, CGI, cartoon, plastic skin, airbrushed skin, heavy makeup, beauty filter, watermark, printed text, arrows, labels, duplicate head, extra eyes, distorted face, blurry lesion, harsh oversharpening, collage

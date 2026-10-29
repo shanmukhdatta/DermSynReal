@@ -1,0 +1,9 @@
+ID: HYPER_239
+GROUP: HYPER_G059
+SPLIT: train
+PHENOTYPE: pih_appearance
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 28-year-old woman with deep brown skin. At the lower jaw and chin skin, show residual post-inflammatory hyperpigmentation-like marks: a flat localized dark-tan patch with subtly jagged uneven contours. The pigmentation has no raised edge or surface scaling. Low affected-area extent, with some unaffected skin beside the residual marks. The discolored areas lie flat on healed skin, without active pustules, visible crust, or depressed scars. Face-level neutral clinical photo, balanced diffuse neutral lighting, realistic pores and skin texture, natural skin tones, plain background, no retouching.
+
+NEGATIVE PROMPT:
+cartoon, CGI, painted-on stains, makeup, face paint, beauty filter, plastic skin, airbrushing, watermark, text, arrows, annotations, duplicate face, distorted eyes, wrong facial anatomy, blurred lesions, oversaturated pigments, image collage, unrelated body rash

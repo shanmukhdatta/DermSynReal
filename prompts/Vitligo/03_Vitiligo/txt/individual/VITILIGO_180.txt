@@ -1,0 +1,10 @@
+PROMPT_ID: VITILIGO_180
+GROUP_ID: VITILIGO_G036
+PHENOTYPE: focal_undetermined_appearance
+SPLIT: train
+
+POSITIVE PROMPT:
+Clinical photograph of a 57-year-old man with medium-brown skin, showing a localized focal-appearing facial vitiligo pattern. At the right lower lip skin, a small white area has three gentle outward projections. The depigmented zone is flat with an intact surface. The white region remains a single limited focus rather than a widespread pattern. The whitened region has no scale and lies level with the rest of the face. Front-facing dermatology photograph, soft indirect window light. Keep the lesion in sharp focus, with neutral white balance and no retouching.
+
+NEGATIVE PROMPT:
+illustration, painting, cartoon, CGI, digitally painted white mask, artificial cutout borders, face paint, cosmetic concealer, smooth plastic skin, beauty filter, watermark, text overlay, arrows, annotation, duplicate face, extra eyes, distorted facial anatomy, out of focus lesion, heavy crust, thick scale, raised ring rash, collage

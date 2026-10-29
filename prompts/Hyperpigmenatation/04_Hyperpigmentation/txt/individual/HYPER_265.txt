@@ -1,0 +1,9 @@
+ID: HYPER_265
+GROUP: HYPER_G025
+SPLIT: test
+PHENOTYPE: melasma_appearance
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 38-year-old woman with medium-brown skin. At the skin below both cheekbones, show melasma-like facial hyperpigmentation: bilateral oval-to-irregular brown patches with softly uneven perimeters. The right and left patches differ slightly in size despite their matching regions. Moderate extent, several irregular patches occupy part of the specified region. The pigmentation is flat, with no raised border, crust or scale; both sides are broadly but not perfectly symmetrical. Frontal clinical face photograph, broad shadow-free examination lighting, realistic pores and skin texture, natural skin tones, plain background, no retouching.
+
+NEGATIVE PROMPT:
+cartoon, CGI, painted-on stains, makeup, face paint, beauty filter, plastic skin, airbrushing, watermark, text, arrows, annotations, duplicate face, distorted eyes, wrong facial anatomy, blurred lesions, oversaturated pigments, image collage, unrelated body rash

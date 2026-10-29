@@ -1,0 +1,11 @@
+PROMPT_ID: FUNGAL_282
+PROMPT_GROUP_ID: FUNGAL_G042
+PHENOTYPE: tinea_faciei
+SPLIT: test
+CLINICAL_STATUS: PILOT_REVIEW_REQUIRED
+
+POSITIVE_PROMPT:
+Clinical facial photograph of a 38-year-old woman with light olive skin; frontal face-level photograph, balanced shadow-free lighting. On the left cheek near the ear, show a tinea faciei pattern: a partial annular plaque with short runs of fine papules and superficial flakes. The arc has an uneven contour, not a sharply drawn ring. The patch edge looks pink-red with fine flaky skin. The outer rim is clearly visible but the lesion remains localized. The background is plain; skin detail is unretouched and sharply focused.
+
+NEGATIVE_PROMPT:
+illustration, painting, CGI, cartoon, plastic skin, airbrushed skin, heavy makeup, beauty filter, watermark, printed text, arrows, labels, duplicate head, extra eyes, distorted face, blurry lesion, harsh oversharpening, collage

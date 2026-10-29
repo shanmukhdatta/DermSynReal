@@ -1,0 +1,18 @@
+PASS: Notebook JSON, code compilation
+Usable images: 26
+Provisional groups: 24
+PASS: Image scanning and flip-aware duplicate grouping
+Split policy: AUTO_SPLIT provisional groups | train images: 18 | manifest: /tmp/tmpjptz04pj/output/split_manifest.csv
+PASS: Provisional train/val/test group isolation and CSV manifest
+Captioned training images: 18 | metadata: /tmp/tmpjptz04pj/prepared/metadata.csv
+PASS: ImageFolder metadata paths, captions and image decoding
+one: 3 content tokens, 1 CLIP chunk(s)
+negative: 3 content tokens, 1 CLIP chunk(s)
+boundary 150: 150 content tokens, 2 CLIP chunk(s)
+PASS: Compel control-flow mocks, 150/151 boundary, two-chunk padding
+a: 3 content tokens, 1 CLIP chunk(s)
+b: 150 content tokens, 2 CLIP chunk(s)
+Saved: 10 images, seconds: 0.0
+PASS: CPU-mocked five images per prompt, metadata JSONL and embedded conditioning
+PASS: Official trainer CLI static configuration
+RESULT: ALL AVAILABLE OFFLINE CHECKS PASSED; actual dependencies, GPU model loading and training NOT executed.

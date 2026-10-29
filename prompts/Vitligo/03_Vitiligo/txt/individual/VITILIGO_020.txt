@@ -1,0 +1,10 @@
+PROMPT_ID: VITILIGO_020
+GROUP_ID: VITILIGO_G004
+PHENOTYPE: non_segmental_appearance
+SPLIT: train
+
+POSITIVE PROMPT:
+Clinical photograph of a 27-year-old man with fair beige skin, showing a non-segmental facial vitiligo pattern. At the lower perioral skin on both sides, separate chalk-white islands form a paired distribution around the mouth. Normal pigmented skin remains between the islands. The depigmented regions occupy a noticeable but localized part of both sides. The depigmented area is smooth with naturally uneven contours. Close frontal facial photograph, even neutral examination-room light. Keep true skin texture and a plain neutral background; avoid cosmetic smoothing.
+
+NEGATIVE PROMPT:
+illustration, painting, cartoon, CGI, digitally painted white mask, artificial cutout borders, face paint, cosmetic concealer, smooth plastic skin, beauty filter, watermark, text overlay, arrows, annotation, duplicate face, extra eyes, distorted facial anatomy, out of focus lesion, heavy crust, thick scale, raised ring rash, collage

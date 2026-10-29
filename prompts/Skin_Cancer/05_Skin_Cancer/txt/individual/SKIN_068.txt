@@ -1,0 +1,10 @@
+PROMPT ID: SKIN_068
+PHENOTYPE: bcc_appearance
+GROUP: SKIN_G014
+SPLIT: test
+
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 50-year-old man with light skin. At the right cheekbone, show basal-cell-carcinoma-like morphology: a thin irregular salmon-pink patch with a glossy partial border. One edge is slightly elevated while the center remains flat. The elevation is subtle but readable at normal photographic distance. A margin of unaffected skin surrounds the lesion. Render the indicated skin tone without color exaggeration. Frontal clinical face view, soft diffuse examination-room light, visible natural pores, neutral background, sharp focus.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, face paint, makeup concealment, airbrushed skin, beauty filter, plastic pores, glossy cosmetic retouching, tattoo, watermark, text, label, arrows, distorted facial anatomy, duplicate face, blurred skin detail, fantasy colors, excessive artificial symmetry

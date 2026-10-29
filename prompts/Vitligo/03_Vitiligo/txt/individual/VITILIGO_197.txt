@@ -1,0 +1,10 @@
+PROMPT_ID: VITILIGO_197
+GROUP_ID: VITILIGO_G040
+PHENOTYPE: non_segmental_appearance
+SPLIT: train
+
+POSITIVE PROMPT:
+Clinical photograph of a 38-year-old woman with deep brown skin, showing a non-segmental facial vitiligo pattern. At both malar prominences, two irregular white areas follow portions of the cheekbone contours. Each contains small indentations of normally pigmented skin. Several adjacent white spots create a somewhat wider bilateral pattern. The depigmented area is smooth with naturally uneven contours. Frontal clinical portrait, even neutral examination-room light. Keep the lesion in sharp focus, with neutral white balance and no retouching.
+
+NEGATIVE PROMPT:
+illustration, painting, cartoon, CGI, digitally painted white mask, artificial cutout borders, face paint, cosmetic concealer, smooth plastic skin, beauty filter, watermark, text overlay, arrows, annotation, duplicate face, extra eyes, distorted facial anatomy, out of focus lesion, heavy crust, thick scale, raised ring rash, collage

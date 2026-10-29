@@ -1,0 +1,9 @@
+ID: HYPER_154
+GROUP: HYPER_G034
+SPLIT: train
+PHENOTYPE: melasma_appearance
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 32-year-old man with light olive skin. At both upper cheeks, show melasma-like facial hyperpigmentation: patchy tan and medium-brown tones within the same bilateral distribution. Both shades blend subtly, leaving visible skin pores. Moderate extent, several irregular patches occupy part of the specified region. The pigmentation is flat, with no raised border, crust or scale; both sides are broadly but not perfectly symmetrical. Slight three-quarter clinical face view, neutral soft daylight, realistic pores and skin texture, natural skin tones, plain background, no retouching.
+
+NEGATIVE PROMPT:
+cartoon, CGI, painted-on stains, makeup, face paint, beauty filter, plastic skin, airbrushing, watermark, text, arrows, annotations, duplicate face, distorted eyes, wrong facial anatomy, blurred lesions, oversaturated pigments, image collage, unrelated body rash

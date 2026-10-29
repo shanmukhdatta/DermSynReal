@@ -1,0 +1,10 @@
+PROMPT_ID: VITILIGO_097
+GROUP_ID: VITILIGO_G020
+PHENOTYPE: segmental_appearance
+SPLIT: train
+
+POSITIVE PROMPT:
+Clinical photograph of a 24-year-old woman with light olive skin, showing a unilateral segmental facial vitiligo pattern. At the left brow-to-temple skin, small separated depigmented macules align in a short curved chain. The sequence follows a facial region without being a straight painted stripe. The patch occupies a narrow unilateral facial zone. The depigmented area is smooth with naturally uneven contours. Frontal clinical portrait, even neutral examination-room light. Keep the lesion in sharp focus, with neutral white balance and no retouching.
+
+NEGATIVE PROMPT:
+illustration, painting, cartoon, CGI, digitally painted white mask, artificial cutout borders, face paint, cosmetic concealer, smooth plastic skin, beauty filter, watermark, text overlay, arrows, annotation, duplicate face, extra eyes, distorted facial anatomy, out of focus lesion, heavy crust, thick scale, raised ring rash, collage

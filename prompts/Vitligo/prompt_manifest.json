@@ -1,0 +1,31 @@
+{
+  "dataset": "DermaLens SD 2.1 Facial Vitiligo Morphological Prompts",
+  "version": "1.0",
+  "class_name": "Vitiligo",
+  "total_prompts": 300,
+  "prompt_groups": 60,
+  "images_per_prompt": 5,
+  "planned_images": 1500,
+  "distribution": {
+    "non_segmental_appearance": 120,
+    "segmental_appearance": 90,
+    "focal_undetermined_appearance": 90
+  },
+  "split": {
+    "train": 210,
+    "val": 45,
+    "test": 45
+  },
+  "splitting_policy": "group-wise by prompt_group_id; all seed images from the same prompt inherit split",
+  "max_positive_prompt_content_tokens": 150,
+  "long_prompt_method": "Compel with truncate_long_prompts=False and at most 2 text chunks",
+  "exact_tokenization": "PENDING_ON_KAGGLE_WITH_THE_EXACT_PIPELINE_TOKENIZER",
+  "clinical_quality": "appearance prompts grounded in reference descriptions; expert review and visual outputs not yet assessed",
+  "main_json": "03_Vitiligo/json/vitiligo_all_300.json",
+  "references": [
+    "https://dermnetnz.org/topics/vitiligo",
+    "https://www.aad.org/public/diseases/a-z/vitiligo-symptoms",
+    "https://www.ncbi.nlm.nih.gov/books/NBK559149/",
+    "https://onlinelibrary.wiley.com/doi/10.1111/jdv.19451"
+  ]
+}

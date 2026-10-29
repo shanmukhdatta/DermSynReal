@@ -1,0 +1,10 @@
+PROMPT ID: SKIN_231
+PHENOTYPE: ak_precancerous_appearance
+GROUP: SKIN_G047
+SPLIT: train
+
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 45-year-old woman with light-medium beige skin. At the left temple, show actinic-keratosis-like sun-damaged skin features: a faint red irregular macule with gritty white scale. The patch is nearly flat and its roughness is localized. The localized surface scale is easy to distinguish. Dry surface scale remains confined to the described patch or spots. A natural resting facial expression. Slight right three-quarter clinical view, even neutral clinical lighting, visible natural pores, neutral background, sharp focus.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, face paint, makeup concealment, airbrushed skin, beauty filter, plastic pores, glossy cosmetic retouching, tattoo, watermark, text, label, arrows, distorted facial anatomy, duplicate face, blurred skin detail, fantasy colors, excessive artificial symmetry

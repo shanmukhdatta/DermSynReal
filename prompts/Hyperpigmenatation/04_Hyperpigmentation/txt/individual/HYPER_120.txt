@@ -1,0 +1,9 @@
+ID: HYPER_120
+GROUP: HYPER_G060
+SPLIT: val
+PHENOTYPE: solar_lentigines_appearance
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 84-year-old man with fair beige skin. At the left upper cheek and temple, show solar lentigo-like benign-appearing pigmented macules: several distinct flat tan-brown macules near one another. The cluster remains a collection of separate spots, not diffuse melasma. Moderate affected area; the described macules are clearly visible on this facial site. The marks remain discrete and predominantly uniform in color; no bleeding, irregular multicolor change or ulceration. Realistic close facial photograph, balanced diffuse neutral lighting, realistic pores and skin texture, natural skin tones, plain background, no retouching.
+
+NEGATIVE PROMPT:
+cartoon, CGI, painted-on stains, makeup, face paint, beauty filter, plastic skin, airbrushing, watermark, text, arrows, annotations, duplicate face, distorted eyes, wrong facial anatomy, blurred lesions, oversaturated pigments, image collage, unrelated body rash

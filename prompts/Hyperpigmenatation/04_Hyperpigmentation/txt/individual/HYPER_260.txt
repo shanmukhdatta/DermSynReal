@@ -1,0 +1,9 @@
+ID: HYPER_260
+GROUP: HYPER_G020
+SPLIT: val
+PHENOTYPE: pih_appearance
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 21-year-old man with light olive skin. At the left and right lower cheeks, show residual post-inflammatory hyperpigmentation-like marks: faint tan-brown spots with uneven fading intensity. The discoloration is flat without pits or elevated scars. Moderate affected-area extent, with distinct flat marks across part of the named region. The discolored areas lie flat on healed skin, without active pustules, visible crust, or depressed scars. Unretouched face-level dermatology photograph, balanced diffuse neutral lighting, realistic pores and skin texture, natural skin tones, plain background, no retouching.
+
+NEGATIVE PROMPT:
+cartoon, CGI, painted-on stains, makeup, face paint, beauty filter, plastic skin, airbrushing, watermark, text, arrows, annotations, duplicate face, distorted eyes, wrong facial anatomy, blurred lesions, oversaturated pigments, image collage, unrelated body rash

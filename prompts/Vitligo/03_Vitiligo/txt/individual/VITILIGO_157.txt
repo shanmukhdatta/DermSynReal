@@ -1,0 +1,10 @@
+PROMPT_ID: VITILIGO_157
+GROUP_ID: VITILIGO_G032
+PHENOTYPE: segmental_appearance
+SPLIT: train
+
+POSITIVE PROMPT:
+Clinical photograph of a 20-year-old woman with light olive skin, showing a unilateral segmental facial vitiligo pattern. At the left cheek near the mouth, a curved white patch has an indentation of natural skin pigment at one border. The pigment island creates a distinct inward notch. The patch occupies a narrow unilateral facial zone. The whitened region has no scale and lies level with the rest of the face. Close frontal facial photograph, soft indirect window light. Use soft realistic lighting and preserve the unaltered skin surface.
+
+NEGATIVE PROMPT:
+illustration, painting, cartoon, CGI, digitally painted white mask, artificial cutout borders, face paint, cosmetic concealer, smooth plastic skin, beauty filter, watermark, text overlay, arrows, annotation, duplicate face, extra eyes, distorted facial anatomy, out of focus lesion, heavy crust, thick scale, raised ring rash, collage

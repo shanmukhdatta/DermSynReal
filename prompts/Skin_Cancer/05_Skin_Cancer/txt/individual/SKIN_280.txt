@@ -1,0 +1,10 @@
+PROMPT ID: SKIN_280
+PHENOTYPE: ak_precancerous_appearance
+GROUP: SKIN_G056
+SPLIT: val
+
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 69-year-old man with medium brown skin. At the nose tip, show actinic-keratosis-like sun-damaged skin features: a red-pink irregular patch with fine gritty pale scale. The scale follows the contours of the exposed nasal skin. The rough dry surface texture is clearly apparent. Dry surface scale remains confined to the described patch or spots. Include visible unaffected facial skin around the lesion. Straight-on facial photograph, even indirect daylight, visible natural pores, neutral background, sharp focus.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, face paint, makeup concealment, airbrushed skin, beauty filter, plastic pores, glossy cosmetic retouching, tattoo, watermark, text, label, arrows, distorted facial anatomy, duplicate face, blurred skin detail, fantasy colors, excessive artificial symmetry

@@ -1,0 +1,11 @@
+PROMPT_ID: FUNGAL_295
+PROMPT_GROUP_ID: FUNGAL_G055
+PHENOTYPE: angular_cheilitis_candida_unconfirmed
+SPLIT: test
+CLINICAL_STATUS: HOLD_FOR_DIAGNOSTIC_REVIEW
+
+POSITIVE_PROMPT:
+Clinical facial photograph of a 43-year-old man with medium-brown skin; right three-quarter facial view, even diffuse daylight. At the right corner of the mouth, show angular cheilitis-like changes: a faint mouth-corner split bordered by dry peel and low-grade discoloration. There is no widespread lip ulceration or diffuse facial eruption. The irritated crease looks reddish-brown to dusky with a little pale peeling. The commissural fissure and local peeling are prominent but confined. The cheek skin remains ordinary and both mouth corners are visible. Keep the affected area in focus, with realistic pores and no cosmetic smoothing.
+
+NEGATIVE_PROMPT:
+illustration, painting, CGI, cartoon, plastic skin, airbrushed skin, heavy makeup, beauty filter, watermark, printed text, arrows, labels, duplicate head, extra eyes, distorted face, blurry lesion, harsh oversharpening, collage

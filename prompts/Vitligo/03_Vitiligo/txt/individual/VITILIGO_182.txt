@@ -1,0 +1,10 @@
+PROMPT_ID: VITILIGO_182
+GROUP_ID: VITILIGO_G037
+PHENOTYPE: non_segmental_appearance
+SPLIT: train
+
+POSITIVE PROMPT:
+Clinical photograph of a 27-year-old man with fair beige skin, showing a non-segmental facial vitiligo pattern. At the medial cheeks on both sides, paired angular-white areas occur beside the nose-to-cheek junctions. The spots are fully depigmented and do not have an active red border. Several adjacent white spots create a somewhat wider bilateral pattern. The whitened region has no scale and lies level with the rest of the face. Close frontal facial photograph, soft indirect window light. Use soft realistic lighting and preserve the unaltered skin surface.
+
+NEGATIVE PROMPT:
+illustration, painting, cartoon, CGI, digitally painted white mask, artificial cutout borders, face paint, cosmetic concealer, smooth plastic skin, beauty filter, watermark, text overlay, arrows, annotation, duplicate face, extra eyes, distorted facial anatomy, out of focus lesion, heavy crust, thick scale, raised ring rash, collage

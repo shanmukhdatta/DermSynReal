@@ -1,0 +1,10 @@
+PROMPT_ID: VITILIGO_187
+GROUP_ID: VITILIGO_G038
+PHENOTYPE: segmental_appearance
+SPLIT: train
+
+POSITIVE PROMPT:
+Clinical photograph of a 24-year-old woman with light olive skin, showing a unilateral segmental facial vitiligo pattern. At the left temple, two neighboring white islands are separated by a very thin pigmented strip. Their white interiors look evenly depigmented. The patch has a few nearby tiny satellite white spots on the same side. The white-to-normal-skin transition is distinct but not mechanically traced. Unretouched clinical face photograph, broad shadow-free clinical light. Keep true skin texture and a plain neutral background; avoid cosmetic smoothing.
+
+NEGATIVE PROMPT:
+illustration, painting, cartoon, CGI, digitally painted white mask, artificial cutout borders, face paint, cosmetic concealer, smooth plastic skin, beauty filter, watermark, text overlay, arrows, annotation, duplicate face, extra eyes, distorted facial anatomy, out of focus lesion, heavy crust, thick scale, raised ring rash, collage

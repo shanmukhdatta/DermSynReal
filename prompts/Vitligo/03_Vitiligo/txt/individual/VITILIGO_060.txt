@@ -1,0 +1,10 @@
+PROMPT_ID: VITILIGO_060
+GROUP_ID: VITILIGO_G012
+PHENOTYPE: focal_undetermined_appearance
+SPLIT: test
+
+POSITIVE PROMPT:
+Clinical photograph of a 49-year-old man with medium-brown skin, showing a localized focal-appearing facial vitiligo pattern. At the right lateral forehead, one round depigmented macule is clearly distinct from surrounding pigmentation. The surface is flat without redness or flakes. The white region remains a single limited focus rather than a widespread pattern. The white-to-normal-skin transition is distinct but not mechanically traced. Frontal clinical portrait, broad shadow-free clinical light. Show ordinary skin texture, an uncluttered background, and realistic anatomy.
+
+NEGATIVE PROMPT:
+illustration, painting, cartoon, CGI, digitally painted white mask, artificial cutout borders, face paint, cosmetic concealer, smooth plastic skin, beauty filter, watermark, text overlay, arrows, annotation, duplicate face, extra eyes, distorted facial anatomy, out of focus lesion, heavy crust, thick scale, raised ring rash, collage

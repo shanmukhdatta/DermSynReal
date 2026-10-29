@@ -1,0 +1,10 @@
+PROMPT ID: SKIN_210
+PHENOTYPE: melanoma_appearance
+GROUP: SKIN_G042
+SPLIT: val
+
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 55-year-old man with very deep brown skin. At the left upper cheek, show melanoma-suspicious skin lesion features: a flat irregular tan-brown patch with one small dark raised focus. The raised part is offset from the center and the patch margin is asymmetrical. Pigment irregularity is visible within the localized mark. The surrounding skin retains natural pores; pigmentation is not painted on. Include visible unaffected facial skin around the lesion. Frontal clinical face view, controlled soft studio lighting, visible natural pores, neutral background, sharp focus.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, face paint, makeup concealment, airbrushed skin, beauty filter, plastic pores, glossy cosmetic retouching, tattoo, watermark, text, label, arrows, distorted facial anatomy, duplicate face, blurred skin detail, fantasy colors, excessive artificial symmetry

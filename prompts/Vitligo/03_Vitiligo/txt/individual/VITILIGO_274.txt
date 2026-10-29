@@ -1,0 +1,10 @@
+PROMPT_ID: VITILIGO_274
+GROUP_ID: VITILIGO_G055
+PHENOTYPE: non_segmental_appearance
+SPLIT: val
+
+POSITIVE PROMPT:
+Clinical photograph of a 20-year-old man with medium-brown skin, showing a non-segmental facial vitiligo pattern. At the paired skin above the lip corners, separate white patches flank the upper lip below the nose. Pigmented gaps interrupt the white band near the middle. Smaller isolated white spots accompany the main bilateral patches. A narrow sharp border separates the white skin from adjacent pigment. Close frontal facial photograph, soft diffused daylight. Show ordinary skin texture, an uncluttered background, and realistic anatomy.
+
+NEGATIVE PROMPT:
+illustration, painting, cartoon, CGI, digitally painted white mask, artificial cutout borders, face paint, cosmetic concealer, smooth plastic skin, beauty filter, watermark, text overlay, arrows, annotation, duplicate face, extra eyes, distorted facial anatomy, out of focus lesion, heavy crust, thick scale, raised ring rash, collage

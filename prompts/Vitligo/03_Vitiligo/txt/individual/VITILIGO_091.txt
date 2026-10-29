@@ -1,0 +1,10 @@
+PROMPT_ID: VITILIGO_091
+GROUP_ID: VITILIGO_G019
+PHENOTYPE: non_segmental_appearance
+SPLIT: train
+
+POSITIVE PROMPT:
+Clinical photograph of a 17-year-old woman with very fair ivory skin, showing a non-segmental facial vitiligo pattern. At the forehead above both eyebrows, white patches form two asymmetric but corresponding regions across the forehead. There is a narrow strip of pigmented skin between the patches. Smaller isolated white spots accompany the main bilateral patches. The whitened region has no scale and lies level with the rest of the face. Unretouched clinical face photograph, soft indirect window light. Show ordinary skin texture, an uncluttered background, and realistic anatomy.
+
+NEGATIVE PROMPT:
+illustration, painting, cartoon, CGI, digitally painted white mask, artificial cutout borders, face paint, cosmetic concealer, smooth plastic skin, beauty filter, watermark, text overlay, arrows, annotation, duplicate face, extra eyes, distorted facial anatomy, out of focus lesion, heavy crust, thick scale, raised ring rash, collage

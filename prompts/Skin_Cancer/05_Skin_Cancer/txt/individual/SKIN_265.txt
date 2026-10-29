@@ -1,0 +1,10 @@
+PROMPT ID: SKIN_265
+PHENOTYPE: ak_precancerous_appearance
+GROUP: SKIN_G053
+SPLIT: train
+
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 45-year-old woman with very fair skin. At the right nasal sidewall, show actinic-keratosis-like sun-damaged skin features: a faint gray-pink irregular patch with a barely raised gritty surface. Fine speckled scale breaks up its otherwise flat appearance. The rough dry surface texture is clearly apparent. Dry surface scale remains confined to the described patch or spots. Include visible unaffected facial skin around the lesion. Slight right three-quarter clinical view, soft diffused daylight, visible natural pores, neutral background, sharp focus.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, face paint, makeup concealment, airbrushed skin, beauty filter, plastic pores, glossy cosmetic retouching, tattoo, watermark, text, label, arrows, distorted facial anatomy, duplicate face, blurred skin detail, fantasy colors, excessive artificial symmetry

@@ -1,0 +1,10 @@
+PROMPT_ID: VITILIGO_116
+GROUP_ID: VITILIGO_G024
+PHENOTYPE: focal_undetermined_appearance
+SPLIT: train
+
+POSITIVE PROMPT:
+Clinical photograph of a 38-year-old man with very dark brown skin, showing a localized focal-appearing facial vitiligo pattern. At the tip-side skin of the nose, one small white patch sits with two minute neighboring white macules. The entire focal cluster occupies one limited facial site. No other white patch is visible on the rest of the face. The whitened region has no scale and lies level with the rest of the face. Unretouched clinical face photograph, soft indirect window light. Show ordinary skin texture, an uncluttered background, and realistic anatomy.
+
+NEGATIVE PROMPT:
+illustration, painting, cartoon, CGI, digitally painted white mask, artificial cutout borders, face paint, cosmetic concealer, smooth plastic skin, beauty filter, watermark, text overlay, arrows, annotation, duplicate face, extra eyes, distorted facial anatomy, out of focus lesion, heavy crust, thick scale, raised ring rash, collage

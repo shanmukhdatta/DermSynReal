@@ -1,0 +1,10 @@
+PROMPT_ID: VITILIGO_218
+GROUP_ID: VITILIGO_G044
+PHENOTYPE: segmental_appearance
+SPLIT: val
+
+POSITIVE PROMPT:
+Clinical photograph of a 27-year-old man with medium-brown skin, showing a unilateral segmental facial vitiligo pattern. At the left eyebrow and neighboring temple, one broad white facial patch has several tiny lighter satellites at its outer margin. The main field remains a true depigmented white rather than a scaly rash. The affected region is compact and remains entirely on one side. Surrounding skin shows normal visible pores and fine texture. Frontal clinical portrait, balanced diffuse studio light. Use soft realistic lighting and preserve the unaltered skin surface.
+
+NEGATIVE PROMPT:
+illustration, painting, cartoon, CGI, digitally painted white mask, artificial cutout borders, face paint, cosmetic concealer, smooth plastic skin, beauty filter, watermark, text overlay, arrows, annotation, duplicate face, extra eyes, distorted facial anatomy, out of focus lesion, heavy crust, thick scale, raised ring rash, collage

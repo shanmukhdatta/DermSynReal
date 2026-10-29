@@ -1,0 +1,10 @@
+PROMPT ID: SKIN_212
+PHENOTYPE: melanoma_appearance
+GROUP: SKIN_G043
+SPLIT: val
+
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 38-year-old man with light skin. At the left cheek, show melanoma-suspicious skin lesion features: an unevenly outlined gray-charcoal macule with lighter brown areas. Its soft uneven margins merge with skin on one side and sharpen on the other. The uneven border and pigment variation are clearly visible. The surrounding skin retains natural pores; pigmentation is not painted on. Maintain natural lesion contrast against adjacent skin. Slight left three-quarter clinical view, controlled soft studio lighting, visible natural pores, neutral background, sharp focus.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, face paint, makeup concealment, airbrushed skin, beauty filter, plastic pores, glossy cosmetic retouching, tattoo, watermark, text, label, arrows, distorted facial anatomy, duplicate face, blurred skin detail, fantasy colors, excessive artificial symmetry

@@ -1,0 +1,10 @@
+PROMPT ID: SKIN_048
+PHENOTYPE: bcc_appearance
+GROUP: SKIN_G010
+SPLIT: train
+
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 70-year-old man with very deep brown skin. At the right inner cheek, show basal-cell-carcinoma-like morphology: a pale yellow-white flat plaque with poorly defined edges. A smooth waxy center contrasts with ordinary pores nearby. The raised contour stands out while the adjacent skin remains ordinary. A margin of unaffected skin surrounds the lesion. Render the indicated skin tone without color exaggeration. Slight right three-quarter clinical view, even indirect daylight, visible natural pores, neutral background, sharp focus.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, face paint, makeup concealment, airbrushed skin, beauty filter, plastic pores, glossy cosmetic retouching, tattoo, watermark, text, label, arrows, distorted facial anatomy, duplicate face, blurred skin detail, fantasy colors, excessive artificial symmetry

@@ -1,0 +1,9 @@
+ID: HYPER_149
+GROUP: HYPER_G029
+SPLIT: train
+PHENOTYPE: pih_appearance
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 56-year-old woman with deep brown skin. At both cheeks in former breakout areas, show residual post-inflammatory hyperpigmentation-like marks: several larger oval brown marks with smaller nearby pigmented dots. The marks have normal skin texture and no active lesions. Moderate affected-area extent, with distinct flat marks across part of the named region. The discolored areas lie flat on healed skin, without active pustules, visible crust, or depressed scars. Face-level neutral clinical photo, balanced diffuse neutral lighting, realistic pores and skin texture, natural skin tones, plain background, no retouching.
+
+NEGATIVE PROMPT:
+cartoon, CGI, painted-on stains, makeup, face paint, beauty filter, plastic skin, airbrushing, watermark, text, arrows, annotations, duplicate face, distorted eyes, wrong facial anatomy, blurred lesions, oversaturated pigments, image collage, unrelated body rash

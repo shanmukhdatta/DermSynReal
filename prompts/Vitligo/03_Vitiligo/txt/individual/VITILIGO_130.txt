@@ -1,0 +1,10 @@
+PROMPT_ID: VITILIGO_130
+GROUP_ID: VITILIGO_G026
+PHENOTYPE: segmental_appearance
+SPLIT: train
+
+POSITIVE PROMPT:
+Clinical photograph of a 57-year-old man with very dark brown skin, showing a unilateral segmental facial vitiligo pattern. At the left upper outer face, one well-defined depigmented patch borders a hair-bearing facial region. A few affected hairs may be white while nearby hairs remain dark. The irregular patch remains unilateral, with unaffected skin elsewhere. The whitened region has no scale and lies level with the rest of the face. Front-facing dermatology photograph, soft indirect window light. Keep the lesion in sharp focus, with neutral white balance and no retouching.
+
+NEGATIVE PROMPT:
+illustration, painting, cartoon, CGI, digitally painted white mask, artificial cutout borders, face paint, cosmetic concealer, smooth plastic skin, beauty filter, watermark, text overlay, arrows, annotation, duplicate face, extra eyes, distorted facial anatomy, out of focus lesion, heavy crust, thick scale, raised ring rash, collage

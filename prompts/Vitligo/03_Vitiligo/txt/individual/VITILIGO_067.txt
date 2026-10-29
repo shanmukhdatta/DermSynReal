@@ -1,0 +1,10 @@
+PROMPT_ID: VITILIGO_067
+GROUP_ID: VITILIGO_G014
+PHENOTYPE: segmental_appearance
+SPLIT: train
+
+POSITIVE PROMPT:
+Clinical photograph of a 20-year-old woman with light olive skin, showing a unilateral segmental facial vitiligo pattern. At the left preauricular cheek, one unilateral chalk-white patch has a markedly jagged border. Short uneven projections break up the white-to-brown junction. The irregular patch remains unilateral, with unaffected skin elsewhere. A narrow sharp border separates the white skin from adjacent pigment. Front-facing dermatology photograph, soft diffused daylight. Use an unretouched photo with natural pores and accurate skin color.
+
+NEGATIVE PROMPT:
+illustration, painting, cartoon, CGI, digitally painted white mask, artificial cutout borders, face paint, cosmetic concealer, smooth plastic skin, beauty filter, watermark, text overlay, arrows, annotation, duplicate face, extra eyes, distorted facial anatomy, out of focus lesion, heavy crust, thick scale, raised ring rash, collage

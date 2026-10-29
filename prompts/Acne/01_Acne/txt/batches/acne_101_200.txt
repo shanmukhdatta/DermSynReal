@@ -1,0 +1,600 @@
+=== ACNE_101 | group=ACNE_G041 | split=test | phenotype=nodular_inflammatory ===
+POSITIVE PROMPT:
+Unretouched dermatology reference photograph of a 31-year-old man with very light ivory skin, showing nodular inflammatory acne vulgaris focused on the lower left cheek and jawline. Morphology: several deep dome-like inflammatory acne nodules, larger than surrounding papules, without superficial whiteheads on the nodules; extent: one or two dominant deep nodules plus several smaller papules. Composition: slightly turned face with visible jaw and opposite cheek; broad neutral daylight; uncluttered neutral backdrop. Preserve natural shallow shadows around protruding lesions; lesions clearly resolved individually, with no beauty retouching. Gentle local shadows communicate nodular depth.
+NEGATIVE PROMPT:
+cartoon, illustration, painting, waxy or plastic skin, beauty filter, airbrushing, blurred face, overexposed highlights, oversaturated colours, duplicate face, distorted anatomy, extra eyes, watermark, text, collage
+
+=== ACNE_102 | group=ACNE_G054 | split=test | phenotype=mixed_lesions ===
+POSITIVE PROMPT:
+Clinical documentary photograph of a 49-year-old woman with medium-brown skin, showing mixed comedonal and inflammatory acne vulgaris focused on the left cheek and nasal sidewalls. Morphology: uneven mix of follicular plugs, solid inflamed papules and several discrete pustules, not a uniform eruption; extent: several open and closed comedones with multiple papules and a few pustules. Composition: slightly turned face with visible jaw and opposite cheek; broad neutral daylight; uncluttered neutral backdrop. Preserve visible skin pores and fine facial hairs; no exaggerated cosmetic colour grading or artificial lesion symmetry.
+NEGATIVE PROMPT:
+cartoon, illustration, painting, waxy or plastic skin, beauty filter, airbrushing, blurred face, overexposed highlights, oversaturated colours, duplicate face, distorted anatomy, extra eyes, watermark, text, collage
+
+=== ACNE_103 | group=ACNE_G004 | split=train | phenotype=closed_comedonal ===
+POSITIVE PROMPT:
+Realistic facial dermatology photograph of a 24-year-old woman with medium-brown skin, showing comedonal acne dominated by closed whiteheads focused on the chin and central lower face. Morphology: small flesh-toned plugged follicles forming uneven clusters, with a few larger closed comedones; extent: very extensive closely packed comedones across much of the selected facial zone. Composition: mildly oblique facial portrait retaining facial landmarks; soft overcast-style daylight; neutral cream background. Preserve natural matte-and-sheen variation across facial regions; the original irregular distribution of individual lesions remains visible.
+NEGATIVE PROMPT:
+cartoon, illustration, painting, waxy or plastic skin, beauty filter, airbrushing, blurred face, overexposed highlights, oversaturated colours, duplicate face, distorted anatomy, extra eyes, watermark, text, collage
+
+=== ACNE_104 | group=ACNE_G017 | split=train | phenotype=open_comedonal ===
+POSITIVE PROMPT:
+Unretouched dermatology reference photograph of a 17-year-old teenage boy with deep brown skin, showing comedonal acne dominated by blackheads focused on the medial cheeks. Morphology: tiny dark open follicle plugs interrupted by several larger visible blackheads, without broad discoloration; extent: multiple blackheads grouped in two distinct regions with clear gaps. Composition: face-level close portrait with both cheeks visible; even clinical examination lighting; plain off-white backdrop. Preserve subtle normal pores visible between individual lesions; fine lesion edges visible at normal diagnostic viewing distance.
+NEGATIVE PROMPT:
+cartoon, illustration, painting, waxy or plastic skin, beauty filter, airbrushing, blurred face, overexposed highlights, oversaturated colours, duplicate face, distorted anatomy, extra eyes, watermark, text, collage
+
+=== ACNE_105 | group=ACNE_G028 | split=train | phenotype=inflammatory_papular ===
+POSITIVE PROMPT:
+Natural clinical facial portrait of a 38-year-old woman with very deep brown skin, showing papular acne vulgaris focused on the both cheeks. Morphology: distinct papules with soft-edged local redness and a few skin-coloured comedones between them; extent: widespread densely grouped inflammatory papules with uneven gaps. Composition: near-frontal three-quarter cheek-focused portrait; soft lateral diffuse light; plain neutral wall. Preserve uneven natural pore visibility across the face; a relaxed neutral expression and realistic skin microtexture. Inflamed papules may appear dusky rather than bright red on this skin tone.
+NEGATIVE PROMPT:
+cartoon, illustration, painting, waxy or plastic skin, beauty filter, airbrushing, blurred face, overexposed highlights, oversaturated colours, duplicate face, distorted anatomy, extra eyes, watermark, text, collage
+
+=== ACNE_106 | group=ACNE_G031 | split=train | phenotype=papulopustular ===
+POSITIVE PROMPT:
+Realistic facial dermatology photograph of a 54-year-old man with very light ivory skin, showing papulopustular acne vulgaris focused on the both cheeks, more concentrated on the right. Morphology: inflamed papules mixed with superficial pustules showing small creamy-white centres, approximately 2–5 mm; extent: a few separate papules and two or three pustules. Composition: face-level close portrait with both cheeks visible; even clinical examination lighting; plain off-white backdrop. Preserve natural shallow shadows around protruding lesions; skin imperfections preserved as in routine clinical documentation.
+NEGATIVE PROMPT:
+cartoon, illustration, painting, waxy or plastic skin, beauty filter, airbrushing, blurred face, overexposed highlights, oversaturated colours, duplicate face, distorted anatomy, extra eyes, watermark, text, collage
+
+=== ACNE_107 | group=ACNE_G042 | split=train | phenotype=nodular_inflammatory ===
+POSITIVE PROMPT:
+High-detail examination-style photograph of a 54-year-old woman with light beige skin, showing nodular inflammatory acne vulgaris focused on the right mandibular cheek. Morphology: deep rounded inflamed nodules with broad reddish or dusky outlines and smaller peripheral papules; extent: several distinct deep nodules with surrounding clusters of inflamed papules. Composition: near-frontal three-quarter cheek-focused portrait; soft lateral diffuse light; plain neutral wall. Preserve visible skin pores and fine facial hairs; a realistic human face rather than an idealised beauty portrait. Gentle local shadows communicate nodular depth.
+NEGATIVE PROMPT:
+cartoon, illustration, painting, waxy or plastic skin, beauty filter, airbrushing, blurred face, overexposed highlights, oversaturated colours, duplicate face, distorted anatomy, extra eyes, watermark, text, collage
+
+=== ACNE_108 | group=ACNE_G055 | split=train | phenotype=mixed_lesions ===
+POSITIVE PROMPT:
+Natural clinical facial portrait of a 53-year-old man with very deep brown skin, showing mixed comedonal and inflammatory acne vulgaris focused on the jawline with central forehead comedones. Morphology: clusters of inflammatory papules interrupted by individual dark-plugged pores and closed comedones; extent: patchy groups of comedones and inflammatory lesions in different regions. Inflamed papules may appear dusky rather than bright red on this skin tone. Composition: near-frontal three-quarter cheek-focused portrait; soft lateral diffuse light; plain neutral wall. Preserve unretouched skin with slight uneven surface microtexture; the original irregular distribution of individual lesions remains visible.
+NEGATIVE PROMPT:
+cartoon, illustration, painting, waxy or plastic skin, beauty filter, airbrushing, blurred face, overexposed highlights, oversaturated colours, duplicate face, distorted anatomy, extra eyes, watermark, text, collage
+
+=== ACNE_109 | group=ACNE_G006 | split=val | phenotype=closed_comedonal ===
+POSITIVE PROMPT:
+Unretouched dermatology reference photograph of a 20-year-old woman with light-medium golden skin, showing comedonal acne dominated by closed whiteheads focused on the both sides of the forehead. Morphology: scattered opaque white-tipped closed comedones, each enclosed under intact skin rather than open black plugs; extent: a sparse field of about eight to fourteen identifiable small plugs, separated by clear skin. Composition: front-facing head-and-shoulders clinical portrait; low-shadow diffuse white light; quiet neutral background. Preserve realistic skin folds and unaltered local surface texture; accurate face anatomy and sharp diagnostic detail.
+NEGATIVE PROMPT:
+cartoon, illustration, painting, waxy or plastic skin, beauty filter, airbrushing, blurred face, overexposed highlights, oversaturated colours, duplicate face, distorted anatomy, extra eyes, watermark, text, collage
+
+=== ACNE_110 | group=ACNE_G019 | split=test | phenotype=open_comedonal ===
+POSITIVE PROMPT:
+Clinical documentary photograph of a 52-year-old man with light-medium golden skin, showing comedonal acne dominated by blackheads focused on the medial cheeks. Morphology: narrow arcs of open comedones over oily-looking follicular skin, with intact natural surrounding texture; extent: very dense, widespread open and closed comedones through the central facial region. Composition: close facial photograph with nose and both eyes in frame; gentle frontal diffuse light; uniform light gray background. Preserve detailed follicular texture with no artificial airbrushing; lesions occupy the intended anatomic zone rather than the whole face.
+NEGATIVE PROMPT:
+cartoon, illustration, painting, waxy or plastic skin, beauty filter, airbrushing, blurred face, overexposed highlights, oversaturated colours, duplicate face, distorted anatomy, extra eyes, watermark, text, collage
+
+=== ACNE_111 | group=ACNE_G030 | split=train | phenotype=inflammatory_papular ===
+POSITIVE PROMPT:
+Realistic facial dermatology photograph of a 15-year-old teenage girl with light beige skin, showing papular acne vulgaris focused on the left cheek. Morphology: solid red or dusky raised spots with visible skin between lesions, not a confluent plaque; extent: six to ten discrete papules with large clear intervals. Composition: straight-on face-level portrait; soft diffuse clinic lighting; uniform pale gray backdrop. Preserve small variation in gloss between the nose and cheeks; lesions clearly resolved individually, with no beauty retouching.
+NEGATIVE PROMPT:
+cartoon, illustration, painting, waxy or plastic skin, beauty filter, airbrushing, blurred face, overexposed highlights, oversaturated colours, duplicate face, distorted anatomy, extra eyes, watermark, text, collage
+
+=== ACNE_112 | group=ACNE_G033 | split=train | phenotype=papulopustular ===
+POSITIVE PROMPT:
+Unretouched dermatology reference photograph of a 27-year-old man with light-medium golden skin, showing papulopustular acne vulgaris focused on the central forehead and temples. Morphology: several raised red papules surrounding separate small white-centred pustules, not a uniform eruption; extent: one small inflammatory cluster plus a few isolated pustules. Composition: mildly oblique facial portrait retaining facial landmarks; soft overcast-style daylight; neutral cream background. Preserve natural sebaceous sheen without cosmetic smoothing; no exaggerated cosmetic colour grading or artificial lesion symmetry.
+NEGATIVE PROMPT:
+cartoon, illustration, painting, waxy or plastic skin, beauty filter, airbrushing, blurred face, overexposed highlights, oversaturated colours, duplicate face, distorted anatomy, extra eyes, watermark, text, collage
+
+=== ACNE_113 | group=ACNE_G044 | split=train | phenotype=nodular_inflammatory ===
+POSITIVE PROMPT:
+Natural clinical facial portrait of a 38-year-old woman with medium-brown skin, showing nodular inflammatory acne vulgaris focused on the lateral cheek near the temple. Morphology: two sizes of inflammatory lesions: dominant deep nodules and smaller papules around adjacent follicles; extent: two pronounced nodules in separate areas with a modest papular background. Gentle local shadows communicate nodular depth. Composition: face-level close portrait with both cheeks visible; even clinical examination lighting; plain off-white backdrop. Preserve preserved follicular openings and realistic skin grain; clear separation between affected skin and neighbouring clear areas.
+NEGATIVE PROMPT:
+cartoon, illustration, painting, waxy or plastic skin, beauty filter, airbrushing, blurred face, overexposed highlights, oversaturated colours, duplicate face, distorted anatomy, extra eyes, watermark, text, collage
+
+=== ACNE_114 | group=ACNE_G057 | split=train | phenotype=mixed_lesions ===
+POSITIVE PROMPT:
+Realistic facial dermatology photograph of a 44-year-old man with deep brown skin, showing mixed comedonal and inflammatory acne vulgaris focused on the both cheeks and chin. Morphology: comedones near the central face alongside separate inflammatory papules and pustules over the cheeks; extent: several open and closed comedones with multiple papules and a few pustules. Composition: slightly turned face with visible jaw and opposite cheek; broad neutral daylight; uncluttered neutral backdrop. Preserve fine facial vellus hair with authentic cutaneous texture; accurate face anatomy and sharp diagnostic detail. Inflamed papules may appear dusky rather than bright red on this skin tone.
+NEGATIVE PROMPT:
+cartoon, illustration, painting, waxy or plastic skin, beauty filter, airbrushing, blurred face, overexposed highlights, oversaturated colours, duplicate face, distorted anatomy, extra eyes, watermark, text, collage
+
+=== ACNE_115 | group=ACNE_G007 | split=train | phenotype=closed_comedonal ===
+POSITIVE PROMPT:
+High-detail examination-style photograph of a 23-year-old man with deep brown skin, showing comedonal acne dominated by closed whiteheads focused on the chin. Morphology: fine raised follicular plugs along the hairline and adjacent skin, interspersed with natural clear follicles; extent: several dozen discrete comedones across the selected zone, with a patchy distribution. Composition: left three-quarter facial portrait; balanced window-diffused light; plain cool gray backdrop. Preserve detailed follicular texture with no artificial airbrushing; a relaxed neutral expression and realistic skin microtexture.
+NEGATIVE PROMPT:
+cartoon, illustration, painting, waxy or plastic skin, beauty filter, airbrushing, blurred face, overexposed highlights, oversaturated colours, duplicate face, distorted anatomy, extra eyes, watermark, text, collage
+
+=== ACNE_116 | group=ACNE_G020 | split=train | phenotype=open_comedonal ===
+POSITIVE PROMPT:
+Natural clinical facial portrait of a 26-year-old woman with deep brown skin, showing comedonal acne dominated by blackheads focused on the central forehead. Morphology: dark-centred follicular blockages clustered more strongly near the central face and thinning peripherally; extent: multiple blackheads grouped in two distinct regions with clear gaps. Composition: left three-quarter facial portrait; balanced window-diffused light; plain cool gray backdrop. Preserve small variation in gloss between the nose and cheeks; skin imperfections preserved as in routine clinical documentation.
+NEGATIVE PROMPT:
+cartoon, illustration, painting, waxy or plastic skin, beauty filter, airbrushing, blurred face, overexposed highlights, oversaturated colours, duplicate face, distorted anatomy, extra eyes, watermark, text, collage
+
+=== ACNE_117 | group=ACNE_G021 | split=train | phenotype=inflammatory_papular ===
+POSITIVE PROMPT:
+Clinical documentary photograph of a 38-year-old man with very light ivory skin, showing papular acne vulgaris focused on the left malar cheek. Morphology: discrete raised inflammatory papules, 2–5 mm, with reddish or dusky rims and no white pus-filled centres; extent: six to ten discrete papules with large clear intervals. Composition: right three-quarter facial portrait; large softbox-like diffuse light; matte beige backdrop. Preserve natural sebaceous sheen without cosmetic smoothing; a realistic human face rather than an idealised beauty portrait.
+NEGATIVE PROMPT:
+cartoon, illustration, painting, waxy or plastic skin, beauty filter, airbrushing, blurred face, overexposed highlights, oversaturated colours, duplicate face, distorted anatomy, extra eyes, watermark, text, collage
+
+=== ACNE_118 | group=ACNE_G034 | split=train | phenotype=papulopustular ===
+POSITIVE PROMPT:
+High-detail examination-style photograph of a 31-year-old woman with medium-brown skin, showing papulopustular acne vulgaris focused on the both cheeks and the nasal sides. Morphology: visible follicular pustules of different sizes with adjacent inflamed papules and intact intervening skin; extent: numerous mixed papules and pustules across the named regions. Composition: right three-quarter facial portrait; large softbox-like diffuse light; matte beige backdrop. Preserve preserved follicular openings and realistic skin grain; the original irregular distribution of individual lesions remains visible.
+NEGATIVE PROMPT:
+cartoon, illustration, painting, waxy or plastic skin, beauty filter, airbrushing, blurred face, overexposed highlights, oversaturated colours, duplicate face, distorted anatomy, extra eyes, watermark, text, collage
+
+=== ACNE_119 | group=ACNE_G045 | split=val | phenotype=nodular_inflammatory ===
+POSITIVE PROMPT:
+Unretouched dermatology reference photograph of a 27-year-old man with medium-brown skin, showing nodular inflammatory acne vulgaris focused on the chin and outer lower cheeks. Morphology: deep inflammatory nodules standing above the cheek contour, with surrounding small papular lesions; extent: multiple prominent raised nodules across adjacent lower-face areas. Gentle local shadows communicate nodular depth. Composition: close facial photograph with nose and both eyes in frame; gentle frontal diffuse light; uniform light gray background. Preserve fine facial vellus hair with authentic cutaneous texture; fine lesion edges visible at normal diagnostic viewing distance.
+NEGATIVE PROMPT:
+cartoon, illustration, painting, waxy or plastic skin, beauty filter, airbrushing, blurred face, overexposed highlights, oversaturated colours, duplicate face, distorted anatomy, extra eyes, watermark, text, collage
+
+=== ACNE_120 | group=ACNE_G058 | split=val | phenotype=mixed_lesions ===
+POSITIVE PROMPT:
+Clinical documentary photograph of a 49-year-old woman with very deep brown skin, showing mixed comedonal and inflammatory acne vulgaris focused on the right cheek and forehead. Morphology: multiple acne lesion stages, from plugged pores to red bumps to small white-centred pustules; extent: many follicular plugs and widespread inflammatory papules with visible pustules. Composition: mildly oblique facial portrait retaining facial landmarks; soft overcast-style daylight; neutral cream background. Preserve realistic skin folds and unaltered local surface texture; a relaxed neutral expression and realistic skin microtexture. Inflamed papules may appear dusky rather than bright red on this skin tone.
+NEGATIVE PROMPT:
+cartoon, illustration, painting, waxy or plastic skin, beauty filter, airbrushing, blurred face, overexposed highlights, oversaturated colours, duplicate face, distorted anatomy, extra eyes, watermark, text, collage
+
+=== ACNE_121 | group=ACNE_G009 | split=test | phenotype=closed_comedonal ===
+POSITIVE PROMPT:
+Natural clinical facial portrait of a 36-year-old man with very light ivory skin, showing comedonal acne dominated by closed whiteheads focused on the chin. Morphology: small rounded noninflamed plugs, dense in one zone and sparse toward the neighbouring cheek; extent: a dense but countable field of comedones with unevenly spaced clear intervals. Composition: slightly turned face with visible jaw and opposite cheek; broad neutral daylight; uncluttered neutral backdrop. Preserve visible skin pores and fine facial hairs; lesions clearly resolved individually, with no beauty retouching.
+NEGATIVE PROMPT:
+cartoon, illustration, painting, waxy or plastic skin, beauty filter, airbrushing, blurred face, overexposed highlights, oversaturated colours, duplicate face, distorted anatomy, extra eyes, watermark, text, collage
+
+=== ACNE_122 | group=ACNE_G012 | split=test | phenotype=open_comedonal ===
+POSITIVE PROMPT:
+Realistic facial dermatology photograph of a 16-year-old teenage girl with light beige skin, showing comedonal acne dominated by blackheads focused on the nose tip and central cheeks. Morphology: pinpoint blackheads of uneven size with clearly defined open follicular centres, not diffuse dark skin patches; extent: multiple blackheads grouped in two distinct regions with clear gaps. Composition: slightly turned face with visible jaw and opposite cheek; broad neutral daylight; uncluttered neutral backdrop. Preserve unretouched skin with slight uneven surface microtexture; no exaggerated cosmetic colour grading or artificial lesion symmetry.
+NEGATIVE PROMPT:
+cartoon, illustration, painting, waxy or plastic skin, beauty filter, airbrushing, blurred face, overexposed highlights, oversaturated colours, duplicate face, distorted anatomy, extra eyes, watermark, text, collage
+
+=== ACNE_123 | group=ACNE_G023 | split=train | phenotype=inflammatory_papular ===
+POSITIVE PROMPT:
+High-detail examination-style photograph of a 23-year-old man with light-medium golden skin, showing papular acne vulgaris focused on the both cheeks with different cluster densities. Morphology: clusters of firm-looking inflamed bumps of varied diameters, each arising around a follicular opening; extent: six to ten discrete papules with large clear intervals. Composition: straight-on mid-face clinical framing; balanced documentary lighting; simple uncluttered backdrop. Preserve natural matte-and-sheen variation across facial regions; clear separation between affected skin and neighbouring clear areas.
+NEGATIVE PROMPT:
+cartoon, illustration, painting, waxy or plastic skin, beauty filter, airbrushing, blurred face, overexposed highlights, oversaturated colours, duplicate face, distorted anatomy, extra eyes, watermark, text, collage
+
+=== ACNE_124 | group=ACNE_G036 | split=train | phenotype=papulopustular ===
+POSITIVE PROMPT:
+Natural clinical facial portrait of a 38-year-old woman with very light ivory skin, showing papulopustular acne vulgaris focused on the left mid-cheek with a few chin lesions. Morphology: a mixture of solid papules and superficial pus-tipped lesions, varying between closely packed and isolated; extent: a few separate papules and two or three pustules. Composition: straight-on mid-face clinical framing; balanced documentary lighting; simple uncluttered backdrop. Preserve subtle normal pores visible between individual lesions; accurate face anatomy and sharp diagnostic detail.
+NEGATIVE PROMPT:
+cartoon, illustration, painting, waxy or plastic skin, beauty filter, airbrushing, blurred face, overexposed highlights, oversaturated colours, duplicate face, distorted anatomy, extra eyes, watermark, text, collage
+
+=== ACNE_125 | group=ACNE_G047 | split=train | phenotype=nodular_inflammatory ===
+POSITIVE PROMPT:
+Clinical documentary photograph of a 53-year-old man with deep brown skin, showing nodular inflammatory acne vulgaris focused on the left jawline and cheek. Morphology: several pronounced nodules that create local contour changes, plus a scattered papular background; extent: several distinct deep nodules with surrounding clusters of inflamed papules. Composition: right three-quarter facial portrait; large softbox-like diffuse light; matte beige backdrop. Preserve uneven natural pore visibility across the face; lesions occupy the intended anatomic zone rather than the whole face. Inflamed papules may appear dusky rather than bright red on this skin tone. Gentle local shadows communicate nodular depth.
+NEGATIVE PROMPT:
+cartoon, illustration, painting, waxy or plastic skin, beauty filter, airbrushing, blurred face, overexposed highlights, oversaturated colours, duplicate face, distorted anatomy, extra eyes, watermark, text, collage
+
+=== ACNE_126 | group=ACNE_G060 | split=train | phenotype=mixed_lesions ===
+POSITIVE PROMPT:
+High-detail examination-style photograph of a 52-year-old woman with very light ivory skin, showing mixed comedonal and inflammatory acne vulgaris focused on the left cheek and lower face. Morphology: mixed noninflamed and inflamed follicular lesions with distinct boundaries and natural skin between them; extent: many follicular plugs and widespread inflammatory papules with visible pustules. Composition: right three-quarter facial portrait; large softbox-like diffuse light; matte beige backdrop. Preserve natural shallow shadows around protruding lesions; lesions clearly resolved individually, with no beauty retouching.
+NEGATIVE PROMPT:
+cartoon, illustration, painting, waxy or plastic skin, beauty filter, airbrushing, blurred face, overexposed highlights, oversaturated colours, duplicate face, distorted anatomy, extra eyes, watermark, text, collage
+
+=== ACNE_127 | group=ACNE_G010 | split=train | phenotype=closed_comedonal ===
+POSITIVE PROMPT:
+Unretouched dermatology reference photograph of a 20-year-old woman with light-medium golden skin, showing comedonal acne dominated by closed whiteheads focused on the central forehead. Morphology: isolated smooth closed comedones beside a small field of shallow raised follicular bumps; extent: roughly a dozen distinct noninflamed plugged follicles, mostly isolated. Composition: mildly oblique facial portrait retaining facial landmarks; soft overcast-style daylight; neutral cream background. Preserve unretouched skin with slight uneven surface microtexture; a realistic human face rather than an idealised beauty portrait.
+NEGATIVE PROMPT:
+cartoon, illustration, painting, waxy or plastic skin, beauty filter, airbrushing, blurred face, overexposed highlights, oversaturated colours, duplicate face, distorted anatomy, extra eyes, watermark, text, collage
+
+=== ACNE_128 | group=ACNE_G013 | split=train | phenotype=open_comedonal ===
+POSITIVE PROMPT:
+Clinical documentary photograph of a 17-year-old teenage boy with light-medium golden skin, showing comedonal acne dominated by blackheads focused on the central forehead and nasal bridge. Morphology: numerous small open plugged pores with dark central dots, some paired with subtle pale closed comedones; extent: multiple blackheads grouped in two distinct regions with clear gaps. Composition: near-frontal three-quarter cheek-focused portrait; soft lateral diffuse light; plain neutral wall. Preserve natural matte-and-sheen variation across facial regions; the original irregular distribution of individual lesions remains visible.
+NEGATIVE PROMPT:
+cartoon, illustration, painting, waxy or plastic skin, beauty filter, airbrushing, blurred face, overexposed highlights, oversaturated colours, duplicate face, distorted anatomy, extra eyes, watermark, text, collage
+
+=== ACNE_129 | group=ACNE_G024 | split=train | phenotype=inflammatory_papular ===
+POSITIVE PROMPT:
+Realistic facial dermatology photograph of a 24-year-old woman with medium-brown skin, showing papular acne vulgaris focused on the lateral forehead and temples. Morphology: several erythematous rounded papules alongside smaller developing bumps, with no broad uniform rash; extent: numerous distinct papules of differing diameters with scattered clear skin. Composition: left three-quarter facial portrait; balanced window-diffused light; plain cool gray backdrop. Preserve subtle normal pores visible between individual lesions; fine lesion edges visible at normal diagnostic viewing distance.
+NEGATIVE PROMPT:
+cartoon, illustration, painting, waxy or plastic skin, beauty filter, airbrushing, blurred face, overexposed highlights, oversaturated colours, duplicate face, distorted anatomy, extra eyes, watermark, text, collage
+
+=== ACNE_130 | group=ACNE_G037 | split=train | phenotype=papulopustular ===
+POSITIVE PROMPT:
+Unretouched dermatology reference photograph of a 27-year-old man with deep brown skin, showing papulopustular acne vulgaris focused on the chin and jawline. Morphology: discrete creamy-centred pustules edged by subtle inflammation alongside smaller papules; extent: several clusters of papules and sparse small pus-tipped lesions. Inflamed papules may appear dusky rather than bright red on this skin tone. Composition: face-level close portrait with both cheeks visible; even clinical examination lighting; plain off-white backdrop. Preserve uneven natural pore visibility across the face; a relaxed neutral expression and realistic skin microtexture.
+NEGATIVE PROMPT:
+cartoon, illustration, painting, waxy or plastic skin, beauty filter, airbrushing, blurred face, overexposed highlights, oversaturated colours, duplicate face, distorted anatomy, extra eyes, watermark, text, collage
+
+=== ACNE_131 | group=ACNE_G048 | split=val | phenotype=nodular_inflammatory ===
+POSITIVE PROMPT:
+Natural clinical facial portrait of a 58-year-old woman with very deep brown skin, showing nodular inflammatory acne vulgaris focused on the both lower cheeks. Morphology: large smooth-topped acne nodules with diffuse local inflammatory shading and fewer smaller bumps; extent: extensive deep nodular inflammation with accompanying smaller lesions. Composition: near-frontal three-quarter cheek-focused portrait; soft lateral diffuse light; plain neutral wall. Preserve natural shallow shadows around protruding lesions; skin imperfections preserved as in routine clinical documentation. Inflamed papules may appear dusky rather than bright red on this skin tone. Gentle local shadows communicate nodular depth.
+NEGATIVE PROMPT:
+cartoon, illustration, painting, waxy or plastic skin, beauty filter, airbrushing, blurred face, overexposed highlights, oversaturated colours, duplicate face, distorted anatomy, extra eyes, watermark, text, collage
+
+=== ACNE_132 | group=ACNE_G051 | split=test | phenotype=mixed_lesions ===
+POSITIVE PROMPT:
+Realistic facial dermatology photograph of a 31-year-old man with very light ivory skin, showing mixed comedonal and inflammatory acne vulgaris focused on the forehead and both cheeks. Morphology: open and closed comedones together with separate inflammatory papules and a few superficial pustules; extent: sparse comedones with a few separate inflammatory papules and one or two pustules. Composition: front-facing head-and-shoulders clinical portrait; low-shadow diffuse white light; quiet neutral background. Preserve visible skin pores and fine facial hairs; a realistic human face rather than an idealised beauty portrait.
+NEGATIVE PROMPT:
+cartoon, illustration, painting, waxy or plastic skin, beauty filter, airbrushing, blurred face, overexposed highlights, oversaturated colours, duplicate face, distorted anatomy, extra eyes, watermark, text, collage
+
+=== ACNE_133 | group=ACNE_G001 | split=train | phenotype=closed_comedonal ===
+POSITIVE PROMPT:
+High-detail examination-style photograph of a 54-year-old man with very light ivory skin, showing comedonal acne dominated by closed whiteheads focused on the central forehead and eyebrow-adjacent skin. Morphology: tiny skin-coloured dome-shaped closed comedones, 1–3 mm, raised above neighbouring follicles, without visible pus; extent: a sparse field of about eight to fourteen identifiable small plugs, separated by clear skin. Composition: straight-on face-level portrait; soft diffuse clinic lighting; uniform pale gray backdrop. Preserve natural matte-and-sheen variation across facial regions; clear separation between affected skin and neighbouring clear areas.
+NEGATIVE PROMPT:
+cartoon, illustration, painting, waxy or plastic skin, beauty filter, airbrushing, blurred face, overexposed highlights, oversaturated colours, duplicate face, distorted anatomy, extra eyes, watermark, text, collage
+
+=== ACNE_134 | group=ACNE_G014 | split=train | phenotype=open_comedonal ===
+POSITIVE PROMPT:
+Natural clinical facial portrait of a 20-year-old woman with medium-brown skin, showing comedonal acne dominated by blackheads focused on the chin below the lower lip. Morphology: discrete dark-centred open comedones separated by normal skin texture and small visible sebaceous pores; extent: very dense, widespread open and closed comedones through the central facial region. Composition: straight-on face-level portrait; soft diffuse clinic lighting; uniform pale gray backdrop. Preserve subtle normal pores visible between individual lesions; accurate face anatomy and sharp diagnostic detail.
+NEGATIVE PROMPT:
+cartoon, illustration, painting, waxy or plastic skin, beauty filter, airbrushing, blurred face, overexposed highlights, oversaturated colours, duplicate face, distorted anatomy, extra eyes, watermark, text, collage
+
+=== ACNE_135 | group=ACNE_G025 | split=test | phenotype=inflammatory_papular ===
+POSITIVE PROMPT:
+Clinical documentary photograph of a 27-year-old man with very deep brown skin, showing papular acne vulgaris focused on the chin and mandibular border. Morphology: inflamed follicular papules of differing heights, surrounded by mildly reactive skin but no scaly rings; extent: several uneven papular clusters, still individually recognizable. Composition: slightly turned face with visible jaw and opposite cheek; broad neutral daylight; uncluttered neutral backdrop. Preserve uneven natural pore visibility across the face; lesions occupy the intended anatomic zone rather than the whole face. Inflamed papules may appear dusky rather than bright red on this skin tone.
+NEGATIVE PROMPT:
+cartoon, illustration, painting, waxy or plastic skin, beauty filter, airbrushing, blurred face, overexposed highlights, oversaturated colours, duplicate face, distorted anatomy, extra eyes, watermark, text, collage
+
+=== ACNE_136 | group=ACNE_G038 | split=test | phenotype=papulopustular ===
+POSITIVE PROMPT:
+High-detail examination-style photograph of a 31-year-old woman with very deep brown skin, showing papulopustular acne vulgaris focused on the both cheeks. Morphology: recent inflammatory acne with several developing papules and several mature pustules with pale centres; extent: extensive inflammatory lesions with many papules and distinct pustule centres. Inflamed papules may appear dusky rather than bright red on this skin tone. Composition: straight-on mid-face clinical framing; balanced documentary lighting; simple uncluttered backdrop. Preserve natural shallow shadows around protruding lesions; lesions clearly resolved individually, with no beauty retouching.
+NEGATIVE PROMPT:
+cartoon, illustration, painting, waxy or plastic skin, beauty filter, airbrushing, blurred face, overexposed highlights, oversaturated colours, duplicate face, distorted anatomy, extra eyes, watermark, text, collage
+
+=== ACNE_137 | group=ACNE_G049 | split=train | phenotype=nodular_inflammatory ===
+POSITIVE PROMPT:
+Unretouched dermatology reference photograph of a 26-year-old man with very deep brown skin, showing nodular inflammatory acne vulgaris focused on the both lower cheeks. Morphology: deep inflamed follicular nodules at uneven distances, accompanied by tiny comedones at the periphery; extent: several distinct deep nodules with surrounding clusters of inflamed papules. Composition: right three-quarter facial portrait; large softbox-like diffuse light; matte beige backdrop. Preserve visible skin pores and fine facial hairs; no exaggerated cosmetic colour grading or artificial lesion symmetry. Inflamed papules may appear dusky rather than bright red on this skin tone. Gentle local shadows communicate nodular depth.
+NEGATIVE PROMPT:
+cartoon, illustration, painting, waxy or plastic skin, beauty filter, airbrushing, blurred face, overexposed highlights, oversaturated colours, duplicate face, distorted anatomy, extra eyes, watermark, text, collage
+
+=== ACNE_138 | group=ACNE_G052 | split=train | phenotype=mixed_lesions ===
+POSITIVE PROMPT:
+Clinical documentary photograph of a 54-year-old woman with light beige skin, showing mixed comedonal and inflammatory acne vulgaris focused on the nose and forehead with inflammatory cheek lesions. Morphology: fine forehead comedones combined with cheek papules and scattered small white-centred pustules; extent: several open and closed comedones with multiple papules and a few pustules. Composition: straight-on mid-face clinical framing; balanced documentary lighting; simple uncluttered backdrop. Preserve unretouched skin with slight uneven surface microtexture; clear separation between affected skin and neighbouring clear areas.
+NEGATIVE PROMPT:
+cartoon, illustration, painting, waxy or plastic skin, beauty filter, airbrushing, blurred face, overexposed highlights, oversaturated colours, duplicate face, distorted anatomy, extra eyes, watermark, text, collage
+
+=== ACNE_139 | group=ACNE_G003 | split=val | phenotype=closed_comedonal ===
+POSITIVE PROMPT:
+Natural clinical facial portrait of a 23-year-old man with light-medium golden skin, showing comedonal acne dominated by closed whiteheads focused on the forehead with a few spots at the temples. Morphology: fine noninflamed whiteheads with subtle rounded silhouettes, some isolated and others grouped in narrow bands; extent: roughly a dozen distinct noninflamed plugged follicles, mostly isolated. Composition: close facial photograph with nose and both eyes in frame; gentle frontal diffuse light; uniform light gray background. Preserve realistic skin folds and unaltered local surface texture; fine lesion edges visible at normal diagnostic viewing distance.
+NEGATIVE PROMPT:
+cartoon, illustration, painting, waxy or plastic skin, beauty filter, airbrushing, blurred face, overexposed highlights, oversaturated colours, duplicate face, distorted anatomy, extra eyes, watermark, text, collage
+
+=== ACNE_140 | group=ACNE_G016 | split=val | phenotype=open_comedonal ===
+POSITIVE PROMPT:
+Realistic facial dermatology photograph of a 24-year-old woman with light beige skin, showing comedonal acne dominated by blackheads focused on the nose and adjoining upper cheeks. Morphology: fine dark follicular openings on sebaceous facial zones together with sparse whitehead-like bumps; extent: six to twelve visible dark-centred follicles separated by clear skin. Composition: close facial photograph with nose and both eyes in frame; gentle frontal diffuse light; uniform light gray background. Preserve detailed follicular texture with no artificial airbrushing; a relaxed neutral expression and realistic skin microtexture.
+NEGATIVE PROMPT:
+cartoon, illustration, painting, waxy or plastic skin, beauty filter, airbrushing, blurred face, overexposed highlights, oversaturated colours, duplicate face, distorted anatomy, extra eyes, watermark, text, collage
+
+=== ACNE_141 | group=ACNE_G027 | split=train | phenotype=inflammatory_papular ===
+POSITIVE PROMPT:
+High-detail examination-style photograph of a 35-year-old man with deep brown skin, showing papular acne vulgaris focused on the right cheek. Morphology: small inflammatory bumps extending from a denser central cluster to a sparse peripheral scatter; extent: numerous distinct papules of differing diameters with scattered clear skin. Inflamed papules may appear dusky rather than bright red on this skin tone. Composition: left three-quarter facial portrait; balanced window-diffused light; plain cool gray backdrop. Preserve small variation in gloss between the nose and cheeks; skin imperfections preserved as in routine clinical documentation.
+NEGATIVE PROMPT:
+cartoon, illustration, painting, waxy or plastic skin, beauty filter, airbrushing, blurred face, overexposed highlights, oversaturated colours, duplicate face, distorted anatomy, extra eyes, watermark, text, collage
+
+=== ACNE_142 | group=ACNE_G040 | split=train | phenotype=papulopustular ===
+POSITIVE PROMPT:
+Natural clinical facial portrait of a 15-year-old teenage girl with light beige skin, showing papulopustular acne vulgaris focused on the left lower cheek. Morphology: white-centred acne pustules scattered among raised inflamed papules, with individual lesion boundaries preserved; extent: a few separate papules and two or three pustules. Composition: left three-quarter facial portrait; balanced window-diffused light; plain cool gray backdrop. Preserve natural sebaceous sheen without cosmetic smoothing; a realistic human face rather than an idealised beauty portrait.
+NEGATIVE PROMPT:
+cartoon, illustration, painting, waxy or plastic skin, beauty filter, airbrushing, blurred face, overexposed highlights, oversaturated colours, duplicate face, distorted anatomy, extra eyes, watermark, text, collage
+
+=== ACNE_143 | group=ACNE_G041 | split=test | phenotype=nodular_inflammatory ===
+POSITIVE PROMPT:
+Clinical documentary photograph of a 23-year-old man with very light ivory skin, showing nodular inflammatory acne vulgaris focused on the lower left cheek and jawline. Morphology: several deep dome-like inflammatory acne nodules, larger than surrounding papules, without superficial whiteheads on the nodules; extent: one or two dominant deep nodules plus several smaller papules. Gentle local shadows communicate nodular depth. Composition: slightly turned face with visible jaw and opposite cheek; broad neutral daylight; uncluttered neutral backdrop. Preserve preserved follicular openings and realistic skin grain; the original irregular distribution of individual lesions remains visible.
+NEGATIVE PROMPT:
+cartoon, illustration, painting, waxy or plastic skin, beauty filter, airbrushing, blurred face, overexposed highlights, oversaturated colours, duplicate face, distorted anatomy, extra eyes, watermark, text, collage
+
+=== ACNE_144 | group=ACNE_G054 | split=test | phenotype=mixed_lesions ===
+POSITIVE PROMPT:
+High-detail examination-style photograph of a 49-year-old woman with medium-brown skin, showing mixed comedonal and inflammatory acne vulgaris focused on the left cheek and nasal sidewalls. Morphology: uneven mix of follicular plugs, solid inflamed papules and several discrete pustules, not a uniform eruption; extent: isolated follicular plugs and one small group of inflammatory spots. Composition: slightly turned face with visible jaw and opposite cheek; broad neutral daylight; uncluttered neutral backdrop. Preserve fine facial vellus hair with authentic cutaneous texture; fine lesion edges visible at normal diagnostic viewing distance.
+NEGATIVE PROMPT:
+cartoon, illustration, painting, waxy or plastic skin, beauty filter, airbrushing, blurred face, overexposed highlights, oversaturated colours, duplicate face, distorted anatomy, extra eyes, watermark, text, collage
+
+=== ACNE_145 | group=ACNE_G004 | split=train | phenotype=closed_comedonal ===
+POSITIVE PROMPT:
+Unretouched dermatology reference photograph of a 24-year-old woman with medium-brown skin, showing comedonal acne dominated by closed whiteheads focused on the chin and central lower face. Morphology: small flesh-toned plugged follicles forming uneven clusters, with a few larger closed comedones; extent: a dense but countable field of comedones with unevenly spaced clear intervals. Composition: mildly oblique facial portrait retaining facial landmarks; soft overcast-style daylight; neutral cream background. Preserve detailed follicular texture with no artificial airbrushing; lesions occupy the intended anatomic zone rather than the whole face.
+NEGATIVE PROMPT:
+cartoon, illustration, painting, waxy or plastic skin, beauty filter, airbrushing, blurred face, overexposed highlights, oversaturated colours, duplicate face, distorted anatomy, extra eyes, watermark, text, collage
+
+=== ACNE_146 | group=ACNE_G017 | split=train | phenotype=open_comedonal ===
+POSITIVE PROMPT:
+Clinical documentary photograph of a 17-year-old teenage boy with deep brown skin, showing comedonal acne dominated by blackheads focused on the chin. Morphology: tiny dark open follicle plugs interrupted by several larger visible blackheads, without broad discoloration; extent: multiple blackheads grouped in two distinct regions with clear gaps. Composition: right three-quarter facial portrait; large softbox-like diffuse light; matte beige backdrop. Preserve small variation in gloss between the nose and cheeks; lesions clearly resolved individually, with no beauty retouching.
+NEGATIVE PROMPT:
+cartoon, illustration, painting, waxy or plastic skin, beauty filter, airbrushing, blurred face, overexposed highlights, oversaturated colours, duplicate face, distorted anatomy, extra eyes, watermark, text, collage
+
+=== ACNE_147 | group=ACNE_G028 | split=train | phenotype=inflammatory_papular ===
+POSITIVE PROMPT:
+Realistic facial dermatology photograph of a 38-year-old woman with very deep brown skin, showing papular acne vulgaris focused on the forehead and temples. Morphology: distinct papules with soft-edged local redness and a few skin-coloured comedones between them; extent: widespread densely grouped inflammatory papules with uneven gaps. Inflamed papules may appear dusky rather than bright red on this skin tone. Composition: close facial photograph with nose and both eyes in frame; gentle frontal diffuse light; uniform light gray background. Preserve natural sebaceous sheen without cosmetic smoothing; no exaggerated cosmetic colour grading or artificial lesion symmetry.
+NEGATIVE PROMPT:
+cartoon, illustration, painting, waxy or plastic skin, beauty filter, airbrushing, blurred face, overexposed highlights, oversaturated colours, duplicate face, distorted anatomy, extra eyes, watermark, text, collage
+
+=== ACNE_148 | group=ACNE_G031 | split=train | phenotype=papulopustular ===
+POSITIVE PROMPT:
+Unretouched dermatology reference photograph of a 38-year-old man with very light ivory skin, showing papulopustular acne vulgaris focused on the both cheeks, more concentrated on the right. Morphology: inflamed papules mixed with superficial pustules showing small creamy-white centres, approximately 2–5 mm; extent: a few separate papules and two or three pustules. Composition: face-level close portrait with both cheeks visible; even clinical examination lighting; plain off-white backdrop. Preserve preserved follicular openings and realistic skin grain; clear separation between affected skin and neighbouring clear areas.
+NEGATIVE PROMPT:
+cartoon, illustration, painting, waxy or plastic skin, beauty filter, airbrushing, blurred face, overexposed highlights, oversaturated colours, duplicate face, distorted anatomy, extra eyes, watermark, text, collage
+
+=== ACNE_149 | group=ACNE_G042 | split=train | phenotype=nodular_inflammatory ===
+POSITIVE PROMPT:
+Natural clinical facial portrait of a 38-year-old woman with light beige skin, showing nodular inflammatory acne vulgaris focused on the right mandibular cheek. Morphology: deep rounded inflamed nodules with broad reddish or dusky outlines and smaller peripheral papules; extent: several distinct deep nodules with surrounding clusters of inflamed papules. Gentle local shadows communicate nodular depth. Composition: near-frontal three-quarter cheek-focused portrait; soft lateral diffuse light; plain neutral wall. Preserve fine facial vellus hair with authentic cutaneous texture; accurate face anatomy and sharp diagnostic detail.
+NEGATIVE PROMPT:
+cartoon, illustration, painting, waxy or plastic skin, beauty filter, airbrushing, blurred face, overexposed highlights, oversaturated colours, duplicate face, distorted anatomy, extra eyes, watermark, text, collage
+
+=== ACNE_150 | group=ACNE_G055 | split=train | phenotype=mixed_lesions ===
+POSITIVE PROMPT:
+Realistic facial dermatology photograph of a 53-year-old man with deep brown skin, showing mixed comedonal and inflammatory acne vulgaris focused on the jawline with central forehead comedones. Morphology: clusters of inflammatory papules interrupted by individual dark-plugged pores and closed comedones; extent: patchy groups of comedones and inflammatory lesions in different regions. Composition: near-frontal three-quarter cheek-focused portrait; soft lateral diffuse light; plain neutral wall. Preserve realistic skin folds and unaltered local surface texture; lesions occupy the intended anatomic zone rather than the whole face. Inflamed papules may appear dusky rather than bright red on this skin tone.
+NEGATIVE PROMPT:
+cartoon, illustration, painting, waxy or plastic skin, beauty filter, airbrushing, blurred face, overexposed highlights, oversaturated colours, duplicate face, distorted anatomy, extra eyes, watermark, text, collage
+
+=== ACNE_151 | group=ACNE_G006 | split=val | phenotype=closed_comedonal ===
+POSITIVE PROMPT:
+Clinical documentary photograph of a 20-year-old woman with very light ivory skin, showing comedonal acne dominated by closed whiteheads focused on the both sides of the forehead. Morphology: scattered opaque white-tipped closed comedones, each enclosed under intact skin rather than open black plugs; extent: a sparse field of about eight to fourteen identifiable small plugs, separated by clear skin. Composition: front-facing head-and-shoulders clinical portrait; low-shadow diffuse white light; quiet neutral background. Preserve visible skin pores and fine facial hairs; skin imperfections preserved as in routine clinical documentation.
+NEGATIVE PROMPT:
+cartoon, illustration, painting, waxy or plastic skin, beauty filter, airbrushing, blurred face, overexposed highlights, oversaturated colours, duplicate face, distorted anatomy, extra eyes, watermark, text, collage
+
+=== ACNE_152 | group=ACNE_G019 | split=test | phenotype=open_comedonal ===
+POSITIVE PROMPT:
+High-detail examination-style photograph of a 36-year-old man with light beige skin, showing comedonal acne dominated by blackheads focused on the chin. Morphology: narrow arcs of open comedones over oily-looking follicular skin, with intact natural surrounding texture; extent: dozens of individually distinguishable open follicular plugs. Composition: front-facing head-and-shoulders clinical portrait; low-shadow diffuse white light; quiet neutral background. Preserve unretouched skin with slight uneven surface microtexture; a realistic human face rather than an idealised beauty portrait.
+NEGATIVE PROMPT:
+cartoon, illustration, painting, waxy or plastic skin, beauty filter, airbrushing, blurred face, overexposed highlights, oversaturated colours, duplicate face, distorted anatomy, extra eyes, watermark, text, collage
+
+=== ACNE_153 | group=ACNE_G030 | split=train | phenotype=inflammatory_papular ===
+POSITIVE PROMPT:
+Unretouched dermatology reference photograph of a 52-year-old woman with very light ivory skin, showing papular acne vulgaris focused on the both cheeks. Morphology: solid red or dusky raised spots with visible skin between lesions, not a confluent plaque; extent: widespread densely grouped inflammatory papules with uneven gaps. Composition: mildly oblique facial portrait retaining facial landmarks; soft overcast-style daylight; neutral cream background. Preserve natural matte-and-sheen variation across facial regions; the original irregular distribution of individual lesions remains visible.
+NEGATIVE PROMPT:
+cartoon, illustration, painting, waxy or plastic skin, beauty filter, airbrushing, blurred face, overexposed highlights, oversaturated colours, duplicate face, distorted anatomy, extra eyes, watermark, text, collage
+
+=== ACNE_154 | group=ACNE_G033 | split=train | phenotype=papulopustular ===
+POSITIVE PROMPT:
+Clinical documentary photograph of a 27-year-old man with light-medium golden skin, showing papulopustular acne vulgaris focused on the central forehead and temples. Morphology: several raised red papules surrounding separate small white-centred pustules, not a uniform eruption; extent: a few separate papules and two or three pustules. Composition: mildly oblique facial portrait retaining facial landmarks; soft overcast-style daylight; neutral cream background. Preserve subtle normal pores visible between individual lesions; fine lesion edges visible at normal diagnostic viewing distance.
+NEGATIVE PROMPT:
+cartoon, illustration, painting, waxy or plastic skin, beauty filter, airbrushing, blurred face, overexposed highlights, oversaturated colours, duplicate face, distorted anatomy, extra eyes, watermark, text, collage
+
+=== ACNE_155 | group=ACNE_G044 | split=train | phenotype=nodular_inflammatory ===
+POSITIVE PROMPT:
+Realistic facial dermatology photograph of a 38-year-old woman with medium-brown skin, showing nodular inflammatory acne vulgaris focused on the lateral cheek near the temple. Morphology: two sizes of inflammatory lesions: dominant deep nodules and smaller papules around adjacent follicles; extent: one or two dominant deep nodules plus several smaller papules. Composition: face-level close portrait with both cheeks visible; even clinical examination lighting; plain off-white backdrop. Preserve uneven natural pore visibility across the face; a relaxed neutral expression and realistic skin microtexture. Gentle local shadows communicate nodular depth.
+NEGATIVE PROMPT:
+cartoon, illustration, painting, waxy or plastic skin, beauty filter, airbrushing, blurred face, overexposed highlights, oversaturated colours, duplicate face, distorted anatomy, extra eyes, watermark, text, collage
+
+=== ACNE_156 | group=ACNE_G057 | split=train | phenotype=mixed_lesions ===
+POSITIVE PROMPT:
+Unretouched dermatology reference photograph of a 44-year-old man with deep brown skin, showing mixed comedonal and inflammatory acne vulgaris focused on the forehead with cheek involvement. Morphology: comedones near the central face alongside separate inflammatory papules and pustules over the cheeks; extent: several open and closed comedones with multiple papules and a few pustules. Inflamed papules may appear dusky rather than bright red on this skin tone. Composition: face-level close portrait with both cheeks visible; even clinical examination lighting; plain off-white backdrop. Preserve natural shallow shadows around protruding lesions; skin imperfections preserved as in routine clinical documentation.
+NEGATIVE PROMPT:
+cartoon, illustration, painting, waxy or plastic skin, beauty filter, airbrushing, blurred face, overexposed highlights, oversaturated colours, duplicate face, distorted anatomy, extra eyes, watermark, text, collage
+
+=== ACNE_157 | group=ACNE_G007 | split=train | phenotype=closed_comedonal ===
+POSITIVE PROMPT:
+Natural clinical facial portrait of a 23-year-old man with deep brown skin, showing comedonal acne dominated by closed whiteheads focused on the both temples. Morphology: fine raised follicular plugs along the hairline and adjacent skin, interspersed with natural clear follicles; extent: several dozen discrete comedones across the selected zone, with a patchy distribution. Composition: straight-on face-level portrait; soft diffuse clinic lighting; uniform pale gray backdrop. Preserve unretouched skin with slight uneven surface microtexture; no exaggerated cosmetic colour grading or artificial lesion symmetry.
+NEGATIVE PROMPT:
+cartoon, illustration, painting, waxy or plastic skin, beauty filter, airbrushing, blurred face, overexposed highlights, oversaturated colours, duplicate face, distorted anatomy, extra eyes, watermark, text, collage
+
+=== ACNE_158 | group=ACNE_G020 | split=train | phenotype=open_comedonal ===
+POSITIVE PROMPT:
+Realistic facial dermatology photograph of a 20-year-old woman with medium-brown skin, showing comedonal acne dominated by blackheads focused on the nasal sidewalls. Morphology: dark-centred follicular blockages clustered more strongly near the central face and thinning peripherally; extent: a scattered small set of open plugs without broad facial involvement. Composition: straight-on face-level portrait; soft diffuse clinic lighting; uniform pale gray backdrop. Preserve natural matte-and-sheen variation across facial regions; clear separation between affected skin and neighbouring clear areas.
+NEGATIVE PROMPT:
+cartoon, illustration, painting, waxy or plastic skin, beauty filter, airbrushing, blurred face, overexposed highlights, oversaturated colours, duplicate face, distorted anatomy, extra eyes, watermark, text, collage
+
+=== ACNE_159 | group=ACNE_G021 | split=train | phenotype=inflammatory_papular ===
+POSITIVE PROMPT:
+High-detail examination-style photograph of a 31-year-old man with very light ivory skin, showing papular acne vulgaris focused on the left malar cheek. Morphology: discrete raised inflammatory papules, 2–5 mm, with reddish or dusky rims and no white pus-filled centres; extent: six to ten discrete papules with large clear intervals. Composition: right three-quarter facial portrait; large softbox-like diffuse light; matte beige backdrop. Preserve subtle normal pores visible between individual lesions; accurate face anatomy and sharp diagnostic detail.
+NEGATIVE PROMPT:
+cartoon, illustration, painting, waxy or plastic skin, beauty filter, airbrushing, blurred face, overexposed highlights, oversaturated colours, duplicate face, distorted anatomy, extra eyes, watermark, text, collage
+
+=== ACNE_160 | group=ACNE_G034 | split=train | phenotype=papulopustular ===
+POSITIVE PROMPT:
+Natural clinical facial portrait of a 31-year-old woman with medium-brown skin, showing papulopustular acne vulgaris focused on the both cheeks and the nasal sides. Morphology: visible follicular pustules of different sizes with adjacent inflamed papules and intact intervening skin; extent: several clusters of papules and sparse small pus-tipped lesions. Composition: right three-quarter facial portrait; large softbox-like diffuse light; matte beige backdrop. Preserve uneven natural pore visibility across the face; lesions occupy the intended anatomic zone rather than the whole face.
+NEGATIVE PROMPT:
+cartoon, illustration, painting, waxy or plastic skin, beauty filter, airbrushing, blurred face, overexposed highlights, oversaturated colours, duplicate face, distorted anatomy, extra eyes, watermark, text, collage
+
+=== ACNE_161 | group=ACNE_G045 | split=val | phenotype=nodular_inflammatory ===
+POSITIVE PROMPT:
+Clinical documentary photograph of a 27-year-old man with light-medium golden skin, showing nodular inflammatory acne vulgaris focused on the chin and outer lower cheeks. Morphology: deep inflammatory nodules standing above the cheek contour, with surrounding small papular lesions; extent: multiple prominent raised nodules across adjacent lower-face areas. Composition: close facial photograph with nose and both eyes in frame; gentle frontal diffuse light; uniform light gray background. Preserve natural shallow shadows around protruding lesions; lesions clearly resolved individually, with no beauty retouching. Gentle local shadows communicate nodular depth.
+NEGATIVE PROMPT:
+cartoon, illustration, painting, waxy or plastic skin, beauty filter, airbrushing, blurred face, overexposed highlights, oversaturated colours, duplicate face, distorted anatomy, extra eyes, watermark, text, collage
+
+=== ACNE_162 | group=ACNE_G058 | split=val | phenotype=mixed_lesions ===
+POSITIVE PROMPT:
+High-detail examination-style photograph of a 49-year-old woman with very deep brown skin, showing mixed comedonal and inflammatory acne vulgaris focused on the central T-zone and cheeks. Morphology: multiple acne lesion stages, from plugged pores to red bumps to small white-centred pustules; extent: many follicular plugs and widespread inflammatory papules with visible pustules. Inflamed papules may appear dusky rather than bright red on this skin tone. Composition: straight-on mid-face clinical framing; balanced documentary lighting; simple uncluttered backdrop. Preserve visible skin pores and fine facial hairs; no exaggerated cosmetic colour grading or artificial lesion symmetry.
+NEGATIVE PROMPT:
+cartoon, illustration, painting, waxy or plastic skin, beauty filter, airbrushing, blurred face, overexposed highlights, oversaturated colours, duplicate face, distorted anatomy, extra eyes, watermark, text, collage
+
+=== ACNE_163 | group=ACNE_G008 | split=train | phenotype=closed_comedonal ===
+POSITIVE PROMPT:
+Unretouched dermatology reference photograph of a 24-year-old woman with very deep brown skin, showing comedonal acne dominated by closed whiteheads focused on the upper cheeks beside the nose. Morphology: closely spaced closed whiteheads of different sizes, smooth overlying skin and visible individual bumps; extent: very extensive closely packed comedones across much of the selected facial zone. Composition: front-facing head-and-shoulders clinical portrait; low-shadow diffuse white light; quiet neutral background. Preserve natural matte-and-sheen variation across facial regions; the original irregular distribution of individual lesions remains visible.
+NEGATIVE PROMPT:
+cartoon, illustration, painting, waxy or plastic skin, beauty filter, airbrushing, blurred face, overexposed highlights, oversaturated colours, duplicate face, distorted anatomy, extra eyes, watermark, text, collage
+
+=== ACNE_164 | group=ACNE_G011 | split=train | phenotype=open_comedonal ===
+POSITIVE PROMPT:
+Clinical documentary photograph of a 54-year-old man with very light ivory skin, showing comedonal acne dominated by blackheads focused on the nose bridge and alar creases. Morphology: open comedones with small dark central keratin plugs seated in visible follicles, mixed with a few closed plugs; extent: six to twelve visible dark-centred follicles separated by clear skin. Composition: left three-quarter facial portrait; balanced window-diffused light; plain cool gray backdrop. Preserve subtle normal pores visible between individual lesions; fine lesion edges visible at normal diagnostic viewing distance.
+NEGATIVE PROMPT:
+cartoon, illustration, painting, waxy or plastic skin, beauty filter, airbrushing, blurred face, overexposed highlights, oversaturated colours, duplicate face, distorted anatomy, extra eyes, watermark, text, collage
+
+=== ACNE_165 | group=ACNE_G022 | split=val | phenotype=inflammatory_papular ===
+POSITIVE PROMPT:
+Realistic facial dermatology photograph of a 54-year-old woman with light beige skin, showing papular acne vulgaris focused on the right cheek and jawline. Morphology: small solid acne papules scattered between a few unobtrusive comedones, with unequal distances between lesions; extent: numerous distinct papules of differing diameters with scattered clear skin. Composition: front-facing head-and-shoulders clinical portrait; low-shadow diffuse white light; quiet neutral background. Preserve uneven natural pore visibility across the face; a relaxed neutral expression and realistic skin microtexture.
+NEGATIVE PROMPT:
+cartoon, illustration, painting, waxy or plastic skin, beauty filter, airbrushing, blurred face, overexposed highlights, oversaturated colours, duplicate face, distorted anatomy, extra eyes, watermark, text, collage
+
+=== ACNE_166 | group=ACNE_G035 | split=test | phenotype=papulopustular ===
+POSITIVE PROMPT:
+Unretouched dermatology reference photograph of a 35-year-old man with very deep brown skin, showing papulopustular acne vulgaris focused on the jawline and lower cheeks. Morphology: clusters of small inflammatory bumps with white or yellow pustule heads on only some lesions; extent: numerous mixed papules and pustules across the named regions. Inflamed papules may appear dusky rather than bright red on this skin tone. Composition: front-facing head-and-shoulders clinical portrait; low-shadow diffuse white light; quiet neutral background. Preserve natural shallow shadows around protruding lesions; skin imperfections preserved as in routine clinical documentation.
+NEGATIVE PROMPT:
+cartoon, illustration, painting, waxy or plastic skin, beauty filter, airbrushing, blurred face, overexposed highlights, oversaturated colours, duplicate face, distorted anatomy, extra eyes, watermark, text, collage
+
+=== ACNE_167 | group=ACNE_G046 | split=train | phenotype=nodular_inflammatory ===
+POSITIVE PROMPT:
+Natural clinical facial portrait of a 31-year-old woman with deep brown skin, showing nodular inflammatory acne vulgaris focused on the left cheek near the jaw angle. Morphology: rounded red or dusky nodular swellings, no ring-shaped scaling or crusted ulcer-like surfaces; extent: one or two dominant deep nodules plus several smaller papules. Composition: mildly oblique facial portrait retaining facial landmarks; soft overcast-style daylight; neutral cream background. Preserve visible skin pores and fine facial hairs; a realistic human face rather than an idealised beauty portrait. Inflamed papules may appear dusky rather than bright red on this skin tone. Gentle local shadows communicate nodular depth.
+NEGATIVE PROMPT:
+cartoon, illustration, painting, waxy or plastic skin, beauty filter, airbrushing, blurred face, overexposed highlights, oversaturated colours, duplicate face, distorted anatomy, extra eyes, watermark, text, collage
+
+=== ACNE_168 | group=ACNE_G059 | split=train | phenotype=mixed_lesions ===
+POSITIVE PROMPT:
+Realistic facial dermatology photograph of a 26-year-old man with very deep brown skin, showing mixed comedonal and inflammatory acne vulgaris focused on the central T-zone and cheeks. Morphology: scattered whiteheads and open comedones with asymmetric groups of papules and a few pus-tipped spots; extent: several open and closed comedones with multiple papules and a few pustules. Inflamed papules may appear dusky rather than bright red on this skin tone. Composition: face-level close portrait with both cheeks visible; even clinical examination lighting; plain off-white backdrop. Preserve unretouched skin with slight uneven surface microtexture; the original irregular distribution of individual lesions remains visible.
+NEGATIVE PROMPT:
+cartoon, illustration, painting, waxy or plastic skin, beauty filter, airbrushing, blurred face, overexposed highlights, oversaturated colours, duplicate face, distorted anatomy, extra eyes, watermark, text, collage
+
+=== ACNE_169 | group=ACNE_G010 | split=train | phenotype=closed_comedonal ===
+POSITIVE PROMPT:
+Clinical documentary photograph of a 15-year-old teenage girl with light beige skin, showing comedonal acne dominated by closed whiteheads focused on the upper forehead. Morphology: isolated smooth closed comedones beside a small field of shallow raised follicular bumps; extent: a sparse field of about eight to fourteen identifiable small plugs, separated by clear skin. Composition: straight-on mid-face clinical framing; balanced documentary lighting; simple uncluttered backdrop. Preserve realistic skin folds and unaltered local surface texture; accurate face anatomy and sharp diagnostic detail.
+NEGATIVE PROMPT:
+cartoon, illustration, painting, waxy or plastic skin, beauty filter, airbrushing, blurred face, overexposed highlights, oversaturated colours, duplicate face, distorted anatomy, extra eyes, watermark, text, collage
+
+=== ACNE_170 | group=ACNE_G013 | split=train | phenotype=open_comedonal ===
+POSITIVE PROMPT:
+High-detail examination-style photograph of a 17-year-old teenage boy with light-medium golden skin, showing comedonal acne dominated by blackheads focused on the central forehead and nasal bridge. Morphology: numerous small open plugged pores with dark central dots, some paired with subtle pale closed comedones; extent: a scattered small set of open plugs without broad facial involvement. Composition: near-frontal three-quarter cheek-focused portrait; soft lateral diffuse light; plain neutral wall. Preserve detailed follicular texture with no artificial airbrushing; lesions occupy the intended anatomic zone rather than the whole face.
+NEGATIVE PROMPT:
+cartoon, illustration, painting, waxy or plastic skin, beauty filter, airbrushing, blurred face, overexposed highlights, oversaturated colours, duplicate face, distorted anatomy, extra eyes, watermark, text, collage
+
+=== ACNE_171 | group=ACNE_G024 | split=train | phenotype=inflammatory_papular ===
+POSITIVE PROMPT:
+Unretouched dermatology reference photograph of a 24-year-old woman with medium-brown skin, showing papular acne vulgaris focused on the lateral forehead and temples. Morphology: several erythematous rounded papules alongside smaller developing bumps, with no broad uniform rash; extent: a few isolated papules plus one small cluster. Composition: left three-quarter facial portrait; balanced window-diffused light; plain cool gray backdrop. Preserve small variation in gloss between the nose and cheeks; lesions clearly resolved individually, with no beauty retouching.
+NEGATIVE PROMPT:
+cartoon, illustration, painting, waxy or plastic skin, beauty filter, airbrushing, blurred face, overexposed highlights, oversaturated colours, duplicate face, distorted anatomy, extra eyes, watermark, text, collage
+
+=== ACNE_172 | group=ACNE_G037 | split=train | phenotype=papulopustular ===
+POSITIVE PROMPT:
+Clinical documentary photograph of a 27-year-old man with deep brown skin, showing papulopustular acne vulgaris focused on the right mid-cheek. Morphology: discrete creamy-centred pustules edged by subtle inflammation alongside smaller papules; extent: several clusters of papules and sparse small pus-tipped lesions. Composition: right three-quarter facial portrait; large softbox-like diffuse light; matte beige backdrop. Preserve natural sebaceous sheen without cosmetic smoothing; no exaggerated cosmetic colour grading or artificial lesion symmetry. Inflamed papules may appear dusky rather than bright red on this skin tone.
+NEGATIVE PROMPT:
+cartoon, illustration, painting, waxy or plastic skin, beauty filter, airbrushing, blurred face, overexposed highlights, oversaturated colours, duplicate face, distorted anatomy, extra eyes, watermark, text, collage
+
+=== ACNE_173 | group=ACNE_G048 | split=val | phenotype=nodular_inflammatory ===
+POSITIVE PROMPT:
+Realistic facial dermatology photograph of a 58-year-old woman with very deep brown skin, showing nodular inflammatory acne vulgaris focused on the right lower cheek. Morphology: large smooth-topped acne nodules with diffuse local inflammatory shading and fewer smaller bumps; extent: extensive deep nodular inflammation with accompanying smaller lesions. Inflamed papules may appear dusky rather than bright red on this skin tone. Gentle local shadows communicate nodular depth. Composition: close facial photograph with nose and both eyes in frame; gentle frontal diffuse light; uniform light gray background. Preserve preserved follicular openings and realistic skin grain; clear separation between affected skin and neighbouring clear areas.
+NEGATIVE PROMPT:
+cartoon, illustration, painting, waxy or plastic skin, beauty filter, airbrushing, blurred face, overexposed highlights, oversaturated colours, duplicate face, distorted anatomy, extra eyes, watermark, text, collage
+
+=== ACNE_174 | group=ACNE_G051 | split=test | phenotype=mixed_lesions ===
+POSITIVE PROMPT:
+Unretouched dermatology reference photograph of a 23-year-old man with very light ivory skin, showing mixed comedonal and inflammatory acne vulgaris focused on the forehead and both cheeks. Morphology: open and closed comedones together with separate inflammatory papules and a few superficial pustules; extent: sparse comedones with a few separate inflammatory papules and one or two pustules. Composition: front-facing head-and-shoulders clinical portrait; low-shadow diffuse white light; quiet neutral background. Preserve fine facial vellus hair with authentic cutaneous texture; accurate face anatomy and sharp diagnostic detail.
+NEGATIVE PROMPT:
+cartoon, illustration, painting, waxy or plastic skin, beauty filter, airbrushing, blurred face, overexposed highlights, oversaturated colours, duplicate face, distorted anatomy, extra eyes, watermark, text, collage
+
+=== ACNE_175 | group=ACNE_G001 | split=train | phenotype=closed_comedonal ===
+POSITIVE PROMPT:
+Natural clinical facial portrait of a 38-year-old man with very light ivory skin, showing comedonal acne dominated by closed whiteheads focused on the central forehead and eyebrow-adjacent skin. Morphology: tiny skin-coloured dome-shaped closed comedones, 1–3 mm, raised above neighbouring follicles, without visible pus; extent: a sparse field of about eight to fourteen identifiable small plugs, separated by clear skin. Composition: straight-on face-level portrait; soft diffuse clinic lighting; uniform pale gray backdrop. Preserve detailed follicular texture with no artificial airbrushing; a relaxed neutral expression and realistic skin microtexture.
+NEGATIVE PROMPT:
+cartoon, illustration, painting, waxy or plastic skin, beauty filter, airbrushing, blurred face, overexposed highlights, oversaturated colours, duplicate face, distorted anatomy, extra eyes, watermark, text, collage
+
+=== ACNE_176 | group=ACNE_G014 | split=train | phenotype=open_comedonal ===
+POSITIVE PROMPT:
+Realistic facial dermatology photograph of a 20-year-old woman with medium-brown skin, showing comedonal acne dominated by blackheads focused on the chin below the lower lip. Morphology: discrete dark-centred open comedones separated by normal skin texture and small visible sebaceous pores; extent: dozens of individually distinguishable open follicular plugs. Composition: straight-on face-level portrait; soft diffuse clinic lighting; uniform pale gray backdrop. Preserve small variation in gloss between the nose and cheeks; skin imperfections preserved as in routine clinical documentation.
+NEGATIVE PROMPT:
+cartoon, illustration, painting, waxy or plastic skin, beauty filter, airbrushing, blurred face, overexposed highlights, oversaturated colours, duplicate face, distorted anatomy, extra eyes, watermark, text, collage
+
+=== ACNE_177 | group=ACNE_G025 | split=test | phenotype=inflammatory_papular ===
+POSITIVE PROMPT:
+High-detail examination-style photograph of a 27-year-old man with deep brown skin, showing papular acne vulgaris focused on the chin and mandibular border. Morphology: inflamed follicular papules of differing heights, surrounded by mildly reactive skin but no scaly rings; extent: several uneven papular clusters, still individually recognizable. Inflamed papules may appear dusky rather than bright red on this skin tone. Composition: slightly turned face with visible jaw and opposite cheek; broad neutral daylight; uncluttered neutral backdrop. Preserve natural sebaceous sheen without cosmetic smoothing; a realistic human face rather than an idealised beauty portrait.
+NEGATIVE PROMPT:
+cartoon, illustration, painting, waxy or plastic skin, beauty filter, airbrushing, blurred face, overexposed highlights, oversaturated colours, duplicate face, distorted anatomy, extra eyes, watermark, text, collage
+
+=== ACNE_178 | group=ACNE_G038 | split=test | phenotype=papulopustular ===
+POSITIVE PROMPT:
+Natural clinical facial portrait of a 31-year-old woman with very deep brown skin, showing papulopustular acne vulgaris focused on the forehead. Morphology: recent inflammatory acne with several developing papules and several mature pustules with pale centres; extent: extensive inflammatory lesions with many papules and distinct pustule centres. Composition: near-frontal three-quarter cheek-focused portrait; soft lateral diffuse light; plain neutral wall. Preserve preserved follicular openings and realistic skin grain; the original irregular distribution of individual lesions remains visible. Inflamed papules may appear dusky rather than bright red on this skin tone.
+NEGATIVE PROMPT:
+cartoon, illustration, painting, waxy or plastic skin, beauty filter, airbrushing, blurred face, overexposed highlights, oversaturated colours, duplicate face, distorted anatomy, extra eyes, watermark, text, collage
+
+=== ACNE_179 | group=ACNE_G049 | split=train | phenotype=nodular_inflammatory ===
+POSITIVE PROMPT:
+Clinical documentary photograph of a 20-year-old man with deep brown skin, showing nodular inflammatory acne vulgaris focused on the right lower cheek. Morphology: deep inflamed follicular nodules at uneven distances, accompanied by tiny comedones at the periphery; extent: two pronounced nodules in separate areas with a modest papular background. Inflamed papules may appear dusky rather than bright red on this skin tone. Gentle local shadows communicate nodular depth. Composition: left three-quarter facial portrait; balanced window-diffused light; plain cool gray backdrop. Preserve fine facial vellus hair with authentic cutaneous texture; fine lesion edges visible at normal diagnostic viewing distance.
+NEGATIVE PROMPT:
+cartoon, illustration, painting, waxy or plastic skin, beauty filter, airbrushing, blurred face, overexposed highlights, oversaturated colours, duplicate face, distorted anatomy, extra eyes, watermark, text, collage
+
+=== ACNE_180 | group=ACNE_G052 | split=train | phenotype=mixed_lesions ===
+POSITIVE PROMPT:
+High-detail examination-style photograph of a 38-year-old woman with light beige skin, showing mixed comedonal and inflammatory acne vulgaris focused on the nose and forehead with inflammatory cheek lesions. Morphology: fine forehead comedones combined with cheek papules and scattered small white-centred pustules; extent: several open and closed comedones with multiple papules and a few pustules. Composition: straight-on mid-face clinical framing; balanced documentary lighting; simple uncluttered backdrop. Preserve realistic skin folds and unaltered local surface texture; a relaxed neutral expression and realistic skin microtexture.
+NEGATIVE PROMPT:
+cartoon, illustration, painting, waxy or plastic skin, beauty filter, airbrushing, blurred face, overexposed highlights, oversaturated colours, duplicate face, distorted anatomy, extra eyes, watermark, text, collage
+
+=== ACNE_181 | group=ACNE_G003 | split=val | phenotype=closed_comedonal ===
+POSITIVE PROMPT:
+Realistic facial dermatology photograph of a 23-year-old man with light-medium golden skin, showing comedonal acne dominated by closed whiteheads focused on the forehead with a few spots at the temples. Morphology: fine noninflamed whiteheads with subtle rounded silhouettes, some isolated and others grouped in narrow bands; extent: a sparse field of about eight to fourteen identifiable small plugs, separated by clear skin. Composition: close facial photograph with nose and both eyes in frame; gentle frontal diffuse light; uniform light gray background. Preserve visible skin pores and fine facial hairs; lesions clearly resolved individually, with no beauty retouching.
+NEGATIVE PROMPT:
+cartoon, illustration, painting, waxy or plastic skin, beauty filter, airbrushing, blurred face, overexposed highlights, oversaturated colours, duplicate face, distorted anatomy, extra eyes, watermark, text, collage
+
+=== ACNE_182 | group=ACNE_G016 | split=val | phenotype=open_comedonal ===
+POSITIVE PROMPT:
+Unretouched dermatology reference photograph of a 24-year-old woman with very light ivory skin, showing comedonal acne dominated by blackheads focused on the nose and adjoining upper cheeks. Morphology: fine dark follicular openings on sebaceous facial zones together with sparse whitehead-like bumps; extent: six to twelve visible dark-centred follicles separated by clear skin. Composition: close facial photograph with nose and both eyes in frame; gentle frontal diffuse light; uniform light gray background. Preserve unretouched skin with slight uneven surface microtexture; no exaggerated cosmetic colour grading or artificial lesion symmetry.
+NEGATIVE PROMPT:
+cartoon, illustration, painting, waxy or plastic skin, beauty filter, airbrushing, blurred face, overexposed highlights, oversaturated colours, duplicate face, distorted anatomy, extra eyes, watermark, text, collage
+
+=== ACNE_183 | group=ACNE_G027 | split=train | phenotype=inflammatory_papular ===
+POSITIVE PROMPT:
+Natural clinical facial portrait of a 35-year-old man with deep brown skin, showing papular acne vulgaris focused on the left cheek. Morphology: small inflammatory bumps extending from a denser central cluster to a sparse peripheral scatter; extent: numerous distinct papules of differing diameters with scattered clear skin. Composition: straight-on face-level portrait; soft diffuse clinic lighting; uniform pale gray backdrop. Preserve natural matte-and-sheen variation across facial regions; clear separation between affected skin and neighbouring clear areas. Inflamed papules may appear dusky rather than bright red on this skin tone.
+NEGATIVE PROMPT:
+cartoon, illustration, painting, waxy or plastic skin, beauty filter, airbrushing, blurred face, overexposed highlights, oversaturated colours, duplicate face, distorted anatomy, extra eyes, watermark, text, collage
+
+=== ACNE_184 | group=ACNE_G040 | split=train | phenotype=papulopustular ===
+POSITIVE PROMPT:
+Realistic facial dermatology photograph of a 52-year-old woman with very light ivory skin, showing papulopustular acne vulgaris focused on the both cheeks. Morphology: white-centred acne pustules scattered among raised inflamed papules, with individual lesion boundaries preserved; extent: extensive inflammatory lesions with many papules and distinct pustule centres. Composition: straight-on face-level portrait; soft diffuse clinic lighting; uniform pale gray backdrop. Preserve subtle normal pores visible between individual lesions; accurate face anatomy and sharp diagnostic detail.
+NEGATIVE PROMPT:
+cartoon, illustration, painting, waxy or plastic skin, beauty filter, airbrushing, blurred face, overexposed highlights, oversaturated colours, duplicate face, distorted anatomy, extra eyes, watermark, text, collage
+
+=== ACNE_185 | group=ACNE_G041 | split=test | phenotype=nodular_inflammatory ===
+POSITIVE PROMPT:
+High-detail examination-style photograph of a 16-year-old teenage boy with very light ivory skin, showing nodular inflammatory acne vulgaris focused on the lower left cheek and jawline. Morphology: several deep dome-like inflammatory acne nodules, larger than surrounding papules, without superficial whiteheads on the nodules; extent: one or two dominant deep nodules plus several smaller papules. Composition: slightly turned face with visible jaw and opposite cheek; broad neutral daylight; uncluttered neutral backdrop. Preserve uneven natural pore visibility across the face; lesions occupy the intended anatomic zone rather than the whole face. Gentle local shadows communicate nodular depth.
+NEGATIVE PROMPT:
+cartoon, illustration, painting, waxy or plastic skin, beauty filter, airbrushing, blurred face, overexposed highlights, oversaturated colours, duplicate face, distorted anatomy, extra eyes, watermark, text, collage
+
+=== ACNE_186 | group=ACNE_G054 | split=test | phenotype=mixed_lesions ===
+POSITIVE PROMPT:
+Natural clinical facial portrait of a 49-year-old woman with medium-brown skin, showing mixed comedonal and inflammatory acne vulgaris focused on the left cheek and nasal sidewalls. Morphology: uneven mix of follicular plugs, solid inflamed papules and several discrete pustules, not a uniform eruption; extent: sparse comedones with a few separate inflammatory papules and one or two pustules. Composition: slightly turned face with visible jaw and opposite cheek; broad neutral daylight; uncluttered neutral backdrop. Preserve natural shallow shadows around protruding lesions; lesions clearly resolved individually, with no beauty retouching.
+NEGATIVE PROMPT:
+cartoon, illustration, painting, waxy or plastic skin, beauty filter, airbrushing, blurred face, overexposed highlights, oversaturated colours, duplicate face, distorted anatomy, extra eyes, watermark, text, collage
+
+=== ACNE_187 | group=ACNE_G004 | split=train | phenotype=closed_comedonal ===
+POSITIVE PROMPT:
+Clinical documentary photograph of a 24-year-old woman with medium-brown skin, showing comedonal acne dominated by closed whiteheads focused on the chin and central lower face. Morphology: small flesh-toned plugged follicles forming uneven clusters, with a few larger closed comedones; extent: several dozen discrete comedones across the selected zone, with a patchy distribution. Composition: mildly oblique facial portrait retaining facial landmarks; soft overcast-style daylight; neutral cream background. Preserve unretouched skin with slight uneven surface microtexture; a realistic human face rather than an idealised beauty portrait.
+NEGATIVE PROMPT:
+cartoon, illustration, painting, waxy or plastic skin, beauty filter, airbrushing, blurred face, overexposed highlights, oversaturated colours, duplicate face, distorted anatomy, extra eyes, watermark, text, collage
+
+=== ACNE_188 | group=ACNE_G017 | split=train | phenotype=open_comedonal ===
+POSITIVE PROMPT:
+High-detail examination-style photograph of a 17-year-old teenage boy with deep brown skin, showing comedonal acne dominated by blackheads focused on the central forehead. Morphology: tiny dark open follicle plugs interrupted by several larger visible blackheads, without broad discoloration; extent: multiple blackheads grouped in two distinct regions with clear gaps. Composition: left three-quarter facial portrait; balanced window-diffused light; plain cool gray backdrop. Preserve natural matte-and-sheen variation across facial regions; the original irregular distribution of individual lesions remains visible.
+NEGATIVE PROMPT:
+cartoon, illustration, painting, waxy or plastic skin, beauty filter, airbrushing, blurred face, overexposed highlights, oversaturated colours, duplicate face, distorted anatomy, extra eyes, watermark, text, collage
+
+=== ACNE_189 | group=ACNE_G028 | split=train | phenotype=inflammatory_papular ===
+POSITIVE PROMPT:
+Unretouched dermatology reference photograph of a 38-year-old woman with very deep brown skin, showing papular acne vulgaris focused on the chin and lower cheeks. Morphology: distinct papules with soft-edged local redness and a few skin-coloured comedones between them; extent: widespread densely grouped inflammatory papules with uneven gaps. Composition: front-facing head-and-shoulders clinical portrait; low-shadow diffuse white light; quiet neutral background. Preserve subtle normal pores visible between individual lesions; fine lesion edges visible at normal diagnostic viewing distance. Inflamed papules may appear dusky rather than bright red on this skin tone.
+NEGATIVE PROMPT:
+cartoon, illustration, painting, waxy or plastic skin, beauty filter, airbrushing, blurred face, overexposed highlights, oversaturated colours, duplicate face, distorted anatomy, extra eyes, watermark, text, collage
+
+=== ACNE_190 | group=ACNE_G031 | split=train | phenotype=papulopustular ===
+POSITIVE PROMPT:
+Clinical documentary photograph of a 31-year-old man with very light ivory skin, showing papulopustular acne vulgaris focused on the both cheeks, more concentrated on the right. Morphology: inflamed papules mixed with superficial pustules showing small creamy-white centres, approximately 2–5 mm; extent: a few separate papules and two or three pustules. Composition: face-level close portrait with both cheeks visible; even clinical examination lighting; plain off-white backdrop. Preserve uneven natural pore visibility across the face; a relaxed neutral expression and realistic skin microtexture.
+NEGATIVE PROMPT:
+cartoon, illustration, painting, waxy or plastic skin, beauty filter, airbrushing, blurred face, overexposed highlights, oversaturated colours, duplicate face, distorted anatomy, extra eyes, watermark, text, collage
+
+=== ACNE_191 | group=ACNE_G042 | split=train | phenotype=nodular_inflammatory ===
+POSITIVE PROMPT:
+Realistic facial dermatology photograph of a 31-year-old woman with light beige skin, showing nodular inflammatory acne vulgaris focused on the right mandibular cheek. Morphology: deep rounded inflamed nodules with broad reddish or dusky outlines and smaller peripheral papules; extent: several distinct deep nodules with surrounding clusters of inflamed papules. Composition: near-frontal three-quarter cheek-focused portrait; soft lateral diffuse light; plain neutral wall. Preserve natural shallow shadows around protruding lesions; skin imperfections preserved as in routine clinical documentation. Gentle local shadows communicate nodular depth.
+NEGATIVE PROMPT:
+cartoon, illustration, painting, waxy or plastic skin, beauty filter, airbrushing, blurred face, overexposed highlights, oversaturated colours, duplicate face, distorted anatomy, extra eyes, watermark, text, collage
+
+=== ACNE_192 | group=ACNE_G055 | split=train | phenotype=mixed_lesions ===
+POSITIVE PROMPT:
+Unretouched dermatology reference photograph of a 53-year-old man with medium-brown skin, showing mixed comedonal and inflammatory acne vulgaris focused on the jawline with central forehead comedones. Morphology: clusters of inflammatory papules interrupted by individual dark-plugged pores and closed comedones; extent: patchy groups of comedones and inflammatory lesions in different regions. Composition: near-frontal three-quarter cheek-focused portrait; soft lateral diffuse light; plain neutral wall. Preserve visible skin pores and fine facial hairs; a realistic human face rather than an idealised beauty portrait.
+NEGATIVE PROMPT:
+cartoon, illustration, painting, waxy or plastic skin, beauty filter, airbrushing, blurred face, overexposed highlights, oversaturated colours, duplicate face, distorted anatomy, extra eyes, watermark, text, collage
+
+=== ACNE_193 | group=ACNE_G005 | split=train | phenotype=closed_comedonal ===
+POSITIVE PROMPT:
+Natural clinical facial portrait of a 17-year-old teenage boy with very deep brown skin, showing comedonal acne dominated by closed whiteheads focused on the upper cheeks close to the nose. Morphology: pinhead-sized closed comedones giving a finely bumpy surface, with minimal surrounding inflammation; extent: a dense but countable field of comedones with unevenly spaced clear intervals. Composition: right three-quarter facial portrait; large softbox-like diffuse light; matte beige backdrop. Preserve natural matte-and-sheen variation across facial regions; clear separation between affected skin and neighbouring clear areas.
+NEGATIVE PROMPT:
+cartoon, illustration, painting, waxy or plastic skin, beauty filter, airbrushing, blurred face, overexposed highlights, oversaturated colours, duplicate face, distorted anatomy, extra eyes, watermark, text, collage
+
+=== ACNE_194 | group=ACNE_G018 | split=train | phenotype=open_comedonal ===
+POSITIVE PROMPT:
+Realistic facial dermatology photograph of a 20-year-old woman with very deep brown skin, showing comedonal acne dominated by blackheads focused on the medial cheeks. Morphology: individual blackheads with circular dark centres, variable spacing and a few nearby closed comedones; extent: very dense, widespread open and closed comedones through the central facial region. Composition: close facial photograph with nose and both eyes in frame; gentle frontal diffuse light; uniform light gray background. Preserve subtle normal pores visible between individual lesions; accurate face anatomy and sharp diagnostic detail.
+NEGATIVE PROMPT:
+cartoon, illustration, painting, waxy or plastic skin, beauty filter, airbrushing, blurred face, overexposed highlights, oversaturated colours, duplicate face, distorted anatomy, extra eyes, watermark, text, collage
+
+=== ACNE_195 | group=ACNE_G029 | split=val | phenotype=inflammatory_papular ===
+POSITIVE PROMPT:
+High-detail examination-style photograph of a 26-year-old man with very deep brown skin, showing papular acne vulgaris focused on the chin and lower cheeks. Morphology: unevenly spaced erythematous follicular papules, some newly raised and others flattening; extent: numerous distinct papules of differing diameters with scattered clear skin. Composition: straight-on face-level portrait; soft diffuse clinic lighting; uniform pale gray backdrop. Preserve uneven natural pore visibility across the face; lesions occupy the intended anatomic zone rather than the whole face. Inflamed papules may appear dusky rather than bright red on this skin tone.
+NEGATIVE PROMPT:
+cartoon, illustration, painting, waxy or plastic skin, beauty filter, airbrushing, blurred face, overexposed highlights, oversaturated colours, duplicate face, distorted anatomy, extra eyes, watermark, text, collage
+
+=== ACNE_196 | group=ACNE_G032 | split=val | phenotype=papulopustular ===
+POSITIVE PROMPT:
+Natural clinical facial portrait of a 54-year-old woman with light beige skin, showing papulopustular acne vulgaris focused on the lower left cheek and chin. Morphology: uneven groups of red acne bumps and distinct tiny yellow-white pustule tips, with sparse comedones; extent: several clusters of papules and sparse small pus-tipped lesions. Composition: close facial photograph with nose and both eyes in frame; gentle frontal diffuse light; uniform light gray background. Preserve natural shallow shadows around protruding lesions; lesions clearly resolved individually, with no beauty retouching.
+NEGATIVE PROMPT:
+cartoon, illustration, painting, waxy or plastic skin, beauty filter, airbrushing, blurred face, overexposed highlights, oversaturated colours, duplicate face, distorted anatomy, extra eyes, watermark, text, collage
+
+=== ACNE_197 | group=ACNE_G043 | split=train | phenotype=nodular_inflammatory ===
+POSITIVE PROMPT:
+Clinical documentary photograph of a 35-year-old man with light-medium golden skin, showing nodular inflammatory acne vulgaris focused on the both lower cheeks with uneven involvement. Morphology: large firm-looking subcutaneous acne bumps with soft raised contours, together with scattered comedones; extent: extensive deep nodular inflammation with accompanying smaller lesions. Composition: straight-on face-level portrait; soft diffuse clinic lighting; uniform pale gray backdrop. Preserve visible skin pores and fine facial hairs; no exaggerated cosmetic colour grading or artificial lesion symmetry. Gentle local shadows communicate nodular depth.
+NEGATIVE PROMPT:
+cartoon, illustration, painting, waxy or plastic skin, beauty filter, airbrushing, blurred face, overexposed highlights, oversaturated colours, duplicate face, distorted anatomy, extra eyes, watermark, text, collage
+
+=== ACNE_198 | group=ACNE_G056 | split=train | phenotype=mixed_lesions ===
+POSITIVE PROMPT:
+High-detail examination-style photograph of a 58-year-old woman with very deep brown skin, showing mixed comedonal and inflammatory acne vulgaris focused on the both cheeks and chin. Morphology: small follicular whiteheads and blackheads beside several pustular and papular inflammatory lesions; extent: sparse comedones with a few separate inflammatory papules and one or two pustules. Inflamed papules may appear dusky rather than bright red on this skin tone. Composition: straight-on face-level portrait; soft diffuse clinic lighting; uniform pale gray backdrop. Preserve unretouched skin with slight uneven surface microtexture; clear separation between affected skin and neighbouring clear areas.
+NEGATIVE PROMPT:
+cartoon, illustration, painting, waxy or plastic skin, beauty filter, airbrushing, blurred face, overexposed highlights, oversaturated colours, duplicate face, distorted anatomy, extra eyes, watermark, text, collage
+
+=== ACNE_199 | group=ACNE_G007 | split=train | phenotype=closed_comedonal ===
+POSITIVE PROMPT:
+Realistic facial dermatology photograph of a 23-year-old man with deep brown skin, showing comedonal acne dominated by closed whiteheads focused on the central forehead. Morphology: fine raised follicular plugs along the hairline and adjacent skin, interspersed with natural clear follicles; extent: several dozen discrete comedones across the selected zone, with a patchy distribution. Composition: mildly oblique facial portrait retaining facial landmarks; soft overcast-style daylight; neutral cream background. Preserve realistic skin folds and unaltered local surface texture; fine lesion edges visible at normal diagnostic viewing distance.
+NEGATIVE PROMPT:
+cartoon, illustration, painting, waxy or plastic skin, beauty filter, airbrushing, blurred face, overexposed highlights, oversaturated colours, duplicate face, distorted anatomy, extra eyes, watermark, text, collage
+
+=== ACNE_200 | group=ACNE_G020 | split=train | phenotype=open_comedonal ===
+POSITIVE PROMPT:
+Unretouched dermatology reference photograph of a 15-year-old teenage girl with light-medium golden skin, showing comedonal acne dominated by blackheads focused on the nose tip. Morphology: dark-centred follicular blockages clustered more strongly near the central face and thinning peripherally; extent: six to twelve visible dark-centred follicles separated by clear skin. Composition: mildly oblique facial portrait retaining facial landmarks; soft overcast-style daylight; neutral cream background. Preserve detailed follicular texture with no artificial airbrushing; a relaxed neutral expression and realistic skin microtexture.
+NEGATIVE PROMPT:
+cartoon, illustration, painting, waxy or plastic skin, beauty filter, airbrushing, blurred face, overexposed highlights, oversaturated colours, duplicate face, distorted anatomy, extra eyes, watermark, text, collage
+

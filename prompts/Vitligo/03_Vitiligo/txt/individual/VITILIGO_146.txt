@@ -1,0 +1,10 @@
+PROMPT_ID: VITILIGO_146
+GROUP_ID: VITILIGO_G030
+PHENOTYPE: focal_undetermined_appearance
+SPLIT: train
+
+POSITIVE PROMPT:
+Clinical photograph of a 27-year-old man with very dark brown skin, showing a localized focal-appearing facial vitiligo pattern. At the right cheek near the nose, one localized white patch has a two-lobed scalloped outline. The lobes are joined and share a uniform flat texture. Only this small localized site is visibly affected. The white-to-normal-skin transition is distinct but not mechanically traced. Front-facing dermatology photograph, broad shadow-free clinical light. Use soft realistic lighting and preserve the unaltered skin surface.
+
+NEGATIVE PROMPT:
+illustration, painting, cartoon, CGI, digitally painted white mask, artificial cutout borders, face paint, cosmetic concealer, smooth plastic skin, beauty filter, watermark, text overlay, arrows, annotation, duplicate face, extra eyes, distorted facial anatomy, out of focus lesion, heavy crust, thick scale, raised ring rash, collage

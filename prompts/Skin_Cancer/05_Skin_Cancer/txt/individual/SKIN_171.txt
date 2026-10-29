@@ -1,0 +1,10 @@
+PROMPT ID: SKIN_171
+PHENOTYPE: melanoma_appearance
+GROUP: SKIN_G035
+SPLIT: train
+
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 47-year-old woman with light-medium beige skin. At the left temple, show melanoma-suspicious skin lesion features: a dome-shaped dark-blue-black pigmented nodule with asymmetric boundaries. The smooth elevated surface shows uneven brown-black color at the periphery. The uneven border and pigment variation are clearly visible. The surrounding skin retains natural pores; pigmentation is not painted on. A natural resting facial expression. Straight-on facial photograph, controlled soft studio lighting, visible natural pores, neutral background, sharp focus.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, face paint, makeup concealment, airbrushed skin, beauty filter, plastic pores, glossy cosmetic retouching, tattoo, watermark, text, label, arrows, distorted facial anatomy, duplicate face, blurred skin detail, fantasy colors, excessive artificial symmetry

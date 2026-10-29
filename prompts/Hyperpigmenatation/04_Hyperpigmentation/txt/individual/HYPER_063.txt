@@ -1,0 +1,9 @@
+ID: HYPER_063
+GROUP: HYPER_G003
+SPLIT: train
+PHENOTYPE: solar_lentigines_appearance
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 51-year-old woman with very fair ivory skin. At the left cheek below the eye, show solar lentigo-like benign-appearing pigmented macules: a sharply outlined uniform tan round macule. Its interior color is even, with no multicolored or inflamed components. Moderate affected area; the described macules are clearly visible on this facial site. The marks remain discrete and predominantly uniform in color; no bleeding, irregular multicolor change or ulceration. Frontal facial close-up, neutral soft daylight, realistic pores and skin texture, natural skin tones, plain background, no retouching.
+
+NEGATIVE PROMPT:
+cartoon, CGI, painted-on stains, makeup, face paint, beauty filter, plastic skin, airbrushing, watermark, text, arrows, annotations, duplicate face, distorted eyes, wrong facial anatomy, blurred lesions, oversaturated pigments, image collage, unrelated body rash

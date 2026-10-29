@@ -1,0 +1,10 @@
+PROMPT ID: SKIN_078
+PHENOTYPE: scc_appearance
+GROUP: SKIN_G016
+SPLIT: train
+
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 68-year-old man with very deep brown skin. At the mid-forehead, show cutaneous-squamous-cell-carcinoma-like morphology: a solitary firm-looking pink nodule with a thick whitish keratin cap. The surface is coarse and the base is slightly raised. The uneven scaly relief is readily visible without magnification. Keratin and surface scale are confined to the described area. Render the indicated skin tone without color exaggeration. Frontal close facial view, controlled soft studio lighting, visible natural pores, neutral background, sharp focus.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, face paint, makeup concealment, airbrushed skin, beauty filter, plastic pores, glossy cosmetic retouching, tattoo, watermark, text, label, arrows, distorted facial anatomy, duplicate face, blurred skin detail, fantasy colors, excessive artificial symmetry

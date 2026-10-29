@@ -1,0 +1,9 @@
+ID: NORMAL_022
+GROUP: NORMAL_G022
+PHENOTYPE: balanced_skin_appearance
+SPLIT: test
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 35-year-old man with medium-brown skin, frontal clinical portrait, neutral softbox lighting. Show balanced-looking non-lesional facial skin. At both temples, depict a naturally fine temple texture with small follicular openings. The surface transitions gradually into nearby facial skin without a sharply edged patch. The surface has restrained, natural reflection and irregular but unobstructed pores. Keep real pore spacing, subtle color variation and naturally uneven skin detail. Neutral expression, plain clinical backdrop, no cosmetic smoothing.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, makeup, beauty filter, airbrushed skin, porcelain skin, digitally painted face, unnatural skin smoothing, watermark, text, distorted face, duplicate eyes, extra nose, excessive blur, overexposure, extreme shadows, acne papules, pustules, comedones, red inflamed rash, ring-shaped scaly plaques, depigmented white patches, distinct pigmented lesions, bleeding or crusted lesions, wet greasy oil coating, severe dryness, thick flaking

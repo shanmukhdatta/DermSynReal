@@ -1,0 +1,10 @@
+PROMPT ID: SKIN_298
+PHENOTYPE: ak_precancerous_appearance
+GROUP: SKIN_G060
+SPLIT: test
+
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 81-year-old man with medium brown skin. At the skin above the upper lip, show actinic-keratosis-like sun-damaged skin features: a small rough reddish-tan macule with adherent pale scale. Its gritty surface is distinct from the surrounding smooth facial skin. The localized surface scale is easy to distinguish. Dry surface scale remains confined to the described patch or spots. Render the indicated skin tone without color exaggeration. Slight right three-quarter clinical view, even indirect daylight, visible natural pores, neutral background, sharp focus.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, face paint, makeup concealment, airbrushed skin, beauty filter, plastic pores, glossy cosmetic retouching, tattoo, watermark, text, label, arrows, distorted facial anatomy, duplicate face, blurred skin detail, fantasy colors, excessive artificial symmetry

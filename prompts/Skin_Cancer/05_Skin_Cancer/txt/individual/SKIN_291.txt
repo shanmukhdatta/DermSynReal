@@ -1,0 +1,10 @@
+PROMPT ID: SKIN_291
+PHENOTYPE: ak_precancerous_appearance
+GROUP: SKIN_G059
+SPLIT: test
+
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 81-year-old woman with light-medium beige skin. At the left outer forehead, show actinic-keratosis-like sun-damaged skin features: two adjacent irregular pink patches with slightly different degrees of fine scale. Their borders touch in one place and normal skin remains around them. The localized surface scale is easy to distinguish. Dry surface scale remains confined to the described patch or spots. A natural resting facial expression. Slight left three-quarter clinical view, even indirect daylight, visible natural pores, neutral background, sharp focus.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, face paint, makeup concealment, airbrushed skin, beauty filter, plastic pores, glossy cosmetic retouching, tattoo, watermark, text, label, arrows, distorted facial anatomy, duplicate face, blurred skin detail, fantasy colors, excessive artificial symmetry

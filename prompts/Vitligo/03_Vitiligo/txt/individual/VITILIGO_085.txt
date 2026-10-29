@@ -1,0 +1,10 @@
+PROMPT_ID: VITILIGO_085
+GROUP_ID: VITILIGO_G017
+PHENOTYPE: segmental_appearance
+SPLIT: train
+
+POSITIVE PROMPT:
+Clinical photograph of a 20-year-old woman with light olive skin, showing a unilateral segmental facial vitiligo pattern. At the right upper outer face, two nearby white lobes connect through a narrow depigmented bridge. The coalesced shape remains entirely on one side. The irregular patch remains unilateral, with unaffected skin elsewhere. The white-to-normal-skin transition is distinct but not mechanically traced. Frontal clinical portrait, broad shadow-free clinical light. Show ordinary skin texture, an uncluttered background, and realistic anatomy.
+
+NEGATIVE PROMPT:
+illustration, painting, cartoon, CGI, digitally painted white mask, artificial cutout borders, face paint, cosmetic concealer, smooth plastic skin, beauty filter, watermark, text overlay, arrows, annotation, duplicate face, extra eyes, distorted facial anatomy, out of focus lesion, heavy crust, thick scale, raised ring rash, collage

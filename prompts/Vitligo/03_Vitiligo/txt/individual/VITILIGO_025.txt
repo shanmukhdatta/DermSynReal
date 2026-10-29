@@ -1,0 +1,10 @@
+PROMPT_ID: VITILIGO_025
+GROUP_ID: VITILIGO_G005
+PHENOTYPE: segmental_appearance
+SPLIT: val
+
+POSITIVE PROMPT:
+Clinical photograph of a 24-year-old woman with light olive skin, showing a unilateral segmental facial vitiligo pattern. At the right cheek near the mouth, two separate white islands of unequal size sit within a confined facial sector. There is ordinary pigmented skin between the islands. The irregular patch remains unilateral, with unaffected skin elsewhere. Surrounding skin shows normal visible pores and fine texture. Unretouched clinical face photograph, balanced diffuse studio light. Use an unretouched photo with natural pores and accurate skin color.
+
+NEGATIVE PROMPT:
+illustration, painting, cartoon, CGI, digitally painted white mask, artificial cutout borders, face paint, cosmetic concealer, smooth plastic skin, beauty filter, watermark, text overlay, arrows, annotation, duplicate face, extra eyes, distorted facial anatomy, out of focus lesion, heavy crust, thick scale, raised ring rash, collage

@@ -1,0 +1,10 @@
+PROMPT_ID: VITILIGO_262
+GROUP_ID: VITILIGO_G053
+PHENOTYPE: segmental_appearance
+SPLIT: test
+
+POSITIVE PROMPT:
+Clinical photograph of a 17-year-old man with very dark brown skin, showing a unilateral segmental facial vitiligo pattern. At the right cheek near the eye, a smooth white patch curves around a local natural facial contour. It stays on one side and does not cross the facial midline. The patch has a few nearby tiny satellite white spots on the same side. The white-to-normal-skin transition is distinct but not mechanically traced. Unretouched clinical face photograph, broad shadow-free clinical light. Keep true skin texture and a plain neutral background; avoid cosmetic smoothing.
+
+NEGATIVE PROMPT:
+illustration, painting, cartoon, CGI, digitally painted white mask, artificial cutout borders, face paint, cosmetic concealer, smooth plastic skin, beauty filter, watermark, text overlay, arrows, annotation, duplicate face, extra eyes, distorted facial anatomy, out of focus lesion, heavy crust, thick scale, raised ring rash, collage

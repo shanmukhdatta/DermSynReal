@@ -1,0 +1,9 @@
+ID: NORMAL_047
+GROUP: NORMAL_G047
+PHENOTYPE: oily_skin_appearance
+SPLIT: train
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 45-year-old woman with brown skin, frontal clinical portrait, neutral softbox lighting. Show oily-looking but non-lesional facial skin. At both jawlines, depict a faint natural shine along the lower jaw skin. The surface retains subtle uneven pore spacing and normal fine hairs. The surface reflects slightly more light while retaining natural pores. Preserve real facial microtexture and ordinary skin color variation. Clear facial view, simple backdrop, restrained photographic processing.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, makeup, beauty filter, airbrushed skin, porcelain skin, digitally painted face, unnatural skin smoothing, watermark, text, distorted face, duplicate eyes, extra nose, excessive blur, overexposure, extreme shadows, acne papules, pustules, comedones, red inflamed rash, ring-shaped scaly plaques, depigmented white patches, distinct pigmented lesions, bleeding or crusted lesions, plastic gloss, dripping oil, severe peeling skin, thick flaky plaques

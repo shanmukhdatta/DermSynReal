@@ -1,0 +1,10 @@
+PROMPT ID: SKIN_146
+PHENOTYPE: scc_appearance
+GROUP: SKIN_G030
+SPLIT: test
+
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 74-year-old man with light skin. At the right forehead, show cutaneous-squamous-cell-carcinoma-like morphology: a broad scaly reddish nodule-plaque with irregularly raised edges. The coarse keratinous surface varies in thickness across the lesion. The uneven scaly relief is readily visible without magnification. Keratin and surface scale are confined to the described area. A natural resting facial expression. Straight-on facial photograph, controlled soft studio lighting, visible natural pores, neutral background, sharp focus.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, face paint, makeup concealment, airbrushed skin, beauty filter, plastic pores, glossy cosmetic retouching, tattoo, watermark, text, label, arrows, distorted facial anatomy, duplicate face, blurred skin detail, fantasy colors, excessive artificial symmetry

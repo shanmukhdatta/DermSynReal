@@ -1,0 +1,4 @@
+image_path,class_name,prompt_id,prompt_family_id,seed,model_id
+Acne/ACNE_P001_seed101.png,Acne,ACNE_P001,ACNE_F001,101,SD21_LoRA
+Acne/ACNE_P001_seed102.png,Acne,ACNE_P001,ACNE_F001,102,SD21_LoRA
+Vitiligo/VITI_P003_seed203.png,Vitiligo,VITI_P003,VITI_F003,203,SD21_LoRA

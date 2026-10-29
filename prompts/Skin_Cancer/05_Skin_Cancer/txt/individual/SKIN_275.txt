@@ -1,0 +1,10 @@
+PROMPT ID: SKIN_275
+PHENOTYPE: ak_precancerous_appearance
+GROUP: SKIN_G055
+SPLIT: val
+
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 62-year-old woman with deep brown skin. At the right forehead, show actinic-keratosis-like sun-damaged skin features: several tiny pink-tan papules with sparse rough scale. The individual spots vary in size but remain distinct. The localized surface scale is easy to distinguish. Dry surface scale remains confined to the described patch or spots. Include visible unaffected facial skin around the lesion. Slight left three-quarter clinical view, soft diffuse examination-room light, visible natural pores, neutral background, sharp focus.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, face paint, makeup concealment, airbrushed skin, beauty filter, plastic pores, glossy cosmetic retouching, tattoo, watermark, text, label, arrows, distorted facial anatomy, duplicate face, blurred skin detail, fantasy colors, excessive artificial symmetry

@@ -1,0 +1,10 @@
+PROMPT_ID: VITILIGO_121
+GROUP_ID: VITILIGO_G025
+PHENOTYPE: non_segmental_appearance
+SPLIT: train
+
+POSITIVE PROMPT:
+Clinical photograph of a 20-year-old woman with very fair ivory skin, showing a non-segmental facial vitiligo pattern. At the skin beside both outer eye corners, curved white marks bracket the outer corners of both eyes. Both arcs taper gradually while retaining a sharply visible boundary. The paired depigmented areas are small and separated by unaffected skin. The white-to-normal-skin transition is distinct but not mechanically traced. Front-facing dermatology photograph, broad shadow-free clinical light. Use soft realistic lighting and preserve the unaltered skin surface.
+
+NEGATIVE PROMPT:
+illustration, painting, cartoon, CGI, digitally painted white mask, artificial cutout borders, face paint, cosmetic concealer, smooth plastic skin, beauty filter, watermark, text overlay, arrows, annotation, duplicate face, extra eyes, distorted facial anatomy, out of focus lesion, heavy crust, thick scale, raised ring rash, collage

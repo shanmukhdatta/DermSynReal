@@ -1,0 +1,11 @@
+PROMPT_ID: FUNGAL_291
+PROMPT_GROUP_ID: FUNGAL_G051
+PHENOTYPE: tinea_faciei
+SPLIT: train
+CLINICAL_STATUS: PILOT_REVIEW_REQUIRED
+
+POSITIVE_PROMPT:
+Clinical facial photograph of a 27-year-old man with very dark brown skin; frontal face-level photograph, soft broad-source lighting. On the outer right cheek near the temple, show a tinea faciei pattern: a compact round plaque with subtle central clearing and a distinctly scaly outer rim. The surrounding skin is mostly unaffected. The edge looks dusky reddish-brown against the natural skin tone. The outer rim is clearly visible but the lesion remains localized. The photograph has realistic skin texture, no beauty retouching, and an uncluttered background.
+
+NEGATIVE_PROMPT:
+illustration, painting, CGI, cartoon, plastic skin, airbrushed skin, heavy makeup, beauty filter, watermark, printed text, arrows, labels, duplicate head, extra eyes, distorted face, blurry lesion, harsh oversharpening, collage

@@ -1,0 +1,10 @@
+PROMPT_ID: VITILIGO_242
+GROUP_ID: VITILIGO_G049
+PHENOTYPE: non_segmental_appearance
+SPLIT: train
+
+POSITIVE PROMPT:
+Clinical photograph of a 38-year-old man with fair beige skin, showing a non-segmental facial vitiligo pattern. At both posterior lower cheeks, depigmented areas appear in short irregular polygonal shapes on the lower face. Each boundary stays distinct against the surrounding skin tone. The paired white regions have unequal area while remaining on both sides. A narrow sharp border separates the white skin from adjacent pigment. Front-facing dermatology photograph, soft diffused daylight. Use an unretouched photo with natural pores and accurate skin color.
+
+NEGATIVE PROMPT:
+illustration, painting, cartoon, CGI, digitally painted white mask, artificial cutout borders, face paint, cosmetic concealer, smooth plastic skin, beauty filter, watermark, text overlay, arrows, annotation, duplicate face, extra eyes, distorted facial anatomy, out of focus lesion, heavy crust, thick scale, raised ring rash, collage

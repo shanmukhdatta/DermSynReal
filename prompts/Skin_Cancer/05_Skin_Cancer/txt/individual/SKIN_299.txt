@@ -1,0 +1,10 @@
+PROMPT ID: SKIN_299
+PHENOTYPE: ak_precancerous_appearance
+GROUP: SKIN_G060
+SPLIT: test
+
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 86-year-old woman with deep brown skin. At the right chin skin, show actinic-keratosis-like sun-damaged skin features: a small rough reddish-tan macule with adherent pale scale. Its gritty surface is distinct from the surrounding smooth facial skin. The rough dry surface texture is clearly apparent. Dry surface scale remains confined to the described patch or spots. The abnormality is confined to this specified skin region. Frontal close facial view, soft diffused daylight, visible natural pores, neutral background, sharp focus.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, face paint, makeup concealment, airbrushed skin, beauty filter, plastic pores, glossy cosmetic retouching, tattoo, watermark, text, label, arrows, distorted facial anatomy, duplicate face, blurred skin detail, fantasy colors, excessive artificial symmetry

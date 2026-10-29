@@ -1,0 +1,95 @@
+{
+  "total": 300,
+  "unique_positive_prompt_count": 300,
+  "groups": 60,
+  "splits": {
+    "train": 210,
+    "val": 45,
+    "test": 45
+  },
+  "phenotypes": {
+    "non_segmental_appearance": 120,
+    "segmental_appearance": 90,
+    "focal_undetermined_appearance": 90
+  },
+  "sex_counts": {
+    "female": 150,
+    "male": 150
+  },
+  "fitzpatrick_reference_counts": {
+    "I": 50,
+    "II": 50,
+    "III": 50,
+    "IV": 50,
+    "V": 50,
+    "VI": 50
+  },
+  "variation_counts": {
+    "V1": 60,
+    "V2": 60,
+    "V3": 60,
+    "V4": 60,
+    "V5": 60
+  },
+  "word_count_min": 71,
+  "word_count_median": 82.0,
+  "word_count_max": 98,
+  "same_group_split_leakage": false,
+  "csv_json_txt_match": true,
+  "location_pattern_checks": "PASSED authored side / symmetry rules",
+  "morphology_family_similarity_top10": [
+    [
+      0.627,
+      4,
+      5
+    ],
+    [
+      0.559,
+      6,
+      8
+    ],
+    [
+      0.558,
+      38,
+      48
+    ],
+    [
+      0.556,
+      29,
+      57
+    ],
+    [
+      0.548,
+      32,
+      45
+    ],
+    [
+      0.547,
+      22,
+      57
+    ],
+    [
+      0.543,
+      1,
+      43
+    ],
+    [
+      0.528,
+      4,
+      19
+    ],
+    [
+      0.525,
+      8,
+      18
+    ],
+    [
+      0.521,
+      12,
+      13
+    ]
+  ],
+  "exact_sd21_token_check": "PENDING_KAGGLE",
+  "generated_image_clinical_evaluation": "NOT_RUN",
+  "caveat": "word counts cannot establish 150-token CLIP compliance; model generation may ignore prompt details; phenotype is appearance only"
+}

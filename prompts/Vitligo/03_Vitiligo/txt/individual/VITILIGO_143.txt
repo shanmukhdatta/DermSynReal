@@ -1,0 +1,10 @@
+PROMPT_ID: VITILIGO_143
+GROUP_ID: VITILIGO_G029
+PHENOTYPE: segmental_appearance
+SPLIT: train
+
+POSITIVE PROMPT:
+Clinical photograph of a 38-year-old woman with very fair ivory skin, showing a unilateral segmental facial vitiligo pattern. At the right brow region, one main depigmented area has two tiny white macules nearby on the same side. The small spots are separate and not inflamed. The affected region is compact and remains entirely on one side. Surrounding skin shows normal visible pores and fine texture. Frontal clinical portrait, balanced diffuse studio light. Use soft realistic lighting and preserve the unaltered skin surface.
+
+NEGATIVE PROMPT:
+illustration, painting, cartoon, CGI, digitally painted white mask, artificial cutout borders, face paint, cosmetic concealer, smooth plastic skin, beauty filter, watermark, text overlay, arrows, annotation, duplicate face, extra eyes, distorted facial anatomy, out of focus lesion, heavy crust, thick scale, raised ring rash, collage

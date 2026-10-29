@@ -1,0 +1,10 @@
+PROMPT ID: SKIN_252
+PHENOTYPE: ak_precancerous_appearance
+GROUP: SKIN_G051
+SPLIT: train
+
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 62-year-old man with very deep brown skin. At the left upper cheek, show actinic-keratosis-like sun-damaged skin features: a flat tan-brown patch with irregular edges and a visibly dry finely scaling surface. Color varies subtly but the predominant clue is roughness. Fine dry scale is subtle but visible. Dry surface scale remains confined to the described patch or spots. Maintain natural lesion contrast against adjacent skin. Slight right three-quarter clinical view, soft diffuse examination-room light, visible natural pores, neutral background, sharp focus.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, face paint, makeup concealment, airbrushed skin, beauty filter, plastic pores, glossy cosmetic retouching, tattoo, watermark, text, label, arrows, distorted facial anatomy, duplicate face, blurred skin detail, fantasy colors, excessive artificial symmetry

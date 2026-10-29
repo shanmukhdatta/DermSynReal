@@ -1,0 +1,11 @@
+PROMPT_ID: FUNGAL_075
+PROMPT_GROUP_ID: FUNGAL_G015
+PHENOTYPE: angular_cheilitis_candida_unconfirmed
+SPLIT: train
+CLINICAL_STATUS: HOLD_FOR_DIAGNOSTIC_REVIEW
+
+POSITIVE_PROMPT:
+Clinical facial photograph of a 53-year-old man with light olive skin; front-facing facial portrait, neutral examination-room lighting. At both outer corners of the mouth, show angular cheilitis-like changes: small cracks at both outer mouth corners, one slightly deeper than the other. Softened-looking skin and delicate peeling are restricted to the commissures. The affected crease looks pink-red with localized dry scale. The inflammation is subtle and stays within the mouth-corner fold. The cheek skin remains ordinary and both mouth corners are visible. Keep the affected area in focus, with realistic pores and no cosmetic smoothing.
+
+NEGATIVE_PROMPT:
+illustration, painting, CGI, cartoon, plastic skin, airbrushed skin, heavy makeup, beauty filter, watermark, printed text, arrows, labels, duplicate head, extra eyes, distorted face, blurry lesion, harsh oversharpening, collage

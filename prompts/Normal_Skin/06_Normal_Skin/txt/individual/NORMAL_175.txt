@@ -1,0 +1,9 @@
+ID: NORMAL_175
+GROUP: NORMAL_G055
+PHENOTYPE: balanced_skin_appearance
+SPLIT: val
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 19-year-old woman with very fair skin, frontal clinical portrait, even diffuse clinical illumination. Show balanced-looking non-lesional facial skin. At the lower face, depict a naturally varied but non-lesional lower-face skin surface. Pore visibility changes subtly from chin to cheek rather than forming uniform dots. The surface has restrained, natural reflection and irregular but unobstructed pores. Keep real pore spacing, subtle color variation and naturally uneven skin detail. Neutral expression, plain clinical backdrop, no cosmetic smoothing.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, makeup, beauty filter, airbrushed skin, porcelain skin, digitally painted face, unnatural skin smoothing, watermark, text, distorted face, duplicate eyes, extra nose, excessive blur, overexposure, extreme shadows, acne papules, pustules, comedones, red inflamed rash, ring-shaped scaly plaques, depigmented white patches, distinct pigmented lesions, bleeding or crusted lesions, wet greasy oil coating, severe dryness, thick flaking

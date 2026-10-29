@@ -1,0 +1,10 @@
+PROMPT_ID: VITILIGO_222
+GROUP_ID: VITILIGO_G045
+PHENOTYPE: focal_undetermined_appearance
+SPLIT: train
+
+POSITIVE PROMPT:
+Clinical photograph of a 49-year-old man with medium-brown skin, showing a localized focal-appearing facial vitiligo pattern. At the outer left upper cheek, one roundish white patch has an indentation of normal skin tone. Its irregularity looks biological rather than precisely geometric. The depigmented area is compact and surrounded by normally colored skin. The depigmented area is smooth with naturally uneven contours. Frontal clinical portrait, even neutral examination-room light. Keep the lesion in sharp focus, with neutral white balance and no retouching.
+
+NEGATIVE PROMPT:
+illustration, painting, cartoon, CGI, digitally painted white mask, artificial cutout borders, face paint, cosmetic concealer, smooth plastic skin, beauty filter, watermark, text overlay, arrows, annotation, duplicate face, extra eyes, distorted facial anatomy, out of focus lesion, heavy crust, thick scale, raised ring rash, collage

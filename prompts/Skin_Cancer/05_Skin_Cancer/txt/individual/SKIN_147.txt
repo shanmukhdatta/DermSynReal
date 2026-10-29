@@ -1,0 +1,10 @@
+PROMPT ID: SKIN_147
+PHENOTYPE: scc_appearance
+GROUP: SKIN_G030
+SPLIT: test
+
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 61-year-old woman with light-medium beige skin. At the left cheek, show cutaneous-squamous-cell-carcinoma-like morphology: a broad scaly reddish nodule-plaque with irregularly raised edges. The coarse keratinous surface varies in thickness across the lesion. The surface roughness is restricted to this one localized area. Keratin and surface scale are confined to the described area. Maintain natural lesion contrast against adjacent skin. Frontal clinical face view, even neutral clinical lighting, visible natural pores, neutral background, sharp focus.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, face paint, makeup concealment, airbrushed skin, beauty filter, plastic pores, glossy cosmetic retouching, tattoo, watermark, text, label, arrows, distorted facial anatomy, duplicate face, blurred skin detail, fantasy colors, excessive artificial symmetry

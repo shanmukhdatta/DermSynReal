@@ -1,0 +1,10 @@
+PROMPT_ID: VITILIGO_006
+GROUP_ID: VITILIGO_G002
+PHENOTYPE: segmental_appearance
+SPLIT: val
+
+POSITIVE PROMPT:
+Clinical photograph of a 49-year-old man with fair beige skin, showing a unilateral segmental facial vitiligo pattern. At the left upper cheekbone, a single irregular white arc follows a short facial skin zone. The patch is completely flat and limited to one half of the face. The affected region is compact and remains entirely on one side. The depigmented area is smooth with naturally uneven contours. Face-level clinical photograph, even neutral examination-room light. Use an unretouched photo with natural pores and accurate skin color.
+
+NEGATIVE PROMPT:
+illustration, painting, cartoon, CGI, digitally painted white mask, artificial cutout borders, face paint, cosmetic concealer, smooth plastic skin, beauty filter, watermark, text overlay, arrows, annotation, duplicate face, extra eyes, distorted facial anatomy, out of focus lesion, heavy crust, thick scale, raised ring rash, collage

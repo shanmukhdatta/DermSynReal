@@ -1,0 +1,10 @@
+PROMPT ID: SKIN_177
+PHENOTYPE: melanoma_appearance
+GROUP: SKIN_G036
+SPLIT: train
+
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 38-year-old woman with light-medium beige skin. At the right forehead, show melanoma-suspicious skin lesion features: a pink, mildly raised irregular nodule with only scattered brown pigment. An uneven pale-red border and subtly varied surface distinguish it from a uniform blemish. Pigment irregularity is visible within the localized mark. The surrounding skin retains natural pores; pigmentation is not painted on. Maintain natural lesion contrast against adjacent skin. Slight right three-quarter clinical view, soft diffuse examination-room light, visible natural pores, neutral background, sharp focus.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, face paint, makeup concealment, airbrushed skin, beauty filter, plastic pores, glossy cosmetic retouching, tattoo, watermark, text, label, arrows, distorted facial anatomy, duplicate face, blurred skin detail, fantasy colors, excessive artificial symmetry

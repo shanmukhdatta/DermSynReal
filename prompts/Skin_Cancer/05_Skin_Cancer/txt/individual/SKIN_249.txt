@@ -1,0 +1,10 @@
+PROMPT ID: SKIN_249
+PHENOTYPE: ak_precancerous_appearance
+GROUP: SKIN_G050
+SPLIT: train
+
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 69-year-old woman with light-medium beige skin. At the right forehead, show actinic-keratosis-like sun-damaged skin features: a small cluster of several faint rough pink spots with patchy fine scale. Normal skin separates the individual subtle lesions. The localized surface scale is easy to distinguish. Dry surface scale remains confined to the described patch or spots. The abnormality is confined to this specified skin region. Frontal close facial view, soft diffused daylight, visible natural pores, neutral background, sharp focus.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, face paint, makeup concealment, airbrushed skin, beauty filter, plastic pores, glossy cosmetic retouching, tattoo, watermark, text, label, arrows, distorted facial anatomy, duplicate face, blurred skin detail, fantasy colors, excessive artificial symmetry

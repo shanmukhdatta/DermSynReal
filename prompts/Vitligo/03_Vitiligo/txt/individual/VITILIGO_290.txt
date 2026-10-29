@@ -1,0 +1,10 @@
+PROMPT_ID: VITILIGO_290
+GROUP_ID: VITILIGO_G058
+PHENOTYPE: non_segmental_appearance
+SPLIT: train
+
+POSITIVE PROMPT:
+Clinical photograph of a 27-year-old man with fair beige skin, showing a non-segmental facial vitiligo pattern. At the skin below both temple hairlines, paired white patches meet the lateral forehead hairline irregularly. The border passes around individual hair follicles. Several adjacent white spots create a somewhat wider bilateral pattern. A narrow sharp border separates the white skin from adjacent pigment. Face-level clinical photograph, soft diffused daylight. Use soft realistic lighting and preserve the unaltered skin surface.
+
+NEGATIVE PROMPT:
+illustration, painting, cartoon, CGI, digitally painted white mask, artificial cutout borders, face paint, cosmetic concealer, smooth plastic skin, beauty filter, watermark, text overlay, arrows, annotation, duplicate face, extra eyes, distorted facial anatomy, out of focus lesion, heavy crust, thick scale, raised ring rash, collage

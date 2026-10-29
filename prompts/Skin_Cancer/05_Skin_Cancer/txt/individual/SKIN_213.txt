@@ -1,0 +1,10 @@
+PROMPT ID: SKIN_213
+PHENOTYPE: melanoma_appearance
+GROUP: SKIN_G043
+SPLIT: val
+
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 47-year-old woman with light-medium beige skin. At the left forehead, show melanoma-suspicious skin lesion features: an unevenly outlined gray-charcoal macule with lighter brown areas. Its soft uneven margins merge with skin on one side and sharpen on the other. The mark contrasts with neighboring skin but remains naturally rendered. The surrounding skin retains natural pores; pigmentation is not painted on. Render the indicated skin tone without color exaggeration. Straight-on facial photograph, even neutral clinical lighting, visible natural pores, neutral background, sharp focus.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, face paint, makeup concealment, airbrushed skin, beauty filter, plastic pores, glossy cosmetic retouching, tattoo, watermark, text, label, arrows, distorted facial anatomy, duplicate face, blurred skin detail, fantasy colors, excessive artificial symmetry

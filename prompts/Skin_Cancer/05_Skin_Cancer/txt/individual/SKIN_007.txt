@@ -1,0 +1,10 @@
+PROMPT ID: SKIN_007
+PHENOTYPE: bcc_appearance
+GROUP: SKIN_G002
+SPLIT: train
+
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 57-year-old woman with very fair skin. At the right nasal bridge, show basal-cell-carcinoma-like morphology: a round dark-brown raised nodule with a translucent shiny border. Brown tones deepen toward one side, without a painted-on outline. The raised contour stands out while the adjacent skin remains ordinary. A margin of unaffected skin surrounds the lesion. Maintain natural lesion contrast against adjacent skin. Frontal close facial view, even indirect daylight, visible natural pores, neutral background, sharp focus.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, face paint, makeup concealment, airbrushed skin, beauty filter, plastic pores, glossy cosmetic retouching, tattoo, watermark, text, label, arrows, distorted facial anatomy, duplicate face, blurred skin detail, fantasy colors, excessive artificial symmetry

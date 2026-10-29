@@ -1,0 +1,10 @@
+PROMPT_ID: VITILIGO_104
+GROUP_ID: VITILIGO_G021
+PHENOTYPE: focal_undetermined_appearance
+SPLIT: val
+
+POSITIVE PROMPT:
+Clinical photograph of a 45-year-old man with very dark brown skin, showing a localized focal-appearing facial vitiligo pattern. At the left lower eyelid skin, one small tapering white patch follows a natural skin fold. Its border remains well differentiated against nearby skin. No other white patch is visible on the rest of the face. The depigmented area is smooth with naturally uneven contours. Unretouched clinical face photograph, even neutral examination-room light. Use soft realistic lighting and preserve the unaltered skin surface.
+
+NEGATIVE PROMPT:
+illustration, painting, cartoon, CGI, digitally painted white mask, artificial cutout borders, face paint, cosmetic concealer, smooth plastic skin, beauty filter, watermark, text overlay, arrows, annotation, duplicate face, extra eyes, distorted facial anatomy, out of focus lesion, heavy crust, thick scale, raised ring rash, collage

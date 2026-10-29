@@ -1,0 +1,10 @@
+PROMPT_ID: VITILIGO_046
+GROUP_ID: VITILIGO_G010
+PHENOTYPE: non_segmental_appearance
+SPLIT: test
+
+POSITIVE PROMPT:
+Clinical photograph of a 17-year-old man with medium-brown skin, showing a non-segmental facial vitiligo pattern. At the eyebrow arches on both sides, thin irregular depigmented bands border the brows. Some eyebrow hairs may remain dark inside the white skin. The paired depigmented areas are small and separated by unaffected skin. The white-to-normal-skin transition is distinct but not mechanically traced. Front-facing dermatology photograph, broad shadow-free clinical light. Use soft realistic lighting and preserve the unaltered skin surface.
+
+NEGATIVE PROMPT:
+illustration, painting, cartoon, CGI, digitally painted white mask, artificial cutout borders, face paint, cosmetic concealer, smooth plastic skin, beauty filter, watermark, text overlay, arrows, annotation, duplicate face, extra eyes, distorted facial anatomy, out of focus lesion, heavy crust, thick scale, raised ring rash, collage

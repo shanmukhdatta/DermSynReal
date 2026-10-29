@@ -1,0 +1,10 @@
+PROMPT ID: SKIN_221
+PHENOTYPE: melanoma_appearance
+GROUP: SKIN_G045
+SPLIT: test
+
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 72-year-old woman with deep brown skin. At the left temple, show melanoma-suspicious skin lesion features: a mole-like brown lesion with irregular notched borders and a near-black focus. One half appears darker and wider than the other. The mark contrasts with neighboring skin but remains naturally rendered. The surrounding skin retains natural pores; pigmentation is not painted on. A natural resting facial expression. Straight-on facial photograph, controlled soft studio lighting, visible natural pores, neutral background, sharp focus.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, face paint, makeup concealment, airbrushed skin, beauty filter, plastic pores, glossy cosmetic retouching, tattoo, watermark, text, label, arrows, distorted facial anatomy, duplicate face, blurred skin detail, fantasy colors, excessive artificial symmetry

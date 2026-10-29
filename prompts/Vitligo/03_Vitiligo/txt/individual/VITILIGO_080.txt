@@ -1,0 +1,10 @@
+PROMPT_ID: VITILIGO_080
+GROUP_ID: VITILIGO_G016
+PHENOTYPE: non_segmental_appearance
+SPLIT: train
+
+POSITIVE PROMPT:
+Clinical photograph of a 57-year-old man with fair beige skin, showing a non-segmental facial vitiligo pattern. At the right and left temples, small oval and round white macules gather around both temples. Several spots remain separate rather than merging into a single field. The paired white regions have unequal area while remaining on both sides. The whitened region has no scale and lies level with the rest of the face. Front-facing dermatology photograph, soft indirect window light. Keep the lesion in sharp focus, with neutral white balance and no retouching.
+
+NEGATIVE PROMPT:
+illustration, painting, cartoon, CGI, digitally painted white mask, artificial cutout borders, face paint, cosmetic concealer, smooth plastic skin, beauty filter, watermark, text overlay, arrows, annotation, duplicate face, extra eyes, distorted facial anatomy, out of focus lesion, heavy crust, thick scale, raised ring rash, collage

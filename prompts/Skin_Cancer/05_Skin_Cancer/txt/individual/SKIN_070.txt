@@ -1,0 +1,10 @@
+PROMPT ID: SKIN_070
+PHENOTYPE: bcc_appearance
+GROUP: SKIN_G014
+SPLIT: test
+
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 63-year-old man with medium brown skin. At the left temple, show basal-cell-carcinoma-like morphology: a thin irregular salmon-pink patch with a glossy partial border. One edge is slightly elevated while the center remains flat. The raised contour stands out while the adjacent skin remains ordinary. A margin of unaffected skin surrounds the lesion. Include visible unaffected facial skin around the lesion. Frontal close facial view, even neutral clinical lighting, visible natural pores, neutral background, sharp focus.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, face paint, makeup concealment, airbrushed skin, beauty filter, plastic pores, glossy cosmetic retouching, tattoo, watermark, text, label, arrows, distorted facial anatomy, duplicate face, blurred skin detail, fantasy colors, excessive artificial symmetry

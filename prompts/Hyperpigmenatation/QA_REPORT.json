@@ -1,0 +1,51 @@
+{
+  "total_prompts": 300,
+  "textually_unique": true,
+  "five_prompt_batches_checked": 60,
+  "morphology_family_count": 60,
+  "morphology_family_keys_unique": true,
+  "stratified_phenotype_counts": {
+    "melasma_appearance": 100,
+    "pih_appearance": 100,
+    "solar_lentigines_appearance": 100
+  },
+  "variation_counts": {
+    "V1": 60,
+    "V2": 60,
+    "V3": 60,
+    "V4": 60,
+    "V5": 60
+  },
+  "sex_descriptor_counts": {
+    "female": 150,
+    "male": 150
+  },
+  "fitzpatrick_reference_counts": {
+    "V": 50,
+    "VI": 50,
+    "III": 50,
+    "II": 50,
+    "IV": 50,
+    "I": 50
+  },
+  "split_counts": {
+    "val": 45,
+    "train": 210,
+    "test": 45
+  },
+  "distinct_prompt_groups": 60,
+  "group_split_leaks": 0,
+  "intergroup_near_duplicate_pairs_threshold_0_92": [],
+  "minimum_word_count": 84,
+  "maximum_word_count": 106,
+  "exact_sd21_token_validation": "PENDING_KAGGLE",
+  "generated_image_review": "NOT_PERFORMED",
+  "medical_diagnosis_validation": "NOT_PERFORMED",
+  "remaining_risks": [
+    "text prompts cannot guarantee anatomical fidelity",
+    "visual PIH cause not proven",
+    "solar lentigines cannot be diagnosed benign on generated appearance alone",
+    "token counts require exact tokenizer",
+    "visual outputs require review"
+  ]
+}

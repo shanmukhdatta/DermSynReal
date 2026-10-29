@@ -1,0 +1,9 @@
+ID: HYPER_112
+GROUP: HYPER_G052
+SPLIT: train
+PHENOTYPE: melasma_appearance
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 36-year-old man with fair beige skin. At the right and left jawlines, show melasma-like facial hyperpigmentation: irregular tan-brown patches along the bilateral lower face. The two sides have comparable coverage but nonidentical outlines. Moderate extent, several irregular patches occupy part of the specified region. The pigmentation is flat, with no raised border, crust or scale; both sides are broadly but not perfectly symmetrical. Slight three-quarter clinical face view, even diffused clinical light, realistic pores and skin texture, natural skin tones, plain background, no retouching.
+
+NEGATIVE PROMPT:
+cartoon, CGI, painted-on stains, makeup, face paint, beauty filter, plastic skin, airbrushing, watermark, text, arrows, annotations, duplicate face, distorted eyes, wrong facial anatomy, blurred lesions, oversaturated pigments, image collage, unrelated body rash

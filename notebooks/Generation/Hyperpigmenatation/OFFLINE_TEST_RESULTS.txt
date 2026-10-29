@@ -1,0 +1,20 @@
+boundary: 150 content tokens, 2 chunk(s)
+Usable images: 23
+Provisional groups: 22
+Split policy: SPLIT_CSV | train images: 16 | manifest: /tmp/tmpc56vf4k1/out/split_manifest.csv
+Captioned training images: 16 | metadata: /tmp/tmpc56vf4k1/prepared/metadata.csv
+Usable images: 23
+Provisional groups: 22
+Split policy: AUTO_SPLIT provisional groups | train images: 15 | manifest: /tmp/tmp8gvjbnkx/out/split_manifest.csv
+Captioned training images: 15 | metadata: /tmp/tmp8gvjbnkx/prepared/metadata.csv
+Generated 10 images in 0.3 seconds
+Captioned training images: 1 | metadata: /tmp/tmpjojm0ydy/prep/metadata.csv
+PASS Both notebook JSONs and all Python cells compile
+PASS Adapters, Compel APIs, pinned trainer options and training-caption checks
+PASS Mock 150/151 token boundaries including textual-inversion expansion
+PASS Mock two-chunk positive/negative embed equalization
+PASS Real notebook CPU dataset scanning, grouped split exclusion and ImageFolder caption paths
+PASS Real inference cell with mocked diffusion generates five PNGs per prompt plus valid JSONL
+PASS Real preprocessing retains rectangular framing and prevents transparent-black output
+PASS Provenance configuration explicitly records TI-versus-LoRA training and checks matching base
+8 local checks passed; real Kaggle downloads/CUDA/Compel imports not tested.

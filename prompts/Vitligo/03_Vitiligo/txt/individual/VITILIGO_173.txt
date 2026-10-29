@@ -1,0 +1,10 @@
+PROMPT_ID: VITILIGO_173
+GROUP_ID: VITILIGO_G035
+PHENOTYPE: segmental_appearance
+SPLIT: train
+
+POSITIVE PROMPT:
+Clinical photograph of a 27-year-old woman with very fair ivory skin, showing a unilateral segmental facial vitiligo pattern. At the right lower jaw area, one white patch is wide at one end and narrows toward a point. No corresponding contralateral patch is present. The affected white skin spans a broader part of one facial sector. The whitened region has no scale and lies level with the rest of the face. Face-level clinical photograph, soft indirect window light. Keep true skin texture and a plain neutral background; avoid cosmetic smoothing.
+
+NEGATIVE PROMPT:
+illustration, painting, cartoon, CGI, digitally painted white mask, artificial cutout borders, face paint, cosmetic concealer, smooth plastic skin, beauty filter, watermark, text overlay, arrows, annotation, duplicate face, extra eyes, distorted facial anatomy, out of focus lesion, heavy crust, thick scale, raised ring rash, collage

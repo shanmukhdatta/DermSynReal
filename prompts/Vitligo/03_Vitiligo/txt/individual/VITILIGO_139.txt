@@ -1,0 +1,10 @@
+PROMPT_ID: VITILIGO_139
+GROUP_ID: VITILIGO_G028
+PHENOTYPE: non_segmental_appearance
+SPLIT: train
+
+POSITIVE PROMPT:
+Clinical photograph of a 20-year-old woman with very fair ivory skin, showing a non-segmental facial vitiligo pattern. At the paired upper lip skin, paired pale-white islands have scalloped edges above the lip. The vermilion and adjacent skin stay visible as separate structures. The paired depigmented areas are small and separated by unaffected skin. The whitened region has no scale and lies level with the rest of the face. Frontal clinical portrait, soft indirect window light. Use an unretouched photo with natural pores and accurate skin color.
+
+NEGATIVE PROMPT:
+illustration, painting, cartoon, CGI, digitally painted white mask, artificial cutout borders, face paint, cosmetic concealer, smooth plastic skin, beauty filter, watermark, text overlay, arrows, annotation, duplicate face, extra eyes, distorted facial anatomy, out of focus lesion, heavy crust, thick scale, raised ring rash, collage

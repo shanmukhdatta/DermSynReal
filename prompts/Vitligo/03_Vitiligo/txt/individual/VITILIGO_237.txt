@@ -1,0 +1,10 @@
+PROMPT_ID: VITILIGO_237
+GROUP_ID: VITILIGO_G048
+PHENOTYPE: focal_undetermined_appearance
+SPLIT: test
+
+POSITIVE PROMPT:
+Clinical photograph of a 42-year-old woman with very fair ivory skin, showing a localized focal-appearing facial vitiligo pattern. At the skin just in front of the right ear, one pale-white field has a small preserved pigmented island inside it. The main area remains clearly depigmented. No other white patch is visible on the rest of the face. The white-to-normal-skin transition is distinct but not mechanically traced. Unretouched clinical face photograph, broad shadow-free clinical light. Keep true skin texture and a plain neutral background; avoid cosmetic smoothing.
+
+NEGATIVE PROMPT:
+illustration, painting, cartoon, CGI, digitally painted white mask, artificial cutout borders, face paint, cosmetic concealer, smooth plastic skin, beauty filter, watermark, text overlay, arrows, annotation, duplicate face, extra eyes, distorted facial anatomy, out of focus lesion, heavy crust, thick scale, raised ring rash, collage

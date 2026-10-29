@@ -1,0 +1,11 @@
+# Keep Kaggle's GPU-enabled torch; install the pinned packages below.
+diffusers==0.35.1
+transformers==4.56.2
+accelerate==1.10.1
+peft==0.17.1
+datasets==3.6.0
+huggingface_hub==0.34.4
+safetensors==0.6.2
+ftfy==6.3.1
+imagehash==4.3.2
+bitsandbytes==0.47.0

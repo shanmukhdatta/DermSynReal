@@ -1,0 +1,9 @@
+ID: HYPER_020
+GROUP: HYPER_G020
+SPLIT: val
+PHENOTYPE: pih_appearance
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 28-year-old man with deep brown skin. At the cheek-to-jaw regions on both sides, show residual post-inflammatory hyperpigmentation-like marks: faint tan-brown spots with uneven fading intensity. The discoloration is flat without pits or elevated scars. Broader affected-area extent, while the pigmentation remains flat and localized to the named region. The discolored areas lie flat on healed skin, without active pustules, visible crust, or depressed scars. Slight three-quarter clinical face view, even diffused clinical light, realistic pores and skin texture, natural skin tones, plain background, no retouching.
+
+NEGATIVE PROMPT:
+cartoon, CGI, painted-on stains, makeup, face paint, beauty filter, plastic skin, airbrushing, watermark, text, arrows, annotations, duplicate face, distorted eyes, wrong facial anatomy, blurred lesions, oversaturated pigments, image collage, unrelated body rash

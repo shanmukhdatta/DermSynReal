@@ -1,0 +1,9 @@
+ID: HYPER_111
+GROUP: HYPER_G051
+SPLIT: val
+PHENOTYPE: solar_lentigines_appearance
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 56-year-old woman with very fair ivory skin. At the bilateral temples, show solar lentigo-like benign-appearing pigmented macules: sparsely distributed small golden-brown oval spots. Large clear areas of skin separate the pigment marks. Wider affected area; the described macules span more of this facial site without forming a diffuse patch. The marks remain discrete and predominantly uniform in color; no bleeding, irregular multicolor change or ulceration. The principal macule is about 7–9 mm across. Frontal facial close-up, even diffused clinical light, realistic pores and skin texture, natural skin tones, plain background, no retouching.
+
+NEGATIVE PROMPT:
+cartoon, CGI, painted-on stains, makeup, face paint, beauty filter, plastic skin, airbrushing, watermark, text, arrows, annotations, duplicate face, distorted eyes, wrong facial anatomy, blurred lesions, oversaturated pigments, image collage, unrelated body rash

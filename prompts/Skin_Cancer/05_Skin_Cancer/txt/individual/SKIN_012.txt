@@ -1,0 +1,10 @@
+PROMPT ID: SKIN_012
+PHENOTYPE: bcc_appearance
+GROUP: SKIN_G003
+SPLIT: train
+
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 63-year-old man with very deep brown skin. At the left temple, show basal-cell-carcinoma-like morphology: a small rose-pink nodule with a shallow central depression. The slightly rolled rim reflects light and the adjacent skin remains intact. The elevation is subtle but readable at normal photographic distance. A margin of unaffected skin surrounds the lesion. Maintain natural lesion contrast against adjacent skin. Slight left three-quarter clinical view, controlled soft studio lighting, visible natural pores, neutral background, sharp focus.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, face paint, makeup concealment, airbrushed skin, beauty filter, plastic pores, glossy cosmetic retouching, tattoo, watermark, text, label, arrows, distorted facial anatomy, duplicate face, blurred skin detail, fantasy colors, excessive artificial symmetry

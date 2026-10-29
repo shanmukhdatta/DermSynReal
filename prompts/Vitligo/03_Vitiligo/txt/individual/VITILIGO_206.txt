@@ -1,0 +1,10 @@
+PROMPT_ID: VITILIGO_206
+GROUP_ID: VITILIGO_G042
+PHENOTYPE: focal_undetermined_appearance
+SPLIT: train
+
+POSITIVE PROMPT:
+Clinical photograph of a 38-year-old man with very dark brown skin, showing a localized focal-appearing facial vitiligo pattern. At the right central forehead, two very small neighboring white macules form one localized focal grouping. They do not extend elsewhere on the face. Only this small localized site is visibly affected. The depigmented area is smooth with naturally uneven contours. Face-level clinical photograph, even neutral examination-room light. Use an unretouched photo with natural pores and accurate skin color.
+
+NEGATIVE PROMPT:
+illustration, painting, cartoon, CGI, digitally painted white mask, artificial cutout borders, face paint, cosmetic concealer, smooth plastic skin, beauty filter, watermark, text overlay, arrows, annotation, duplicate face, extra eyes, distorted facial anatomy, out of focus lesion, heavy crust, thick scale, raised ring rash, collage

@@ -1,0 +1,10 @@
+PROMPT ID: SKIN_035
+PHENOTYPE: bcc_appearance
+GROUP: SKIN_G007
+SPLIT: train
+
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 63-year-old woman with deep brown skin. At the right forehead, show basal-cell-carcinoma-like morphology: a shallow red-tan plaque with a slightly shiny irregular edge. Fine dry scale sits on parts of its surface, without a bulky nodule. The contour and border are clearly visible at normal photographic distance. A margin of unaffected skin surrounds the lesion. Include visible unaffected facial skin around the lesion. Frontal clinical face view, controlled soft studio lighting, visible natural pores, neutral background, sharp focus.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, face paint, makeup concealment, airbrushed skin, beauty filter, plastic pores, glossy cosmetic retouching, tattoo, watermark, text, label, arrows, distorted facial anatomy, duplicate face, blurred skin detail, fantasy colors, excessive artificial symmetry

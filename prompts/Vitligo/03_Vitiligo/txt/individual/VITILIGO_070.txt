@@ -1,0 +1,10 @@
+PROMPT_ID: VITILIGO_070
+GROUP_ID: VITILIGO_G014
+PHENOTYPE: segmental_appearance
+SPLIT: train
+
+POSITIVE PROMPT:
+Clinical photograph of a 24-year-old man with very dark brown skin, showing a unilateral segmental facial vitiligo pattern. At the left hairline near the temple, one unilateral chalk-white patch has a markedly jagged border. Short uneven projections break up the white-to-brown junction. The affected white skin spans a broader part of one facial sector. The depigmented area is smooth with naturally uneven contours. Close frontal facial photograph, even neutral examination-room light. Keep true skin texture and a plain neutral background; avoid cosmetic smoothing.
+
+NEGATIVE PROMPT:
+illustration, painting, cartoon, CGI, digitally painted white mask, artificial cutout borders, face paint, cosmetic concealer, smooth plastic skin, beauty filter, watermark, text overlay, arrows, annotation, duplicate face, extra eyes, distorted facial anatomy, out of focus lesion, heavy crust, thick scale, raised ring rash, collage

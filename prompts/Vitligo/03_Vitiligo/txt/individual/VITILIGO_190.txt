@@ -1,0 +1,10 @@
+PROMPT_ID: VITILIGO_190
+GROUP_ID: VITILIGO_G038
+PHENOTYPE: segmental_appearance
+SPLIT: train
+
+POSITIVE PROMPT:
+Clinical photograph of a 17-year-old man with very dark brown skin, showing a unilateral segmental facial vitiligo pattern. At the left temple, two neighboring white islands are separated by a very thin pigmented strip. Their white interiors look evenly depigmented. The patch occupies a narrow unilateral facial zone. A narrow sharp border separates the white skin from adjacent pigment. Face-level clinical photograph, soft diffused daylight. Use soft realistic lighting and preserve the unaltered skin surface.
+
+NEGATIVE PROMPT:
+illustration, painting, cartoon, CGI, digitally painted white mask, artificial cutout borders, face paint, cosmetic concealer, smooth plastic skin, beauty filter, watermark, text overlay, arrows, annotation, duplicate face, extra eyes, distorted facial anatomy, out of focus lesion, heavy crust, thick scale, raised ring rash, collage

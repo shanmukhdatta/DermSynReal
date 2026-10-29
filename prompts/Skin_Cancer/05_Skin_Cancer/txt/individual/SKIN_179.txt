@@ -1,0 +1,10 @@
+PROMPT ID: SKIN_179
+PHENOTYPE: melanoma_appearance
+GROUP: SKIN_G036
+SPLIT: train
+
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 55-year-old woman with deep brown skin. At the left temple, show melanoma-suspicious skin lesion features: a pink, mildly raised irregular nodule with only scattered brown pigment. An uneven pale-red border and subtly varied surface distinguish it from a uniform blemish. The mark contrasts with neighboring skin but remains naturally rendered. The surrounding skin retains natural pores; pigmentation is not painted on. The abnormality is confined to this specified skin region. Slight left three-quarter clinical view, even neutral clinical lighting, visible natural pores, neutral background, sharp focus.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, face paint, makeup concealment, airbrushed skin, beauty filter, plastic pores, glossy cosmetic retouching, tattoo, watermark, text, label, arrows, distorted facial anatomy, duplicate face, blurred skin detail, fantasy colors, excessive artificial symmetry

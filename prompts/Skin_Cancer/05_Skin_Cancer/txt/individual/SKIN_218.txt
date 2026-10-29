@@ -1,0 +1,10 @@
+PROMPT ID: SKIN_218
+PHENOTYPE: melanoma_appearance
+GROUP: SKIN_G044
+SPLIT: test
+
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 55-year-old man with light skin. At the right outer forehead, show melanoma-suspicious skin lesion features: an asymmetric dark brown raised nodule with varying shades of black and brown. Its smooth contour bulges more strongly on one side. Pigment irregularity is visible within the localized mark. The surrounding skin retains natural pores; pigmentation is not painted on. Render the indicated skin tone without color exaggeration. Frontal clinical face view, soft diffuse examination-room light, visible natural pores, neutral background, sharp focus.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, face paint, makeup concealment, airbrushed skin, beauty filter, plastic pores, glossy cosmetic retouching, tattoo, watermark, text, label, arrows, distorted facial anatomy, duplicate face, blurred skin detail, fantasy colors, excessive artificial symmetry

@@ -1,0 +1,10 @@
+PROMPT ID: SKIN_285
+PHENOTYPE: ak_precancerous_appearance
+GROUP: SKIN_G057
+SPLIT: val
+
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 75-year-old woman with light-medium beige skin. At the left cheekbone, show actinic-keratosis-like sun-damaged skin features: a thin pink plaque with scattered dry scale concentrated at one edge. Its surface remains mostly flat with mild sun-weathered texture nearby. Fine dry scale is subtle but visible. Dry surface scale remains confined to the described patch or spots. Include visible unaffected facial skin around the lesion. Frontal clinical face view, controlled soft studio lighting, visible natural pores, neutral background, sharp focus.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, face paint, makeup concealment, airbrushed skin, beauty filter, plastic pores, glossy cosmetic retouching, tattoo, watermark, text, label, arrows, distorted facial anatomy, duplicate face, blurred skin detail, fantasy colors, excessive artificial symmetry

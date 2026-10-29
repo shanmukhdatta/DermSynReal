@@ -1,0 +1,9 @@
+ID: HYPER_079
+GROUP: HYPER_G019
+SPLIT: train
+PHENOTYPE: melasma_appearance
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 36-year-old woman with medium-brown skin. At the central forehead, nose and bilateral cheeks, show melasma-like facial hyperpigmentation: broad flat tan patches with slightly darker central regions. The pigmentation becomes less dense at naturally feathered edges. Broad extent, larger adjoining flat pigment fields cover much of the specified region. The pigmentation is flat, with no raised border, crust or scale; both sides are broadly but not perfectly symmetrical. Frontal facial close-up, balanced diffuse neutral lighting, realistic pores and skin texture, natural skin tones, plain background, no retouching.
+
+NEGATIVE PROMPT:
+cartoon, CGI, painted-on stains, makeup, face paint, beauty filter, plastic skin, airbrushing, watermark, text, arrows, annotations, duplicate face, distorted eyes, wrong facial anatomy, blurred lesions, oversaturated pigments, image collage, unrelated body rash

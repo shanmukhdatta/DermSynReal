@@ -1,0 +1,11 @@
+PROMPT_ID: FUNGAL_069
+PROMPT_GROUP_ID: FUNGAL_G009
+PHENOTYPE: tinea_faciei
+SPLIT: train
+CLINICAL_STATUS: PILOT_REVIEW_REQUIRED
+
+POSITIVE_PROMPT:
+Clinical facial photograph of a 43-year-old man with light olive skin; frontal face-level photograph, even diffuse daylight. On the left forehead near the hairline, show a tinea faciei pattern: a small annular patch defined by a very thin, finely scaling raised border. The center retains almost ordinary skin texture. The patch edge looks pink-red with fine flaky skin. Only a small amount of fine scale outlines the patch. Keep the affected area in focus, with realistic pores and no cosmetic smoothing.
+
+NEGATIVE_PROMPT:
+illustration, painting, CGI, cartoon, plastic skin, airbrushed skin, heavy makeup, beauty filter, watermark, printed text, arrows, labels, duplicate head, extra eyes, distorted face, blurry lesion, harsh oversharpening, collage

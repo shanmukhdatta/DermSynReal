@@ -1,0 +1,10 @@
+PROMPT_ID: VITILIGO_089
+GROUP_ID: VITILIGO_G018
+PHENOTYPE: focal_undetermined_appearance
+SPLIT: train
+
+POSITIVE PROMPT:
+Clinical photograph of a 38-year-old woman with light olive skin, showing a localized focal-appearing facial vitiligo pattern. At the outer right eyebrow margin, a compact leaf-shaped white patch widens toward one side. There is no second facial patch elsewhere. Only this small localized site is visibly affected. The whitened region has no scale and lies level with the rest of the face. Frontal clinical portrait, soft indirect window light. Use an unretouched photo with natural pores and accurate skin color.
+
+NEGATIVE PROMPT:
+illustration, painting, cartoon, CGI, digitally painted white mask, artificial cutout borders, face paint, cosmetic concealer, smooth plastic skin, beauty filter, watermark, text overlay, arrows, annotation, duplicate face, extra eyes, distorted facial anatomy, out of focus lesion, heavy crust, thick scale, raised ring rash, collage

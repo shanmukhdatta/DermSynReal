@@ -1,0 +1,11 @@
+PROMPT_ID: FUNGAL_279
+PROMPT_GROUP_ID: FUNGAL_G039
+PHENOTYPE: tinea_faciei
+SPLIT: train
+CLINICAL_STATUS: PILOT_REVIEW_REQUIRED
+
+POSITIVE_PROMPT:
+Clinical facial photograph of a 27-year-old man with very dark brown skin; frontal face-level photograph, even diffuse daylight. On the right malar region, show a tinea faciei pattern: an oval plaque with delicate peripheral scale and a discontinuous bumpy rim. The small bumps cluster along one curved section of the border. The edge looks dusky reddish-brown against the natural skin tone. The outer rim is clearly visible but the lesion remains localized. The photograph has realistic skin texture, no beauty retouching, and an uncluttered background.
+
+NEGATIVE_PROMPT:
+illustration, painting, CGI, cartoon, plastic skin, airbrushed skin, heavy makeup, beauty filter, watermark, printed text, arrows, labels, duplicate head, extra eyes, distorted face, blurry lesion, harsh oversharpening, collage

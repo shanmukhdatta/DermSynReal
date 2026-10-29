@@ -1,0 +1,10 @@
+PROMPT_ID: VITILIGO_047
+GROUP_ID: VITILIGO_G010
+PHENOTYPE: non_segmental_appearance
+SPLIT: test
+
+POSITIVE PROMPT:
+Clinical photograph of a 27-year-old woman with deep brown skin, showing a non-segmental facial vitiligo pattern. At the skin immediately below both brows, thin irregular depigmented bands border the brows. Some eyebrow hairs may remain dark inside the white skin. Several adjacent white spots create a somewhat wider bilateral pattern. The depigmented area is smooth with naturally uneven contours. Frontal clinical portrait, even neutral examination-room light. Keep the lesion in sharp focus, with neutral white balance and no retouching.
+
+NEGATIVE PROMPT:
+illustration, painting, cartoon, CGI, digitally painted white mask, artificial cutout borders, face paint, cosmetic concealer, smooth plastic skin, beauty filter, watermark, text overlay, arrows, annotation, duplicate face, extra eyes, distorted facial anatomy, out of focus lesion, heavy crust, thick scale, raised ring rash, collage

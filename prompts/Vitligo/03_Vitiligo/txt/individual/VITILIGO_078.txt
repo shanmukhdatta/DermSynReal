@@ -1,0 +1,10 @@
+PROMPT_ID: VITILIGO_078
+GROUP_ID: VITILIGO_G016
+PHENOTYPE: non_segmental_appearance
+SPLIT: train
+
+POSITIVE PROMPT:
+Clinical photograph of a 31-year-old man with very dark brown skin, showing a non-segmental facial vitiligo pattern. At the right and left temples, small oval and round white macules gather around both temples. Several spots remain separate rather than merging into a single field. The depigmented regions occupy a noticeable but localized part of both sides. The white-to-normal-skin transition is distinct but not mechanically traced. Close frontal facial photograph, broad shadow-free clinical light. Use an unretouched photo with natural pores and accurate skin color.
+
+NEGATIVE PROMPT:
+illustration, painting, cartoon, CGI, digitally painted white mask, artificial cutout borders, face paint, cosmetic concealer, smooth plastic skin, beauty filter, watermark, text overlay, arrows, annotation, duplicate face, extra eyes, distorted facial anatomy, out of focus lesion, heavy crust, thick scale, raised ring rash, collage

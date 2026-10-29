@@ -1,0 +1,10 @@
+PROMPT ID: SKIN_082
+PHENOTYPE: scc_appearance
+GROUP: SKIN_G017
+SPLIT: train
+
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 68-year-old man with medium brown skin. At the upper forehead, show cutaneous-squamous-cell-carcinoma-like morphology: a raised reddish papule with dense rough white scale. An irregular firm-looking edge surrounds the scaly center. The uneven scaly relief is readily visible without magnification. Keratin and surface scale are confined to the described area. Maintain natural lesion contrast against adjacent skin. Frontal close facial view, even indirect daylight, visible natural pores, neutral background, sharp focus.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, face paint, makeup concealment, airbrushed skin, beauty filter, plastic pores, glossy cosmetic retouching, tattoo, watermark, text, label, arrows, distorted facial anatomy, duplicate face, blurred skin detail, fantasy colors, excessive artificial symmetry

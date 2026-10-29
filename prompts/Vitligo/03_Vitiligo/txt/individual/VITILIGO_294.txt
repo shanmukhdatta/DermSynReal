@@ -1,0 +1,10 @@
+PROMPT_ID: VITILIGO_294
+GROUP_ID: VITILIGO_G059
+PHENOTYPE: non_segmental_appearance
+SPLIT: test
+
+POSITIVE PROMPT:
+Clinical photograph of a 49-year-old man with fair beige skin, showing a non-segmental facial vitiligo pattern. At the bilateral lower inner cheeks, a few separate white macules align near both mouth-to-cheek transitions. Their combined distribution is roughly paired, not perfectly identical. Several adjacent white spots create a somewhat wider bilateral pattern. The white-to-normal-skin transition is distinct but not mechanically traced. Face-level clinical photograph, broad shadow-free clinical light. Keep the lesion in sharp focus, with neutral white balance and no retouching.
+
+NEGATIVE PROMPT:
+illustration, painting, cartoon, CGI, digitally painted white mask, artificial cutout borders, face paint, cosmetic concealer, smooth plastic skin, beauty filter, watermark, text overlay, arrows, annotation, duplicate face, extra eyes, distorted facial anatomy, out of focus lesion, heavy crust, thick scale, raised ring rash, collage

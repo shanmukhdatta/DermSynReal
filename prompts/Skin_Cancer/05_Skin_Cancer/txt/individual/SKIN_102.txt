@@ -1,0 +1,10 @@
+PROMPT ID: SKIN_102
+PHENOTYPE: scc_appearance
+GROUP: SKIN_G021
+SPLIT: train
+
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 45-year-old man with very deep brown skin. At the right cheek, show cutaneous-squamous-cell-carcinoma-like morphology: a small conical yellow-white keratin projection on a pink raised base. The compact horny tip is short and its surrounding skin is gently inflamed. The surface roughness is restricted to this one localized area. Keratin and surface scale are confined to the described area. Maintain natural lesion contrast against adjacent skin. Slight right three-quarter clinical view, soft diffuse examination-room light, visible natural pores, neutral background, sharp focus.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, face paint, makeup concealment, airbrushed skin, beauty filter, plastic pores, glossy cosmetic retouching, tattoo, watermark, text, label, arrows, distorted facial anatomy, duplicate face, blurred skin detail, fantasy colors, excessive artificial symmetry

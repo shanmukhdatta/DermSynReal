@@ -1,0 +1,10 @@
+PROMPT_ID: VITILIGO_209
+GROUP_ID: VITILIGO_G042
+PHENOTYPE: focal_undetermined_appearance
+SPLIT: train
+
+POSITIVE PROMPT:
+Clinical photograph of a 27-year-old woman with light olive skin, showing a localized focal-appearing facial vitiligo pattern. At the right central forehead, two very small neighboring white macules form one localized focal grouping. They do not extend elsewhere on the face. No other white patch is visible on the rest of the face. Surrounding skin shows normal visible pores and fine texture. Front-facing dermatology photograph, balanced diffuse studio light. Keep true skin texture and a plain neutral background; avoid cosmetic smoothing.
+
+NEGATIVE PROMPT:
+illustration, painting, cartoon, CGI, digitally painted white mask, artificial cutout borders, face paint, cosmetic concealer, smooth plastic skin, beauty filter, watermark, text overlay, arrows, annotation, duplicate face, extra eyes, distorted facial anatomy, out of focus lesion, heavy crust, thick scale, raised ring rash, collage

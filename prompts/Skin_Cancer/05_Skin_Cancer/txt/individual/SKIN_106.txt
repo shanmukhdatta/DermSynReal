@@ -1,0 +1,10 @@
+PROMPT ID: SKIN_106
+PHENOTYPE: scc_appearance
+GROUP: SKIN_G022
+SPLIT: train
+
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 68-year-old man with medium brown skin. At the mid-forehead, show cutaneous-squamous-cell-carcinoma-like morphology: a round raised pink nodule surrounding a central keratin plug. The curved firm-looking margin creates a shallow crateriform appearance. The surface roughness is restricted to this one localized area. Keratin and surface scale are confined to the described area. A natural resting facial expression. Slight right three-quarter clinical view, even neutral clinical lighting, visible natural pores, neutral background, sharp focus.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, face paint, makeup concealment, airbrushed skin, beauty filter, plastic pores, glossy cosmetic retouching, tattoo, watermark, text, label, arrows, distorted facial anatomy, duplicate face, blurred skin detail, fantasy colors, excessive artificial symmetry

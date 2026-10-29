@@ -1,0 +1,10 @@
+PROMPT ID: SKIN_105
+PHENOTYPE: scc_appearance
+GROUP: SKIN_G021
+SPLIT: train
+
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 68-year-old woman with light-medium beige skin. At the right forehead, show cutaneous-squamous-cell-carcinoma-like morphology: a small conical yellow-white keratin projection on a pink raised base. The compact horny tip is short and its surrounding skin is gently inflamed. The surface roughness is restricted to this one localized area. Keratin and surface scale are confined to the described area. Include visible unaffected facial skin around the lesion. Straight-on facial photograph, even indirect daylight, visible natural pores, neutral background, sharp focus.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, face paint, makeup concealment, airbrushed skin, beauty filter, plastic pores, glossy cosmetic retouching, tattoo, watermark, text, label, arrows, distorted facial anatomy, duplicate face, blurred skin detail, fantasy colors, excessive artificial symmetry

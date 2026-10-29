@@ -1,0 +1,10 @@
+PROMPT_ID: VITILIGO_018
+GROUP_ID: VITILIGO_G004
+PHENOTYPE: non_segmental_appearance
+SPLIT: train
+
+POSITIVE PROMPT:
+Clinical photograph of a 58-year-old man with very dark brown skin, showing a non-segmental facial vitiligo pattern. At the skin above and below both mouth corners, separate chalk-white islands form a paired distribution around the mouth. Normal pigmented skin remains between the islands. The paired depigmented areas are small and separated by unaffected skin. Surrounding skin shows normal visible pores and fine texture. Frontal clinical portrait, balanced diffuse studio light. Use soft realistic lighting and preserve the unaltered skin surface.
+
+NEGATIVE PROMPT:
+illustration, painting, cartoon, CGI, digitally painted white mask, artificial cutout borders, face paint, cosmetic concealer, smooth plastic skin, beauty filter, watermark, text overlay, arrows, annotation, duplicate face, extra eyes, distorted facial anatomy, out of focus lesion, heavy crust, thick scale, raised ring rash, collage

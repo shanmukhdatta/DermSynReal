@@ -1,0 +1,9 @@
+ID: HYPER_116
+GROUP: HYPER_G056
+SPLIT: test
+PHENOTYPE: pih_appearance
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 43-year-old man with deep brown skin. At the lower jaw and chin skin, show residual post-inflammatory hyperpigmentation-like marks: several small brown residual macules at a previously irritated lower-face site. There are no fresh bumps, pustules or ingrown hairs to dominate the scene. Broader affected-area extent, while the pigmentation remains flat and localized to the named region. The discolored areas lie flat on healed skin, without active pustules, visible crust, or depressed scars. Unretouched face-level dermatology photograph, broad shadow-free examination lighting, realistic pores and skin texture, natural skin tones, plain background, no retouching.
+
+NEGATIVE PROMPT:
+cartoon, CGI, painted-on stains, makeup, face paint, beauty filter, plastic skin, airbrushing, watermark, text, arrows, annotations, duplicate face, distorted eyes, wrong facial anatomy, blurred lesions, oversaturated pigments, image collage, unrelated body rash

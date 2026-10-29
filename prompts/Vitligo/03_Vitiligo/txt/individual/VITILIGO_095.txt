@@ -1,0 +1,10 @@
+PROMPT_ID: VITILIGO_095
+GROUP_ID: VITILIGO_G019
+PHENOTYPE: non_segmental_appearance
+SPLIT: train
+
+POSITIVE PROMPT:
+Clinical photograph of a 32-year-old woman with deep brown skin, showing a non-segmental facial vitiligo pattern. At the two outer halves of the forehead, white patches form two asymmetric but corresponding regions across the forehead. There is a narrow strip of pigmented skin between the patches. The depigmented regions occupy a noticeable but localized part of both sides. The depigmented area is smooth with naturally uneven contours. Close frontal facial photograph, even neutral examination-room light. Keep true skin texture and a plain neutral background; avoid cosmetic smoothing.
+
+NEGATIVE PROMPT:
+illustration, painting, cartoon, CGI, digitally painted white mask, artificial cutout borders, face paint, cosmetic concealer, smooth plastic skin, beauty filter, watermark, text overlay, arrows, annotation, duplicate face, extra eyes, distorted facial anatomy, out of focus lesion, heavy crust, thick scale, raised ring rash, collage

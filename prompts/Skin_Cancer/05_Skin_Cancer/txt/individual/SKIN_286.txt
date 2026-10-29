@@ -1,0 +1,10 @@
+PROMPT ID: SKIN_286
+PHENOTYPE: ak_precancerous_appearance
+GROUP: SKIN_G058
+SPLIT: test
+
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 75-year-old man with medium brown skin. At the upper left cheek, show actinic-keratosis-like sun-damaged skin features: a small white-scaled reddish spot with slight surface elevation. The coarse dry flakes are localized to the center of the patch. Fine dry scale is subtle but visible. Dry surface scale remains confined to the described patch or spots. A natural resting facial expression. Frontal close facial view, soft diffuse examination-room light, visible natural pores, neutral background, sharp focus.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, face paint, makeup concealment, airbrushed skin, beauty filter, plastic pores, glossy cosmetic retouching, tattoo, watermark, text, label, arrows, distorted facial anatomy, duplicate face, blurred skin detail, fantasy colors, excessive artificial symmetry

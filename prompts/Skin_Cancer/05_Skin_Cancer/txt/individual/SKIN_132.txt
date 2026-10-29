@@ -1,0 +1,10 @@
+PROMPT ID: SKIN_132
+PHENOTYPE: scc_appearance
+GROUP: SKIN_G027
+SPLIT: val
+
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 84-year-old man with very deep brown skin. At the left temple, show cutaneous-squamous-cell-carcinoma-like morphology: an irregular pink-beige thickened nodule with a warty surface. Multiple tiny keratin ridges make its silhouette uneven. The surface roughness is restricted to this one localized area. Keratin and surface scale are confined to the described area. Maintain natural lesion contrast against adjacent skin. Frontal close facial view, even indirect daylight, visible natural pores, neutral background, sharp focus.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, face paint, makeup concealment, airbrushed skin, beauty filter, plastic pores, glossy cosmetic retouching, tattoo, watermark, text, label, arrows, distorted facial anatomy, duplicate face, blurred skin detail, fantasy colors, excessive artificial symmetry

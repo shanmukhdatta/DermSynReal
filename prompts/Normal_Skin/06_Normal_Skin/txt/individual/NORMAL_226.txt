@@ -1,0 +1,9 @@
+ID: NORMAL_226
+GROUP: NORMAL_G046
+PHENOTYPE: balanced_skin_appearance
+SPLIT: train
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 35-year-old man with medium-brown skin, slight right three-quarter clinical portrait, broad diffused window light. Show balanced-looking non-lesional facial skin. At the upper-lip skin below the nose, depict fine vellus hairs and ordinary pore visibility on the cutaneous upper lip. The upper-lip skin is intact, without red patches or mouth-corner fissures. The surface remains gently even in reflectance, not uniformly polished. Natural follicles and fine vellus hairs remain visible. Neutral expression, realistic facial anatomy, minimal retouching, plain background.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, makeup, beauty filter, airbrushed skin, porcelain skin, digitally painted face, unnatural skin smoothing, watermark, text, distorted face, duplicate eyes, extra nose, excessive blur, overexposure, extreme shadows, acne papules, pustules, comedones, red inflamed rash, ring-shaped scaly plaques, depigmented white patches, distinct pigmented lesions, bleeding or crusted lesions, wet greasy oil coating, severe dryness, thick flaking

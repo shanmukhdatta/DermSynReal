@@ -1,0 +1,10 @@
+PROMPT_ID: VITILIGO_247
+GROUP_ID: VITILIGO_G050
+PHENOTYPE: segmental_appearance
+SPLIT: test
+
+POSITIVE PROMPT:
+Clinical photograph of a 20-year-old woman with light olive skin, showing a unilateral segmental facial vitiligo pattern. At the left lateral forehead, several tiny white marks merge into one irregular unilateral patch. Distinct smaller spots remain close to its border. The patch occupies a narrow unilateral facial zone. The depigmented area is smooth with naturally uneven contours. Frontal clinical portrait, even neutral examination-room light. Keep the lesion in sharp focus, with neutral white balance and no retouching.
+
+NEGATIVE PROMPT:
+illustration, painting, cartoon, CGI, digitally painted white mask, artificial cutout borders, face paint, cosmetic concealer, smooth plastic skin, beauty filter, watermark, text overlay, arrows, annotation, duplicate face, extra eyes, distorted facial anatomy, out of focus lesion, heavy crust, thick scale, raised ring rash, collage

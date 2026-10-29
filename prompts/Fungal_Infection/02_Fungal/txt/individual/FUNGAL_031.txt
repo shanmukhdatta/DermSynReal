@@ -1,0 +1,11 @@
+PROMPT_ID: FUNGAL_031
+PROMPT_GROUP_ID: FUNGAL_G031
+PHENOTYPE: tinea_faciei
+SPLIT: train
+CLINICAL_STATUS: PILOT_REVIEW_REQUIRED
+
+POSITIVE_PROMPT:
+Clinical facial photograph of a 38-year-old man with very fair ivory skin; right three-quarter facial view, neutral examination-room lighting. On the right lateral forehead, show a tinea faciei pattern: a low-contrast facial patch with a short crescent of fine peripheral scale. There is no heavy crust and no broad diffuse redness. The patch edge looks pink-red with fine flaky skin. Only a small amount of fine scale outlines the patch. A neutral background and natural pores keep the skin texture visible.
+
+NEGATIVE_PROMPT:
+illustration, painting, CGI, cartoon, plastic skin, airbrushed skin, heavy makeup, beauty filter, watermark, printed text, arrows, labels, duplicate head, extra eyes, distorted face, blurry lesion, harsh oversharpening, collage

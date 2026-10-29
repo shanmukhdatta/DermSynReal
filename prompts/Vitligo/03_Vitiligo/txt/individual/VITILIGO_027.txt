@@ -1,0 +1,10 @@
+PROMPT_ID: VITILIGO_027
+GROUP_ID: VITILIGO_G006
+PHENOTYPE: focal_undetermined_appearance
+SPLIT: train
+
+POSITIVE PROMPT:
+Clinical photograph of a 23-year-old woman with very fair ivory skin, showing a localized focal-appearing facial vitiligo pattern. At the outer right cheek, one bean-shaped white patch has a shallow inward notch. The white surface remains smooth and nonscaly. The depigmented area is compact and surrounded by normally colored skin. Surrounding skin shows normal visible pores and fine texture. Face-level clinical photograph, balanced diffuse studio light. Show ordinary skin texture, an uncluttered background, and realistic anatomy.
+
+NEGATIVE PROMPT:
+illustration, painting, cartoon, CGI, digitally painted white mask, artificial cutout borders, face paint, cosmetic concealer, smooth plastic skin, beauty filter, watermark, text overlay, arrows, annotation, duplicate face, extra eyes, distorted facial anatomy, out of focus lesion, heavy crust, thick scale, raised ring rash, collage

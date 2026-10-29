@@ -1,0 +1,9 @@
+ID: NORMAL_194
+GROUP: NORMAL_G014
+PHENOTYPE: oily_skin_appearance
+SPLIT: test
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 23-year-old man with fair skin, frontal clinical portrait, even shadow-controlled studio illumination. Show oily-looking but non-lesional facial skin. At the central chin, depict a mild concentrated shine at the center of the chin. The chin still retains small pores and natural shallow surface lines. The surface reflects slightly more light while retaining natural pores. Preserve real facial microtexture and ordinary skin color variation. Clear facial view, simple backdrop, restrained photographic processing.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, makeup, beauty filter, airbrushed skin, porcelain skin, digitally painted face, unnatural skin smoothing, watermark, text, distorted face, duplicate eyes, extra nose, excessive blur, overexposure, extreme shadows, acne papules, pustules, comedones, red inflamed rash, ring-shaped scaly plaques, depigmented white patches, distinct pigmented lesions, bleeding or crusted lesions, plastic gloss, dripping oil, severe peeling skin, thick flaky plaques

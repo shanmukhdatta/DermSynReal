@@ -1,0 +1,9 @@
+ID: NORMAL_005
+GROUP: NORMAL_G005
+PHENOTYPE: oily_skin_appearance
+SPLIT: train
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 41-year-old woman with very fair skin, frontal clinical portrait, broad diffused window light. Show oily-looking but non-lesional facial skin. At the nasal tip, depict a localized gentle glossy reflection across the nasal tip. Slightly pronounced normal pores appear without dark plugs or inflamed lesions. The sheen is visible but patchy and follows the curved facial surface. Preserve real facial microtexture and ordinary skin color variation. Clear facial view, simple backdrop, restrained photographic processing.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, makeup, beauty filter, airbrushed skin, porcelain skin, digitally painted face, unnatural skin smoothing, watermark, text, distorted face, duplicate eyes, extra nose, excessive blur, overexposure, extreme shadows, acne papules, pustules, comedones, red inflamed rash, ring-shaped scaly plaques, depigmented white patches, distinct pigmented lesions, bleeding or crusted lesions, plastic gloss, dripping oil, severe peeling skin, thick flaky plaques

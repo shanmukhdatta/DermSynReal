@@ -1,0 +1,10 @@
+PROMPT ID: SKIN_075
+PHENOTYPE: bcc_appearance
+GROUP: SKIN_G015
+SPLIT: test
+
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 70-year-old woman with light-medium beige skin. At the right lateral forehead, show basal-cell-carcinoma-like morphology: a shallow tan-brown plaque with a subtle pearly border. Uneven brown pigmentation alternates with a faint pink area. The elevation is subtle but readable at normal photographic distance. A margin of unaffected skin surrounds the lesion. Include visible unaffected facial skin around the lesion. Slight left three-quarter clinical view, soft diffuse examination-room light, visible natural pores, neutral background, sharp focus.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, face paint, makeup concealment, airbrushed skin, beauty filter, plastic pores, glossy cosmetic retouching, tattoo, watermark, text, label, arrows, distorted facial anatomy, duplicate face, blurred skin detail, fantasy colors, excessive artificial symmetry

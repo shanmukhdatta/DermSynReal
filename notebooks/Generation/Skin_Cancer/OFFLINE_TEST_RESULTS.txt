@@ -1,0 +1,9 @@
+Notebook JSON + Python syntax for every cell
+Training CLI static options and version pin
+150 accepted / 151 rejected + textual-inversion expansion token counting
+Mock inference all 4 modes × 5 images, equal embedding lengths, matching seeds and metadata
+Real CPU preprocessing: held-out near-duplicate excluded, split boundary respected
+Real CPU preprocessing: RGB 512-square letterboxing, valid ImageFolder metadata, nonblack padding
+Shared LoRA requires verified subtype labels; AK category kept separate
+
+Actual installed libraries, Hugging Face model fetch and GPU not tested.

@@ -1,0 +1,10 @@
+PROMPT_ID: VITILIGO_298
+GROUP_ID: VITILIGO_G060
+PHENOTYPE: non_segmental_appearance
+SPLIT: val
+
+POSITIVE PROMPT:
+Clinical photograph of a 17-year-old man with fair beige skin, showing a non-segmental facial vitiligo pattern. At the paired regions below both eyes, flat white areas spread beneath both eyes with natural irregular outlines. The patches are sharply distinguished from ordinary surrounding skin. The depigmented regions occupy a noticeable but localized part of both sides. The whitened region has no scale and lies level with the rest of the face. Face-level clinical photograph, soft indirect window light. Keep true skin texture and a plain neutral background; avoid cosmetic smoothing.
+
+NEGATIVE PROMPT:
+illustration, painting, cartoon, CGI, digitally painted white mask, artificial cutout borders, face paint, cosmetic concealer, smooth plastic skin, beauty filter, watermark, text overlay, arrows, annotation, duplicate face, extra eyes, distorted facial anatomy, out of focus lesion, heavy crust, thick scale, raised ring rash, collage

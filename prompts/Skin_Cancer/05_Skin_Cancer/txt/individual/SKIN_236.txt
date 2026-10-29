@@ -1,0 +1,10 @@
+PROMPT ID: SKIN_236
+PHENOTYPE: ak_precancerous_appearance
+GROUP: SKIN_G048
+SPLIT: train
+
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 54-year-old man with light skin. At the left temple, show actinic-keratosis-like sun-damaged skin features: a small flat-topped gray-pink papule with dry whitish scale. The scale is thin and uneven rather than a thick central keratin plug. The rough dry surface texture is clearly apparent. Dry surface scale remains confined to the described patch or spots. A natural resting facial expression. Frontal close facial view, soft diffuse examination-room light, visible natural pores, neutral background, sharp focus.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, face paint, makeup concealment, airbrushed skin, beauty filter, plastic pores, glossy cosmetic retouching, tattoo, watermark, text, label, arrows, distorted facial anatomy, duplicate face, blurred skin detail, fantasy colors, excessive artificial symmetry

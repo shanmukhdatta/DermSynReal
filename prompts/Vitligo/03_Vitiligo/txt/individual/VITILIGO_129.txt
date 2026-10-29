@@ -1,0 +1,10 @@
+PROMPT_ID: VITILIGO_129
+GROUP_ID: VITILIGO_G026
+PHENOTYPE: segmental_appearance
+SPLIT: train
+
+POSITIVE PROMPT:
+Clinical photograph of a 45-year-old woman with deep brown skin, showing a unilateral segmental facial vitiligo pattern. At the left upper outer face, one well-defined depigmented patch borders a hair-bearing facial region. A few affected hairs may be white while nearby hairs remain dark. The patch has a few nearby tiny satellite white spots on the same side. The depigmented area is smooth with naturally uneven contours. Unretouched clinical face photograph, even neutral examination-room light. Use soft realistic lighting and preserve the unaltered skin surface.
+
+NEGATIVE PROMPT:
+illustration, painting, cartoon, CGI, digitally painted white mask, artificial cutout borders, face paint, cosmetic concealer, smooth plastic skin, beauty filter, watermark, text overlay, arrows, annotation, duplicate face, extra eyes, distorted facial anatomy, out of focus lesion, heavy crust, thick scale, raised ring rash, collage

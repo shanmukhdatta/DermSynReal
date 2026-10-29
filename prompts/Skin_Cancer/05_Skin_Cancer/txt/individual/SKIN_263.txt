@@ -1,0 +1,10 @@
+PROMPT ID: SKIN_263
+PHENOTYPE: ak_precancerous_appearance
+GROUP: SKIN_G053
+SPLIT: train
+
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 81-year-old woman with deep brown skin. At the right temple, show actinic-keratosis-like sun-damaged skin features: a faint gray-pink irregular patch with a barely raised gritty surface. Fine speckled scale breaks up its otherwise flat appearance. Fine dry scale is subtle but visible. Dry surface scale remains confined to the described patch or spots. Render the indicated skin tone without color exaggeration. Straight-on facial photograph, even neutral clinical lighting, visible natural pores, neutral background, sharp focus.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, face paint, makeup concealment, airbrushed skin, beauty filter, plastic pores, glossy cosmetic retouching, tattoo, watermark, text, label, arrows, distorted facial anatomy, duplicate face, blurred skin detail, fantasy colors, excessive artificial symmetry

@@ -1,0 +1,10 @@
+PROMPT_ID: VITILIGO_118
+GROUP_ID: VITILIGO_G024
+PHENOTYPE: focal_undetermined_appearance
+SPLIT: train
+
+POSITIVE PROMPT:
+Clinical photograph of a 17-year-old man with fair beige skin, showing a localized focal-appearing facial vitiligo pattern. At the middle nasal bridge, one small white patch sits with two minute neighboring white macules. The entire focal cluster occupies one limited facial site. Only this small localized site is visibly affected. Surrounding skin shows normal visible pores and fine texture. Frontal clinical portrait, balanced diffuse studio light. Use soft realistic lighting and preserve the unaltered skin surface.
+
+NEGATIVE PROMPT:
+illustration, painting, cartoon, CGI, digitally painted white mask, artificial cutout borders, face paint, cosmetic concealer, smooth plastic skin, beauty filter, watermark, text overlay, arrows, annotation, duplicate face, extra eyes, distorted facial anatomy, out of focus lesion, heavy crust, thick scale, raised ring rash, collage

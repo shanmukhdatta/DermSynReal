@@ -1,0 +1,10 @@
+PROMPT ID: SKIN_172
+PHENOTYPE: melanoma_appearance
+GROUP: SKIN_G035
+SPLIT: train
+
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 29-year-old man with medium brown skin. At the right upper cheek, show melanoma-suspicious skin lesion features: a dome-shaped dark-blue-black pigmented nodule with asymmetric boundaries. The smooth elevated surface shows uneven brown-black color at the periphery. The mark contrasts with neighboring skin but remains naturally rendered. The surrounding skin retains natural pores; pigmentation is not painted on. Maintain natural lesion contrast against adjacent skin. Frontal clinical face view, even neutral clinical lighting, visible natural pores, neutral background, sharp focus.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, face paint, makeup concealment, airbrushed skin, beauty filter, plastic pores, glossy cosmetic retouching, tattoo, watermark, text, label, arrows, distorted facial anatomy, duplicate face, blurred skin detail, fantasy colors, excessive artificial symmetry

@@ -1,0 +1,10 @@
+PROMPT ID: SKIN_023
+PHENOTYPE: bcc_appearance
+GROUP: SKIN_G005
+SPLIT: train
+
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 81-year-old woman with deep brown skin. At the right nasal sidewall, show basal-cell-carcinoma-like morphology: a blue-brown oval nodule with a glossy elevated border. Pigmentation is concentrated unevenly beneath the smooth surface. The elevation is subtle but readable at normal photographic distance. A margin of unaffected skin surrounds the lesion. Render the indicated skin tone without color exaggeration. Slight right three-quarter clinical view, even indirect daylight, visible natural pores, neutral background, sharp focus.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, face paint, makeup concealment, airbrushed skin, beauty filter, plastic pores, glossy cosmetic retouching, tattoo, watermark, text, label, arrows, distorted facial anatomy, duplicate face, blurred skin detail, fantasy colors, excessive artificial symmetry

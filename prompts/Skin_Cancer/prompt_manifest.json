@@ -1,0 +1,51 @@
+{
+  "dataset": "DermaLens SD2.1 facial skin cancer & actinic keratosis morphology prompts",
+  "version": "1.0",
+  "total_prompts": 300,
+  "morphology_groups": 60,
+  "image_candidates_at_five_seeds": 1500,
+  "phenotypes": {
+    "bcc_appearance": 75,
+    "scc_appearance": 75,
+    "melanoma_appearance": 75,
+    "ak_precancerous_appearance": 75
+  },
+  "split_counts": {
+    "train": 210,
+    "val": 45,
+    "test": 45
+  },
+  "variation_counts": {
+    "V1": 60,
+    "V2": 60,
+    "V3": 60,
+    "V4": 60,
+    "V5": 60
+  },
+  "sex_descriptor_counts": {
+    "female": 150,
+    "male": 150
+  },
+  "visual_skin_tone_counts": {
+    "I": 50,
+    "II": 50,
+    "III": 50,
+    "IV": 50,
+    "V": 50,
+    "VI": 50
+  },
+  "max_positive_content_tokens": 150,
+  "long_prompt_method": "Compel truncate_long_prompts=False; max 2 chunks",
+  "actual_tokenization": "NOT_RUN: requires exact SD2.1 tokenizer and custom added tokens on Kaggle",
+  "clinical_review_status": "NOT_CLINICALLY_VALIDATED",
+  "diagnosis_note": "Synthetic appearance only; melanoma/BCC/SCC histology unconfirmed, AK precancerous, never treat labels as diagnoses.",
+  "splitting_policy": "all prompts in the same prompt_group_id and all five seed variants inherit one split; independent real test must remain held out",
+  "preferred_inference_source": "05_Skin_Cancer/json/skin_cancer_all_300.json",
+  "canonical_prompt_column": "positive_prompt",
+  "reference_urls": [
+    "https://dermnetnz.org/topics/basal-cell-carcinoma",
+    "https://dermnetnz.org/topics/cutaneous-squamous-cell-carcinoma",
+    "https://dermnetnz.org/topics/melanoma",
+    "https://dermnetnz.org/topics/actinic-keratosis"
+  ]
+}

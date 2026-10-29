@@ -1,0 +1,10 @@
+PROMPT ID: SKIN_022
+PHENOTYPE: bcc_appearance
+GROUP: SKIN_G005
+SPLIT: train
+
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 76-year-old man with medium brown skin. At the right cheek, show basal-cell-carcinoma-like morphology: a blue-brown oval nodule with a glossy elevated border. Pigmentation is concentrated unevenly beneath the smooth surface. The raised contour stands out while the adjacent skin remains ordinary. A margin of unaffected skin surrounds the lesion. Maintain natural lesion contrast against adjacent skin. Frontal clinical face view, even neutral clinical lighting, visible natural pores, neutral background, sharp focus.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, face paint, makeup concealment, airbrushed skin, beauty filter, plastic pores, glossy cosmetic retouching, tattoo, watermark, text, label, arrows, distorted facial anatomy, duplicate face, blurred skin detail, fantasy colors, excessive artificial symmetry

@@ -1,0 +1,9 @@
+ID: NORMAL_184
+GROUP: NORMAL_G004
+PHENOTYPE: balanced_skin_appearance
+SPLIT: train
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 35-year-old man with medium-brown skin, frontal clinical portrait, even shadow-controlled studio illumination. Show balanced-looking non-lesional facial skin. At the forehead, depict small visible follicular openings distributed unevenly across the forehead. The surface is neither unusually glossy nor uniformly featureless. The surface has restrained, natural reflection and irregular but unobstructed pores. Keep real pore spacing, subtle color variation and naturally uneven skin detail. Neutral expression, plain clinical backdrop, no cosmetic smoothing.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, makeup, beauty filter, airbrushed skin, porcelain skin, digitally painted face, unnatural skin smoothing, watermark, text, distorted face, duplicate eyes, extra nose, excessive blur, overexposure, extreme shadows, acne papules, pustules, comedones, red inflamed rash, ring-shaped scaly plaques, depigmented white patches, distinct pigmented lesions, bleeding or crusted lesions, wet greasy oil coating, severe dryness, thick flaking

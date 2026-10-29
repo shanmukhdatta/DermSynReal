@@ -1,0 +1,10 @@
+PROMPT ID: SKIN_001
+PHENOTYPE: bcc_appearance
+GROUP: SKIN_G001
+SPLIT: train
+
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 63-year-old woman with very fair skin. At the left side of the nose, show basal-cell-carcinoma-like morphology: a single small pearly pink, smooth dome-shaped nodule. A fine branching red vessel is visible across its glossy surface. The elevation is subtle but readable at normal photographic distance. A margin of unaffected skin surrounds the lesion. A natural resting facial expression. Frontal clinical face view, soft diffused daylight, visible natural pores, neutral background, sharp focus.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, face paint, makeup concealment, airbrushed skin, beauty filter, plastic pores, glossy cosmetic retouching, tattoo, watermark, text, label, arrows, distorted facial anatomy, duplicate face, blurred skin detail, fantasy colors, excessive artificial symmetry

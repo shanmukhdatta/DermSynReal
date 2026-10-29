@@ -1,0 +1,10 @@
+PROMPT_ID: VITILIGO_015
+GROUP_ID: VITILIGO_G003
+PHENOTYPE: focal_undetermined_appearance
+SPLIT: train
+
+POSITIVE PROMPT:
+Clinical photograph of a 49-year-old woman with very fair ivory skin, showing a localized focal-appearing facial vitiligo pattern. At the left lateral forehead, a single small oval of uniform chalk-white depigmentation. Its edge is sharp with no raised margin. The depigmented area is compact and surrounded by normally colored skin. A narrow sharp border separates the white skin from adjacent pigment. Face-level clinical photograph, soft diffused daylight. Use soft realistic lighting and preserve the unaltered skin surface.
+
+NEGATIVE PROMPT:
+illustration, painting, cartoon, CGI, digitally painted white mask, artificial cutout borders, face paint, cosmetic concealer, smooth plastic skin, beauty filter, watermark, text overlay, arrows, annotation, duplicate face, extra eyes, distorted facial anatomy, out of focus lesion, heavy crust, thick scale, raised ring rash, collage

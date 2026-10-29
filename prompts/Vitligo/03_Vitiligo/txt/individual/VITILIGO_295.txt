@@ -1,0 +1,10 @@
+PROMPT_ID: VITILIGO_295
+GROUP_ID: VITILIGO_G059
+PHENOTYPE: non_segmental_appearance
+SPLIT: test
+
+POSITIVE PROMPT:
+Clinical photograph of a 24-year-old woman with light olive skin, showing a non-segmental facial vitiligo pattern. At the skin lateral to each mouth corner, a few separate white macules align near both mouth-to-cheek transitions. Their combined distribution is roughly paired, not perfectly identical. The depigmented regions occupy a noticeable but localized part of both sides. The depigmented area is smooth with naturally uneven contours. Close frontal facial photograph, even neutral examination-room light. Keep true skin texture and a plain neutral background; avoid cosmetic smoothing.
+
+NEGATIVE PROMPT:
+illustration, painting, cartoon, CGI, digitally painted white mask, artificial cutout borders, face paint, cosmetic concealer, smooth plastic skin, beauty filter, watermark, text overlay, arrows, annotation, duplicate face, extra eyes, distorted facial anatomy, out of focus lesion, heavy crust, thick scale, raised ring rash, collage

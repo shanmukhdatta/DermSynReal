@@ -1,0 +1,11 @@
+PROMPT_ID: FUNGAL_032
+PROMPT_GROUP_ID: FUNGAL_G032
+PHENOTYPE: tinea_faciei
+SPLIT: val
+CLINICAL_STATUS: PILOT_REVIEW_REQUIRED
+
+POSITIVE_PROMPT:
+Clinical facial photograph of a 43-year-old woman with fair beige skin; frontal face-level photograph, diffuse overhead and frontal light. On the left temple and adjacent upper cheek, show a tinea faciei pattern: a barely erythematous or dusky circular patch with a thin dry border. Very fine flakes outline only part of its circumference. The patch edge looks pink-red with fine flaky skin. The outer rim is clearly visible but the lesion remains localized. The background is plain; skin detail is unretouched and sharply focused.
+
+NEGATIVE_PROMPT:
+illustration, painting, CGI, cartoon, plastic skin, airbrushed skin, heavy makeup, beauty filter, watermark, printed text, arrows, labels, duplicate head, extra eyes, distorted face, blurry lesion, harsh oversharpening, collage

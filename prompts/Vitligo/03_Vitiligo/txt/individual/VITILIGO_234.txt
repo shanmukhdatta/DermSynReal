@@ -1,0 +1,10 @@
+PROMPT_ID: VITILIGO_234
+GROUP_ID: VITILIGO_G047
+PHENOTYPE: segmental_appearance
+SPLIT: train
+
+POSITIVE PROMPT:
+Clinical photograph of a 58-year-old man with fair beige skin, showing a unilateral segmental facial vitiligo pattern. At the right temple, an obliquely oriented white oval has a slightly scalloped rim. Its orientation follows local facial anatomy, not a perfect outline. The patch has a few nearby tiny satellite white spots on the same side. Surrounding skin shows normal visible pores and fine texture. Front-facing dermatology photograph, balanced diffuse studio light. Keep true skin texture and a plain neutral background; avoid cosmetic smoothing.
+
+NEGATIVE PROMPT:
+illustration, painting, cartoon, CGI, digitally painted white mask, artificial cutout borders, face paint, cosmetic concealer, smooth plastic skin, beauty filter, watermark, text overlay, arrows, annotation, duplicate face, extra eyes, distorted facial anatomy, out of focus lesion, heavy crust, thick scale, raised ring rash, collage

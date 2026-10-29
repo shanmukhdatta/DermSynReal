@@ -1,0 +1,10 @@
+PROMPT ID: SKIN_185
+PHENOTYPE: melanoma_appearance
+GROUP: SKIN_G037
+SPLIT: train
+
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 72-year-old woman with deep brown skin. At the left upper forehead, show melanoma-suspicious skin lesion features: an irregular reddish-brown flat patch with a mottled dark-brown sector. The smudgy edge is asymmetrical, with no overlying thick scale. The uneven border and pigment variation are clearly visible. The surrounding skin retains natural pores; pigmentation is not painted on. Include visible unaffected facial skin around the lesion. Frontal clinical face view, controlled soft studio lighting, visible natural pores, neutral background, sharp focus.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, face paint, makeup concealment, airbrushed skin, beauty filter, plastic pores, glossy cosmetic retouching, tattoo, watermark, text, label, arrows, distorted facial anatomy, duplicate face, blurred skin detail, fantasy colors, excessive artificial symmetry

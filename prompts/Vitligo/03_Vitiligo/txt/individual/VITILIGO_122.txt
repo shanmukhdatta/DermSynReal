@@ -1,0 +1,10 @@
+PROMPT_ID: VITILIGO_122
+GROUP_ID: VITILIGO_G025
+PHENOTYPE: non_segmental_appearance
+SPLIT: train
+
+POSITIVE PROMPT:
+Clinical photograph of a 32-year-old man with fair beige skin, showing a non-segmental facial vitiligo pattern. At the bilateral crow-foot regions, curved white marks bracket the outer corners of both eyes. Both arcs taper gradually while retaining a sharply visible boundary. Several adjacent white spots create a somewhat wider bilateral pattern. The depigmented area is smooth with naturally uneven contours. Frontal clinical portrait, even neutral examination-room light. Keep the lesion in sharp focus, with neutral white balance and no retouching.
+
+NEGATIVE PROMPT:
+illustration, painting, cartoon, CGI, digitally painted white mask, artificial cutout borders, face paint, cosmetic concealer, smooth plastic skin, beauty filter, watermark, text overlay, arrows, annotation, duplicate face, extra eyes, distorted facial anatomy, out of focus lesion, heavy crust, thick scale, raised ring rash, collage

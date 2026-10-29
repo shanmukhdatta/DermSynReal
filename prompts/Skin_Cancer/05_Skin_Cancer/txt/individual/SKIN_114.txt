@@ -1,0 +1,10 @@
+PROMPT ID: SKIN_114
+PHENOTYPE: scc_appearance
+GROUP: SKIN_G023
+SPLIT: train
+
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 74-year-old man with very deep brown skin. At the left upper cheek, show cutaneous-squamous-cell-carcinoma-like morphology: a compact pink nodule with uneven dry flaking along its crown. A thicker scaly ridge occupies one side of the raised lesion. Dry keratin texture is clearly visible under neutral light. Keratin and surface scale are confined to the described area. The abnormality is confined to this specified skin region. Frontal clinical face view, even indirect daylight, visible natural pores, neutral background, sharp focus.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, face paint, makeup concealment, airbrushed skin, beauty filter, plastic pores, glossy cosmetic retouching, tattoo, watermark, text, label, arrows, distorted facial anatomy, duplicate face, blurred skin detail, fantasy colors, excessive artificial symmetry

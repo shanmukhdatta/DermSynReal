@@ -1,0 +1,10 @@
+PROMPT ID: SKIN_244
+PHENOTYPE: ak_precancerous_appearance
+GROUP: SKIN_G049
+SPLIT: train
+
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 62-year-old man with medium brown skin. At the left cheek, show actinic-keratosis-like sun-damaged skin features: a thin tan-pink patch bearing a delicate yellow-white adherent scale. The surrounding surface shows mild sun-exposure texture. Fine dry scale is subtle but visible. Dry surface scale remains confined to the described patch or spots. The abnormality is confined to this specified skin region. Slight right three-quarter clinical view, controlled soft studio lighting, visible natural pores, neutral background, sharp focus.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, face paint, makeup concealment, airbrushed skin, beauty filter, plastic pores, glossy cosmetic retouching, tattoo, watermark, text, label, arrows, distorted facial anatomy, duplicate face, blurred skin detail, fantasy colors, excessive artificial symmetry

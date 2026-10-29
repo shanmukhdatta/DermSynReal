@@ -1,0 +1,10 @@
+PROMPT_ID: VITILIGO_054
+GROUP_ID: VITILIGO_G011
+PHENOTYPE: segmental_appearance
+SPLIT: train
+
+POSITIVE PROMPT:
+Clinical photograph of a 45-year-old man with fair beige skin, showing a unilateral segmental facial vitiligo pattern. At the right upper cheekbone, three small white ovals cluster along a unilateral facial region. The marks have different diameters and smooth surfaces. The patch has a few nearby tiny satellite white spots on the same side. The depigmented area is smooth with naturally uneven contours. Unretouched clinical face photograph, even neutral examination-room light. Use soft realistic lighting and preserve the unaltered skin surface.
+
+NEGATIVE PROMPT:
+illustration, painting, cartoon, CGI, digitally painted white mask, artificial cutout borders, face paint, cosmetic concealer, smooth plastic skin, beauty filter, watermark, text overlay, arrows, annotation, duplicate face, extra eyes, distorted facial anatomy, out of focus lesion, heavy crust, thick scale, raised ring rash, collage

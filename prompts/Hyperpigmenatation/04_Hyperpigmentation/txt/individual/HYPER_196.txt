@@ -1,0 +1,9 @@
+ID: HYPER_196
+GROUP: HYPER_G016
+SPLIT: val
+PHENOTYPE: melasma_appearance
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 48-year-old man with fair beige skin. At the upper lip skin and paired central cheeks, show melasma-like facial hyperpigmentation: multiple neighboring brown patches that almost touch but remain partly separate. Their edges are faintly irregular and the pigment is not uniformly dark. Moderate extent, several irregular patches occupy part of the specified region. The pigmentation is flat, with no raised border, crust or scale; both sides are broadly but not perfectly symmetrical. Slight three-quarter clinical face view, broad shadow-free examination lighting, realistic pores and skin texture, natural skin tones, plain background, no retouching.
+
+NEGATIVE PROMPT:
+cartoon, CGI, painted-on stains, makeup, face paint, beauty filter, plastic skin, airbrushing, watermark, text, arrows, annotations, duplicate face, distorted eyes, wrong facial anatomy, blurred lesions, oversaturated pigments, image collage, unrelated body rash

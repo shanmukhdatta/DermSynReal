@@ -1,0 +1,10 @@
+PROMPT ID: SKIN_253
+PHENOTYPE: ak_precancerous_appearance
+GROUP: SKIN_G051
+SPLIT: train
+
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 69-year-old woman with very fair skin. At the right cheekbone, show actinic-keratosis-like sun-damaged skin features: a flat tan-brown patch with irregular edges and a visibly dry finely scaling surface. Color varies subtly but the predominant clue is roughness. The localized surface scale is easy to distinguish. Dry surface scale remains confined to the described patch or spots. Render the indicated skin tone without color exaggeration. Frontal close facial view, controlled soft studio lighting, visible natural pores, neutral background, sharp focus.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, face paint, makeup concealment, airbrushed skin, beauty filter, plastic pores, glossy cosmetic retouching, tattoo, watermark, text, label, arrows, distorted facial anatomy, duplicate face, blurred skin detail, fantasy colors, excessive artificial symmetry

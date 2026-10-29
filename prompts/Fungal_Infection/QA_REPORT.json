@@ -1,0 +1,50 @@
+{
+  "status": "STRUCTURALLY_VALIDATED__NOT_CLINICALLY_CERTIFIED",
+  "prompts": 300,
+  "unique_positive_prompts": 300,
+  "groups": 60,
+  "prompts_per_group": 5,
+  "splits": {
+    "train": 210,
+    "test": 45,
+    "val": 45
+  },
+  "phenotypes": {
+    "tinea_faciei": 150,
+    "pityriasis_versicolor": 120,
+    "angular_cheilitis_candida_unconfirmed": 30
+  },
+  "variation_groups": {
+    "V1": 60,
+    "V2": 60,
+    "V3": 60,
+    "V4": 60,
+    "V5": 60
+  },
+  "sex_descriptors": {
+    "male": 150,
+    "female": 150
+  },
+  "skin_tone_sampling": {
+    "I": 50,
+    "II": 50,
+    "III": 50,
+    "IV": 50,
+    "V": 50,
+    "VI": 50
+  },
+  "prompt_words": {
+    "min": 73,
+    "median": 82.0,
+    "max": 103
+  },
+  "five_prompt_batch_checks": 60,
+  "group_split_leakage": 0,
+  "location_phrases": 51,
+  "exact_tokenizer_test": "NOT RUN: needs actual SD 2.1 CLIP tokenizer",
+  "Kaggle_gpu_test": "NOT RUN",
+  "medical_professional_review": "NOT RUN",
+  "image_fidelity_and_diversity": "NOT RUN",
+  "candida_angular_cheilitis_requiring_review": 30,
+  "scope": "Photographic appearance prompts only, not verified fungal diagnoses"
+}

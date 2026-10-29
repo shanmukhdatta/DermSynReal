@@ -1,0 +1,9 @@
+ID: NORMAL_165
+GROUP: NORMAL_G045
+PHENOTYPE: dry_skin_appearance
+SPLIT: train
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 29-year-old woman with light olive skin, frontal clinical portrait, even diffuse clinical illumination. Show mildly dry-looking but non-lesional facial skin. At the central forehead, depict fine dry-looking surface texture without raised lesions on the central forehead. The texture is not a powder coating, makeup effect or retouched blur. The surface has low gloss with delicate skin lines and no marked scaling. Natural follicles and fine vellus hairs remain visible. Neutral expression, realistic facial anatomy, minimal retouching, plain background.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, makeup, beauty filter, airbrushed skin, porcelain skin, digitally painted face, unnatural skin smoothing, watermark, text, distorted face, duplicate eyes, extra nose, excessive blur, overexposure, extreme shadows, acne papules, pustules, comedones, red inflamed rash, ring-shaped scaly plaques, depigmented white patches, distinct pigmented lesions, bleeding or crusted lesions, wet greasy oil coating, thick scales, cracked skin, severe peeling plaques

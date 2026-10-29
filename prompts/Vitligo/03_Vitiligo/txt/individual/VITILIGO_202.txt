@@ -1,0 +1,10 @@
+PROMPT_ID: VITILIGO_202
+GROUP_ID: VITILIGO_G041
+PHENOTYPE: segmental_appearance
+SPLIT: train
+
+POSITIVE PROMPT:
+Clinical photograph of a 23-year-old man with very dark brown skin, showing a unilateral segmental facial vitiligo pattern. At the right cheek near the mouth, two curved white segments form an incomplete crescent on one side. A gap of pigmented skin interrupts the shape. The patch occupies a narrow unilateral facial zone. Surrounding skin shows normal visible pores and fine texture. Face-level clinical photograph, balanced diffuse studio light. Show ordinary skin texture, an uncluttered background, and realistic anatomy.
+
+NEGATIVE PROMPT:
+illustration, painting, cartoon, CGI, digitally painted white mask, artificial cutout borders, face paint, cosmetic concealer, smooth plastic skin, beauty filter, watermark, text overlay, arrows, annotation, duplicate face, extra eyes, distorted facial anatomy, out of focus lesion, heavy crust, thick scale, raised ring rash, collage

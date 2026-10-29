@@ -1,0 +1,10 @@
+PROMPT ID: SKIN_020
+PHENOTYPE: bcc_appearance
+GROUP: SKIN_G004
+SPLIT: train
+
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 42-year-old man with light skin. At the right temple, show basal-cell-carcinoma-like morphology: a skin-colored firm-looking bump with smooth pearly elevation. Subtle fine surface vessels interrupt an otherwise even surface. The contour and border are clearly visible at normal photographic distance. A margin of unaffected skin surrounds the lesion. Include visible unaffected facial skin around the lesion. Frontal close facial view, even neutral clinical lighting, visible natural pores, neutral background, sharp focus.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, face paint, makeup concealment, airbrushed skin, beauty filter, plastic pores, glossy cosmetic retouching, tattoo, watermark, text, label, arrows, distorted facial anatomy, duplicate face, blurred skin detail, fantasy colors, excessive artificial symmetry

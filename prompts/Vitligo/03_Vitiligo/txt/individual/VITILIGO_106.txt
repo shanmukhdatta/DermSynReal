@@ -1,0 +1,10 @@
+PROMPT_ID: VITILIGO_106
+GROUP_ID: VITILIGO_G022
+PHENOTYPE: non_segmental_appearance
+SPLIT: train
+
+POSITIVE PROMPT:
+Clinical photograph of a 24-year-old man with medium-brown skin, showing a non-segmental facial vitiligo pattern. At both lower cheek-to-chin junctions, paired depigmented patches have irregular angled edges near the chin. The white skin has no surface crust or papules. The paired depigmented areas are small and separated by unaffected skin. The depigmented area is smooth with naturally uneven contours. Face-level clinical photograph, even neutral examination-room light. Use an unretouched photo with natural pores and accurate skin color.
+
+NEGATIVE PROMPT:
+illustration, painting, cartoon, CGI, digitally painted white mask, artificial cutout borders, face paint, cosmetic concealer, smooth plastic skin, beauty filter, watermark, text overlay, arrows, annotation, duplicate face, extra eyes, distorted facial anatomy, out of focus lesion, heavy crust, thick scale, raised ring rash, collage

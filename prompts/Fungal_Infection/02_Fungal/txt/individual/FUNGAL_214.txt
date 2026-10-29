@@ -1,0 +1,11 @@
+PROMPT_ID: FUNGAL_214
+PROMPT_GROUP_ID: FUNGAL_G034
+PHENOTYPE: tinea_faciei
+SPLIT: train
+CLINICAL_STATUS: PILOT_REVIEW_REQUIRED
+
+POSITIVE_PROMPT:
+Clinical facial photograph of a 18-year-old young woman with medium-brown skin; left three-quarter facial view, soft neutral clinic lighting. On the mid-left cheek, show a tinea faciei pattern: a softly discolored patch with a dry active margin and relatively smooth center. The lesion is mildly asymmetric and remains localized. The edge looks dusky reddish-brown against the natural skin tone. Only a small amount of fine scale outlines the patch. Use ordinary color balance, natural skin texture, and a distraction-free backdrop.
+
+NEGATIVE_PROMPT:
+illustration, painting, CGI, cartoon, plastic skin, airbrushed skin, heavy makeup, beauty filter, watermark, printed text, arrows, labels, duplicate head, extra eyes, distorted face, blurry lesion, harsh oversharpening, collage

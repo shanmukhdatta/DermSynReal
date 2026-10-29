@@ -1,0 +1,23 @@
+PASS — notebooks validated and all code cells compile
+normal_example | tokenizer: 5/150 content tokens
+normal_example | tokenizer_2: 5/150 content tokens
+negative | tokenizer: 2/150 content tokens
+negative | tokenizer_2: 2/150 content tokens
+exact_150 | tokenizer: 150/150 content tokens
+exact_150 | tokenizer_2: 150/150 content tokens
+reject_second_tokenizer | tokenizer: 150/150 content tokens
+Generated 20 images in 0.0 min
+PASS — 150/151 token tests, dual-tokenizer tests, 4 modes, embeddings after adapter selection, matched seeds and 20 fake images
+Using existing train/ folder
+Held-out leakage screen passed: 2 train vs 1 held-out images
+Training images selected: 2
+Prepared 2 images; skipped 0
+Sample image (128, 128) RGB corner: (225, 225, 225)
+PASS — real preparation code: train-only split, leakage screen, nonblack transparent/rectangular images, caption metadata
+Using existing train/ folder
+Near-duplicate train/held-out examples: [('/tmp/normal_final__fkcbqin/dataset/train/wide.jpg', '/tmp/normal_final__fkcbqin/dataset/test/heldout.jpg', 0)]
+PASS — held-out exact duplicate triggers explicit stop
+PASS — pinned official trainer source reference and CLI flags are present
+ALL CPU-OFFLINE AUDIT TESTS PASSED — FULL GPU NOT TESTED
+
+NOTE: PyTorch/Compel/Diffusers model GPU integration was NOT tested.

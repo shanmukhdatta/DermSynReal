@@ -1,0 +1,10 @@
+PROMPT ID: SKIN_057
+PHENOTYPE: bcc_appearance
+GROUP: SKIN_G012
+SPLIT: val
+
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 76-year-old woman with light-medium beige skin. At the left cheek beside nose, show basal-cell-carcinoma-like morphology: a pink raised rim surrounding a shallow central indentation. The outer edge appears pearly rather than scaly or sharply pigmented. The elevation is subtle but readable at normal photographic distance. A margin of unaffected skin surrounds the lesion. Maintain natural lesion contrast against adjacent skin. Frontal close facial view, even indirect daylight, visible natural pores, neutral background, sharp focus.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, face paint, makeup concealment, airbrushed skin, beauty filter, plastic pores, glossy cosmetic retouching, tattoo, watermark, text, label, arrows, distorted facial anatomy, duplicate face, blurred skin detail, fantasy colors, excessive artificial symmetry

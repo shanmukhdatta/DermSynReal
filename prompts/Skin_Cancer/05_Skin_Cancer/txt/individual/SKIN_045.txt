@@ -1,0 +1,10 @@
+PROMPT ID: SKIN_045
+PHENOTYPE: bcc_appearance
+GROUP: SKIN_G009
+SPLIT: train
+
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 76-year-old woman with light-medium beige skin. At the left central cheek, show basal-cell-carcinoma-like morphology: an indistinct ivory-white waxy plaque that resembles a small scar. The patch is subtly depressed and blends gradually into surrounding skin. The elevation is subtle but readable at normal photographic distance. A margin of unaffected skin surrounds the lesion. Include visible unaffected facial skin around the lesion. Frontal close facial view, even neutral clinical lighting, visible natural pores, neutral background, sharp focus.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, face paint, makeup concealment, airbrushed skin, beauty filter, plastic pores, glossy cosmetic retouching, tattoo, watermark, text, label, arrows, distorted facial anatomy, duplicate face, blurred skin detail, fantasy colors, excessive artificial symmetry

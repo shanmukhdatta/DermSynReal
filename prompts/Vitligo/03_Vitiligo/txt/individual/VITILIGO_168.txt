@@ -1,0 +1,10 @@
+PROMPT_ID: VITILIGO_168
+GROUP_ID: VITILIGO_G034
+PHENOTYPE: non_segmental_appearance
+SPLIT: test
+
+POSITIVE PROMPT:
+Clinical photograph of a 49-year-old man with very dark brown skin, showing a non-segmental facial vitiligo pattern. At the paired lateral forehead patches, several small white macules partly join into lobed forehead patches. Tiny individual macules remain at the outer edges of the clusters. The paired depigmented areas are small and separated by unaffected skin. Surrounding skin shows normal visible pores and fine texture. Frontal clinical portrait, balanced diffuse studio light. Use soft realistic lighting and preserve the unaltered skin surface.
+
+NEGATIVE PROMPT:
+illustration, painting, cartoon, CGI, digitally painted white mask, artificial cutout borders, face paint, cosmetic concealer, smooth plastic skin, beauty filter, watermark, text overlay, arrows, annotation, duplicate face, extra eyes, distorted facial anatomy, out of focus lesion, heavy crust, thick scale, raised ring rash, collage

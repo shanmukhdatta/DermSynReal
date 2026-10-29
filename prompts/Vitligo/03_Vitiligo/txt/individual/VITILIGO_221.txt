@@ -1,0 +1,10 @@
+PROMPT_ID: VITILIGO_221
+GROUP_ID: VITILIGO_G045
+PHENOTYPE: focal_undetermined_appearance
+SPLIT: train
+
+POSITIVE PROMPT:
+Clinical photograph of a 32-year-old woman with light olive skin, showing a localized focal-appearing facial vitiligo pattern. At the left cheekbone, one roundish white patch has an indentation of normal skin tone. Its irregularity looks biological rather than precisely geometric. Only this small localized site is visibly affected. The white-to-normal-skin transition is distinct but not mechanically traced. Front-facing dermatology photograph, broad shadow-free clinical light. Use soft realistic lighting and preserve the unaltered skin surface.
+
+NEGATIVE PROMPT:
+illustration, painting, cartoon, CGI, digitally painted white mask, artificial cutout borders, face paint, cosmetic concealer, smooth plastic skin, beauty filter, watermark, text overlay, arrows, annotation, duplicate face, extra eyes, distorted facial anatomy, out of focus lesion, heavy crust, thick scale, raised ring rash, collage

@@ -1,0 +1,10 @@
+PROMPT ID: SKIN_049
+PHENOTYPE: bcc_appearance
+GROUP: SKIN_G010
+SPLIT: train
+
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 76-year-old woman with very fair skin. At the left side of the nose, show basal-cell-carcinoma-like morphology: a pale yellow-white flat plaque with poorly defined edges. A smooth waxy center contrasts with ordinary pores nearby. The elevation is subtle but readable at normal photographic distance. A margin of unaffected skin surrounds the lesion. The abnormality is confined to this specified skin region. Frontal close facial view, soft diffused daylight, visible natural pores, neutral background, sharp focus.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, face paint, makeup concealment, airbrushed skin, beauty filter, plastic pores, glossy cosmetic retouching, tattoo, watermark, text, label, arrows, distorted facial anatomy, duplicate face, blurred skin detail, fantasy colors, excessive artificial symmetry

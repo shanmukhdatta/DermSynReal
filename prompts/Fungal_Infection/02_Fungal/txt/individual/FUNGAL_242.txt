@@ -1,0 +1,11 @@
+PROMPT_ID: FUNGAL_242
+PROMPT_GROUP_ID: FUNGAL_G002
+PHENOTYPE: tinea_faciei
+SPLIT: train
+CLINICAL_STATUS: PILOT_REVIEW_REQUIRED
+
+POSITIVE_PROMPT:
+Clinical facial photograph of a 24-year-old young woman with deep brown skin; frontal face-level photograph, balanced shadow-free lighting. On the left lateral forehead, show a tinea faciei pattern: an elongated oval patch with peripheral scale and visible partial central clearing. The outer edge is more inflamed than the central surface. The edge looks dusky reddish-brown against the natural skin tone. Only a small amount of fine scale outlines the patch. Use ordinary color balance, natural skin texture, and a distraction-free backdrop.
+
+NEGATIVE_PROMPT:
+illustration, painting, CGI, cartoon, plastic skin, airbrushed skin, heavy makeup, beauty filter, watermark, printed text, arrows, labels, duplicate head, extra eyes, distorted face, blurry lesion, harsh oversharpening, collage

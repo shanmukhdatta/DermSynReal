@@ -1,0 +1,10 @@
+PROMPT ID: SKIN_055
+PHENOTYPE: bcc_appearance
+GROUP: SKIN_G011
+SPLIT: train
+
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 42-year-old woman with very fair skin. At the nose bridge, show basal-cell-carcinoma-like morphology: a translucent pale-pink bump with fine curved vessels. Its rounded surface is smooth and faintly reflective. The raised contour stands out while the adjacent skin remains ordinary. A margin of unaffected skin surrounds the lesion. Include visible unaffected facial skin around the lesion. Straight-on facial photograph, even indirect daylight, visible natural pores, neutral background, sharp focus.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, face paint, makeup concealment, airbrushed skin, beauty filter, plastic pores, glossy cosmetic retouching, tattoo, watermark, text, label, arrows, distorted facial anatomy, duplicate face, blurred skin detail, fantasy colors, excessive artificial symmetry

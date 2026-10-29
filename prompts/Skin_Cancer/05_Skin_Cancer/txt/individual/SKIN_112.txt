@@ -1,0 +1,10 @@
+PROMPT ID: SKIN_112
+PHENOTYPE: scc_appearance
+GROUP: SKIN_G023
+SPLIT: train
+
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 61-year-old man with medium brown skin. At the left temple, show cutaneous-squamous-cell-carcinoma-like morphology: a compact pink nodule with uneven dry flaking along its crown. A thicker scaly ridge occupies one side of the raised lesion. The uneven scaly relief is readily visible without magnification. Keratin and surface scale are confined to the described area. Maintain natural lesion contrast against adjacent skin. Slight left three-quarter clinical view, controlled soft studio lighting, visible natural pores, neutral background, sharp focus.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, face paint, makeup concealment, airbrushed skin, beauty filter, plastic pores, glossy cosmetic retouching, tattoo, watermark, text, label, arrows, distorted facial anatomy, duplicate face, blurred skin detail, fantasy colors, excessive artificial symmetry

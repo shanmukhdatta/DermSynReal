@@ -1,0 +1,11 @@
+PROMPT_ID: FUNGAL_174
+PROMPT_GROUP_ID: FUNGAL_G054
+PHENOTYPE: tinea_faciei
+SPLIT: train
+CLINICAL_STATUS: PILOT_REVIEW_REQUIRED
+
+POSITIVE_PROMPT:
+Clinical facial photograph of a 48-year-old woman with very fair ivory skin; frontal face-level photograph, gentle indirect daylight. On the central left cheek, show a tinea faciei pattern: two small partial rings with fine flaky edges and slight overlap. Their centers have less visible scale than the borders. The patch edge looks pink-red with fine flaky skin. Peripheral flaking is conspicuous while the surrounding face remains mostly unaffected. Preserve visible pores and fine surface scale in a neutral clinical composition.
+
+NEGATIVE_PROMPT:
+illustration, painting, CGI, cartoon, plastic skin, airbrushed skin, heavy makeup, beauty filter, watermark, printed text, arrows, labels, duplicate head, extra eyes, distorted face, blurry lesion, harsh oversharpening, collage

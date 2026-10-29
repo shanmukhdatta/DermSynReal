@@ -1,0 +1,10 @@
+PROMPT_ID: VITILIGO_061
+GROUP_ID: VITILIGO_G013
+PHENOTYPE: non_segmental_appearance
+SPLIT: val
+
+POSITIVE PROMPT:
+Clinical photograph of a 24-year-old woman with very fair ivory skin, showing a non-segmental facial vitiligo pattern. At both malar cheek regions, two broad oval depigmented patches have gently uneven outlines. Their surfaces stay flat with ordinary skin pores. The depigmented regions occupy a noticeable but localized part of both sides. Surrounding skin shows normal visible pores and fine texture. Close frontal facial photograph, balanced diffuse studio light. Keep the lesion in sharp focus, with neutral white balance and no retouching.
+
+NEGATIVE PROMPT:
+illustration, painting, cartoon, CGI, digitally painted white mask, artificial cutout borders, face paint, cosmetic concealer, smooth plastic skin, beauty filter, watermark, text overlay, arrows, annotation, duplicate face, extra eyes, distorted facial anatomy, out of focus lesion, heavy crust, thick scale, raised ring rash, collage

@@ -1,0 +1,11 @@
+PROMPT_ID: FUNGAL_284
+PROMPT_GROUP_ID: FUNGAL_G044
+PHENOTYPE: tinea_faciei
+SPLIT: test
+CLINICAL_STATUS: PILOT_REVIEW_REQUIRED
+
+POSITIVE_PROMPT:
+Clinical facial photograph of a 18-year-old young woman with deep brown skin; front-facing clinical close-up, gentle indirect daylight. On the upper central forehead, show a tinea faciei pattern: an elongated scaly plaque spreading more noticeably in one direction. The advancing side carries more scale than the receding side. The edge looks dusky reddish-brown against the natural skin tone. Only a small amount of fine scale outlines the patch. Use ordinary color balance, natural skin texture, and a distraction-free backdrop.
+
+NEGATIVE_PROMPT:
+illustration, painting, CGI, cartoon, plastic skin, airbrushed skin, heavy makeup, beauty filter, watermark, printed text, arrows, labels, duplicate head, extra eyes, distorted face, blurry lesion, harsh oversharpening, collage

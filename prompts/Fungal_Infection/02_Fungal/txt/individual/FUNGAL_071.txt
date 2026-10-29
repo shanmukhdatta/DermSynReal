@@ -1,0 +1,11 @@
+PROMPT_ID: FUNGAL_071
+PROMPT_GROUP_ID: FUNGAL_G011
+PHENOTYPE: tinea_faciei
+SPLIT: val
+CLINICAL_STATUS: PILOT_REVIEW_REQUIRED
+
+POSITIVE_PROMPT:
+Clinical facial photograph of a 35-year-old man with deep brown skin; frontal face-level photograph, diffused window daylight. On the right lateral forehead, show a tinea faciei pattern: a broad but localized annular plaque with a slightly thickened flaky outer margin. The center shows reduced redness with faint dry skin. The edge looks dusky reddish-brown against the natural skin tone. Peripheral flaking is conspicuous while the surrounding face remains mostly unaffected. The photograph has realistic skin texture, no beauty retouching, and an uncluttered background.
+
+NEGATIVE_PROMPT:
+illustration, painting, CGI, cartoon, plastic skin, airbrushed skin, heavy makeup, beauty filter, watermark, printed text, arrows, labels, duplicate head, extra eyes, distorted face, blurry lesion, harsh oversharpening, collage

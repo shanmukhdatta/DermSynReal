@@ -1,0 +1,10 @@
+PROMPT ID: SKIN_281
+PHENOTYPE: ak_precancerous_appearance
+GROUP: SKIN_G057
+SPLIT: val
+
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 69-year-old woman with deep brown skin. At the left cheekbone, show actinic-keratosis-like sun-damaged skin features: a thin pink plaque with scattered dry scale concentrated at one edge. Its surface remains mostly flat with mild sun-weathered texture nearby. The rough dry surface texture is clearly apparent. Dry surface scale remains confined to the described patch or spots. A natural resting facial expression. Slight right three-quarter clinical view, even neutral clinical lighting, visible natural pores, neutral background, sharp focus.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, face paint, makeup concealment, airbrushed skin, beauty filter, plastic pores, glossy cosmetic retouching, tattoo, watermark, text, label, arrows, distorted facial anatomy, duplicate face, blurred skin detail, fantasy colors, excessive artificial symmetry

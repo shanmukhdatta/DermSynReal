@@ -1,0 +1,9 @@
+ID: HYPER_198
+GROUP: HYPER_G018
+SPLIT: train
+PHENOTYPE: solar_lentigines_appearance
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 40-year-old man with very fair ivory skin. At the left temple, show solar lentigo-like benign-appearing pigmented macules: multiple tiny round to oval uniformly brown spots. The marks are distinct and do not merge into one broad facial mask. Moderate affected area; the described macules are clearly visible on this facial site. The marks remain discrete and predominantly uniform in color; no bleeding, irregular multicolor change or ulceration. Realistic close facial photograph, gentle indirect daylight, realistic pores and skin texture, natural skin tones, plain background, no retouching.
+
+NEGATIVE PROMPT:
+cartoon, CGI, painted-on stains, makeup, face paint, beauty filter, plastic skin, airbrushing, watermark, text, arrows, annotations, duplicate face, distorted eyes, wrong facial anatomy, blurred lesions, oversaturated pigments, image collage, unrelated body rash

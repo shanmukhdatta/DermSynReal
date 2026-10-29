@@ -1,0 +1,10 @@
+PROMPT_ID: VITILIGO_079
+GROUP_ID: VITILIGO_G016
+PHENOTYPE: non_segmental_appearance
+SPLIT: train
+
+POSITIVE PROMPT:
+Clinical photograph of a 45-year-old woman with very fair ivory skin, showing a non-segmental facial vitiligo pattern. At the right and left temples, small oval and round white macules gather around both temples. Several spots remain separate rather than merging into a single field. Smaller isolated white spots accompany the main bilateral patches. The depigmented area is smooth with naturally uneven contours. Unretouched clinical face photograph, even neutral examination-room light. Use soft realistic lighting and preserve the unaltered skin surface.
+
+NEGATIVE PROMPT:
+illustration, painting, cartoon, CGI, digitally painted white mask, artificial cutout borders, face paint, cosmetic concealer, smooth plastic skin, beauty filter, watermark, text overlay, arrows, annotation, duplicate face, extra eyes, distorted facial anatomy, out of focus lesion, heavy crust, thick scale, raised ring rash, collage

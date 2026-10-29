@@ -1,0 +1,10 @@
+PROMPT ID: SKIN_279
+PHENOTYPE: ak_precancerous_appearance
+GROUP: SKIN_G056
+SPLIT: val
+
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 62-year-old woman with light-medium beige skin. At the nose tip, show actinic-keratosis-like sun-damaged skin features: a red-pink irregular patch with fine gritty pale scale. The scale follows the contours of the exposed nasal skin. The localized surface scale is easy to distinguish. Dry surface scale remains confined to the described patch or spots. The abnormality is confined to this specified skin region. Slight left three-quarter clinical view, even neutral clinical lighting, visible natural pores, neutral background, sharp focus.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, face paint, makeup concealment, airbrushed skin, beauty filter, plastic pores, glossy cosmetic retouching, tattoo, watermark, text, label, arrows, distorted facial anatomy, duplicate face, blurred skin detail, fantasy colors, excessive artificial symmetry

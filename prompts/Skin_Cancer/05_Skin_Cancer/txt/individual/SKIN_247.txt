@@ -1,0 +1,10 @@
+PROMPT ID: SKIN_247
+PHENOTYPE: ak_precancerous_appearance
+GROUP: SKIN_G050
+SPLIT: train
+
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 54-year-old woman with very fair skin. At the left temple, show actinic-keratosis-like sun-damaged skin features: a small cluster of several faint rough pink spots with patchy fine scale. Normal skin separates the individual subtle lesions. The rough dry surface texture is clearly apparent. Dry surface scale remains confined to the described patch or spots. Maintain natural lesion contrast against adjacent skin. Frontal clinical face view, even neutral clinical lighting, visible natural pores, neutral background, sharp focus.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, face paint, makeup concealment, airbrushed skin, beauty filter, plastic pores, glossy cosmetic retouching, tattoo, watermark, text, label, arrows, distorted facial anatomy, duplicate face, blurred skin detail, fantasy colors, excessive artificial symmetry

@@ -1,0 +1,11 @@
+PROMPT_ID: FUNGAL_267
+PROMPT_GROUP_ID: FUNGAL_G027
+PHENOTYPE: tinea_faciei
+SPLIT: val
+CLINICAL_STATUS: PILOT_REVIEW_REQUIRED
+
+POSITIVE_PROMPT:
+Clinical facial photograph of a 27-year-old man with very dark brown skin; frontal face-level photograph, soft broad-source lighting. On the right cheekbone, show a tinea faciei pattern: two intersecting arcs of flaky raised skin around a quiet central region. The outline is partly interrupted rather than fully closed. The edge looks dusky reddish-brown against the natural skin tone. The outer rim is clearly visible but the lesion remains localized. The photograph has realistic skin texture, no beauty retouching, and an uncluttered background.
+
+NEGATIVE_PROMPT:
+illustration, painting, CGI, cartoon, plastic skin, airbrushed skin, heavy makeup, beauty filter, watermark, printed text, arrows, labels, duplicate head, extra eyes, distorted face, blurry lesion, harsh oversharpening, collage

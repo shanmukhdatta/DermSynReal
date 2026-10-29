@@ -1,0 +1,10 @@
+PROMPT_ID: VITILIGO_219
+GROUP_ID: VITILIGO_G044
+PHENOTYPE: segmental_appearance
+SPLIT: val
+
+POSITIVE PROMPT:
+Clinical photograph of a 42-year-old woman with deep brown skin, showing a unilateral segmental facial vitiligo pattern. At the left cheek near the eye, one broad white facial patch has several tiny lighter satellites at its outer margin. The main field remains a true depigmented white rather than a scaly rash. The patch occupies a narrow unilateral facial zone. The white-to-normal-skin transition is distinct but not mechanically traced. Face-level clinical photograph, broad shadow-free clinical light. Keep the lesion in sharp focus, with neutral white balance and no retouching.
+
+NEGATIVE PROMPT:
+illustration, painting, cartoon, CGI, digitally painted white mask, artificial cutout borders, face paint, cosmetic concealer, smooth plastic skin, beauty filter, watermark, text overlay, arrows, annotation, duplicate face, extra eyes, distorted facial anatomy, out of focus lesion, heavy crust, thick scale, raised ring rash, collage

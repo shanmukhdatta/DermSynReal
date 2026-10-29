@@ -1,0 +1,9 @@
+ID: NORMAL_163
+GROUP: NORMAL_G043
+PHENOTYPE: balanced_skin_appearance
+SPLIT: test
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 16-year-old woman with light olive skin, frontal clinical portrait, soft indirect daylight. Show balanced-looking non-lesional facial skin. At the forehead between its lateral halves, depict soft normal forehead texture with tiny irregularly spaced pores. Minor facial lines are present but no distinct dermatologic lesion is visible. The surface remains gently even in reflectance, not uniformly polished. Keep real pore spacing, subtle color variation and naturally uneven skin detail. Neutral expression, plain clinical backdrop, no cosmetic smoothing.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, makeup, beauty filter, airbrushed skin, porcelain skin, digitally painted face, unnatural skin smoothing, watermark, text, distorted face, duplicate eyes, extra nose, excessive blur, overexposure, extreme shadows, acne papules, pustules, comedones, red inflamed rash, ring-shaped scaly plaques, depigmented white patches, distinct pigmented lesions, bleeding or crusted lesions, wet greasy oil coating, severe dryness, thick flaking

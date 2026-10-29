@@ -1,0 +1,66 @@
+{
+  "dataset_name": "DermaLens_SD21_Acne_Morphological_Prompts",
+  "schema_version": "1.0.0",
+  "source": "Existing 300 manually-authored acne CSV prompt records; no prompt text rewritten in JSON/TXT exports",
+  "class_name": "Acne",
+  "total_prompts": 300,
+  "total_prompt_groups": 60,
+  "prompts_per_group": 5,
+  "images_per_prompt": 5,
+  "planned_candidate_images": 1500,
+  "split_counts": {
+    "test": 45,
+    "train": 210,
+    "val": 45
+  },
+  "phenotype_counts": {
+    "closed_comedonal": 50,
+    "inflammatory_papular": 50,
+    "mixed_lesions": 50,
+    "nodular_inflammatory": 50,
+    "open_comedonal": 50,
+    "papulopustular": 50
+  },
+  "variation_counts": {
+    "V1": 60,
+    "V2": 60,
+    "V3": 60,
+    "V4": 60,
+    "V5": 60
+  },
+  "prompt_limit": {
+    "content_tokens": 150,
+    "clip_chunks_at_most": 2,
+    "tokenizer": "SD 2.1 pipeline tokenizer",
+    "verified": false,
+    "instruction": "Run validate_acne_prompts_for_kaggle.py with the exact pipeline tokenizer; reject overlength prompts rather than truncating"
+  },
+  "generation_info": {
+    "supported_model": "Stable Diffusion 2.1 with compatible LoRA",
+    "prompt_source": "positive_prompt",
+    "negative_prompt_source": "negative_prompt",
+    "seed_rule": "seed_base + image_index for image_index in 0..4",
+    "split_rule": "All images inherit their prompt_group_id and split from source JSON; do not resplit images"
+  },
+  "files": {
+    "json_master": "01_Acne/json/acne_all_300.json",
+    "json_batches": [
+      "01_Acne/json/acne_001_100.json",
+      "01_Acne/json/acne_101_200.json",
+      "01_Acne/json/acne_201_300.json"
+    ],
+    "jsonl": "01_Acne/acne_all_300.jsonl",
+    "csv_batches": [
+      "01_Acne/acne_001_100.csv",
+      "01_Acne/acne_101_200.csv",
+      "01_Acne/acne_201_300.csv"
+    ],
+    "txt_master": "01_Acne/txt/acne_all_300.txt",
+    "txt_batches": [
+      "01_Acne/txt/batches/acne_001_100.txt",
+      "01_Acne/txt/batches/acne_101_200.txt",
+      "01_Acne/txt/batches/acne_201_300.txt"
+    ],
+    "individual_txt_directory": "01_Acne/txt/individual/"
+  }
+}

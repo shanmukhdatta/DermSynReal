@@ -1,0 +1,10 @@
+PROMPT ID: SKIN_061
+PHENOTYPE: bcc_appearance
+GROUP: SKIN_G013
+SPLIT: val
+
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 50-year-old woman with very fair skin. At the upper left cheek, show basal-cell-carcinoma-like morphology: a small pink-beige dome-shaped papule with distinct surface capillaries. Short delicate red lines cross the otherwise smooth lesion. The elevation is subtle but readable at normal photographic distance. A margin of unaffected skin surrounds the lesion. A natural resting facial expression. Frontal close facial view, soft diffuse examination-room light, visible natural pores, neutral background, sharp focus.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, face paint, makeup concealment, airbrushed skin, beauty filter, plastic pores, glossy cosmetic retouching, tattoo, watermark, text, label, arrows, distorted facial anatomy, duplicate face, blurred skin detail, fantasy colors, excessive artificial symmetry

@@ -1,0 +1,10 @@
+PROMPT ID: SKIN_142
+PHENOTYPE: scc_appearance
+GROUP: SKIN_G029
+SPLIT: test
+
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 53-year-old man with medium brown skin. At the left upper forehead, show cutaneous-squamous-cell-carcinoma-like morphology: a compact erythematous papule with densely packed white-yellow scale. Its raised border is firm-looking with no pearly translucence. The uneven scaly relief is readily visible without magnification. Keratin and surface scale are confined to the described area. Maintain natural lesion contrast against adjacent skin. Straight-on facial photograph, soft diffused daylight, visible natural pores, neutral background, sharp focus.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, face paint, makeup concealment, airbrushed skin, beauty filter, plastic pores, glossy cosmetic retouching, tattoo, watermark, text, label, arrows, distorted facial anatomy, duplicate face, blurred skin detail, fantasy colors, excessive artificial symmetry

@@ -1,0 +1,10 @@
+PROMPT ID: SKIN_119
+PHENOTYPE: scc_appearance
+GROUP: SKIN_G024
+SPLIT: train
+
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 79-year-old woman with deep brown skin. At the right temple, show cutaneous-squamous-cell-carcinoma-like morphology: a relatively flat red-brown plaque covered by coarse adherent scale. The plaque is more substantial than a fine gritty sunspot. The uneven scaly relief is readily visible without magnification. Keratin and surface scale are confined to the described area. The abnormality is confined to this specified skin region. Slight right three-quarter clinical view, controlled soft studio lighting, visible natural pores, neutral background, sharp focus.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, face paint, makeup concealment, airbrushed skin, beauty filter, plastic pores, glossy cosmetic retouching, tattoo, watermark, text, label, arrows, distorted facial anatomy, duplicate face, blurred skin detail, fantasy colors, excessive artificial symmetry

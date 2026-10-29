@@ -1,0 +1,9 @@
+ID: NORMAL_292
+GROUP: NORMAL_G052
+PHENOTYPE: balanced_skin_appearance
+SPLIT: test
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 39-year-old man with medium-brown skin, frontal clinical portrait, soft indirect daylight. Show balanced-looking non-lesional facial skin. At the skin next to the eyebrows, depict intact skin near the brow with tiny follicular openings. A few natural expression folds appear without redness or scaling. The surface remains gently even in reflectance, not uniformly polished. Natural follicles and fine vellus hairs remain visible. Neutral expression, realistic facial anatomy, minimal retouching, plain background.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, makeup, beauty filter, airbrushed skin, porcelain skin, digitally painted face, unnatural skin smoothing, watermark, text, distorted face, duplicate eyes, extra nose, excessive blur, overexposure, extreme shadows, acne papules, pustules, comedones, red inflamed rash, ring-shaped scaly plaques, depigmented white patches, distinct pigmented lesions, bleeding or crusted lesions, wet greasy oil coating, severe dryness, thick flaking

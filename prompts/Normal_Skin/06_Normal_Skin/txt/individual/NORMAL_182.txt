@@ -1,0 +1,9 @@
+ID: NORMAL_182
+GROUP: NORMAL_G002
+PHENOTYPE: oily_skin_appearance
+SPLIT: train
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 19-year-old man with medium-brown skin, frontal clinical portrait, even diffuse clinical illumination. Show oily-looking but non-lesional facial skin. At the forehead above both brows, depict a soft continuous sebum sheen across the central forehead. Specular highlights are small and follow the skin curves; pores remain visible. The sheen is visible but patchy and follows the curved facial surface. Preserve real facial microtexture and ordinary skin color variation. Clear facial view, simple backdrop, restrained photographic processing.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, makeup, beauty filter, airbrushed skin, porcelain skin, digitally painted face, unnatural skin smoothing, watermark, text, distorted face, duplicate eyes, extra nose, excessive blur, overexposure, extreme shadows, acne papules, pustules, comedones, red inflamed rash, ring-shaped scaly plaques, depigmented white patches, distinct pigmented lesions, bleeding or crusted lesions, plastic gloss, dripping oil, severe peeling skin, thick flaky plaques

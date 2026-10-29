@@ -1,0 +1,10 @@
+PROMPT_ID: VITILIGO_011
+GROUP_ID: VITILIGO_G003
+PHENOTYPE: focal_undetermined_appearance
+SPLIT: train
+
+POSITIVE PROMPT:
+Clinical photograph of a 27-year-old woman with light olive skin, showing a localized focal-appearing facial vitiligo pattern. At the left lateral forehead, a single small oval of uniform chalk-white depigmentation. Its edge is sharp with no raised margin. The localized patch occupies a moderately sized area of that facial site. Surrounding skin shows normal visible pores and fine texture. Close frontal facial photograph, balanced diffuse studio light. Keep the lesion in sharp focus, with neutral white balance and no retouching.
+
+NEGATIVE PROMPT:
+illustration, painting, cartoon, CGI, digitally painted white mask, artificial cutout borders, face paint, cosmetic concealer, smooth plastic skin, beauty filter, watermark, text overlay, arrows, annotation, duplicate face, extra eyes, distorted facial anatomy, out of focus lesion, heavy crust, thick scale, raised ring rash, collage

@@ -1,0 +1,10 @@
+PROMPT_ID: VITILIGO_107
+GROUP_ID: VITILIGO_G022
+PHENOTYPE: non_segmental_appearance
+SPLIT: train
+
+POSITIVE PROMPT:
+Clinical photograph of a 38-year-old woman with deep brown skin, showing a non-segmental facial vitiligo pattern. At both lower cheek-to-chin junctions, paired depigmented patches have irregular angled edges near the chin. The white skin has no surface crust or papules. Several adjacent white spots create a somewhat wider bilateral pattern. The whitened region has no scale and lies level with the rest of the face. Close frontal facial photograph, soft indirect window light. Use soft realistic lighting and preserve the unaltered skin surface.
+
+NEGATIVE PROMPT:
+illustration, painting, cartoon, CGI, digitally painted white mask, artificial cutout borders, face paint, cosmetic concealer, smooth plastic skin, beauty filter, watermark, text overlay, arrows, annotation, duplicate face, extra eyes, distorted facial anatomy, out of focus lesion, heavy crust, thick scale, raised ring rash, collage

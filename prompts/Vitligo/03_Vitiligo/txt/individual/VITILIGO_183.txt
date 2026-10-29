@@ -1,0 +1,10 @@
+PROMPT_ID: VITILIGO_183
+GROUP_ID: VITILIGO_G037
+PHENOTYPE: non_segmental_appearance
+SPLIT: train
+
+POSITIVE PROMPT:
+Clinical photograph of a 42-year-old woman with light olive skin, showing a non-segmental facial vitiligo pattern. At the medial cheeks on both sides, paired angular-white areas occur beside the nose-to-cheek junctions. The spots are fully depigmented and do not have an active red border. The depigmented regions occupy a noticeable but localized part of both sides. A narrow sharp border separates the white skin from adjacent pigment. Unretouched clinical face photograph, soft diffused daylight. Keep the lesion in sharp focus, with neutral white balance and no retouching.
+
+NEGATIVE PROMPT:
+illustration, painting, cartoon, CGI, digitally painted white mask, artificial cutout borders, face paint, cosmetic concealer, smooth plastic skin, beauty filter, watermark, text overlay, arrows, annotation, duplicate face, extra eyes, distorted facial anatomy, out of focus lesion, heavy crust, thick scale, raised ring rash, collage

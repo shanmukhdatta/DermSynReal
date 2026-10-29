@@ -1,0 +1,10 @@
+PROMPT ID: SKIN_139
+PHENOTYPE: scc_appearance
+GROUP: SKIN_G028
+SPLIT: val
+
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 61-year-old woman with very fair skin. At the left outer cheek, show cutaneous-squamous-cell-carcinoma-like morphology: a pink firm-looking plaque bearing thick dry scale with a fine surface fissure. The edge is raised and asymmetrical rather than smoothly ring-shaped. The surface roughness is restricted to this one localized area. Keratin and surface scale are confined to the described area. The abnormality is confined to this specified skin region. Frontal clinical face view, even indirect daylight, visible natural pores, neutral background, sharp focus.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, face paint, makeup concealment, airbrushed skin, beauty filter, plastic pores, glossy cosmetic retouching, tattoo, watermark, text, label, arrows, distorted facial anatomy, duplicate face, blurred skin detail, fantasy colors, excessive artificial symmetry

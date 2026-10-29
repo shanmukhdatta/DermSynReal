@@ -1,0 +1,10 @@
+PROMPT ID: SKIN_092
+PHENOTYPE: scc_appearance
+GROUP: SKIN_G019
+SPLIT: train
+
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 79-year-old man with light skin. At the right temple, show cutaneous-squamous-cell-carcinoma-like morphology: a rough wart-like thickened plaque with irregular keratin ridges. Light catches the uneven surface without any exaggerated projection. Dry keratin texture is clearly visible under neutral light. Keratin and surface scale are confined to the described area. Maintain natural lesion contrast against adjacent skin. Straight-on facial photograph, soft diffused daylight, visible natural pores, neutral background, sharp focus.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, face paint, makeup concealment, airbrushed skin, beauty filter, plastic pores, glossy cosmetic retouching, tattoo, watermark, text, label, arrows, distorted facial anatomy, duplicate face, blurred skin detail, fantasy colors, excessive artificial symmetry

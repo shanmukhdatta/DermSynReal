@@ -1,0 +1,9 @@
+ID: NORMAL_300
+GROUP: NORMAL_G060
+PHENOTYPE: dry_skin_appearance
+SPLIT: val
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 54-year-old man with deep brown skin, slight right three-quarter clinical portrait, neutral softbox lighting. Show mildly dry-looking but non-lesional facial skin. At the nose and chin with a lighter forehead sheen, depict a gently matte nose-and-chin surface rather than a glossy T-zone. Normal pores are retained and there is no dry crust or inflamed patch. The surface has subdued reflection and slight natural tight-looking texture. Preserve real facial microtexture and ordinary skin color variation. Clear facial view, simple backdrop, restrained photographic processing.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, makeup, beauty filter, airbrushed skin, porcelain skin, digitally painted face, unnatural skin smoothing, watermark, text, distorted face, duplicate eyes, extra nose, excessive blur, overexposure, extreme shadows, acne papules, pustules, comedones, red inflamed rash, ring-shaped scaly plaques, depigmented white patches, distinct pigmented lesions, bleeding or crusted lesions, wet greasy oil coating, thick scales, cracked skin, severe peeling plaques

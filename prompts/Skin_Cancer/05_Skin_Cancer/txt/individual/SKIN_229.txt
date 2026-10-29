@@ -1,0 +1,10 @@
+PROMPT ID: SKIN_229
+PHENOTYPE: ak_precancerous_appearance
+GROUP: SKIN_G046
+SPLIT: train
+
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 86-year-old woman with very fair skin. At the left temple, show actinic-keratosis-like sun-damaged skin features: a small pale-pink flat patch with very fine adherent rough scale. Normal skin pores remain visible around its irregular dry edge. Fine dry scale is subtle but visible. Dry surface scale remains confined to the described patch or spots. The abnormality is confined to this specified skin region. Slight left three-quarter clinical view, even neutral clinical lighting, visible natural pores, neutral background, sharp focus.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, face paint, makeup concealment, airbrushed skin, beauty filter, plastic pores, glossy cosmetic retouching, tattoo, watermark, text, label, arrows, distorted facial anatomy, duplicate face, blurred skin detail, fantasy colors, excessive artificial symmetry

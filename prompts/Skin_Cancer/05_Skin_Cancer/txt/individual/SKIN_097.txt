@@ -1,0 +1,10 @@
+PROMPT ID: SKIN_097
+PHENOTYPE: scc_appearance
+GROUP: SKIN_G020
+SPLIT: train
+
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 84-year-old woman with very fair skin. At the right temple, show cutaneous-squamous-cell-carcinoma-like morphology: a broad reddish scaly plaque with a slightly firm raised edge. Areas of adherent dry white scale alternate with smoother red skin. The uneven scaly relief is readily visible without magnification. Keratin and surface scale are confined to the described area. Maintain natural lesion contrast against adjacent skin. Frontal clinical face view, even neutral clinical lighting, visible natural pores, neutral background, sharp focus.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, face paint, makeup concealment, airbrushed skin, beauty filter, plastic pores, glossy cosmetic retouching, tattoo, watermark, text, label, arrows, distorted facial anatomy, duplicate face, blurred skin detail, fantasy colors, excessive artificial symmetry

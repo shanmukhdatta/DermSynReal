@@ -1,0 +1,10 @@
+PROMPT_ID: VITILIGO_048
+GROUP_ID: VITILIGO_G010
+PHENOTYPE: non_segmental_appearance
+SPLIT: test
+
+POSITIVE PROMPT:
+Clinical photograph of a 42-year-old man with very dark brown skin, showing a non-segmental facial vitiligo pattern. At the outer ends of both eyebrows, thin irregular depigmented bands border the brows. Some eyebrow hairs may remain dark inside the white skin. The depigmented regions occupy a noticeable but localized part of both sides. The whitened region has no scale and lies level with the rest of the face. Face-level clinical photograph, soft indirect window light. Keep true skin texture and a plain neutral background; avoid cosmetic smoothing.
+
+NEGATIVE PROMPT:
+illustration, painting, cartoon, CGI, digitally painted white mask, artificial cutout borders, face paint, cosmetic concealer, smooth plastic skin, beauty filter, watermark, text overlay, arrows, annotation, duplicate face, extra eyes, distorted facial anatomy, out of focus lesion, heavy crust, thick scale, raised ring rash, collage

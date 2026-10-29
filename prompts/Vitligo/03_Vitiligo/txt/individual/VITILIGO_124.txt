@@ -1,0 +1,10 @@
+PROMPT_ID: VITILIGO_124
+GROUP_ID: VITILIGO_G025
+PHENOTYPE: non_segmental_appearance
+SPLIT: train
+
+POSITIVE PROMPT:
+Clinical photograph of a 24-year-old man with medium-brown skin, showing a non-segmental facial vitiligo pattern. At the lateral periorbital skin on both sides, curved white marks bracket the outer corners of both eyes. Both arcs taper gradually while retaining a sharply visible boundary. Smaller isolated white spots accompany the main bilateral patches. A narrow sharp border separates the white skin from adjacent pigment. Close frontal facial photograph, soft diffused daylight. Show ordinary skin texture, an uncluttered background, and realistic anatomy.
+
+NEGATIVE PROMPT:
+illustration, painting, cartoon, CGI, digitally painted white mask, artificial cutout borders, face paint, cosmetic concealer, smooth plastic skin, beauty filter, watermark, text overlay, arrows, annotation, duplicate face, extra eyes, distorted facial anatomy, out of focus lesion, heavy crust, thick scale, raised ring rash, collage

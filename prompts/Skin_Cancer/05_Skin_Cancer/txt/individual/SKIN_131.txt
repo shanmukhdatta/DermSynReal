@@ -1,0 +1,10 @@
+PROMPT ID: SKIN_131
+PHENOTYPE: scc_appearance
+GROUP: SKIN_G027
+SPLIT: val
+
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 53-year-old woman with deep brown skin. At the right outer cheek, show cutaneous-squamous-cell-carcinoma-like morphology: an irregular pink-beige thickened nodule with a warty surface. Multiple tiny keratin ridges make its silhouette uneven. The uneven scaly relief is readily visible without magnification. Keratin and surface scale are confined to the described area. A natural resting facial expression. Slight right three-quarter clinical view, even neutral clinical lighting, visible natural pores, neutral background, sharp focus.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, face paint, makeup concealment, airbrushed skin, beauty filter, plastic pores, glossy cosmetic retouching, tattoo, watermark, text, label, arrows, distorted facial anatomy, duplicate face, blurred skin detail, fantasy colors, excessive artificial symmetry

@@ -1,0 +1,10 @@
+PROMPT ID: SKIN_032
+PHENOTYPE: bcc_appearance
+GROUP: SKIN_G007
+SPLIT: train
+
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 42-year-old man with light skin. At the left upper cheek, show basal-cell-carcinoma-like morphology: a shallow red-tan plaque with a slightly shiny irregular edge. Fine dry scale sits on parts of its surface, without a bulky nodule. The contour and border are clearly visible at normal photographic distance. A margin of unaffected skin surrounds the lesion. Maintain natural lesion contrast against adjacent skin. Frontal close facial view, even indirect daylight, visible natural pores, neutral background, sharp focus.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, face paint, makeup concealment, airbrushed skin, beauty filter, plastic pores, glossy cosmetic retouching, tattoo, watermark, text, label, arrows, distorted facial anatomy, duplicate face, blurred skin detail, fantasy colors, excessive artificial symmetry

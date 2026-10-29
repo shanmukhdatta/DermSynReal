@@ -1,0 +1,11 @@
+PROMPT_ID: FUNGAL_170
+PROMPT_GROUP_ID: FUNGAL_G050
+PHENOTYPE: pityriasis_versicolor
+SPLIT: train
+CLINICAL_STATUS: PILOT_REVIEW_REQUIRED
+
+POSITIVE_PROMPT:
+Clinical facial photograph of a 31-year-old woman with light olive skin; front-facing clinical close-up, soft neutral clinic lighting. Across the upper forehead near the hairline, show a pityriasis versicolor pattern: some flat macules slightly paler and others slightly darker than nearby skin. All share subtle bran-like scaling and soft outlines. The color difference is noticeable, while every patch stays flat. The patches have fine superficial scale, without a raised annular border. The background is plain; skin detail is unretouched and sharply focused.
+
+NEGATIVE_PROMPT:
+illustration, painting, CGI, cartoon, plastic skin, airbrushed skin, heavy makeup, beauty filter, watermark, printed text, arrows, labels, duplicate head, extra eyes, distorted face, blurry lesion, harsh oversharpening, collage

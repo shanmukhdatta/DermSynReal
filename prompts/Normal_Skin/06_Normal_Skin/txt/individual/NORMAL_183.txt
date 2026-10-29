@@ -1,0 +1,9 @@
+ID: NORMAL_183
+GROUP: NORMAL_G003
+PHENOTYPE: dry_skin_appearance
+SPLIT: train
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 33-year-old woman with light olive skin, frontal clinical portrait, neutral softbox lighting. Show mildly dry-looking but non-lesional facial skin. At both cheeks, depict a low-gloss matte cheek surface with fine natural lines. The texture is intact and only subtly dry-looking, without a defined rash. The surface has subdued reflection and slight natural tight-looking texture. Preserve real facial microtexture and ordinary skin color variation. Clear facial view, simple backdrop, restrained photographic processing.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, makeup, beauty filter, airbrushed skin, porcelain skin, digitally painted face, unnatural skin smoothing, watermark, text, distorted face, duplicate eyes, extra nose, excessive blur, overexposure, extreme shadows, acne papules, pustules, comedones, red inflamed rash, ring-shaped scaly plaques, depigmented white patches, distinct pigmented lesions, bleeding or crusted lesions, wet greasy oil coating, thick scales, cracked skin, severe peeling plaques

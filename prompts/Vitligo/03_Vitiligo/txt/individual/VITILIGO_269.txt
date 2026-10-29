@@ -1,0 +1,10 @@
+PROMPT_ID: VITILIGO_269
+GROUP_ID: VITILIGO_G054
+PHENOTYPE: focal_undetermined_appearance
+SPLIT: train
+
+POSITIVE PROMPT:
+Clinical photograph of a 38-year-old woman with light olive skin, showing a localized focal-appearing facial vitiligo pattern. At the right upper temple, one solitary irregular patch has a chalk-white center and clean boundary. There is no scale, crust, swelling, or thickening. The depigmented area is compact and surrounded by normally colored skin. The white-to-normal-skin transition is distinct but not mechanically traced. Face-level clinical photograph, broad shadow-free clinical light. Keep the lesion in sharp focus, with neutral white balance and no retouching.
+
+NEGATIVE PROMPT:
+illustration, painting, cartoon, CGI, digitally painted white mask, artificial cutout borders, face paint, cosmetic concealer, smooth plastic skin, beauty filter, watermark, text overlay, arrows, annotation, duplicate face, extra eyes, distorted facial anatomy, out of focus lesion, heavy crust, thick scale, raised ring rash, collage

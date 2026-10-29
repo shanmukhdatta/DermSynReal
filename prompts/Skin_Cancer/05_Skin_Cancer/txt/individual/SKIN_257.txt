@@ -1,0 +1,10 @@
+PROMPT ID: SKIN_257
+PHENOTYPE: ak_precancerous_appearance
+GROUP: SKIN_G052
+SPLIT: train
+
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 69-year-old woman with deep brown skin. At the left upper cheek, show actinic-keratosis-like sun-damaged skin features: a low pink papule with adherent white flaky keratin. The pale surface scale extends just beyond its central roughest area. The localized surface scale is easy to distinguish. Dry surface scale remains confined to the described patch or spots. Maintain natural lesion contrast against adjacent skin. Frontal close facial view, even indirect daylight, visible natural pores, neutral background, sharp focus.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, face paint, makeup concealment, airbrushed skin, beauty filter, plastic pores, glossy cosmetic retouching, tattoo, watermark, text, label, arrows, distorted facial anatomy, duplicate face, blurred skin detail, fantasy colors, excessive artificial symmetry

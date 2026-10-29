@@ -1,0 +1,10 @@
+PROMPT ID: SKIN_095
+PHENOTYPE: scc_appearance
+GROUP: SKIN_G019
+SPLIT: train
+
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 53-year-old woman with deep brown skin. At the right outer cheek, show cutaneous-squamous-cell-carcinoma-like morphology: a rough wart-like thickened plaque with irregular keratin ridges. Light catches the uneven surface without any exaggerated projection. Dry keratin texture is clearly visible under neutral light. Keratin and surface scale are confined to the described area. Include visible unaffected facial skin around the lesion. Frontal close facial view, even neutral clinical lighting, visible natural pores, neutral background, sharp focus.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, face paint, makeup concealment, airbrushed skin, beauty filter, plastic pores, glossy cosmetic retouching, tattoo, watermark, text, label, arrows, distorted facial anatomy, duplicate face, blurred skin detail, fantasy colors, excessive artificial symmetry

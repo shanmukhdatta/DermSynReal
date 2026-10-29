@@ -1,0 +1,11 @@
+PROMPT_ID: FUNGAL_155
+PROMPT_GROUP_ID: FUNGAL_G035
+PHENOTYPE: angular_cheilitis_candida_unconfirmed
+SPLIT: val
+CLINICAL_STATUS: HOLD_FOR_DIAGNOSTIC_REVIEW
+
+POSITIVE_PROMPT:
+Clinical facial photograph of a 35-year-old man with very dark brown skin; frontal face-level photograph, diffused window daylight. At the right corner of the mouth, show angular cheilitis-like changes: a narrow mouth-corner fissure with a small patch of delicate dry crust. The change stays at the lip angle without spreading across the cheeks. The irritated crease looks reddish-brown to dusky with a little pale peeling. There is a visible but superficial fissure with limited peeling. The cheek skin remains ordinary and both mouth corners are visible. The photograph has realistic skin texture, no beauty retouching, and an uncluttered background.
+
+NEGATIVE_PROMPT:
+illustration, painting, CGI, cartoon, plastic skin, airbrushed skin, heavy makeup, beauty filter, watermark, printed text, arrows, labels, duplicate head, extra eyes, distorted face, blurry lesion, harsh oversharpening, collage

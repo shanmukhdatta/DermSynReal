@@ -1,0 +1,11 @@
+PROMPT_ID: FUNGAL_085
+PROMPT_GROUP_ID: FUNGAL_G025
+PHENOTYPE: angular_cheilitis_candida_unconfirmed
+SPLIT: train
+CLINICAL_STATUS: HOLD_FOR_DIAGNOSTIC_REVIEW
+
+POSITIVE_PROMPT:
+Clinical facial photograph of a 16-year-old boy with very fair ivory skin; right three-quarter facial view, even diffuse daylight. At the right corner of the mouth, show angular cheilitis-like changes: localized pale softened skin in the mouth-corner fold with a tiny red crack. The affected fold looks superficially moist with mild surrounding dryness. The affected crease looks pink-red with localized dry scale. There is a visible but superficial fissure with limited peeling. The cheek skin remains ordinary and both mouth corners are visible. A neutral background and natural pores keep the skin texture visible.
+
+NEGATIVE_PROMPT:
+illustration, painting, CGI, cartoon, plastic skin, airbrushed skin, heavy makeup, beauty filter, watermark, printed text, arrows, labels, duplicate head, extra eyes, distorted face, blurry lesion, harsh oversharpening, collage

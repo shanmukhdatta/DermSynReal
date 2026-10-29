@@ -1,0 +1,11 @@
+PROMPT_ID: FUNGAL_109
+PROMPT_GROUP_ID: FUNGAL_G049
+PHENOTYPE: tinea_faciei
+SPLIT: val
+CLINICAL_STATUS: PILOT_REVIEW_REQUIRED
+
+POSITIVE_PROMPT:
+Clinical facial photograph of a 16-year-old boy with very fair ivory skin; left three-quarter facial view, even diffuse daylight. On the left cheek near the ear, show a tinea faciei pattern: one shallow plaque whose outer border alternates between dry flaking and nearly smooth sectors. The discontinuous edge follows a natural irregular curve. The patch edge looks pink-red with fine flaky skin. The outer rim is clearly visible but the lesion remains localized. A neutral background and natural pores keep the skin texture visible.
+
+NEGATIVE_PROMPT:
+illustration, painting, CGI, cartoon, plastic skin, airbrushed skin, heavy makeup, beauty filter, watermark, printed text, arrows, labels, duplicate head, extra eyes, distorted face, blurry lesion, harsh oversharpening, collage

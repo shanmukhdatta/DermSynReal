@@ -1,0 +1,10 @@
+PROMPT ID: SKIN_165
+PHENOTYPE: melanoma_appearance
+GROUP: SKIN_G033
+SPLIT: train
+
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 38-year-old woman with light-medium beige skin. At the left outer cheek, show melanoma-suspicious skin lesion features: an irregular flat pigmented patch containing tan, brown and charcoal areas. Unequal shapes and mottled pigment create visibly asymmetrical halves. Pigment irregularity is visible within the localized mark. The surrounding skin retains natural pores; pigmentation is not painted on. Include visible unaffected facial skin around the lesion. Slight right three-quarter clinical view, soft diffused daylight, visible natural pores, neutral background, sharp focus.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, face paint, makeup concealment, airbrushed skin, beauty filter, plastic pores, glossy cosmetic retouching, tattoo, watermark, text, label, arrows, distorted facial anatomy, duplicate face, blurred skin detail, fantasy colors, excessive artificial symmetry

@@ -1,0 +1,10 @@
+PROMPT_ID: VITILIGO_028
+GROUP_ID: VITILIGO_G006
+PHENOTYPE: focal_undetermined_appearance
+SPLIT: train
+
+POSITIVE PROMPT:
+Clinical photograph of a 31-year-old man with fair beige skin, showing a localized focal-appearing facial vitiligo pattern. At the outer right cheek, one bean-shaped white patch has a shallow inward notch. The white surface remains smooth and nonscaly. The localized patch occupies a moderately sized area of that facial site. The white-to-normal-skin transition is distinct but not mechanically traced. Close frontal facial photograph, broad shadow-free clinical light. Use an unretouched photo with natural pores and accurate skin color.
+
+NEGATIVE PROMPT:
+illustration, painting, cartoon, CGI, digitally painted white mask, artificial cutout borders, face paint, cosmetic concealer, smooth plastic skin, beauty filter, watermark, text overlay, arrows, annotation, duplicate face, extra eyes, distorted facial anatomy, out of focus lesion, heavy crust, thick scale, raised ring rash, collage

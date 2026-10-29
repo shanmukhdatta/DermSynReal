@@ -1,0 +1,11 @@
+PROMPT_ID: FUNGAL_257
+PROMPT_GROUP_ID: FUNGAL_G017
+PHENOTYPE: tinea_faciei
+SPLIT: train
+CLINICAL_STATUS: PILOT_REVIEW_REQUIRED
+
+POSITIVE_PROMPT:
+Clinical facial photograph of a 21-year-old young man with fair beige skin; frontal face-level photograph, diffused window daylight. On the left outer upper cheek, show a tinea faciei pattern: two nearby crescent-shaped scaly patches with clear spaces between them. Each crescent has its most noticeable scale at the outward edge. The patch edge looks pink-red with fine flaky skin. Only a small amount of fine scale outlines the patch. A neutral background and natural pores keep the skin texture visible.
+
+NEGATIVE_PROMPT:
+illustration, painting, CGI, cartoon, plastic skin, airbrushed skin, heavy makeup, beauty filter, watermark, printed text, arrows, labels, duplicate head, extra eyes, distorted face, blurry lesion, harsh oversharpening, collage

@@ -1,0 +1,10 @@
+PROMPT ID: SKIN_270
+PHENOTYPE: ak_precancerous_appearance
+GROUP: SKIN_G054
+SPLIT: train
+
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 54-year-old man with very deep brown skin. At the right temple, show actinic-keratosis-like sun-damaged skin features: a small raised rough plaque with dry yellow-white keratin. The texture is thicker than a subtle macule yet remains localized. Fine dry scale is subtle but visible. Dry surface scale remains confined to the described patch or spots. Include visible unaffected facial skin around the lesion. Frontal close facial view, even neutral clinical lighting, visible natural pores, neutral background, sharp focus.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, face paint, makeup concealment, airbrushed skin, beauty filter, plastic pores, glossy cosmetic retouching, tattoo, watermark, text, label, arrows, distorted facial anatomy, duplicate face, blurred skin detail, fantasy colors, excessive artificial symmetry

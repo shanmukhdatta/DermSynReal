@@ -1,0 +1,10 @@
+PROMPT_ID: VITILIGO_083
+GROUP_ID: VITILIGO_G017
+PHENOTYPE: segmental_appearance
+SPLIT: train
+
+POSITIVE PROMPT:
+Clinical photograph of a 27-year-old woman with very fair ivory skin, showing a unilateral segmental facial vitiligo pattern. At the right upper outer face, two nearby white lobes connect through a narrow depigmented bridge. The coalesced shape remains entirely on one side. The affected white skin spans a broader part of one facial sector. A narrow sharp border separates the white skin from adjacent pigment. Unretouched clinical face photograph, soft diffused daylight. Keep the lesion in sharp focus, with neutral white balance and no retouching.
+
+NEGATIVE PROMPT:
+illustration, painting, cartoon, CGI, digitally painted white mask, artificial cutout borders, face paint, cosmetic concealer, smooth plastic skin, beauty filter, watermark, text overlay, arrows, annotation, duplicate face, extra eyes, distorted facial anatomy, out of focus lesion, heavy crust, thick scale, raised ring rash, collage

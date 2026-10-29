@@ -1,0 +1,11 @@
+PROMPT_ID: FUNGAL_064
+PROMPT_GROUP_ID: FUNGAL_G004
+PHENOTYPE: tinea_faciei
+SPLIT: train
+CLINICAL_STATUS: PILOT_REVIEW_REQUIRED
+
+POSITIVE_PROMPT:
+Clinical facial photograph of a 24-year-old young woman with medium-brown skin; left three-quarter facial view, balanced shadow-free lighting. On the outer left cheek near the temple, show a tinea faciei pattern: an incomplete scaly ring resembling a broad open letter C. The unfinished arc has a more distinct dry margin on one side. The edge looks dusky reddish-brown against the natural skin tone. The outer rim is clearly visible but the lesion remains localized. Use ordinary color balance, natural skin texture, and a distraction-free backdrop.
+
+NEGATIVE_PROMPT:
+illustration, painting, CGI, cartoon, plastic skin, airbrushed skin, heavy makeup, beauty filter, watermark, printed text, arrows, labels, duplicate head, extra eyes, distorted face, blurry lesion, harsh oversharpening, collage

@@ -1,0 +1,10 @@
+PROMPT ID: SKIN_076
+PHENOTYPE: scc_appearance
+GROUP: SKIN_G016
+SPLIT: train
+
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 74-year-old man with medium brown skin. At the left upper cheek, show cutaneous-squamous-cell-carcinoma-like morphology: a solitary firm-looking pink nodule with a thick whitish keratin cap. The surface is coarse and the base is slightly raised. The surface roughness is restricted to this one localized area. Keratin and surface scale are confined to the described area. A natural resting facial expression. Frontal clinical face view, soft diffused daylight, visible natural pores, neutral background, sharp focus.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, face paint, makeup concealment, airbrushed skin, beauty filter, plastic pores, glossy cosmetic retouching, tattoo, watermark, text, label, arrows, distorted facial anatomy, duplicate face, blurred skin detail, fantasy colors, excessive artificial symmetry

@@ -1,0 +1,10 @@
+PROMPT_ID: VITILIGO_259
+GROUP_ID: VITILIGO_G052
+PHENOTYPE: non_segmental_appearance
+SPLIT: train
+
+POSITIVE PROMPT:
+Clinical photograph of a 24-year-old woman with very fair ivory skin, showing a non-segmental facial vitiligo pattern. At the bilateral alar creases, small chalk-white spots outline portions of both outer nostril folds. The skin surface remains normal with no crusting. Smaller isolated white spots accompany the main bilateral patches. Surrounding skin shows normal visible pores and fine texture. Front-facing dermatology photograph, balanced diffuse studio light. Keep true skin texture and a plain neutral background; avoid cosmetic smoothing.
+
+NEGATIVE PROMPT:
+illustration, painting, cartoon, CGI, digitally painted white mask, artificial cutout borders, face paint, cosmetic concealer, smooth plastic skin, beauty filter, watermark, text overlay, arrows, annotation, duplicate face, extra eyes, distorted facial anatomy, out of focus lesion, heavy crust, thick scale, raised ring rash, collage

@@ -1,0 +1,10 @@
+PROMPT ID: SKIN_053
+PHENOTYPE: bcc_appearance
+GROUP: SKIN_G011
+SPLIT: train
+
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 76-year-old woman with deep brown skin. At the right nasal tip, show basal-cell-carcinoma-like morphology: a translucent pale-pink bump with fine curved vessels. Its rounded surface is smooth and faintly reflective. The elevation is subtle but readable at normal photographic distance. A margin of unaffected skin surrounds the lesion. Render the indicated skin tone without color exaggeration. Frontal close facial view, controlled soft studio lighting, visible natural pores, neutral background, sharp focus.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, face paint, makeup concealment, airbrushed skin, beauty filter, plastic pores, glossy cosmetic retouching, tattoo, watermark, text, label, arrows, distorted facial anatomy, duplicate face, blurred skin detail, fantasy colors, excessive artificial symmetry

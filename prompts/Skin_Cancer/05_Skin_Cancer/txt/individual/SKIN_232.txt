@@ -1,0 +1,10 @@
+PROMPT ID: SKIN_232
+PHENOTYPE: ak_precancerous_appearance
+GROUP: SKIN_G047
+SPLIT: train
+
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 81-year-old man with medium brown skin. At the left lateral forehead, show actinic-keratosis-like sun-damaged skin features: a faint red irregular macule with gritty white scale. The patch is nearly flat and its roughness is localized. The rough dry surface texture is clearly apparent. Dry surface scale remains confined to the described patch or spots. Maintain natural lesion contrast against adjacent skin. Frontal close facial view, even indirect daylight, visible natural pores, neutral background, sharp focus.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, face paint, makeup concealment, airbrushed skin, beauty filter, plastic pores, glossy cosmetic retouching, tattoo, watermark, text, label, arrows, distorted facial anatomy, duplicate face, blurred skin detail, fantasy colors, excessive artificial symmetry

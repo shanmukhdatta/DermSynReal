@@ -1,0 +1,10 @@
+PROMPT_ID: VITILIGO_141
+GROUP_ID: VITILIGO_G029
+PHENOTYPE: segmental_appearance
+SPLIT: train
+
+POSITIVE PROMPT:
+Clinical photograph of a 49-year-old woman with deep brown skin, showing a unilateral segmental facial vitiligo pattern. At the right brow-to-temple skin, one main depigmented area has two tiny white macules nearby on the same side. The small spots are separate and not inflamed. The patch has a few nearby tiny satellite white spots on the same side. The whitened region has no scale and lies level with the rest of the face. Unretouched clinical face photograph, soft indirect window light. Show ordinary skin texture, an uncluttered background, and realistic anatomy.
+
+NEGATIVE PROMPT:
+illustration, painting, cartoon, CGI, digitally painted white mask, artificial cutout borders, face paint, cosmetic concealer, smooth plastic skin, beauty filter, watermark, text overlay, arrows, annotation, duplicate face, extra eyes, distorted facial anatomy, out of focus lesion, heavy crust, thick scale, raised ring rash, collage

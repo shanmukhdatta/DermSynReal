@@ -1,0 +1,10 @@
+PROMPT_ID: VITILIGO_300
+GROUP_ID: VITILIGO_G060
+PHENOTYPE: non_segmental_appearance
+SPLIT: val
+
+POSITIVE PROMPT:
+Clinical photograph of a 42-year-old man with medium-brown skin, showing a non-segmental facial vitiligo pattern. At the cheek skin adjoining both lower eyelids, flat white areas spread beneath both eyes with natural irregular outlines. The patches are sharply distinguished from ordinary surrounding skin. The paired white regions have unequal area while remaining on both sides. Surrounding skin shows normal visible pores and fine texture. Unretouched clinical face photograph, balanced diffuse studio light. Use an unretouched photo with natural pores and accurate skin color.
+
+NEGATIVE PROMPT:
+illustration, painting, cartoon, CGI, digitally painted white mask, artificial cutout borders, face paint, cosmetic concealer, smooth plastic skin, beauty filter, watermark, text overlay, arrows, annotation, duplicate face, extra eyes, distorted facial anatomy, out of focus lesion, heavy crust, thick scale, raised ring rash, collage

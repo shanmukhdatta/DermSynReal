@@ -1,0 +1,2111 @@
+{
+  "total_prompts": 300,
+  "groups": 60,
+  "counts_by_split": {
+    "train": 210,
+    "val": 45,
+    "test": 45
+  },
+  "counts_by_sex": {
+    "male": 150,
+    "female": 150
+  },
+  "counts_by_age_group": {
+    "15-24": 118,
+    "25-39": 118,
+    "40-59": 64
+  },
+  "counts_by_skin_reference": {
+    "I": 50,
+    "II": 50,
+    "III": 50,
+    "IV": 50,
+    "V": 50,
+    "VI": 50
+  },
+  "counts_by_phenotype": {
+    "closed_comedonal": 50,
+    "open_comedonal": 50,
+    "inflammatory_papular": 50,
+    "papulopustular": 50,
+    "nodular_inflammatory": 50,
+    "mixed_lesions": 50
+  },
+  "counts_by_variation": {
+    "V1": 60,
+    "V2": 60,
+    "V3": 60,
+    "V4": 60,
+    "V5": 60
+  },
+  "counts_by_severity": {
+    "mild": 90,
+    "moderate": 133,
+    "severe": 77
+  },
+  "word_count_min": 70,
+  "word_count_max": 106,
+  "word_count_mean": 84.94,
+  "max_cross_group_tfidf_cosine": 0.5948,
+  "cross_group_pairs_over_0.88": [],
+  "token_count_verified": false,
+  "reason_token_pending": "Exact SD2.1 tokenizer assets unavailable in offline sandbox; Kaggle validator supplied to compute exact counts and reject >150.",
+  "batches": [
+    {
+      "batch": 1,
+      "group": "ACNE_G001",
+      "phenotype": "closed_comedonal",
+      "focus": "V1",
+      "split": "train",
+      "unique_prompts": 5,
+      "passed_static_checks": true
+    },
+    {
+      "batch": 2,
+      "group": "ACNE_G002",
+      "phenotype": "closed_comedonal",
+      "focus": "V1",
+      "split": "train",
+      "unique_prompts": 5,
+      "passed_static_checks": true
+    },
+    {
+      "batch": 3,
+      "group": "ACNE_G003",
+      "phenotype": "closed_comedonal",
+      "focus": "V2",
+      "split": "val",
+      "unique_prompts": 5,
+      "passed_static_checks": true
+    },
+    {
+      "batch": 4,
+      "group": "ACNE_G004",
+      "phenotype": "closed_comedonal",
+      "focus": "V2",
+      "split": "train",
+      "unique_prompts": 5,
+      "passed_static_checks": true
+    },
+    {
+      "batch": 5,
+      "group": "ACNE_G005",
+      "phenotype": "closed_comedonal",
+      "focus": "V3",
+      "split": "train",
+      "unique_prompts": 5,
+      "passed_static_checks": true
+    },
+    {
+      "batch": 6,
+      "group": "ACNE_G006",
+      "phenotype": "closed_comedonal",
+      "focus": "V3",
+      "split": "val",
+      "unique_prompts": 5,
+      "passed_static_checks": true
+    },
+    {
+      "batch": 7,
+      "group": "ACNE_G007",
+      "phenotype": "closed_comedonal",
+      "focus": "V4",
+      "split": "train",
+      "unique_prompts": 5,
+      "passed_static_checks": true
+    },
+    {
+      "batch": 8,
+      "group": "ACNE_G008",
+      "phenotype": "closed_comedonal",
+      "focus": "V4",
+      "split": "train",
+      "unique_prompts": 5,
+      "passed_static_checks": true
+    },
+    {
+      "batch": 9,
+      "group": "ACNE_G009",
+      "phenotype": "closed_comedonal",
+      "focus": "V5",
+      "split": "test",
+      "unique_prompts": 5,
+      "passed_static_checks": true
+    },
+    {
+      "batch": 10,
+      "group": "ACNE_G010",
+      "phenotype": "closed_comedonal",
+      "focus": "V5",
+      "split": "train",
+      "unique_prompts": 5,
+      "passed_static_checks": true
+    },
+    {
+      "batch": 11,
+      "group": "ACNE_G011",
+      "phenotype": "open_comedonal",
+      "focus": "V1",
+      "split": "train",
+      "unique_prompts": 5,
+      "passed_static_checks": true
+    },
+    {
+      "batch": 12,
+      "group": "ACNE_G012",
+      "phenotype": "open_comedonal",
+      "focus": "V1",
+      "split": "test",
+      "unique_prompts": 5,
+      "passed_static_checks": true
+    },
+    {
+      "batch": 13,
+      "group": "ACNE_G013",
+      "phenotype": "open_comedonal",
+      "focus": "V2",
+      "split": "train",
+      "unique_prompts": 5,
+      "passed_static_checks": true
+    },
+    {
+      "batch": 14,
+      "group": "ACNE_G014",
+      "phenotype": "open_comedonal",
+      "focus": "V2",
+      "split": "train",
+      "unique_prompts": 5,
+      "passed_static_checks": true
+    },
+    {
+      "batch": 15,
+      "group": "ACNE_G015",
+      "phenotype": "open_comedonal",
+      "focus": "V3",
+      "split": "train",
+      "unique_prompts": 5,
+      "passed_static_checks": true
+    },
+    {
+      "batch": 16,
+      "group": "ACNE_G016",
+      "phenotype": "open_comedonal",
+      "focus": "V3",
+      "split": "val",
+      "unique_prompts": 5,
+      "passed_static_checks": true
+    },
+    {
+      "batch": 17,
+      "group": "ACNE_G017",
+      "phenotype": "open_comedonal",
+      "focus": "V4",
+      "split": "train",
+      "unique_prompts": 5,
+      "passed_static_checks": true
+    },
+    {
+      "batch": 18,
+      "group": "ACNE_G018",
+      "phenotype": "open_comedonal",
+      "focus": "V4",
+      "split": "train",
+      "unique_prompts": 5,
+      "passed_static_checks": true
+    },
+    {
+      "batch": 19,
+      "group": "ACNE_G019",
+      "phenotype": "open_comedonal",
+      "focus": "V5",
+      "split": "test",
+      "unique_prompts": 5,
+      "passed_static_checks": true
+    },
+    {
+      "batch": 20,
+      "group": "ACNE_G020",
+      "phenotype": "open_comedonal",
+      "focus": "V5",
+      "split": "train",
+      "unique_prompts": 5,
+      "passed_static_checks": true
+    },
+    {
+      "batch": 21,
+      "group": "ACNE_G021",
+      "phenotype": "inflammatory_papular",
+      "focus": "V1",
+      "split": "train",
+      "unique_prompts": 5,
+      "passed_static_checks": true
+    },
+    {
+      "batch": 22,
+      "group": "ACNE_G022",
+      "phenotype": "inflammatory_papular",
+      "focus": "V1",
+      "split": "val",
+      "unique_prompts": 5,
+      "passed_static_checks": true
+    },
+    {
+      "batch": 23,
+      "group": "ACNE_G023",
+      "phenotype": "inflammatory_papular",
+      "focus": "V2",
+      "split": "train",
+      "unique_prompts": 5,
+      "passed_static_checks": true
+    },
+    {
+      "batch": 24,
+      "group": "ACNE_G024",
+      "phenotype": "inflammatory_papular",
+      "focus": "V2",
+      "split": "train",
+      "unique_prompts": 5,
+      "passed_static_checks": true
+    },
+    {
+      "batch": 25,
+      "group": "ACNE_G025",
+      "phenotype": "inflammatory_papular",
+      "focus": "V3",
+      "split": "test",
+      "unique_prompts": 5,
+      "passed_static_checks": true
+    },
+    {
+      "batch": 26,
+      "group": "ACNE_G026",
+      "phenotype": "inflammatory_papular",
+      "focus": "V3",
+      "split": "train",
+      "unique_prompts": 5,
+      "passed_static_checks": true
+    },
+    {
+      "batch": 27,
+      "group": "ACNE_G027",
+      "phenotype": "inflammatory_papular",
+      "focus": "V4",
+      "split": "train",
+      "unique_prompts": 5,
+      "passed_static_checks": true
+    },
+    {
+      "batch": 28,
+      "group": "ACNE_G028",
+      "phenotype": "inflammatory_papular",
+      "focus": "V4",
+      "split": "train",
+      "unique_prompts": 5,
+      "passed_static_checks": true
+    },
+    {
+      "batch": 29,
+      "group": "ACNE_G029",
+      "phenotype": "inflammatory_papular",
+      "focus": "V5",
+      "split": "val",
+      "unique_prompts": 5,
+      "passed_static_checks": true
+    },
+    {
+      "batch": 30,
+      "group": "ACNE_G030",
+      "phenotype": "inflammatory_papular",
+      "focus": "V5",
+      "split": "train",
+      "unique_prompts": 5,
+      "passed_static_checks": true
+    },
+    {
+      "batch": 31,
+      "group": "ACNE_G031",
+      "phenotype": "papulopustular",
+      "focus": "V1",
+      "split": "train",
+      "unique_prompts": 5,
+      "passed_static_checks": true
+    },
+    {
+      "batch": 32,
+      "group": "ACNE_G032",
+      "phenotype": "papulopustular",
+      "focus": "V1",
+      "split": "val",
+      "unique_prompts": 5,
+      "passed_static_checks": true
+    },
+    {
+      "batch": 33,
+      "group": "ACNE_G033",
+      "phenotype": "papulopustular",
+      "focus": "V2",
+      "split": "train",
+      "unique_prompts": 5,
+      "passed_static_checks": true
+    },
+    {
+      "batch": 34,
+      "group": "ACNE_G034",
+      "phenotype": "papulopustular",
+      "focus": "V2",
+      "split": "train",
+      "unique_prompts": 5,
+      "passed_static_checks": true
+    },
+    {
+      "batch": 35,
+      "group": "ACNE_G035",
+      "phenotype": "papulopustular",
+      "focus": "V3",
+      "split": "test",
+      "unique_prompts": 5,
+      "passed_static_checks": true
+    },
+    {
+      "batch": 36,
+      "group": "ACNE_G036",
+      "phenotype": "papulopustular",
+      "focus": "V3",
+      "split": "train",
+      "unique_prompts": 5,
+      "passed_static_checks": true
+    },
+    {
+      "batch": 37,
+      "group": "ACNE_G037",
+      "phenotype": "papulopustular",
+      "focus": "V4",
+      "split": "train",
+      "unique_prompts": 5,
+      "passed_static_checks": true
+    },
+    {
+      "batch": 38,
+      "group": "ACNE_G038",
+      "phenotype": "papulopustular",
+      "focus": "V4",
+      "split": "test",
+      "unique_prompts": 5,
+      "passed_static_checks": true
+    },
+    {
+      "batch": 39,
+      "group": "ACNE_G039",
+      "phenotype": "papulopustular",
+      "focus": "V5",
+      "split": "train",
+      "unique_prompts": 5,
+      "passed_static_checks": true
+    },
+    {
+      "batch": 40,
+      "group": "ACNE_G040",
+      "phenotype": "papulopustular",
+      "focus": "V5",
+      "split": "train",
+      "unique_prompts": 5,
+      "passed_static_checks": true
+    },
+    {
+      "batch": 41,
+      "group": "ACNE_G041",
+      "phenotype": "nodular_inflammatory",
+      "focus": "V1",
+      "split": "test",
+      "unique_prompts": 5,
+      "passed_static_checks": true
+    },
+    {
+      "batch": 42,
+      "group": "ACNE_G042",
+      "phenotype": "nodular_inflammatory",
+      "focus": "V1",
+      "split": "train",
+      "unique_prompts": 5,
+      "passed_static_checks": true
+    },
+    {
+      "batch": 43,
+      "group": "ACNE_G043",
+      "phenotype": "nodular_inflammatory",
+      "focus": "V2",
+      "split": "train",
+      "unique_prompts": 5,
+      "passed_static_checks": true
+    },
+    {
+      "batch": 44,
+      "group": "ACNE_G044",
+      "phenotype": "nodular_inflammatory",
+      "focus": "V2",
+      "split": "train",
+      "unique_prompts": 5,
+      "passed_static_checks": true
+    },
+    {
+      "batch": 45,
+      "group": "ACNE_G045",
+      "phenotype": "nodular_inflammatory",
+      "focus": "V3",
+      "split": "val",
+      "unique_prompts": 5,
+      "passed_static_checks": true
+    },
+    {
+      "batch": 46,
+      "group": "ACNE_G046",
+      "phenotype": "nodular_inflammatory",
+      "focus": "V3",
+      "split": "train",
+      "unique_prompts": 5,
+      "passed_static_checks": true
+    },
+    {
+      "batch": 47,
+      "group": "ACNE_G047",
+      "phenotype": "nodular_inflammatory",
+      "focus": "V4",
+      "split": "train",
+      "unique_prompts": 5,
+      "passed_static_checks": true
+    },
+    {
+      "batch": 48,
+      "group": "ACNE_G048",
+      "phenotype": "nodular_inflammatory",
+      "focus": "V4",
+      "split": "val",
+      "unique_prompts": 5,
+      "passed_static_checks": true
+    },
+    {
+      "batch": 49,
+      "group": "ACNE_G049",
+      "phenotype": "nodular_inflammatory",
+      "focus": "V5",
+      "split": "train",
+      "unique_prompts": 5,
+      "passed_static_checks": true
+    },
+    {
+      "batch": 50,
+      "group": "ACNE_G050",
+      "phenotype": "nodular_inflammatory",
+      "focus": "V5",
+      "split": "train",
+      "unique_prompts": 5,
+      "passed_static_checks": true
+    },
+    {
+      "batch": 51,
+      "group": "ACNE_G051",
+      "phenotype": "mixed_lesions",
+      "focus": "V1",
+      "split": "test",
+      "unique_prompts": 5,
+      "passed_static_checks": true
+    },
+    {
+      "batch": 52,
+      "group": "ACNE_G052",
+      "phenotype": "mixed_lesions",
+      "focus": "V1",
+      "split": "train",
+      "unique_prompts": 5,
+      "passed_static_checks": true
+    },
+    {
+      "batch": 53,
+      "group": "ACNE_G053",
+      "phenotype": "mixed_lesions",
+      "focus": "V2",
+      "split": "train",
+      "unique_prompts": 5,
+      "passed_static_checks": true
+    },
+    {
+      "batch": 54,
+      "group": "ACNE_G054",
+      "phenotype": "mixed_lesions",
+      "focus": "V2",
+      "split": "test",
+      "unique_prompts": 5,
+      "passed_static_checks": true
+    },
+    {
+      "batch": 55,
+      "group": "ACNE_G055",
+      "phenotype": "mixed_lesions",
+      "focus": "V3",
+      "split": "train",
+      "unique_prompts": 5,
+      "passed_static_checks": true
+    },
+    {
+      "batch": 56,
+      "group": "ACNE_G056",
+      "phenotype": "mixed_lesions",
+      "focus": "V3",
+      "split": "train",
+      "unique_prompts": 5,
+      "passed_static_checks": true
+    },
+    {
+      "batch": 57,
+      "group": "ACNE_G057",
+      "phenotype": "mixed_lesions",
+      "focus": "V4",
+      "split": "train",
+      "unique_prompts": 5,
+      "passed_static_checks": true
+    },
+    {
+      "batch": 58,
+      "group": "ACNE_G058",
+      "phenotype": "mixed_lesions",
+      "focus": "V4",
+      "split": "val",
+      "unique_prompts": 5,
+      "passed_static_checks": true
+    },
+    {
+      "batch": 59,
+      "group": "ACNE_G059",
+      "phenotype": "mixed_lesions",
+      "focus": "V5",
+      "split": "train",
+      "unique_prompts": 5,
+      "passed_static_checks": true
+    },
+    {
+      "batch": 60,
+      "group": "ACNE_G060",
+      "phenotype": "mixed_lesions",
+      "focus": "V5",
+      "split": "train",
+      "unique_prompts": 5,
+      "passed_static_checks": true
+    }
+  ],
+  "five_prompt_review_batches": [
+    {
+      "batch": 1,
+      "prompt_ids": [
+        "ACNE_001",
+        "ACNE_002",
+        "ACNE_003",
+        "ACNE_004",
+        "ACNE_005"
+      ],
+      "phenotypes": [
+        "closed_comedonal",
+        "open_comedonal",
+        "inflammatory_papular",
+        "papulopustular",
+        "nodular_inflammatory"
+      ],
+      "variation_groups": [
+        "V1",
+        "V2",
+        "V3",
+        "V4",
+        "V5"
+      ],
+      "static_review_passed": true
+    },
+    {
+      "batch": 2,
+      "prompt_ids": [
+        "ACNE_006",
+        "ACNE_007",
+        "ACNE_008",
+        "ACNE_009",
+        "ACNE_010"
+      ],
+      "phenotypes": [
+        "mixed_lesions",
+        "closed_comedonal",
+        "open_comedonal",
+        "inflammatory_papular",
+        "papulopustular"
+      ],
+      "variation_groups": [
+        "V1",
+        "V1",
+        "V3",
+        "V3",
+        "V5"
+      ],
+      "static_review_passed": true
+    },
+    {
+      "batch": 3,
+      "prompt_ids": [
+        "ACNE_011",
+        "ACNE_012",
+        "ACNE_013",
+        "ACNE_014",
+        "ACNE_015"
+      ],
+      "phenotypes": [
+        "nodular_inflammatory",
+        "mixed_lesions",
+        "closed_comedonal",
+        "open_comedonal",
+        "inflammatory_papular"
+      ],
+      "variation_groups": [
+        "V5",
+        "V2",
+        "V2",
+        "V3",
+        "V4"
+      ],
+      "static_review_passed": true
+    },
+    {
+      "batch": 4,
+      "prompt_ids": [
+        "ACNE_016",
+        "ACNE_017",
+        "ACNE_018",
+        "ACNE_019",
+        "ACNE_020"
+      ],
+      "phenotypes": [
+        "papulopustular",
+        "nodular_inflammatory",
+        "mixed_lesions",
+        "closed_comedonal",
+        "open_comedonal"
+      ],
+      "variation_groups": [
+        "V5",
+        "V1",
+        "V2",
+        "V3",
+        "V4"
+      ],
+      "static_review_passed": true
+    },
+    {
+      "batch": 5,
+      "prompt_ids": [
+        "ACNE_021",
+        "ACNE_022",
+        "ACNE_023",
+        "ACNE_024",
+        "ACNE_025"
+      ],
+      "phenotypes": [
+        "inflammatory_papular",
+        "papulopustular",
+        "nodular_inflammatory",
+        "mixed_lesions",
+        "closed_comedonal"
+      ],
+      "variation_groups": [
+        "V5",
+        "V1",
+        "V2",
+        "V3",
+        "V3"
+      ],
+      "static_review_passed": true
+    },
+    {
+      "batch": 6,
+      "prompt_ids": [
+        "ACNE_026",
+        "ACNE_027",
+        "ACNE_028",
+        "ACNE_029",
+        "ACNE_030"
+      ],
+      "phenotypes": [
+        "open_comedonal",
+        "inflammatory_papular",
+        "papulopustular",
+        "nodular_inflammatory",
+        "mixed_lesions"
+      ],
+      "variation_groups": [
+        "V5",
+        "V5",
+        "V2",
+        "V2",
+        "V4"
+      ],
+      "static_review_passed": true
+    },
+    {
+      "batch": 7,
+      "prompt_ids": [
+        "ACNE_031",
+        "ACNE_032",
+        "ACNE_033",
+        "ACNE_034",
+        "ACNE_035"
+      ],
+      "phenotypes": [
+        "closed_comedonal",
+        "open_comedonal",
+        "inflammatory_papular",
+        "papulopustular",
+        "nodular_inflammatory"
+      ],
+      "variation_groups": [
+        "V4",
+        "V1",
+        "V1",
+        "V3",
+        "V3"
+      ],
+      "static_review_passed": true
+    },
+    {
+      "batch": 8,
+      "prompt_ids": [
+        "ACNE_036",
+        "ACNE_037",
+        "ACNE_038",
+        "ACNE_039",
+        "ACNE_040"
+      ],
+      "phenotypes": [
+        "mixed_lesions",
+        "closed_comedonal",
+        "open_comedonal",
+        "inflammatory_papular",
+        "papulopustular"
+      ],
+      "variation_groups": [
+        "V5",
+        "V5",
+        "V1",
+        "V2",
+        "V3"
+      ],
+      "static_review_passed": true
+    },
+    {
+      "batch": 9,
+      "prompt_ids": [
+        "ACNE_041",
+        "ACNE_042",
+        "ACNE_043",
+        "ACNE_044",
+        "ACNE_045"
+      ],
+      "phenotypes": [
+        "nodular_inflammatory",
+        "mixed_lesions",
+        "closed_comedonal",
+        "open_comedonal",
+        "inflammatory_papular"
+      ],
+      "variation_groups": [
+        "V4",
+        "V5",
+        "V5",
+        "V2",
+        "V2"
+      ],
+      "static_review_passed": true
+    },
+    {
+      "batch": 10,
+      "prompt_ids": [
+        "ACNE_046",
+        "ACNE_047",
+        "ACNE_048",
+        "ACNE_049",
+        "ACNE_050"
+      ],
+      "phenotypes": [
+        "papulopustular",
+        "nodular_inflammatory",
+        "mixed_lesions",
+        "closed_comedonal",
+        "open_comedonal"
+      ],
+      "variation_groups": [
+        "V4",
+        "V4",
+        "V1",
+        "V1",
+        "V3"
+      ],
+      "static_review_passed": true
+    },
+    {
+      "batch": 11,
+      "prompt_ids": [
+        "ACNE_051",
+        "ACNE_052",
+        "ACNE_053",
+        "ACNE_054",
+        "ACNE_055"
+      ],
+      "phenotypes": [
+        "inflammatory_papular",
+        "papulopustular",
+        "nodular_inflammatory",
+        "mixed_lesions",
+        "closed_comedonal"
+      ],
+      "variation_groups": [
+        "V3",
+        "V5",
+        "V5",
+        "V2",
+        "V2"
+      ],
+      "static_review_passed": true
+    },
+    {
+      "batch": 12,
+      "prompt_ids": [
+        "ACNE_056",
+        "ACNE_057",
+        "ACNE_058",
+        "ACNE_059",
+        "ACNE_060"
+      ],
+      "phenotypes": [
+        "open_comedonal",
+        "inflammatory_papular",
+        "papulopustular",
+        "nodular_inflammatory",
+        "mixed_lesions"
+      ],
+      "variation_groups": [
+        "V3",
+        "V4",
+        "V5",
+        "V1",
+        "V2"
+      ],
+      "static_review_passed": true
+    },
+    {
+      "batch": 13,
+      "prompt_ids": [
+        "ACNE_061",
+        "ACNE_062",
+        "ACNE_063",
+        "ACNE_064",
+        "ACNE_065"
+      ],
+      "phenotypes": [
+        "closed_comedonal",
+        "open_comedonal",
+        "inflammatory_papular",
+        "papulopustular",
+        "nodular_inflammatory"
+      ],
+      "variation_groups": [
+        "V3",
+        "V4",
+        "V5",
+        "V1",
+        "V2"
+      ],
+      "static_review_passed": true
+    },
+    {
+      "batch": 14,
+      "prompt_ids": [
+        "ACNE_066",
+        "ACNE_067",
+        "ACNE_068",
+        "ACNE_069",
+        "ACNE_070"
+      ],
+      "phenotypes": [
+        "mixed_lesions",
+        "closed_comedonal",
+        "open_comedonal",
+        "inflammatory_papular",
+        "papulopustular"
+      ],
+      "variation_groups": [
+        "V3",
+        "V3",
+        "V5",
+        "V5",
+        "V2"
+      ],
+      "static_review_passed": true
+    },
+    {
+      "batch": 15,
+      "prompt_ids": [
+        "ACNE_071",
+        "ACNE_072",
+        "ACNE_073",
+        "ACNE_074",
+        "ACNE_075"
+      ],
+      "phenotypes": [
+        "nodular_inflammatory",
+        "mixed_lesions",
+        "closed_comedonal",
+        "open_comedonal",
+        "inflammatory_papular"
+      ],
+      "variation_groups": [
+        "V2",
+        "V4",
+        "V4",
+        "V5",
+        "V1"
+      ],
+      "static_review_passed": true
+    },
+    {
+      "batch": 16,
+      "prompt_ids": [
+        "ACNE_076",
+        "ACNE_077",
+        "ACNE_078",
+        "ACNE_079",
+        "ACNE_080"
+      ],
+      "phenotypes": [
+        "papulopustular",
+        "nodular_inflammatory",
+        "mixed_lesions",
+        "closed_comedonal",
+        "open_comedonal"
+      ],
+      "variation_groups": [
+        "V2",
+        "V3",
+        "V4",
+        "V5",
+        "V1"
+      ],
+      "static_review_passed": true
+    },
+    {
+      "batch": 17,
+      "prompt_ids": [
+        "ACNE_081",
+        "ACNE_082",
+        "ACNE_083",
+        "ACNE_084",
+        "ACNE_085"
+      ],
+      "phenotypes": [
+        "inflammatory_papular",
+        "papulopustular",
+        "nodular_inflammatory",
+        "mixed_lesions",
+        "closed_comedonal"
+      ],
+      "variation_groups": [
+        "V2",
+        "V3",
+        "V4",
+        "V5",
+        "V5"
+      ],
+      "static_review_passed": true
+    },
+    {
+      "batch": 18,
+      "prompt_ids": [
+        "ACNE_086",
+        "ACNE_087",
+        "ACNE_088",
+        "ACNE_089",
+        "ACNE_090"
+      ],
+      "phenotypes": [
+        "open_comedonal",
+        "inflammatory_papular",
+        "papulopustular",
+        "nodular_inflammatory",
+        "mixed_lesions"
+      ],
+      "variation_groups": [
+        "V2",
+        "V2",
+        "V4",
+        "V4",
+        "V1"
+      ],
+      "static_review_passed": true
+    },
+    {
+      "batch": 19,
+      "prompt_ids": [
+        "ACNE_091",
+        "ACNE_092",
+        "ACNE_093",
+        "ACNE_094",
+        "ACNE_095"
+      ],
+      "phenotypes": [
+        "closed_comedonal",
+        "open_comedonal",
+        "inflammatory_papular",
+        "papulopustular",
+        "nodular_inflammatory"
+      ],
+      "variation_groups": [
+        "V1",
+        "V3",
+        "V3",
+        "V5",
+        "V5"
+      ],
+      "static_review_passed": true
+    },
+    {
+      "batch": 20,
+      "prompt_ids": [
+        "ACNE_096",
+        "ACNE_097",
+        "ACNE_098",
+        "ACNE_099",
+        "ACNE_100"
+      ],
+      "phenotypes": [
+        "mixed_lesions",
+        "closed_comedonal",
+        "open_comedonal",
+        "inflammatory_papular",
+        "papulopustular"
+      ],
+      "variation_groups": [
+        "V2",
+        "V2",
+        "V3",
+        "V4",
+        "V5"
+      ],
+      "static_review_passed": true
+    },
+    {
+      "batch": 21,
+      "prompt_ids": [
+        "ACNE_101",
+        "ACNE_102",
+        "ACNE_103",
+        "ACNE_104",
+        "ACNE_105"
+      ],
+      "phenotypes": [
+        "nodular_inflammatory",
+        "mixed_lesions",
+        "closed_comedonal",
+        "open_comedonal",
+        "inflammatory_papular"
+      ],
+      "variation_groups": [
+        "V1",
+        "V2",
+        "V2",
+        "V4",
+        "V4"
+      ],
+      "static_review_passed": true
+    },
+    {
+      "batch": 22,
+      "prompt_ids": [
+        "ACNE_106",
+        "ACNE_107",
+        "ACNE_108",
+        "ACNE_109",
+        "ACNE_110"
+      ],
+      "phenotypes": [
+        "papulopustular",
+        "nodular_inflammatory",
+        "mixed_lesions",
+        "closed_comedonal",
+        "open_comedonal"
+      ],
+      "variation_groups": [
+        "V1",
+        "V1",
+        "V3",
+        "V3",
+        "V5"
+      ],
+      "static_review_passed": true
+    },
+    {
+      "batch": 23,
+      "prompt_ids": [
+        "ACNE_111",
+        "ACNE_112",
+        "ACNE_113",
+        "ACNE_114",
+        "ACNE_115"
+      ],
+      "phenotypes": [
+        "inflammatory_papular",
+        "papulopustular",
+        "nodular_inflammatory",
+        "mixed_lesions",
+        "closed_comedonal"
+      ],
+      "variation_groups": [
+        "V5",
+        "V2",
+        "V2",
+        "V4",
+        "V4"
+      ],
+      "static_review_passed": true
+    },
+    {
+      "batch": 24,
+      "prompt_ids": [
+        "ACNE_116",
+        "ACNE_117",
+        "ACNE_118",
+        "ACNE_119",
+        "ACNE_120"
+      ],
+      "phenotypes": [
+        "open_comedonal",
+        "inflammatory_papular",
+        "papulopustular",
+        "nodular_inflammatory",
+        "mixed_lesions"
+      ],
+      "variation_groups": [
+        "V5",
+        "V1",
+        "V2",
+        "V3",
+        "V4"
+      ],
+      "static_review_passed": true
+    },
+    {
+      "batch": 25,
+      "prompt_ids": [
+        "ACNE_121",
+        "ACNE_122",
+        "ACNE_123",
+        "ACNE_124",
+        "ACNE_125"
+      ],
+      "phenotypes": [
+        "closed_comedonal",
+        "open_comedonal",
+        "inflammatory_papular",
+        "papulopustular",
+        "nodular_inflammatory"
+      ],
+      "variation_groups": [
+        "V5",
+        "V1",
+        "V2",
+        "V3",
+        "V4"
+      ],
+      "static_review_passed": true
+    },
+    {
+      "batch": 26,
+      "prompt_ids": [
+        "ACNE_126",
+        "ACNE_127",
+        "ACNE_128",
+        "ACNE_129",
+        "ACNE_130"
+      ],
+      "phenotypes": [
+        "mixed_lesions",
+        "closed_comedonal",
+        "open_comedonal",
+        "inflammatory_papular",
+        "papulopustular"
+      ],
+      "variation_groups": [
+        "V5",
+        "V5",
+        "V2",
+        "V2",
+        "V4"
+      ],
+      "static_review_passed": true
+    },
+    {
+      "batch": 27,
+      "prompt_ids": [
+        "ACNE_131",
+        "ACNE_132",
+        "ACNE_133",
+        "ACNE_134",
+        "ACNE_135"
+      ],
+      "phenotypes": [
+        "nodular_inflammatory",
+        "mixed_lesions",
+        "closed_comedonal",
+        "open_comedonal",
+        "inflammatory_papular"
+      ],
+      "variation_groups": [
+        "V4",
+        "V1",
+        "V1",
+        "V2",
+        "V3"
+      ],
+      "static_review_passed": true
+    },
+    {
+      "batch": 28,
+      "prompt_ids": [
+        "ACNE_136",
+        "ACNE_137",
+        "ACNE_138",
+        "ACNE_139",
+        "ACNE_140"
+      ],
+      "phenotypes": [
+        "papulopustular",
+        "nodular_inflammatory",
+        "mixed_lesions",
+        "closed_comedonal",
+        "open_comedonal"
+      ],
+      "variation_groups": [
+        "V4",
+        "V5",
+        "V1",
+        "V2",
+        "V3"
+      ],
+      "static_review_passed": true
+    },
+    {
+      "batch": 29,
+      "prompt_ids": [
+        "ACNE_141",
+        "ACNE_142",
+        "ACNE_143",
+        "ACNE_144",
+        "ACNE_145"
+      ],
+      "phenotypes": [
+        "inflammatory_papular",
+        "papulopustular",
+        "nodular_inflammatory",
+        "mixed_lesions",
+        "closed_comedonal"
+      ],
+      "variation_groups": [
+        "V4",
+        "V5",
+        "V1",
+        "V2",
+        "V2"
+      ],
+      "static_review_passed": true
+    },
+    {
+      "batch": 30,
+      "prompt_ids": [
+        "ACNE_146",
+        "ACNE_147",
+        "ACNE_148",
+        "ACNE_149",
+        "ACNE_150"
+      ],
+      "phenotypes": [
+        "open_comedonal",
+        "inflammatory_papular",
+        "papulopustular",
+        "nodular_inflammatory",
+        "mixed_lesions"
+      ],
+      "variation_groups": [
+        "V4",
+        "V4",
+        "V1",
+        "V1",
+        "V3"
+      ],
+      "static_review_passed": true
+    },
+    {
+      "batch": 31,
+      "prompt_ids": [
+        "ACNE_151",
+        "ACNE_152",
+        "ACNE_153",
+        "ACNE_154",
+        "ACNE_155"
+      ],
+      "phenotypes": [
+        "closed_comedonal",
+        "open_comedonal",
+        "inflammatory_papular",
+        "papulopustular",
+        "nodular_inflammatory"
+      ],
+      "variation_groups": [
+        "V3",
+        "V5",
+        "V5",
+        "V2",
+        "V2"
+      ],
+      "static_review_passed": true
+    },
+    {
+      "batch": 32,
+      "prompt_ids": [
+        "ACNE_156",
+        "ACNE_157",
+        "ACNE_158",
+        "ACNE_159",
+        "ACNE_160"
+      ],
+      "phenotypes": [
+        "mixed_lesions",
+        "closed_comedonal",
+        "open_comedonal",
+        "inflammatory_papular",
+        "papulopustular"
+      ],
+      "variation_groups": [
+        "V4",
+        "V4",
+        "V5",
+        "V1",
+        "V2"
+      ],
+      "static_review_passed": true
+    },
+    {
+      "batch": 33,
+      "prompt_ids": [
+        "ACNE_161",
+        "ACNE_162",
+        "ACNE_163",
+        "ACNE_164",
+        "ACNE_165"
+      ],
+      "phenotypes": [
+        "nodular_inflammatory",
+        "mixed_lesions",
+        "closed_comedonal",
+        "open_comedonal",
+        "inflammatory_papular"
+      ],
+      "variation_groups": [
+        "V3",
+        "V4",
+        "V4",
+        "V1",
+        "V1"
+      ],
+      "static_review_passed": true
+    },
+    {
+      "batch": 34,
+      "prompt_ids": [
+        "ACNE_166",
+        "ACNE_167",
+        "ACNE_168",
+        "ACNE_169",
+        "ACNE_170"
+      ],
+      "phenotypes": [
+        "papulopustular",
+        "nodular_inflammatory",
+        "mixed_lesions",
+        "closed_comedonal",
+        "open_comedonal"
+      ],
+      "variation_groups": [
+        "V3",
+        "V3",
+        "V5",
+        "V5",
+        "V2"
+      ],
+      "static_review_passed": true
+    },
+    {
+      "batch": 35,
+      "prompt_ids": [
+        "ACNE_171",
+        "ACNE_172",
+        "ACNE_173",
+        "ACNE_174",
+        "ACNE_175"
+      ],
+      "phenotypes": [
+        "inflammatory_papular",
+        "papulopustular",
+        "nodular_inflammatory",
+        "mixed_lesions",
+        "closed_comedonal"
+      ],
+      "variation_groups": [
+        "V2",
+        "V4",
+        "V4",
+        "V1",
+        "V1"
+      ],
+      "static_review_passed": true
+    },
+    {
+      "batch": 36,
+      "prompt_ids": [
+        "ACNE_176",
+        "ACNE_177",
+        "ACNE_178",
+        "ACNE_179",
+        "ACNE_180"
+      ],
+      "phenotypes": [
+        "open_comedonal",
+        "inflammatory_papular",
+        "papulopustular",
+        "nodular_inflammatory",
+        "mixed_lesions"
+      ],
+      "variation_groups": [
+        "V2",
+        "V3",
+        "V4",
+        "V5",
+        "V1"
+      ],
+      "static_review_passed": true
+    },
+    {
+      "batch": 37,
+      "prompt_ids": [
+        "ACNE_181",
+        "ACNE_182",
+        "ACNE_183",
+        "ACNE_184",
+        "ACNE_185"
+      ],
+      "phenotypes": [
+        "closed_comedonal",
+        "open_comedonal",
+        "inflammatory_papular",
+        "papulopustular",
+        "nodular_inflammatory"
+      ],
+      "variation_groups": [
+        "V2",
+        "V3",
+        "V4",
+        "V5",
+        "V1"
+      ],
+      "static_review_passed": true
+    },
+    {
+      "batch": 38,
+      "prompt_ids": [
+        "ACNE_186",
+        "ACNE_187",
+        "ACNE_188",
+        "ACNE_189",
+        "ACNE_190"
+      ],
+      "phenotypes": [
+        "mixed_lesions",
+        "closed_comedonal",
+        "open_comedonal",
+        "inflammatory_papular",
+        "papulopustular"
+      ],
+      "variation_groups": [
+        "V2",
+        "V2",
+        "V4",
+        "V4",
+        "V1"
+      ],
+      "static_review_passed": true
+    },
+    {
+      "batch": 39,
+      "prompt_ids": [
+        "ACNE_191",
+        "ACNE_192",
+        "ACNE_193",
+        "ACNE_194",
+        "ACNE_195"
+      ],
+      "phenotypes": [
+        "nodular_inflammatory",
+        "mixed_lesions",
+        "closed_comedonal",
+        "open_comedonal",
+        "inflammatory_papular"
+      ],
+      "variation_groups": [
+        "V1",
+        "V3",
+        "V3",
+        "V4",
+        "V5"
+      ],
+      "static_review_passed": true
+    },
+    {
+      "batch": 40,
+      "prompt_ids": [
+        "ACNE_196",
+        "ACNE_197",
+        "ACNE_198",
+        "ACNE_199",
+        "ACNE_200"
+      ],
+      "phenotypes": [
+        "papulopustular",
+        "nodular_inflammatory",
+        "mixed_lesions",
+        "closed_comedonal",
+        "open_comedonal"
+      ],
+      "variation_groups": [
+        "V1",
+        "V2",
+        "V3",
+        "V4",
+        "V5"
+      ],
+      "static_review_passed": true
+    },
+    {
+      "batch": 41,
+      "prompt_ids": [
+        "ACNE_201",
+        "ACNE_202",
+        "ACNE_203",
+        "ACNE_204",
+        "ACNE_205"
+      ],
+      "phenotypes": [
+        "inflammatory_papular",
+        "papulopustular",
+        "nodular_inflammatory",
+        "mixed_lesions",
+        "closed_comedonal"
+      ],
+      "variation_groups": [
+        "V1",
+        "V2",
+        "V3",
+        "V4",
+        "V4"
+      ],
+      "static_review_passed": true
+    },
+    {
+      "batch": 42,
+      "prompt_ids": [
+        "ACNE_206",
+        "ACNE_207",
+        "ACNE_208",
+        "ACNE_209",
+        "ACNE_210"
+      ],
+      "phenotypes": [
+        "open_comedonal",
+        "inflammatory_papular",
+        "papulopustular",
+        "nodular_inflammatory",
+        "mixed_lesions"
+      ],
+      "variation_groups": [
+        "V1",
+        "V1",
+        "V3",
+        "V3",
+        "V5"
+      ],
+      "static_review_passed": true
+    },
+    {
+      "batch": 43,
+      "prompt_ids": [
+        "ACNE_211",
+        "ACNE_212",
+        "ACNE_213",
+        "ACNE_214",
+        "ACNE_215"
+      ],
+      "phenotypes": [
+        "closed_comedonal",
+        "open_comedonal",
+        "inflammatory_papular",
+        "papulopustular",
+        "nodular_inflammatory"
+      ],
+      "variation_groups": [
+        "V5",
+        "V2",
+        "V2",
+        "V4",
+        "V4"
+      ],
+      "static_review_passed": true
+    },
+    {
+      "batch": 44,
+      "prompt_ids": [
+        "ACNE_216",
+        "ACNE_217",
+        "ACNE_218",
+        "ACNE_219",
+        "ACNE_220"
+      ],
+      "phenotypes": [
+        "mixed_lesions",
+        "closed_comedonal",
+        "open_comedonal",
+        "inflammatory_papular",
+        "papulopustular"
+      ],
+      "variation_groups": [
+        "V1",
+        "V1",
+        "V2",
+        "V3",
+        "V4"
+      ],
+      "static_review_passed": true
+    },
+    {
+      "batch": 45,
+      "prompt_ids": [
+        "ACNE_221",
+        "ACNE_222",
+        "ACNE_223",
+        "ACNE_224",
+        "ACNE_225"
+      ],
+      "phenotypes": [
+        "nodular_inflammatory",
+        "mixed_lesions",
+        "closed_comedonal",
+        "open_comedonal",
+        "inflammatory_papular"
+      ],
+      "variation_groups": [
+        "V5",
+        "V1",
+        "V1",
+        "V3",
+        "V3"
+      ],
+      "static_review_passed": true
+    },
+    {
+      "batch": 46,
+      "prompt_ids": [
+        "ACNE_226",
+        "ACNE_227",
+        "ACNE_228",
+        "ACNE_229",
+        "ACNE_230"
+      ],
+      "phenotypes": [
+        "papulopustular",
+        "nodular_inflammatory",
+        "mixed_lesions",
+        "closed_comedonal",
+        "open_comedonal"
+      ],
+      "variation_groups": [
+        "V5",
+        "V5",
+        "V2",
+        "V2",
+        "V4"
+      ],
+      "static_review_passed": true
+    },
+    {
+      "batch": 47,
+      "prompt_ids": [
+        "ACNE_231",
+        "ACNE_232",
+        "ACNE_233",
+        "ACNE_234",
+        "ACNE_235"
+      ],
+      "phenotypes": [
+        "inflammatory_papular",
+        "papulopustular",
+        "nodular_inflammatory",
+        "mixed_lesions",
+        "closed_comedonal"
+      ],
+      "variation_groups": [
+        "V4",
+        "V1",
+        "V1",
+        "V3",
+        "V3"
+      ],
+      "static_review_passed": true
+    },
+    {
+      "batch": 48,
+      "prompt_ids": [
+        "ACNE_236",
+        "ACNE_237",
+        "ACNE_238",
+        "ACNE_239",
+        "ACNE_240"
+      ],
+      "phenotypes": [
+        "open_comedonal",
+        "inflammatory_papular",
+        "papulopustular",
+        "nodular_inflammatory",
+        "mixed_lesions"
+      ],
+      "variation_groups": [
+        "V4",
+        "V5",
+        "V1",
+        "V2",
+        "V3"
+      ],
+      "static_review_passed": true
+    },
+    {
+      "batch": 49,
+      "prompt_ids": [
+        "ACNE_241",
+        "ACNE_242",
+        "ACNE_243",
+        "ACNE_244",
+        "ACNE_245"
+      ],
+      "phenotypes": [
+        "closed_comedonal",
+        "open_comedonal",
+        "inflammatory_papular",
+        "papulopustular",
+        "nodular_inflammatory"
+      ],
+      "variation_groups": [
+        "V4",
+        "V5",
+        "V1",
+        "V2",
+        "V3"
+      ],
+      "static_review_passed": true
+    },
+    {
+      "batch": 50,
+      "prompt_ids": [
+        "ACNE_246",
+        "ACNE_247",
+        "ACNE_248",
+        "ACNE_249",
+        "ACNE_250"
+      ],
+      "phenotypes": [
+        "mixed_lesions",
+        "closed_comedonal",
+        "open_comedonal",
+        "inflammatory_papular",
+        "papulopustular"
+      ],
+      "variation_groups": [
+        "V4",
+        "V4",
+        "V1",
+        "V1",
+        "V3"
+      ],
+      "static_review_passed": true
+    },
+    {
+      "batch": 51,
+      "prompt_ids": [
+        "ACNE_251",
+        "ACNE_252",
+        "ACNE_253",
+        "ACNE_254",
+        "ACNE_255"
+      ],
+      "phenotypes": [
+        "nodular_inflammatory",
+        "mixed_lesions",
+        "closed_comedonal",
+        "open_comedonal",
+        "inflammatory_papular"
+      ],
+      "variation_groups": [
+        "V3",
+        "V5",
+        "V5",
+        "V1",
+        "V2"
+      ],
+      "static_review_passed": true
+    },
+    {
+      "batch": 52,
+      "prompt_ids": [
+        "ACNE_256",
+        "ACNE_257",
+        "ACNE_258",
+        "ACNE_259",
+        "ACNE_260"
+      ],
+      "phenotypes": [
+        "papulopustular",
+        "nodular_inflammatory",
+        "mixed_lesions",
+        "closed_comedonal",
+        "open_comedonal"
+      ],
+      "variation_groups": [
+        "V3",
+        "V4",
+        "V5",
+        "V1",
+        "V2"
+      ],
+      "static_review_passed": true
+    },
+    {
+      "batch": 53,
+      "prompt_ids": [
+        "ACNE_261",
+        "ACNE_262",
+        "ACNE_263",
+        "ACNE_264",
+        "ACNE_265"
+      ],
+      "phenotypes": [
+        "inflammatory_papular",
+        "papulopustular",
+        "nodular_inflammatory",
+        "mixed_lesions",
+        "closed_comedonal"
+      ],
+      "variation_groups": [
+        "V3",
+        "V4",
+        "V5",
+        "V1",
+        "V1"
+      ],
+      "static_review_passed": true
+    },
+    {
+      "batch": 54,
+      "prompt_ids": [
+        "ACNE_266",
+        "ACNE_267",
+        "ACNE_268",
+        "ACNE_269",
+        "ACNE_270"
+      ],
+      "phenotypes": [
+        "open_comedonal",
+        "inflammatory_papular",
+        "papulopustular",
+        "nodular_inflammatory",
+        "mixed_lesions"
+      ],
+      "variation_groups": [
+        "V3",
+        "V3",
+        "V5",
+        "V5",
+        "V2"
+      ],
+      "static_review_passed": true
+    },
+    {
+      "batch": 55,
+      "prompt_ids": [
+        "ACNE_271",
+        "ACNE_272",
+        "ACNE_273",
+        "ACNE_274",
+        "ACNE_275"
+      ],
+      "phenotypes": [
+        "closed_comedonal",
+        "open_comedonal",
+        "inflammatory_papular",
+        "papulopustular",
+        "nodular_inflammatory"
+      ],
+      "variation_groups": [
+        "V2",
+        "V4",
+        "V4",
+        "V1",
+        "V1"
+      ],
+      "static_review_passed": true
+    },
+    {
+      "batch": 56,
+      "prompt_ids": [
+        "ACNE_276",
+        "ACNE_277",
+        "ACNE_278",
+        "ACNE_279",
+        "ACNE_280"
+      ],
+      "phenotypes": [
+        "mixed_lesions",
+        "closed_comedonal",
+        "open_comedonal",
+        "inflammatory_papular",
+        "papulopustular"
+      ],
+      "variation_groups": [
+        "V3",
+        "V3",
+        "V4",
+        "V5",
+        "V1"
+      ],
+      "static_review_passed": true
+    },
+    {
+      "batch": 57,
+      "prompt_ids": [
+        "ACNE_281",
+        "ACNE_282",
+        "ACNE_283",
+        "ACNE_284",
+        "ACNE_285"
+      ],
+      "phenotypes": [
+        "nodular_inflammatory",
+        "mixed_lesions",
+        "closed_comedonal",
+        "open_comedonal",
+        "inflammatory_papular"
+      ],
+      "variation_groups": [
+        "V2",
+        "V3",
+        "V3",
+        "V5",
+        "V5"
+      ],
+      "static_review_passed": true
+    },
+    {
+      "batch": 58,
+      "prompt_ids": [
+        "ACNE_286",
+        "ACNE_287",
+        "ACNE_288",
+        "ACNE_289",
+        "ACNE_290"
+      ],
+      "phenotypes": [
+        "papulopustular",
+        "nodular_inflammatory",
+        "mixed_lesions",
+        "closed_comedonal",
+        "open_comedonal"
+      ],
+      "variation_groups": [
+        "V2",
+        "V2",
+        "V4",
+        "V4",
+        "V1"
+      ],
+      "static_review_passed": true
+    },
+    {
+      "batch": 59,
+      "prompt_ids": [
+        "ACNE_291",
+        "ACNE_292",
+        "ACNE_293",
+        "ACNE_294",
+        "ACNE_295"
+      ],
+      "phenotypes": [
+        "inflammatory_papular",
+        "papulopustular",
+        "nodular_inflammatory",
+        "mixed_lesions",
+        "closed_comedonal"
+      ],
+      "variation_groups": [
+        "V1",
+        "V3",
+        "V3",
+        "V5",
+        "V5"
+      ],
+      "static_review_passed": true
+    },
+    {
+      "batch": 60,
+      "prompt_ids": [
+        "ACNE_296",
+        "ACNE_297",
+        "ACNE_298",
+        "ACNE_299",
+        "ACNE_300"
+      ],
+      "phenotypes": [
+        "open_comedonal",
+        "inflammatory_papular",
+        "papulopustular",
+        "nodular_inflammatory",
+        "mixed_lesions"
+      ],
+      "variation_groups": [
+        "V1",
+        "V2",
+        "V3",
+        "V4",
+        "V5"
+      ],
+      "static_review_passed": true
+    }
+  ],
+  "near_identical_cross_group_pairs_tfidf_gt_0_88": 0,
+  "max_tfidf_cosine_across_groups": 0.5948,
+  "most_similar_cross_group_pair": [
+    "ACNE_072",
+    "ACNE_132"
+  ],
+  "prompt_count_final": 300,
+  "review_batch_diversity_check": "each consecutive five contains >=4 acne lesion families and >=3 variation groups",
+  "qualifications": [
+    "Checks confirm textual diversity, metadata balance, and split isolation only\u2014not actual generated-image diversity.",
+    "Clinical diagnosis and morphology alignment need dermatologist review of images after generation.",
+    "True SD2.1 tokenizer token lengths are not measurable offline here; run the supplied fail-closed Kaggle checker.",
+    "Fitzpatrick_reference is an intended sampling proxy, not a clinical phototype diagnosis."
+  ]
+}

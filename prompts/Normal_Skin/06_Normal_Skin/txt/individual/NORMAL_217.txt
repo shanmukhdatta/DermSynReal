@@ -1,0 +1,9 @@
+ID: NORMAL_217
+GROUP: NORMAL_G037
+PHENOTYPE: balanced_skin_appearance
+SPLIT: train
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 16-year-old woman with light olive skin, frontal clinical portrait, even diffuse clinical illumination. Show balanced-looking non-lesional facial skin. At the outer cheek surfaces, depict an intact outer-cheek surface with subtle pores and mild texture variation. The appearance remains natural despite the restrained facial expression. The surface remains gently even in reflectance, not uniformly polished. Keep real pore spacing, subtle color variation and naturally uneven skin detail. Neutral expression, plain clinical backdrop, no cosmetic smoothing.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, makeup, beauty filter, airbrushed skin, porcelain skin, digitally painted face, unnatural skin smoothing, watermark, text, distorted face, duplicate eyes, extra nose, excessive blur, overexposure, extreme shadows, acne papules, pustules, comedones, red inflamed rash, ring-shaped scaly plaques, depigmented white patches, distinct pigmented lesions, bleeding or crusted lesions, wet greasy oil coating, severe dryness, thick flaking

@@ -1,0 +1,9 @@
+ID: HYPER_173
+GROUP: HYPER_G053
+SPLIT: train
+PHENOTYPE: pih_appearance
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 18-year-old woman with fair beige skin. At the side of the lower cheek, show residual post-inflammatory hyperpigmentation-like marks: a compact uneven brown patch bordered by small fading pigmented marks. The area has intact skin and no fresh abrasions or active dermatitis. Broader affected-area extent, while the pigmentation remains flat and localized to the named region. The discolored areas lie flat on healed skin, without active pustules, visible crust, or depressed scars. Frontal clinical face photograph, gentle indirect daylight, realistic pores and skin texture, natural skin tones, plain background, no retouching.
+
+NEGATIVE PROMPT:
+cartoon, CGI, painted-on stains, makeup, face paint, beauty filter, plastic skin, airbrushing, watermark, text, arrows, annotations, duplicate face, distorted eyes, wrong facial anatomy, blurred lesions, oversaturated pigments, image collage, unrelated body rash

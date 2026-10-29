@@ -1,0 +1,10 @@
+PROMPT ID: SKIN_021
+PHENOTYPE: bcc_appearance
+GROUP: SKIN_G005
+SPLIT: train
+
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 42-year-old woman with light-medium beige skin. At the left temple, show basal-cell-carcinoma-like morphology: a blue-brown oval nodule with a glossy elevated border. Pigmentation is concentrated unevenly beneath the smooth surface. The contour and border are clearly visible at normal photographic distance. A margin of unaffected skin surrounds the lesion. A natural resting facial expression. Straight-on facial photograph, controlled soft studio lighting, visible natural pores, neutral background, sharp focus.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, face paint, makeup concealment, airbrushed skin, beauty filter, plastic pores, glossy cosmetic retouching, tattoo, watermark, text, label, arrows, distorted facial anatomy, duplicate face, blurred skin detail, fantasy colors, excessive artificial symmetry

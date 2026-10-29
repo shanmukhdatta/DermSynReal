@@ -1,0 +1,10 @@
+PROMPT_ID: VITILIGO_117
+GROUP_ID: VITILIGO_G024
+PHENOTYPE: focal_undetermined_appearance
+SPLIT: train
+
+POSITIVE PROMPT:
+Clinical photograph of a 58-year-old woman with very fair ivory skin, showing a localized focal-appearing facial vitiligo pattern. At the upper nasal bridge, one small white patch sits with two minute neighboring white macules. The entire focal cluster occupies one limited facial site. The white region remains a single limited focus rather than a widespread pattern. A narrow sharp border separates the white skin from adjacent pigment. Front-facing dermatology photograph, soft diffused daylight. Use an unretouched photo with natural pores and accurate skin color.
+
+NEGATIVE PROMPT:
+illustration, painting, cartoon, CGI, digitally painted white mask, artificial cutout borders, face paint, cosmetic concealer, smooth plastic skin, beauty filter, watermark, text overlay, arrows, annotation, duplicate face, extra eyes, distorted facial anatomy, out of focus lesion, heavy crust, thick scale, raised ring rash, collage

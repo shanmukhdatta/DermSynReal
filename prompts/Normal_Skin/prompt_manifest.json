@@ -1,0 +1,46 @@
+{
+  "dataset": "DermaLens Normal Facial Skin Morphological Prompts",
+  "version": "1.0.0",
+  "count": 300,
+  "csv_batch_count": 3,
+  "class_name": "Normal",
+  "phenotype_counts": {
+    "balanced_skin_appearance": 100,
+    "oily_skin_appearance": 100,
+    "dry_skin_appearance": 100
+  },
+  "sex_descriptor_counts": {
+    "female": 150,
+    "male": 150
+  },
+  "intended_tone_reference_counts": {
+    "I": 50,
+    "II": 50,
+    "IV": 50,
+    "VI": 50,
+    "III": 50,
+    "V": 50
+  },
+  "split_counts": {
+    "train": 210,
+    "val": 45,
+    "test": 45
+  },
+  "variation_counts": {
+    "V1": 60,
+    "V2": 60,
+    "V3": 60,
+    "V4": 60,
+    "V5": 60
+  },
+  "recommended_images_per_prompt": 5,
+  "candidate_images": 1500,
+  "inference_json": "06_Normal_Skin/json/normal_skin_all_300.json",
+  "positive_prompt_content_token_limit": 150,
+  "max_clip_chunks": 2,
+  "exact_sd21_token_check": "PENDING__RUN_ON_KAGGLE",
+  "generated_image_review": "NOT_PERFORMED",
+  "clinical_ground_truth": "NOT_VERIFIED",
+  "sampling_note": "Balanced/dry/oily are appearance targets within non-lesional normal class, not clinical diagnoses. Fitzpatrick reference categories are sampling labels, not measured sun-reactivity phototypes.",
+  "images_from_same_prompt_group_must_share_split": true
+}

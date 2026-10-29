@@ -1,0 +1,11 @@
+PROMPT_ID: FUNGAL_253
+PROMPT_GROUP_ID: FUNGAL_G013
+PHENOTYPE: pityriasis_versicolor
+SPLIT: train
+CLINICAL_STATUS: PILOT_REVIEW_REQUIRED
+
+POSITIVE_PROMPT:
+Clinical facial photograph of a 53-year-old man with medium-brown skin; left three-quarter facial view, neutral examination-room lighting. Across the left temple, show a pityriasis versicolor pattern: several pale macules merging into one gently scalloped flat patch. Individual smaller spots can still be seen along one side. The mottled pigment contrast is distinct but the patches remain non-raised. The patches have fine superficial scale, without a raised annular border. Keep the affected area in focus, with realistic pores and no cosmetic smoothing.
+
+NEGATIVE_PROMPT:
+illustration, painting, CGI, cartoon, plastic skin, airbrushed skin, heavy makeup, beauty filter, watermark, printed text, arrows, labels, duplicate head, extra eyes, distorted face, blurry lesion, harsh oversharpening, collage

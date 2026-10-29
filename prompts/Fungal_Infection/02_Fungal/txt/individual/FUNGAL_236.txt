@@ -1,0 +1,11 @@
+PROMPT_ID: FUNGAL_236
+PROMPT_GROUP_ID: FUNGAL_G056
+PHENOTYPE: pityriasis_versicolor
+SPLIT: val
+CLINICAL_STATUS: PILOT_REVIEW_REQUIRED
+
+POSITIVE_PROMPT:
+Clinical facial photograph of a 38-year-old woman with fair beige skin; frontal face-level photograph, diffuse overhead and frontal light. Across the right temple and upper cheek, show a pityriasis versicolor pattern: many tiny pale spots merging into a gently irregular patch. Individual spots remain evident at its outer margin. The color difference is noticeable, while every patch stays flat. The patches have fine superficial scale, without a raised annular border. The background is plain; skin detail is unretouched and sharply focused.
+
+NEGATIVE_PROMPT:
+illustration, painting, CGI, cartoon, plastic skin, airbrushed skin, heavy makeup, beauty filter, watermark, printed text, arrows, labels, duplicate head, extra eyes, distorted face, blurry lesion, harsh oversharpening, collage

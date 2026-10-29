@@ -1,0 +1,10 @@
+PROMPT_ID: VITILIGO_287
+GROUP_ID: VITILIGO_G058
+PHENOTYPE: non_segmental_appearance
+SPLIT: train
+
+POSITIVE PROMPT:
+Clinical photograph of a 38-year-old woman with deep brown skin, showing a non-segmental facial vitiligo pattern. At the skin below both temple hairlines, paired white patches meet the lateral forehead hairline irregularly. The border passes around individual hair follicles. Smaller isolated white spots accompany the main bilateral patches. The white-to-normal-skin transition is distinct but not mechanically traced. Unretouched clinical face photograph, broad shadow-free clinical light. Keep true skin texture and a plain neutral background; avoid cosmetic smoothing.
+
+NEGATIVE PROMPT:
+illustration, painting, cartoon, CGI, digitally painted white mask, artificial cutout borders, face paint, cosmetic concealer, smooth plastic skin, beauty filter, watermark, text overlay, arrows, annotation, duplicate face, extra eyes, distorted facial anatomy, out of focus lesion, heavy crust, thick scale, raised ring rash, collage

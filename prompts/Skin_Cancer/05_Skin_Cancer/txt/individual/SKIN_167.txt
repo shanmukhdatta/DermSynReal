@@ -1,0 +1,10 @@
+PROMPT ID: SKIN_167
+PHENOTYPE: melanoma_appearance
+GROUP: SKIN_G034
+SPLIT: train
+
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 78-year-old woman with deep brown skin. At the right temple, show melanoma-suspicious skin lesion features: a small slightly raised dark-brown lesion with an off-center darker zone. Its outline is asymmetric and not uniformly circular. The uneven border and pigment variation are clearly visible. The surrounding skin retains natural pores; pigmentation is not painted on. Maintain natural lesion contrast against adjacent skin. Straight-on facial photograph, soft diffused daylight, visible natural pores, neutral background, sharp focus.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, face paint, makeup concealment, airbrushed skin, beauty filter, plastic pores, glossy cosmetic retouching, tattoo, watermark, text, label, arrows, distorted facial anatomy, duplicate face, blurred skin detail, fantasy colors, excessive artificial symmetry

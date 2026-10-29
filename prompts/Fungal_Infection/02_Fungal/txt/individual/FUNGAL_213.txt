@@ -1,0 +1,11 @@
+PROMPT_ID: FUNGAL_213
+PROMPT_GROUP_ID: FUNGAL_G033
+PHENOTYPE: pityriasis_versicolor
+SPLIT: val
+CLINICAL_STATUS: PILOT_REVIEW_REQUIRED
+
+POSITIVE_PROMPT:
+Clinical facial photograph of a 43-year-old man with light olive skin; front-facing clinical close-up, even diffuse daylight. Across the upper central forehead, show a pityriasis versicolor pattern: several darker tan macules merging into a broad irregular flat patch. Bran-like scale is light and discontinuous. The mottled pigment contrast is distinct but the patches remain non-raised. The patches have fine superficial scale, without a raised annular border. Keep the affected area in focus, with realistic pores and no cosmetic smoothing.
+
+NEGATIVE_PROMPT:
+illustration, painting, CGI, cartoon, plastic skin, airbrushed skin, heavy makeup, beauty filter, watermark, printed text, arrows, labels, duplicate head, extra eyes, distorted face, blurry lesion, harsh oversharpening, collage

@@ -1,0 +1,10 @@
+PROMPT ID: SKIN_137
+PHENOTYPE: scc_appearance
+GROUP: SKIN_G028
+SPLIT: val
+
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 45-year-old woman with deep brown skin. At the right temple, show cutaneous-squamous-cell-carcinoma-like morphology: a pink firm-looking plaque bearing thick dry scale with a fine surface fissure. The edge is raised and asymmetrical rather than smoothly ring-shaped. Dry keratin texture is clearly visible under neutral light. Keratin and surface scale are confined to the described area. Maintain natural lesion contrast against adjacent skin. Slight left three-quarter clinical view, controlled soft studio lighting, visible natural pores, neutral background, sharp focus.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, face paint, makeup concealment, airbrushed skin, beauty filter, plastic pores, glossy cosmetic retouching, tattoo, watermark, text, label, arrows, distorted facial anatomy, duplicate face, blurred skin detail, fantasy colors, excessive artificial symmetry

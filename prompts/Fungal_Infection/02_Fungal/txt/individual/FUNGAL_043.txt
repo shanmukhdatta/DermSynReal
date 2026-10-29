@@ -1,0 +1,11 @@
+PROMPT_ID: FUNGAL_043
+PROMPT_GROUP_ID: FUNGAL_G043
+PHENOTYPE: pityriasis_versicolor
+SPLIT: train
+CLINICAL_STATUS: PILOT_REVIEW_REQUIRED
+
+POSITIVE_PROMPT:
+Clinical facial photograph of a 38-year-old man with very fair ivory skin; left three-quarter facial view, diffused window daylight. Across the outer left cheek, show a pityriasis versicolor pattern: a mixture of pale pink and tan flat macules. Fine superficial flakes sit within the patches without raised borders. The pigment difference is faint and scaling is visible only close up. The patches have fine superficial scale, without a raised annular border. A neutral background and natural pores keep the skin texture visible.
+
+NEGATIVE_PROMPT:
+illustration, painting, CGI, cartoon, plastic skin, airbrushed skin, heavy makeup, beauty filter, watermark, printed text, arrows, labels, duplicate head, extra eyes, distorted face, blurry lesion, harsh oversharpening, collage

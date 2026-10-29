@@ -1,0 +1,10 @@
+PROMPT_ID: VITILIGO_167
+GROUP_ID: VITILIGO_G034
+PHENOTYPE: non_segmental_appearance
+SPLIT: test
+
+POSITIVE PROMPT:
+Clinical photograph of a 32-year-old woman with deep brown skin, showing a non-segmental facial vitiligo pattern. At the upper outer forehead on both sides, several small white macules partly join into lobed forehead patches. Tiny individual macules remain at the outer edges of the clusters. The paired white regions have unequal area while remaining on both sides. A narrow sharp border separates the white skin from adjacent pigment. Front-facing dermatology photograph, soft diffused daylight. Use an unretouched photo with natural pores and accurate skin color.
+
+NEGATIVE PROMPT:
+illustration, painting, cartoon, CGI, digitally painted white mask, artificial cutout borders, face paint, cosmetic concealer, smooth plastic skin, beauty filter, watermark, text overlay, arrows, annotation, duplicate face, extra eyes, distorted facial anatomy, out of focus lesion, heavy crust, thick scale, raised ring rash, collage

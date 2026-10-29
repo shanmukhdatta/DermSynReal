@@ -1,0 +1,11 @@
+PROMPT_ID: FUNGAL_254
+PROMPT_GROUP_ID: FUNGAL_G014
+PHENOTYPE: tinea_faciei
+SPLIT: test
+CLINICAL_STATUS: PILOT_REVIEW_REQUIRED
+
+POSITIVE_PROMPT:
+Clinical facial photograph of a 24-year-old young woman with deep brown skin; front-facing clinical close-up, diffuse overhead and frontal light. On the upper central forehead, show a tinea faciei pattern: three small oval lesions with uneven dry edges and faint central lightening. The patches are separate rather than one diffuse facial rash. The edge looks dusky reddish-brown against the natural skin tone. Only a small amount of fine scale outlines the patch. Use ordinary color balance, natural skin texture, and a distraction-free backdrop.
+
+NEGATIVE_PROMPT:
+illustration, painting, CGI, cartoon, plastic skin, airbrushed skin, heavy makeup, beauty filter, watermark, printed text, arrows, labels, duplicate head, extra eyes, distorted face, blurry lesion, harsh oversharpening, collage

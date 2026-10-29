@@ -1,0 +1,11 @@
+PROMPT_ID: FUNGAL_246
+PROMPT_GROUP_ID: FUNGAL_G006
+PHENOTYPE: pityriasis_versicolor
+SPLIT: val
+CLINICAL_STATUS: PILOT_REVIEW_REQUIRED
+
+POSITIVE_PROMPT:
+Clinical facial photograph of a 38-year-old woman with light olive skin; frontal face-level photograph, diffuse overhead and frontal light. Across the right temple and adjacent forehead, show a pityriasis versicolor pattern: several flat oval light-beige patches of slightly different sizes. Fine bran-like scale is visible inside the discolored areas. The color difference is noticeable, while every patch stays flat. The patches have fine superficial scale, without a raised annular border. The background is plain; skin detail is unretouched and sharply focused.
+
+NEGATIVE_PROMPT:
+illustration, painting, CGI, cartoon, plastic skin, airbrushed skin, heavy makeup, beauty filter, watermark, printed text, arrows, labels, duplicate head, extra eyes, distorted face, blurry lesion, harsh oversharpening, collage

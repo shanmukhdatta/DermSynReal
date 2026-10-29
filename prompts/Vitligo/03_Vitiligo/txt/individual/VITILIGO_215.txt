@@ -1,0 +1,10 @@
+PROMPT_ID: VITILIGO_215
+GROUP_ID: VITILIGO_G043
+PHENOTYPE: non_segmental_appearance
+SPLIT: train
+
+POSITIVE PROMPT:
+Clinical photograph of a 38-year-old woman with deep brown skin, showing a non-segmental facial vitiligo pattern. At the upper nasal sidewalls beside both eyes, small sharply defined white patches cluster at paired inner eye regions. The spots remain flat, without scale or swelling. Several adjacent white spots create a somewhat wider bilateral pattern. A narrow sharp border separates the white skin from adjacent pigment. Face-level clinical photograph, soft diffused daylight. Use soft realistic lighting and preserve the unaltered skin surface.
+
+NEGATIVE PROMPT:
+illustration, painting, cartoon, CGI, digitally painted white mask, artificial cutout borders, face paint, cosmetic concealer, smooth plastic skin, beauty filter, watermark, text overlay, arrows, annotation, duplicate face, extra eyes, distorted facial anatomy, out of focus lesion, heavy crust, thick scale, raised ring rash, collage

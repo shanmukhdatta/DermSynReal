@@ -1,0 +1,35 @@
+New comparison tests:
+tinea | base | 5 images
+tinea | ti_only | 5 images
+tinea | lora_only | 5 images
+tinea | ti_plus_lora | 5 images
+pv | base | 5 images
+pv | lora_only | 5 images
+Generated: 30 | Output: /tmp/tmp4uoqwl17/images | Seconds: 0.6
+PASS Both notebook JSON files and all Python code cells compile
+PASS cgDDI TI loading, token manager, Compel, routing, training CLI checks
+PASS 150/151 content-token bounds and multi-vector TI expansion
+PASS Mock pipeline: four comparison modes, 5 images/mode, metadata and matched seeds
+PASS README present and explains adapter domain mismatch
+PASS count: 5
+NOT TESTED: downloading published model, Compel import, genuine SD2.1 CUDA inference or LoRA training.
+
+Retained LoRA training notebook source suite:
+150 : 150 content tokens; chunks= 2
+Usable images: 25
+Provisional groups: 24
+Split policy: SPLIT_CSV | train images: 18 | manifest: /tmp/tmp6h80fdia/out/split_manifest.csv
+Prepared 18 images; metadata: /tmp/tmp6h80fdia/data/metadata.csv
+Usable images: 25
+Provisional groups: 24
+Split policy: AUTO_SPLIT provisional groups | train images: 16 | manifest: /tmp/tmp5ija5dlz/out/split_manifest.csv
+Prepared 16 images; metadata: /tmp/tmp5ija5dlz/data/metadata.csv
+Saved 10 images; elapsed seconds: 0.3
+PASS Both notebook JSONs and every code cell compile
+PASS Architecture, package pins, LoRA selection, Compel, training CLI and provenance
+PASS 150-token accept; 151-token/empty prompt rejection (tokenizer stub)
+PASS Compel-style positive/negative two-chunk padding (mock tensors)
+PASS Real training cells: CSV/auto group boundaries, captions, alpha and rectangular images
+PASS Actual inference loop on a fake CPU pipeline: 5 images/prompt, LoRA routing, JSONL
+PASS Pinned training CLI flag validation (static)
+7 checks passed. Real CUDA/Diffusers/Compel/model loading NOT verified.

@@ -1,0 +1,10 @@
+PROMPT ID: SKIN_273
+PHENOTYPE: ak_precancerous_appearance
+GROUP: SKIN_G055
+SPLIT: val
+
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 45-year-old woman with light-medium beige skin. At the left cheekbone, show actinic-keratosis-like sun-damaged skin features: several tiny pink-tan papules with sparse rough scale. The individual spots vary in size but remain distinct. The rough dry surface texture is clearly apparent. Dry surface scale remains confined to the described patch or spots. Render the indicated skin tone without color exaggeration. Slight right three-quarter clinical view, even indirect daylight, visible natural pores, neutral background, sharp focus.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, face paint, makeup concealment, airbrushed skin, beauty filter, plastic pores, glossy cosmetic retouching, tattoo, watermark, text, label, arrows, distorted facial anatomy, duplicate face, blurred skin detail, fantasy colors, excessive artificial symmetry

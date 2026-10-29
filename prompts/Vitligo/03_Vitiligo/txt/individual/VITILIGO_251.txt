@@ -1,0 +1,10 @@
+PROMPT_ID: VITILIGO_251
+GROUP_ID: VITILIGO_G051
+PHENOTYPE: focal_undetermined_appearance
+SPLIT: train
+
+POSITIVE PROMPT:
+Clinical photograph of a 16-year-old woman with light olive skin, showing a localized focal-appearing facial vitiligo pattern. At the central skin below the lower lip, one single curved white patch occupies a compact skin region. The outline is crisp but subtly asymmetrical. Only this small localized site is visibly affected. A narrow sharp border separates the white skin from adjacent pigment. Frontal clinical portrait, soft diffused daylight. Keep true skin texture and a plain neutral background; avoid cosmetic smoothing.
+
+NEGATIVE PROMPT:
+illustration, painting, cartoon, CGI, digitally painted white mask, artificial cutout borders, face paint, cosmetic concealer, smooth plastic skin, beauty filter, watermark, text overlay, arrows, annotation, duplicate face, extra eyes, distorted facial anatomy, out of focus lesion, heavy crust, thick scale, raised ring rash, collage

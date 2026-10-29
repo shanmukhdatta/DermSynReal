@@ -1,0 +1,10 @@
+PROMPT_ID: VITILIGO_181
+GROUP_ID: VITILIGO_G037
+PHENOTYPE: non_segmental_appearance
+SPLIT: train
+
+POSITIVE PROMPT:
+Clinical photograph of a 17-year-old woman with very fair ivory skin, showing a non-segmental facial vitiligo pattern. At the medial cheeks on both sides, paired angular-white areas occur beside the nose-to-cheek junctions. The spots are fully depigmented and do not have an active red border. The paired depigmented areas are small and separated by unaffected skin. The depigmented area is smooth with naturally uneven contours. Face-level clinical photograph, even neutral examination-room light. Use an unretouched photo with natural pores and accurate skin color.
+
+NEGATIVE PROMPT:
+illustration, painting, cartoon, CGI, digitally painted white mask, artificial cutout borders, face paint, cosmetic concealer, smooth plastic skin, beauty filter, watermark, text overlay, arrows, annotation, duplicate face, extra eyes, distorted facial anatomy, out of focus lesion, heavy crust, thick scale, raised ring rash, collage

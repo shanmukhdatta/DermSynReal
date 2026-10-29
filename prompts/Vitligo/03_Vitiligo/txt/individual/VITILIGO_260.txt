@@ -1,0 +1,10 @@
+PROMPT_ID: VITILIGO_260
+GROUP_ID: VITILIGO_G052
+PHENOTYPE: non_segmental_appearance
+SPLIT: train
+
+POSITIVE PROMPT:
+Clinical photograph of a 38-year-old man with fair beige skin, showing a non-segmental facial vitiligo pattern. At the bilateral alar creases, small chalk-white spots outline portions of both outer nostril folds. The skin surface remains normal with no crusting. The paired white regions have unequal area while remaining on both sides. The white-to-normal-skin transition is distinct but not mechanically traced. Frontal clinical portrait, broad shadow-free clinical light. Show ordinary skin texture, an uncluttered background, and realistic anatomy.
+
+NEGATIVE PROMPT:
+illustration, painting, cartoon, CGI, digitally painted white mask, artificial cutout borders, face paint, cosmetic concealer, smooth plastic skin, beauty filter, watermark, text overlay, arrows, annotation, duplicate face, extra eyes, distorted facial anatomy, out of focus lesion, heavy crust, thick scale, raised ring rash, collage

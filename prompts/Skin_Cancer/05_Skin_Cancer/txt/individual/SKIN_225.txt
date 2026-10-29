@@ -1,0 +1,10 @@
+PROMPT ID: SKIN_225
+PHENOTYPE: melanoma_appearance
+GROUP: SKIN_G045
+SPLIT: test
+
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 78-year-old woman with light-medium beige skin. At the left temple, show melanoma-suspicious skin lesion features: a mole-like brown lesion with irregular notched borders and a near-black focus. One half appears darker and wider than the other. Pigment irregularity is visible within the localized mark. The surrounding skin retains natural pores; pigmentation is not painted on. Include visible unaffected facial skin around the lesion. Slight left three-quarter clinical view, soft diffuse examination-room light, visible natural pores, neutral background, sharp focus.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, face paint, makeup concealment, airbrushed skin, beauty filter, plastic pores, glossy cosmetic retouching, tattoo, watermark, text, label, arrows, distorted facial anatomy, duplicate face, blurred skin detail, fantasy colors, excessive artificial symmetry

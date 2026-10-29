@@ -1,0 +1,10 @@
+PROMPT_ID: VITILIGO_113
+GROUP_ID: VITILIGO_G023
+PHENOTYPE: segmental_appearance
+SPLIT: train
+
+POSITIVE PROMPT:
+Clinical photograph of a 32-year-old woman with very fair ivory skin, showing a unilateral segmental facial vitiligo pattern. At the right cheek near the mouth, a roughly triangular white patch with soft corners occupies one facial sector. The triangle is organic and irregular, not geometrically exact. The irregular patch remains unilateral, with unaffected skin elsewhere. The depigmented area is smooth with naturally uneven contours. Front-facing dermatology photograph, even neutral examination-room light. Show ordinary skin texture, an uncluttered background, and realistic anatomy.
+
+NEGATIVE PROMPT:
+illustration, painting, cartoon, CGI, digitally painted white mask, artificial cutout borders, face paint, cosmetic concealer, smooth plastic skin, beauty filter, watermark, text overlay, arrows, annotation, duplicate face, extra eyes, distorted facial anatomy, out of focus lesion, heavy crust, thick scale, raised ring rash, collage

@@ -1,0 +1,10 @@
+PROMPT ID: SKIN_267
+PHENOTYPE: ak_precancerous_appearance
+GROUP: SKIN_G054
+SPLIT: train
+
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 81-year-old woman with light-medium beige skin. At the left forehead, show actinic-keratosis-like sun-damaged skin features: a small raised rough plaque with dry yellow-white keratin. The texture is thicker than a subtle macule yet remains localized. Fine dry scale is subtle but visible. Dry surface scale remains confined to the described patch or spots. Maintain natural lesion contrast against adjacent skin. Straight-on facial photograph, soft diffused daylight, visible natural pores, neutral background, sharp focus.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, face paint, makeup concealment, airbrushed skin, beauty filter, plastic pores, glossy cosmetic retouching, tattoo, watermark, text, label, arrows, distorted facial anatomy, duplicate face, blurred skin detail, fantasy colors, excessive artificial symmetry

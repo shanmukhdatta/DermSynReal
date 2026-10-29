@@ -1,0 +1,11 @@
+PROMPT_ID: FUNGAL_237
+PROMPT_GROUP_ID: FUNGAL_G057
+PHENOTYPE: tinea_faciei
+SPLIT: train
+CLINICAL_STATUS: PILOT_REVIEW_REQUIRED
+
+POSITIVE_PROMPT:
+Clinical facial photograph of a 43-year-old man with light olive skin; frontal face-level photograph, even diffuse daylight. On the outer right cheek near the temple, show a tinea faciei pattern: a narrow curved raised scaly band framing a faint oval interior. The active rim is most evident along the outer curve. The patch edge looks pink-red with fine flaky skin. Peripheral flaking is conspicuous while the surrounding face remains mostly unaffected. Keep the affected area in focus, with realistic pores and no cosmetic smoothing.
+
+NEGATIVE_PROMPT:
+illustration, painting, CGI, cartoon, plastic skin, airbrushed skin, heavy makeup, beauty filter, watermark, printed text, arrows, labels, duplicate head, extra eyes, distorted face, blurry lesion, harsh oversharpening, collage

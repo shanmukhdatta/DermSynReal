@@ -1,0 +1,10 @@
+PROMPT ID: SKIN_028
+PHENOTYPE: bcc_appearance
+GROUP: SKIN_G006
+SPLIT: train
+
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 42-year-old man with medium brown skin. At the right cheekbone, show basal-cell-carcinoma-like morphology: a thin irregular pink plaque with faint peripheral scale. A delicate translucent rim borders part of the flat lesion. The contour and border are clearly visible at normal photographic distance. A margin of unaffected skin surrounds the lesion. Render the indicated skin tone without color exaggeration. Frontal close facial view, controlled soft studio lighting, visible natural pores, neutral background, sharp focus.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, face paint, makeup concealment, airbrushed skin, beauty filter, plastic pores, glossy cosmetic retouching, tattoo, watermark, text, label, arrows, distorted facial anatomy, duplicate face, blurred skin detail, fantasy colors, excessive artificial symmetry

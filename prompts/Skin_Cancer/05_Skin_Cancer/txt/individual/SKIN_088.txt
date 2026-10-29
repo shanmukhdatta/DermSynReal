@@ -1,0 +1,10 @@
+PROMPT ID: SKIN_088
+PHENOTYPE: scc_appearance
+GROUP: SKIN_G018
+SPLIT: train
+
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 79-year-old man with medium brown skin. At the left temple, show cutaneous-squamous-cell-carcinoma-like morphology: a pink-red nodule bearing a dry yellow-tan crust. Its border is uneven and thicker than nearby normal skin. Dry keratin texture is clearly visible under neutral light. Keratin and surface scale are confined to the described area. Render the indicated skin tone without color exaggeration. Straight-on facial photograph, even neutral clinical lighting, visible natural pores, neutral background, sharp focus.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, face paint, makeup concealment, airbrushed skin, beauty filter, plastic pores, glossy cosmetic retouching, tattoo, watermark, text, label, arrows, distorted facial anatomy, duplicate face, blurred skin detail, fantasy colors, excessive artificial symmetry

@@ -1,0 +1,11 @@
+PROMPT_ID: FUNGAL_024
+PROMPT_GROUP_ID: FUNGAL_G024
+PHENOTYPE: tinea_faciei
+SPLIT: train
+CLINICAL_STATUS: PILOT_REVIEW_REQUIRED
+
+POSITIVE_PROMPT:
+Clinical facial photograph of a 16-year-old girl with very dark brown skin; frontal face-level photograph, diffuse overhead and frontal light. On the left upper outer cheek, show a tinea faciei pattern: two overlapping oval plaques producing a single winding scaly perimeter. A pair of partially cleared inner areas remain perceptible. The edge looks dusky reddish-brown against the natural skin tone. Peripheral flaking is conspicuous while the surrounding face remains mostly unaffected. Preserve visible pores and fine surface scale in a neutral clinical composition.
+
+NEGATIVE_PROMPT:
+illustration, painting, CGI, cartoon, plastic skin, airbrushed skin, heavy makeup, beauty filter, watermark, printed text, arrows, labels, duplicate head, extra eyes, distorted face, blurry lesion, harsh oversharpening, collage

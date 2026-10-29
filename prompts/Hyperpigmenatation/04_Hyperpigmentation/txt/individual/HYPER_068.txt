@@ -1,0 +1,9 @@
+ID: HYPER_068
+GROUP: HYPER_G008
+SPLIT: test
+PHENOTYPE: pih_appearance
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 27-year-old man with fair beige skin. At the left and right lower cheeks, show residual post-inflammatory hyperpigmentation-like marks: numerous tiny tan-to-brown specks with occasional larger oval marks. Normal skin remains visible between the flat marks. Moderate affected-area extent, with distinct flat marks across part of the named region. The discolored areas lie flat on healed skin, without active pustules, visible crust, or depressed scars. Unretouched face-level dermatology photograph, gentle indirect daylight, realistic pores and skin texture, natural skin tones, plain background, no retouching.
+
+NEGATIVE PROMPT:
+cartoon, CGI, painted-on stains, makeup, face paint, beauty filter, plastic skin, airbrushing, watermark, text, arrows, annotations, duplicate face, distorted eyes, wrong facial anatomy, blurred lesions, oversaturated pigments, image collage, unrelated body rash

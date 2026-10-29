@@ -1,0 +1,10 @@
+PROMPT ID: SKIN_202
+PHENOTYPE: melanoma_appearance
+GROUP: SKIN_G041
+SPLIT: train
+
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 78-year-old man with medium brown skin. At the right nasal sidewall, show melanoma-suspicious skin lesion features: an irregular gray-brown flat macule with uneven pigment density. Some edges are faint while another section has a sharper dark-brown border. The mark contrasts with neighboring skin but remains naturally rendered. The surrounding skin retains natural pores; pigmentation is not painted on. Maintain natural lesion contrast against adjacent skin. Slight right three-quarter clinical view, soft diffuse examination-room light, visible natural pores, neutral background, sharp focus.
+
+NEGATIVE PROMPT:
+cartoon, illustration, CGI, face paint, makeup concealment, airbrushed skin, beauty filter, plastic pores, glossy cosmetic retouching, tattoo, watermark, text, label, arrows, distorted facial anatomy, duplicate face, blurred skin detail, fantasy colors, excessive artificial symmetry

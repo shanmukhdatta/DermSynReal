@@ -1,0 +1,11 @@
+PROMPT_ID: FUNGAL_271
+PROMPT_GROUP_ID: FUNGAL_G031
+PHENOTYPE: tinea_faciei
+SPLIT: train
+CLINICAL_STATUS: PILOT_REVIEW_REQUIRED
+
+POSITIVE_PROMPT:
+Clinical facial photograph of a 43-year-old man with medium-brown skin; right three-quarter facial view, even diffuse daylight. On the right upper outer cheek, show a tinea faciei pattern: a low-contrast facial patch with a short crescent of fine peripheral scale. There is no heavy crust and no broad diffuse redness. The edge looks dusky reddish-brown against the natural skin tone. Peripheral flaking is conspicuous while the surrounding face remains mostly unaffected. Keep the affected area in focus, with realistic pores and no cosmetic smoothing.
+
+NEGATIVE_PROMPT:
+illustration, painting, CGI, cartoon, plastic skin, airbrushed skin, heavy makeup, beauty filter, watermark, printed text, arrows, labels, duplicate head, extra eyes, distorted face, blurry lesion, harsh oversharpening, collage

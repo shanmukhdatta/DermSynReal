@@ -1,0 +1,10 @@
+PROMPT_ID: VITILIGO_246
+GROUP_ID: VITILIGO_G050
+PHENOTYPE: segmental_appearance
+SPLIT: test
+
+POSITIVE PROMPT:
+Clinical photograph of a 42-year-old man with fair beige skin, showing a unilateral segmental facial vitiligo pattern. At the left hairline near the temple, several tiny white marks merge into one irregular unilateral patch. Distinct smaller spots remain close to its border. The affected region is compact and remains entirely on one side. The white-to-normal-skin transition is distinct but not mechanically traced. Front-facing dermatology photograph, broad shadow-free clinical light. Use soft realistic lighting and preserve the unaltered skin surface.
+
+NEGATIVE PROMPT:
+illustration, painting, cartoon, CGI, digitally painted white mask, artificial cutout borders, face paint, cosmetic concealer, smooth plastic skin, beauty filter, watermark, text overlay, arrows, annotation, duplicate face, extra eyes, distorted facial anatomy, out of focus lesion, heavy crust, thick scale, raised ring rash, collage

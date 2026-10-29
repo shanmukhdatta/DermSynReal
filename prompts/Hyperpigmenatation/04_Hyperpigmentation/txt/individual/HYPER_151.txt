@@ -1,0 +1,9 @@
+ID: HYPER_151
+GROUP: HYPER_G031
+SPLIT: train
+PHENOTYPE: melasma_appearance
+POSITIVE PROMPT:
+Unretouched clinical facial photograph of a 37-year-old woman with very dark brown skin. At both upper cheeks, show melasma-like facial hyperpigmentation: muted brown patches with fine wispy peripheral extensions. The pigment fades at the edges without a rim or raised plaque. Moderate extent, several irregular patches occupy part of the specified region. The pigmentation is flat, with no raised border, crust or scale; both sides are broadly but not perfectly symmetrical. Frontal clinical face photograph, even diffused clinical light, realistic pores and skin texture, natural skin tones, plain background, no retouching.
+
+NEGATIVE PROMPT:
+cartoon, CGI, painted-on stains, makeup, face paint, beauty filter, plastic skin, airbrushing, watermark, text, arrows, annotations, duplicate face, distorted eyes, wrong facial anatomy, blurred lesions, oversaturated pigments, image collage, unrelated body rash

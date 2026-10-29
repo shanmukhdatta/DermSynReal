@@ -1,0 +1,11 @@
+PROMPT_ID: FUNGAL_239
+PROMPT_GROUP_ID: FUNGAL_G059
+PHENOTYPE: tinea_faciei
+SPLIT: test
+CLINICAL_STATUS: PILOT_REVIEW_REQUIRED
+
+POSITIVE_PROMPT:
+Clinical facial photograph of a 35-year-old man with deep brown skin; frontal face-level photograph, diffused window daylight. On the right lateral forehead, show a tinea faciei pattern: several discrete small oval plaques with peripheral scale of varying intensity. Some plaques have partial central clearing while others are early and faint. The edge looks dusky reddish-brown against the natural skin tone. The outer rim is clearly visible but the lesion remains localized. The photograph has realistic skin texture, no beauty retouching, and an uncluttered background.
+
+NEGATIVE_PROMPT:
+illustration, painting, CGI, cartoon, plastic skin, airbrushed skin, heavy makeup, beauty filter, watermark, printed text, arrows, labels, duplicate head, extra eyes, distorted face, blurry lesion, harsh oversharpening, collage

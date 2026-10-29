@@ -1,0 +1,10 @@
+PROMPT_ID: VITILIGO_293
+GROUP_ID: VITILIGO_G059
+PHENOTYPE: non_segmental_appearance
+SPLIT: test
+
+POSITIVE PROMPT:
+Clinical photograph of a 32-year-old woman with very fair ivory skin, showing a non-segmental facial vitiligo pattern. At both mouth-corner to cheek transitions, a few separate white macules align near both mouth-to-cheek transitions. Their combined distribution is roughly paired, not perfectly identical. The paired depigmented areas are small and separated by unaffected skin. Surrounding skin shows normal visible pores and fine texture. Frontal clinical portrait, balanced diffuse studio light. Use soft realistic lighting and preserve the unaltered skin surface.
+
+NEGATIVE PROMPT:
+illustration, painting, cartoon, CGI, digitally painted white mask, artificial cutout borders, face paint, cosmetic concealer, smooth plastic skin, beauty filter, watermark, text overlay, arrows, annotation, duplicate face, extra eyes, distorted facial anatomy, out of focus lesion, heavy crust, thick scale, raised ring rash, collage
