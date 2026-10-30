@@ -1,6 +1,6 @@
 # DermSynReal — real-image classifier training (Kaggle)
 
-**Current notebook set: SMOKE / FULL progressive fine-tuning, six facial categories.**
+**Current notebook set: six SMOKE / FULL progressive fine-tuning classifiers, six facial categories.**
 These notebooks replace the older, architecture-mismatched training examples. They are research prototypes, not clinical diagnostic systems.
 
 ## Data: use the finalized split dataset, not the raw collection
@@ -22,7 +22,7 @@ These notebooks replace the older, architecture-mismatched training examples. Th
 | [03_DINOv2_ViTB14_SMOKE_FULL.ipynb](03_DINOv2_ViTB14_SMOKE_FULL.ipynb) | timm DINOv2 ViT-**B/14** | Head → last 2 transformer blocks → last 4 |
 | [04_VMamba_Tiny_SMOKE_FULL.ipynb](04_VMamba_Tiny_SMOKE_FULL.ipynb) | official VMamba Tiny state-space model | Head → final state-space stage → final two |
 | [05_PanDerm_Base_SMOKE_FULL.ipynb](05_PanDerm_Base_SMOKE_FULL.ipynb) | **genuine** official PanDerm Base weights | Head → final 2 transformer blocks → final 4 |
-| EfficientNet-B0 | **Planned, not uploaded yet** | Lightweight efficiency baseline; notebook forthcoming |
+| [06_EfficientNetB0_SMOKE_FULL.ipynb](06_EfficientNetB0_SMOKE_FULL.ipynb) | torchvision **EfficientNet-B0** (ImageNet V1) | Head → final MBConv stage → final two MBConv stages; lightweight efficiency baseline |
 
 **Do not relabel** previous EfficientNet-B3, ConvNeXt Tiny (non-V2), or DINOv2 ViT-S/14 checkpoints as the architectures above. The earlier PanDerm linear probe is also a different experiment.
 
@@ -72,11 +72,12 @@ For later real-vs-synthetic evaluation, reuse a real-trained `best_model.pt` *wi
 
 - **DINOv2:** This version includes the corrected `timm.list_models(..., pretrained=True)` check and does not intentionally throw a restart error after detecting a missing registration.
 - **VMamba:** Its official implementation depends on a selective-scan CUDA extension and may require compatible compilation tools. Do not silently substitute another model if the kernel fails.
+- **EfficientNet-B0:** Uses `torchvision.models.efficientnet_b0(weights=EfficientNet_B0_Weights.IMAGENET1K_V1)`. Local workflow tests used random initialization; genuine weights and Kaggle T4 must still be tested.
 - **PanDerm:** Requires an authentic released PanDerm Base checkpoint. Automatic Google Drive download may be restricted; attach the original file as a second Kaggle input if needed.
 - **ResNet-50 / ConvNeXt V2:** Dataset-path detection supports the flat and nested Kaggle mounts; attach the correct split dataset first.
 
 ## Provenance and status
 
-These files are the current **real-only** Kaggle training notebooks. Earlier notebook implementations were removed from this folder but remain recoverable through Git history. The repository commit records code, **not measured model accuracy**. Local syntax and reduced/substitute-model workflow tests were performed during notebook development; authentic pretrained-weight loading and complete FULL runs must be documented with actual Kaggle logs and artifact versions.
+These files are the current **real-only** Kaggle training notebooks. Earlier notebook implementations were removed from this folder but remain recoverable through Git history. The repository commit records code, **not measured model accuracy**. The sixth EfficientNet-B0 notebook uses the official torchvision architecture without requiring `timm`; its SMOKE and reduced FULL paths were locally tested with that architecture and synthetic fixture images, not pretrained Kaggle weights. Local syntax and reduced/substitute-model workflow tests were performed during notebook development; authentic pretrained-weight loading and complete FULL runs must be documented with actual Kaggle logs and artifact versions.
 
 Keep raw clinical images, private per-image metadata, API keys, model weights, and large Kaggle artifacts **out of Git**. Share reviewed aggregate outcomes and versioned run references only.
