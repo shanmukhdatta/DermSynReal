@@ -24,7 +24,7 @@ Subtypes guide generation and metadata; they do not automatically become separat
 | Phase | Aim | First executable notebook | Status |
 |---|---|---|---|
 | P0 | Initialize repo, reproducibility contract, config schemas | `notebooks/00_environment_check.ipynb` | Scaffold |
-| P1 | Real-image ingest, metadata, deduplication and frozen group-aware splits | `notebooks/01_real_data_audit.ipynb` | Planned |
+| P1 | Real-image ingest, SHA/pHash/ResNet grouping and frozen splits | `notebooks/Preprocessing/Real_Data/DermaLens_Real_Dedup_GroupSplit_Kaggle.ipynb` | Kaggle 069 run complete; manual review pending |
 | P2 | Generator eligibility check and disease-specific 15–20 image/prompt pilots | `notebooks/02_generation_pilot.ipynb` | Planned |
 | P3 | Versioned synthetic generation, QA, near-copy and coverage controls | `notebooks/03_synthetic_generation.ipynb` | Planned |
 | P4 | Train real-only baseline, then equal-budget synthetic variants | `notebooks/04_train_classifier.ipynb` | Planned |
@@ -90,7 +90,7 @@ Read [`docs/PROJECT_PLAN.md`](docs/PROJECT_PLAN.md), [`docs/CODE_COMPLETION_TRAC
 
 ## October 29 Kaggle v2 integration
 
-**Only real-image source:** `/kaggle/input/datasets/shanmukhadattaboda/facial-skin-conditions-real-image-collection` (Kaggle dataset v2). The screenshot displays six folders totaling **9,791 uploaded files, not 9,791 verified independent images**. The collection is not yet clinically reviewed, deduplicated or trained against. Original permissions must be checked; the uploader's CC0 choice does not prove third-party image rights.
+**Only real-image source:** `/kaggle/input/datasets/shanmukhadattaboda/facial-skin-conditions-real-image-collection` (Kaggle dataset v2). The screenshot displays six folders totaling **9,791 uploaded files, not 9,791 verified independent images**. The raw collection subsequently underwent image-level duplicate grouping and a frozen split on Kaggle account 069; clinical-label review and large-group inspection remain pending. Original permissions must be checked; the uploader's CC0 choice does not prove third-party image rights.
 
 **Start:** [real v2 inventory → review → group-disjoint split → train manifest](notebooks/Preprocessing/Real_Data/00_Facial_Real_V2_Kaggle_Start_Here.ipynb). See [Preprocessing README](notebooks/Preprocessing/README.md), [Generation README](notebooks/Generation/README.md), [Training README](notebooks/Training/README.md), and [Evaluation README](notebooks/Evaluation/README.md).
 
@@ -115,3 +115,14 @@ For public GitHub research evidence use **only** the whitelisted, privacy-review
 ## Research paper — complete pre-results draft
 
 The new research manuscript is maintained separately at [paper/manuscript/main.tex](paper/manuscript/main.tex), with nine complete sections and [verified research references](paper/manuscript/references.bib). Its contextual and methodological content is written; measured results, empirical figures, result-dependent discussion and final numerical conclusions remain **deliberately blank** until the audited Kaggle experiments run. For the exact update locations, compilation instructions and CSV-to-table mapping, read [paper/manuscript/README.md](paper/manuscript/README.md). The older paper/dermsynreal_manuscript.tex protocol draft remains unchanged for comparison.
+
+
+## Recorded real-data preprocessing run — Kaggle 069 (30 October 2026)
+
+The standalone [real preprocessing notebook](notebooks/Preprocessing/Real_Data/DermaLens_Real_Dedup_GroupSplit_Kaggle.ipynb) has been **replaced with the 26-cell Kaggle pipeline** for integrity and SHA-256 checks, four-orientation perceptual hashes, ImageNet ResNet-50 similarity links, Union-Find groups, conflicting-label quarantine, and seeded 70/15/15 group allocation. Read the [workflow overview](notebooks/Preprocessing/Real_Data/WORKFLOW_OVERVIEW.md) and [real preprocessing README](notebooks/Preprocessing/Real_Data/README.md) for implementation and outputs.
+
+**Observed Kaggle results (user-supplied):** 9,791 raw images; 0 automated quality failures; 6 cross-class conflicts quarantined; **9,785 eligible images**, **7,428 final similarity groups**; **6,908 train / 1,420 validation / 1,457 test** (70.598/14.512/14.890%); seed **42**, ResNet cosine threshold **0.90**. Recorded path/hash/group cross-split audit passed. **This does not establish patient identity independence, source licensing, or clinically verified labels.** Large similarity groups and Skin Cancer/Normal Skin mislabel risks still warrant review.
+
+The [derived Kaggle dataset](https://www.kaggle.com/datasets/shanmukhadattaboda/facial-dermatology-image-dataset/data) is intended to supply the fixed splits; do **not** run a new split for each model. Diffusion LoRA adaptation uses **real train only**, not validation/test. A lightweight manifest/version consistency check is appropriate during training; repeated expensive duplicate grouping is unnecessary when data are unchanged.
+
+The older `00_Facial_Real_V2_Kaggle_Start_Here.ipynb` and `pipeline.py` are preserved as a **legacy review-first alternative**, not the Kaggle 069 workflow. Do not mix their frozen manifests. Do not publish raw face images or image-level private audit records in this repo; the original data licenses continue to apply.
