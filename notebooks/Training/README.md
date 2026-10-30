@@ -1,28 +1,82 @@
-# DermSynReal — six-class classifier training
+# DermSynReal — real-image classifier training (Kaggle)
 
-The **only real-image dataset** is Kaggle v2 `shanmukhadattaboda/facial-skin-conditions-real-image-collection`: `/kaggle/input/datasets/shanmukhadattaboda/facial-skin-conditions-real-image-collection/Face_Skin_dataset`. The raw class folder spellings are preserved as uploaded. **Never train on the raw collection**: first run `notebooks/Preprocessing/Real_Data/00_Facial_Real_V2_Kaggle_Start_Here.ipynb`, complete real-label review, and freeze the protected 70/15/15 split. Labels and original source licenses still need independent verification. No Kaggle GPU executions are claimed yet.
+**Current notebook set: SMOKE / FULL progressive fine-tuning, six facial categories.**
+These notebooks replace the older, architecture-mismatched training examples. They are research prototypes, not clinical diagnostic systems.
 
+## Data: use the finalized split dataset, not the raw collection
 
-**Only train from saved Kaggle approved real-split artifacts**:
-```python
-MANIFEST_CSV = "/kaggle/input/EDIT_APPROVED_REAL_SPLIT/real_all_manifest.csv"
-IMAGE_ROOT = "/kaggle/input/EDIT_APPROVED_REAL_IMAGES/facial_real_split_v2"
-EXPERIMENT = "real_only"  # E0 initial pilot
-RUN_FINAL_TEST = False     # keep frozen until method choices complete
+- [Facial Dermatology Image Dataset](https://www.kaggle.com/datasets/shanmukhadattaboda/facial-dermatology-image-dataset/data)
+- Kaggle may mount it at `/kaggle/input/facial-dermatology-image-dataset` or `/kaggle/input/datasets/shanmukhadattaboda/facial-dermatology-image-dataset`. ResNet-50 and ConvNeXt V2 now detect both; the other notebooks also search the nested layout.
+- A nested folder containing exactly `train/`, `validation/` and `test/` is supported.
+- All splits must contain these **exact** folder names:
+  `Acne`, `Fungal_infection`, `Hyper_Pigmentation`, `Normal_Skin`, `Skin_cancer`, `Vitiligo`.
+- **Do not attach** the older unsplit `facial-skin-conditions-real-image-collection` as a substitute.
+- Dataset labels, provenance, licensing and leakage audits require independent human verification. A passed loader/smoke test cannot establish medical correctness.
+
+## Current notebooks
+
+| Notebook | Backbone / initialization | Staged fine-tuning |
+|---|---|---|
+| [01_ResNet50_SMOKE_FULL.ipynb](01_ResNet50_SMOKE_FULL.ipynb) | torchvision ResNet-50, ImageNet V2 | Head → layer4 → layers3–4 |
+| [02_ConvNeXtV2_Tiny_SMOKE_FULL.ipynb](02_ConvNeXtV2_Tiny_SMOKE_FULL.ipynb) | timm ConvNeXt **V2** Tiny, ImageNet | Head → final stage → final two stages |
+| [03_DINOv2_ViTB14_SMOKE_FULL.ipynb](03_DINOv2_ViTB14_SMOKE_FULL.ipynb) | timm DINOv2 ViT-**B/14** | Head → last 2 transformer blocks → last 4 |
+| [04_VMamba_Tiny_SMOKE_FULL.ipynb](04_VMamba_Tiny_SMOKE_FULL.ipynb) | official VMamba Tiny state-space model | Head → final state-space stage → final two |
+| [05_PanDerm_Base_SMOKE_FULL.ipynb](05_PanDerm_Base_SMOKE_FULL.ipynb) | **genuine** official PanDerm Base weights | Head → final 2 transformer blocks → final 4 |
+| EfficientNet-B0 | **Planned, not uploaded yet** | Lightweight efficiency baseline; notebook forthcoming |
+
+**Do not relabel** previous EfficientNet-B3, ConvNeXt Tiny (non-V2), or DINOv2 ViT-S/14 checkpoints as the architectures above. The earlier PanDerm linear probe is also a different experiment.
+
+## Run one notebook on Kaggle
+
+1. Open the model notebook in Kaggle, attach the finalized dataset above, enable a GPU (T4) and Internet if official weights are not cached.
+2. Keep `RUN_MODE = "SMOKE"`; use **Save Version → Save & Run All**. Smoke uses a *small balanced sample* and one epoch per enabled stage, and validates the load/train/evaluate/export pipeline.
+3. Check for `SMOKE PASSED` and `run_status.json` recording `smoke_passed`. Inspect the **actual logs** for official backbone/checkpoint success, especially VMamba's CUDA selective-scan and PanDerm's official weights.
+4. Change **only** `RUN_MODE = "FULL"`, save a **new** Kaggle version and Run All. FULL uses the complete fixed splits and the configured progressive training schedule. Optional full-backbone stage is **off** by default.
+5. Confirm final `run_status.json` records `full_completed`; download/retain the model-specific ZIP and Kaggle output version. A smoke pass does **not** guarantee a complete full run.
+
+**Kaggle caution:** Do not reuse smoke checkpoints as research results. SMOKE and FULL write to different output directories. No FULL run is certified by this Git commit.
+
+## Shared methods
+
+- **Real-only training:** ImageNet or officially released pretrained weights; six-class classification head; sequential block-wise unfreezing; discriminative learning rates.
+- Mild **train-only** augmentation: preserve aspect ratio, conservative horizontal flips and small rotations; do not augment real validation/test images. Strong color distortions are avoided.
+- Model selection: **validation macro-F1** (validation-loss tie-break where implemented), early stopping and best checkpoint reload.
+- Final evaluation: one held-out real test after selecting the configuration with validation data. Do **not** use test metrics to tune hyperparameters.
+- Log model name, true pretrained checkpoint, library versions, random seed, class order, dataset/split identity, preprocessing, augmentation, and measured results. For publication-quality comparisons, add multiple seeds and confidence intervals.
+- **SMOKE and FULL both evaluate a test subset/full test respectively** by notebook design; the smoke test is a *software validation*, not a valid model-comparison result. For strictly one-time test inference during experimental selection, avoid examining test metrics until the protocol is frozen.
+
+## Expected Kaggle output / downstream evaluation
+
+Outputs are written under `/kaggle/working/<model_specific_name>_SMOKE/` or `_FULL/`, with a downloadable artifact ZIP. Look for:
+
+```text
+checkpoints/best_model.pt
+checkpoints/                 # stage checkpoints (model-specific)
+reports/history.csv
+reports/final_metrics.json
+reports/                     # predictions / classification reports (model-specific)
+plots/
+class_to_idx.json
+preprocessing.json
+config.json
+training.log
+run_status.json
+inference_example.py         # available for most models; check the artifact manifest
 ```
 
-The five current notebooks are `01_ResNet50_6Class_Train.ipynb`, `02_EfficientNet_B3_6Class_Train.ipynb`, `03_ConvNeXt_Tiny_6Class_Train.ipynb`, `04_DINOv2_ViTS14_6Class_Train.ipynb`, and `05_PanDerm_Base_6Class_Linear_Probe.ipynb`. Exact checkpoint architectures are ResNet-50, **EfficientNet-B3**, **ConvNeXt Tiny (not V2)**, **DINOv2 ViT-S/14 (not B/14)** and **PanDerm Base frozen-feature linear probe (not full fine-tuning)**. The older `DermaLens_ResNet50_Kaggle_Training.ipynb` is a separate optional trainer, not interchangeable with the new experiment-runner manifests.
+**Important:** Each checkpoint must be loaded by its **own architecture** and exact preprocessing. The common folder names do **not** imply the serialized state dictionaries are interchangeable. PanDerm uses its own official architecture/source and may not export exactly the same per-image prediction filenames as the other models.
 
-Start with E0, real-only and a small GPU smoke test. Choose model stages on **real validation only**. The **four timm** notebooks now include head warmup → partial final-block unfreezing → optional full fine-tuning (default off), with a matched real-train-based number of optimizer updates per epoch across E0–E5. This is offline validated only; the exact architecture parameter prefix and GPU optimizer behavior still require Kaggle validation. PanDerm remains a frozen-feature linear probe, not progressive fine-tuning. The manuscript must describe what was *actually* run.
+For later real-vs-synthetic evaluation, reuse a real-trained `best_model.pt` *without retraining* on independently held-out real and synthetic images. Synthetic-only and real+synthetic conditions instead require **new training runs**. Maintain the same class mapping, frozen test split, and prompt/identity separation. The pre-existing notebooks in `../Evaluation/` were written for earlier checkpoint formats; their checkpoint loaders **must be adapted and smoke-tested** before using these artifacts. Do not assume drop-in compatibility.
 
-For E1–E4 use reviewed synthetic data in train **only** and the same frozen real val/test. The `scripts/build_experiment_manifests.py` builder outputs compatible E0–E4 CSVs after reviewed real and synthetic pools are supplied. Do not use synthetic test data to train or choose checkpoints.
+## Model-specific dependency risks
 
-Each notebook saves `best_weights.pth` or the PanDerm probe, `history.csv`/`val_tuning.csv`, run config, `artifact_inventory.csv`, `run_log.jsonl`, and (when explicitly unlocked) real-test predictions with stable IDs, six class probabilities and grouped/real source metadata. PanDerm needs genuine pretrained weights and the official encoder source. Kaggle execution and clinical validity are unverified until actually run.
+- **DINOv2:** This version includes the corrected `timm.list_models(..., pretrained=True)` check and does not intentionally throw a restart error after detecting a missing registration.
+- **VMamba:** Its official implementation depends on a selective-scan CUDA extension and may require compatible compilation tools. Do not silently substitute another model if the kernel fails.
+- **PanDerm:** Requires an authentic released PanDerm Base checkpoint. Automatic Google Drive download may be restricted; attach the original file as a second Kaggle input if needed.
+- **ResNet-50 / ConvNeXt V2:** Dataset-path detection supports the flat and nested Kaggle mounts; attach the correct split dataset first.
 
+## Provenance and status
 
-## Persistent training proof
+These files are the current **real-only** Kaggle training notebooks. Earlier notebook implementations were removed from this folder but remain recoverable through Git history. The repository commit records code, **not measured model accuracy**. Local syntax and reduced/substitute-model workflow tests were performed during notebook development; authentic pretrained-weight loading and complete FULL runs must be documented with actual Kaggle logs and artifact versions.
 
-All five standard classifiers store `notebook_console.log` from before model initialization, their validation history/checkpoints, `artifact_inventory.csv` with SHA-256 digests of stable output files, and `run_log.jsonl`. The older `DermaLens_ResNet50_Kaggle_Training.ipynb` also has console and completion logs, but uses a different training design. The real held-out test is only evaluated when `RUN_FINAL_TEST=True`. Every model uses the same frozen reviewer-approved real test IDs and group assignments. Raw logs and per-image prediction outputs must be retained privately; only aggregated class/experiment results may be published publicly.
-
-
-**Input handoff for mixed generator outputs:** run the reviewed combiner and synthetic preprocessing first; then pass the output `reports/synthetic_train_pool_for_experiments.csv` to `scripts/build_experiment_manifests.py` using `--synthetic-root` and an explicitly chosen `--generator-mode`. This separates base/LoRA image sources for controlled comparisons. The resulting E0–E5 manifests contain absolute synthetic image paths and relative real image paths; set `IMAGE_ROOT` to the frozen real split mount. E5 uses reviewed synthetic *train* while evaluating unchanged real val/test. No model checkpoints or results are generated by this manifest step.
+Keep raw clinical images, private per-image metadata, API keys, model weights, and large Kaggle artifacts **out of Git**. Share reviewed aggregate outcomes and versioned run references only.

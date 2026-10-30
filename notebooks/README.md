@@ -1,17 +1,14 @@
-# Kaggle notebooks — current repository inventory
+# DermSynReal notebooks
 
-Notebook code has been uploaded, but **no GPU run or clinical experiment is verified simply by its presence**.
+Research notebooks grouped by task:
 
-- `Generation/`: two disease-specific diffusion / optional LoRA notebooks for each of six target classes, with 300 authored prompts and generic/morphology variants, with existing README and offline validation notes.
-- `Preprocessing/Real_Data/`: real deduplication and group-aware split.
-- `Preprocessing/Synthetic_Data/`: reviewed synthetic prompt-family split, preserving the authored train/val/test prompt groups.
-- `Training/`: five explicit backbone notebooks (ResNet-50, EfficientNet-B3, ConvNeXt Tiny, DINOv2 ViT-S/14, PanDerm Base linear probe) plus a separate self-contained ResNet50 real/synthetic/combined training notebook.
-- **`Evaluation/`: seven Kaggle-ready notebooks**, from real-label preflight to model inference, generation QA, cross-condition paired reporting, calibration, and LaTeX result export. Start with [Evaluation README](Evaluation/README.md).
+- [Generation](Generation/README.md): disease-specific image synthesis and LoRA experiments.
+- [Preprocessing](Preprocessing/README.md): real-image auditing/grouped splits and synthetic prompt-family splitting.
+- [Training](Training/README.md): **current** six-class real-image classifier pipeline with model-specific SMOKE/FULL Kaggle notebooks for ResNet-50, ConvNeXt V2 Tiny, DINOv2 ViT-B/14, VMamba Tiny, and PanDerm Base. EfficientNet-B0 is planned separately.
+- [Evaluation](Evaluation/README.md): evaluation and reporting notebooks. **Check checkpoint format compatibility first**: the evaluation scripts predate the new SMOKE/FULL model artifacts and are not automatically interchangeable.
 
-Train notebooks 01–05 export locked real-test prediction CSVs. For full class probabilities or a separate synthetic-test set, use the dedicated evaluation inference notebooks. All source image inputs and final run flags are intentionally configured by the researcher.
+## Fixed real dataset
 
-See [execution guide](../docs/EXECUTION_GUIDE.md) and [evaluation protocol](../docs/EVALUATION_PROTOCOL.md).
+Use the finalized [Facial Dermatology Image Dataset](https://www.kaggle.com/datasets/shanmukhadattaboda/facial-dermatology-image-dataset/data) containing **train / validation / test** splits. It is *not* the older raw [facial-skin-conditions-real-image-collection](https://www.kaggle.com/datasets/shanmukhadattaboda/facial-skin-conditions-real-image-collection).
 
-**Important:** The present EfficientNet-B3, ConvNeXt Tiny and DINOv2 ViT-S/14 notebooks are not the separately planned EfficientNet-B0, ConvNeXt V2 Tiny and DINOv2 ViT-B/14 variants. PanDerm is a linear probe. Do not misname experiments.
-
-**Begin research here:** [V2 real dataset inventory / reviewed duplicate-split notebook](Preprocessing/Real_Data/00_Facial_Real_V2_Kaggle_Start_Here.ipynb). The only raw real dataset is Kaggle v2 `shanmukhadattaboda/facial-skin-conditions-real-image-collection` (9,791 image files shown in the user's Kaggle listing, before audit). Training consumes **approved frozen splits**, never this raw source directly.
+See the [Training README](Training/README.md) for class names, Kaggle mount paths, exact model variants, instructions, expected outputs, compatibility caveats, and reproducibility requirements. Notebook presence and SMOKE tests do not establish clinically meaningful or verified FULL-run results. Historical training notebooks remain available in Git history.
