@@ -1,19 +1,36 @@
-# Real dataset v2 — approved dedup and frozen split
+# Real Image Preprocessing — Current Kaggle Workflow
 
-The **only real-image dataset** is Kaggle v2 `shanmukhadattaboda/facial-skin-conditions-real-image-collection`: `/kaggle/input/datasets/shanmukhadattaboda/facial-skin-conditions-real-image-collection/Face_Skin_dataset`. The raw class folder spellings are preserved as uploaded. **Never train on the raw collection**: first run `notebooks/Preprocessing/Real_Data/00_Facial_Real_V2_Kaggle_Start_Here.ipynb`, complete real-label review, and freeze the protected 70/15/15 split. Labels and original source licenses still need independent verification. No Kaggle GPU executions are claimed yet.
+**Current notebook:** [DermaLens_Real_Dedup_GroupSplit_Kaggle.ipynb](DermaLens_Real_Dedup_GroupSplit_Kaggle.ipynb) — replaced with the 26-cell real-data grouping and split notebook executed on Kaggle account 069.
 
+See [WORKFLOW_OVERVIEW.md](WORKFLOW_OVERVIEW.md) for the processing algorithm, expected outputs, instructions, limitations and recorded summary.
 
-**Start here:** `00_Facial_Real_V2_Kaggle_Start_Here.ipynb`. It maps these exact original folders without renaming the Kaggle upload:
+## Dataset sources
 
-| Canonical class | Raw Kaggle folder |
-|---|---|
-| Acne | `Acne` |
-| Fungal_Infection | `Fungal_infection` |
-| Hyperpigmentation | `Hyper_Pigmentation` |
-| Normal | `Normal_Skin` |
-| Skin_Cancer | `Skin_cancer` |
-| Vitiligo | `Vitiligo` |
+- **Raw:** [Facial Skin Conditions — Real Image Collection](https://www.kaggle.com/datasets/shanmukhadattaboda/facial-skin-conditions-real-image-collection/data) (9,791 image files).
+- **Processed:** [Facial Dermatology Image Dataset](https://www.kaggle.com/datasets/shanmukhadattaboda/facial-dermatology-image-dataset/data).
+- **Kaggle input root:** `/kaggle/input/datasets/shanmukhadattaboda/facial-skin-conditions-real-image-collection/Face_Skin_datset`
 
-Step 1 only inventories exact SHA duplicates and flags filenames. Download `review_draft.csv`, record original diagnosis/provenance, actual reviewer decision and reviewer ID for **every** image. No automatic medical labels. Step 2 requires a passing review audit, then stages approved-only links to original images. Step 3 calls `pipeline.py` to discover near-duplicate and cross-label groups and allocate approximately 70/15/15 by protected group; check `review_gallery.html`, `candidate_pairs.csv`, `review_candidates_cross_split.csv`, `quarantined_conflicts.csv`. Step 4 produces stable, reviewer-joined `real_all_manifest.csv`, `real_{train,val,test}_manifest.csv` and a split ZIP with original image bytes.
+Original class directories are `Acne`, `Fungal_infection`, `Hyper_Pigmentation`, `Normal_Skin`, `Skin_cancer` and `Vitiligo`. Preserve these spellings for direct use with the exported image folders.
 
-**Blocked until labels reviewed:** previous source reports flagged potential SJS/TEN in Skin Cancer and dermatitis/rosacea in Normal. The new Kaggle upload's folder names and screenshot cannot establish those cases were corrected. Only a reviewed manifest and image inspection can. No patient ID: inferred visual grouping does not prove patient independence.
+## Recorded output from Kaggle 069
+
+| Stage | Count |
+|---|---:|
+| Source images | 9,791 |
+| Automated quality exclusions | 0 |
+| Quarantined conflicting-label images | 6 |
+| Eligible images | 9,785 |
+| Final similarity groups | 7,428 |
+| Train | 6,908 |
+| Validation | 1,420 |
+| Test | 1,457 |
+
+The run selected cosine threshold 0.90 and used seed 42. The split passed the recorded path/hash/group isolation checks. Large same-class similarity clusters, clinical labels and source licenses still require review.
+
+## Which notebook should I run?
+
+Run **only the current standalone notebook** above for reproduction of the Kaggle 069 preprocessing procedure. The older `00_Facial_Real_V2_Kaggle_Start_Here.ipynb` and `pipeline.py` are preserved as an alternate review-first route; they are not the recorded 069 run and should not generate competing splits for this study.
+
+Use the frozen 70/15/15 output directly in classifier training notebooks; **do not rerun grouping or independently split again**. Train LoRA adapters on real train images only, never validation/test. Keep derived images and image-level private manifests outside GitHub.
+
+**Important:** Duplicate-aware image grouping is not clinical ground truth or patient-level independence.
